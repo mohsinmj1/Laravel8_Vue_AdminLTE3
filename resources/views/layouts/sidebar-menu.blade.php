@@ -8,6 +8,42 @@
           </p>
         </router-link>
       </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <!-- <i class="fas fa-edit"></i> -->
+          <i class="nav-icon  fas fa-clock"></i>
+          <p>
+          Timesheets
+            <i class="fas fa-angle-left right"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <router-link to="/timesheets/create" class="nav-link ">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Create</p>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/forms/advanced" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Drafts </p>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/forms/editors" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Unauthorised</p>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/forms/validation" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Approved </p>
+            </router-link>
+          </li>
+        </ul>
+      </li>
 
       <li class="nav-item">
         <router-link to="/products" class="nav-link">

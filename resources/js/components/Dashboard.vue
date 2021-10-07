@@ -1,16 +1,339 @@
 <template>
     <section class="content">
         <div class="container-fluid">
-            <div class="row ">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="alert alert-info" role="alert">
+                        <i class="mdi mdi-alert-circle-outline mr-2"></i>
+                        InTime V21.03 has been released. Please click to see our
+                        <a target="_blank" href="#" class="alert-link"
+                            >release notes</a
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">NMW</h3>
+                        </div>
+                        <div class="card-body">
+                            <table
+                                class="table table-bordered table-responsive"
+                            >
+                                <thead>
+                                    <tr class="text-center">
+                                        <th>
+                                            Year
+                                        </th>
+                                        <th>
+                                            23 and over
+                                        </th>
+                                        <th>
+                                            21 to 22
+                                        </th>
+                                        <th>18 to 20</th>
+                                        <th>Under 18</th>
+                                        <th>Apprentice</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align: center;">
+                                            <strong>202122</strong>
+                                        </td>
+                                        <td style="text-align: center;">
+                                            <strong>£8.91</strong>
+                                        </td>
+                                        <td style="text-align: center;">
+                                            <strong>£8.36</strong>
+                                        </td>
+                                        <td style="text-align: center;">
+                                            <strong>£6.56</strong>
+                                        </td>
+                                        <td style="text-align: center;">
+                                            <strong>£4.62</strong>
+                                        </td>
+                                        <td style="text-align: center;">
+                                            <strong>£4.30</strong>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">Timesheet Deadline</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                Your weekly timesheet cut off is Tuesday 9am.
+                                Any requests to process timesheets after the cut
+                                off are subject to a late processing fee.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-lg-4">
+                    <div class="card card-primary h-100 mb-3">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                Timesheets (last 15 Days)
+                            </h3>
+                        </div>
+                        <div class="card-body table-responsive">
+                            <table class="table table-hover text-nowrap">
+                                <tbody>
+                                    <tr>
+                                        <td>Missing</td>
+                                        <td class="text-right">&#163;795.56</td>
+                                        <td>
+                                            <span class="badge bg-primary"
+                                                >0</span
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Unauthorised
+                                        </td>
+                                        <td class="text-right">&#163;0.00</td>
+                                        <td>
+                                            <span class="badge bg-primary"
+                                                >1</span
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            To Self Bill Invoice
+                                        </td>
+                                        <td class="text-right">&#163;0.00</td>
+                                        <td>
+                                            <span class="badge bg-primary"
+                                                >0</span
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            To Self Bill Invoice
+                                        </td>
+                                        <td class="text-right">&#163;0.00</td>
+                                        <td>
+                                            <span class="badge bg-primary"
+                                                >0</span
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            To Advice Note
+                                        </td>
+                                        <td class="text-right">&#163;0.00</td>
+                                        <td>
+                                            <span class="badge bg-primary"
+                                                >0</span
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Ready for PAYE
+                                        </td>
+                                        <td class="text-right">&#163;0.00</td>
+                                        <td>
+                                            <span class="badge bg-primary"
+                                                >0</span
+                                            >
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card card-primary h-100 mb-3">
+                        <div class="card-header">
+                            <h3 class="card-title">Expenses (last 15 Days)</h3>
+                        </div>
+                        <div class="card-body table-responsive ">
+                            <table class="table table-hover text-nowrap">
+                                <tbody>
+                                    <tr>
+                                        <td>Unauthorised</td>
+                                        <td class="text-right">&#163;7.56</td>
+                                        <td>
+                                            <span class="badge bg-primary"
+                                                >1</span
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            To Sales Invoice
+                                        </td>
+                                        <td class="text-right">&#163;0.00</td>
+                                        <td>
+                                            <span class="badge bg-primary"
+                                                >0</span
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            To Self Bill
+                                        </td>
+                                        <td class="text-right">&#163;0.00</td>
+                                        <td>
+                                            <span class="badge bg-primary"
+                                                >0</span
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            To Advice Note
+                                        </td>
+                                        <td class="text-right">&#163;0.00</td>
+                                        <td>
+                                            <span class="badge bg-primary"
+                                                >0</span
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Ready for PAYE
+                                        </td>
+                                        <td class="text-right">&#163;0.00</td>
+                                        <td>
+                                            <span class="badge bg-primary"
+                                                >0</span
+                                            >
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card card-warning h-100 mb-3">
+                        <div class="card-header">
+                            <h3 class="card-title text-white">
+                                Timesheet Deadline
+                            </h3>
+                        </div>
+                        <div class="card-body  table-responsive ">
+                            <table class="table table-hover text-nowrap">
+                                <tbody>
+                                    <tr>
+                                        <td>Changes To Approve</td>
+                                        <td>
+                                            <span
+                                                class="badge bg-warning text-white"
+                                                >8</span
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Email Account Access
+                                        </td>
+                                        <td class="text-right">&nbsp;</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card card-primary ">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <i class="far fa-chart-bar"></i>
+                                Bar Chart
+                            </h3>
+
+                            <div class="card-tools">
+                                <button
+                                    type="button"
+                                    class="btn btn-tool"
+                                    data-card-widget="collapse"
+                                >
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <button
+                                    type="button"
+                                    class="btn btn-tool"
+                                    data-card-widget="remove"
+                                >
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="bar-chart" style="height: 300px;"></div>
+                        </div>
+                        <!-- /.card-body-->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <i class="far fa-chart-bar"></i>
+                                Donut Chart
+                            </h3>
+
+                            <div class="card-tools">
+                                <button
+                                    type="button"
+                                    class="btn btn-tool"
+                                    data-card-widget="collapse"
+                                >
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <button
+                                    type="button"
+                                    class="btn btn-tool"
+                                    data-card-widget="remove"
+                                >
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="donut-chart" style="height: 300px;"></div>
+                        </div>
+                        <!-- /.card-body-->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-12 col-sm-6 col-md-3">
                     <div class="info-box">
-                        <span class="info-box-icon bg-info elevation-1"><i class="fas fa-cog"></i></span>
+                        <span class="info-box-icon bg-info elevation-1"
+                            ><i class="fas fa-cog"></i
+                        ></span>
 
                         <div class="info-box-content">
                             <span class="info-box-text">CPU Traffic</span>
                             <span class="info-box-number">
-                            10
-                            <small>%</small>
+                                1000
+                                <small>%</small>
                             </span>
                         </div>
                         <!-- /.info-box-content -->
@@ -20,7 +343,9 @@
                 <!-- /.col -->
                 <div class="col-12 col-sm-6 col-md-3">
                     <div class="info-box mb-3">
-                        <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-thumbs-up"></i></span>
+                        <span class="info-box-icon bg-danger elevation-1"
+                            ><i class="fas fa-thumbs-up"></i
+                        ></span>
 
                         <div class="info-box-content">
                             <span class="info-box-text">Likes</span>
@@ -37,7 +362,9 @@
 
                 <div class="col-12 col-sm-6 col-md-3">
                     <div class="info-box mb-3">
-                        <span class="info-box-icon bg-success elevation-1"><i class="fas fa-shopping-cart"></i></span>
+                        <span class="info-box-icon bg-success elevation-1"
+                            ><i class="fas fa-shopping-cart"></i
+                        ></span>
 
                         <div class="info-box-content">
                             <span class="info-box-text">Sales</span>
@@ -50,17 +377,19 @@
                 <!-- /.col -->
                 <div class="col-12 col-sm-6 col-md-3">
                     <div class="info-box mb-3">
-                        <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-users"></i></span>
+                        <span class="info-box-icon bg-warning elevation-1"
+                            ><i class="fas fa-users"></i
+                        ></span>
 
                         <div class="info-box-content">
                             <span class="info-box-text">New Members</span>
                             <span class="info-box-number">2,000</span>
                         </div>
-                    <!-- /.info-box-content -->
+                        <!-- /.info-box-content -->
                     </div>
                     <!-- /.info-box -->
                 </div>
-            <!-- /.col -->
+                <!-- /.col -->
             </div>
             <!-- /.row -->
 
@@ -69,144 +398,296 @@
                 <div class="col-md-8">
                     <!-- MAP & BOX PANE -->
                     <div class="card">
-                    <div class="card-header">
-                        <h3 class="card-title">Latest Orders (Demo)</h3>
+                        <div class="card-header">
+                            <h3 class="card-title">Latest Orders (Demo)</h3>
 
-                        <div class="card-tools">
-                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                            <i class="fas fa-minus"></i>
-                        </button>
-                        <button type="button" class="btn btn-tool" data-card-widget="remove">
-                            <i class="fas fa-times"></i>
-                        </button>
+                            <div class="card-tools">
+                                <button
+                                    type="button"
+                                    class="btn btn-tool"
+                                    data-card-widget="collapse"
+                                >
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <button
+                                    type="button"
+                                    class="btn btn-tool"
+                                    data-card-widget="remove"
+                                >
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <!-- /.card-header -->
-                    <div class="card-body p-0">
-                        <div class="table-responsive">
-                        <table class="table m-0">
-                            <thead>
-                                <tr>
-                                    <th>Order ID</th>
-                                    <th>Item</th>
-                                    <th>Status</th>
-                                    <th>Popularity</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><a href="pages/examples/invoice.html">OR9842</a></td>
-                                    <td>Call of Duty IV</td>
-                                    <td><span class="badge badge-success">Shipped</span></td>
-                                    <td>
-                                        <div class="sparkbar" data-color="#00a65a" data-height="20">90,80,90,-70,61,-83,63</div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="pages/examples/invoice.html">OR1848</a></td>
-                                    <td>Samsung Smart TV</td>
-                                    <td><span class="badge badge-warning">Pending</span></td>
-                                    <td>
-                                        <div class="sparkbar" data-color="#f39c12" data-height="20">90,80,-90,70,61,-83,68</div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="pages/examples/invoice.html">OR7429</a></td>
-                                    <td>iPhone 6 Plus</td>
-                                    <td><span class="badge badge-danger">Delivered</span></td>
-                                    <td>
-                                        <div class="sparkbar" data-color="#f56954" data-height="20">90,-80,90,70,-61,83,63</div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="pages/examples/invoice.html">OR7429</a></td>
-                                    <td>Samsung Smart TV</td>
-                                    <td><span class="badge badge-info">Processing</span></td>
-                                    <td>
-                                        <div class="sparkbar" data-color="#00c0ef" data-height="20">90,80,-90,70,-61,83,63</div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="pages/examples/invoice.html">OR1848</a></td>
-                                    <td>Samsung Smart TV</td>
-                                    <td><span class="badge badge-warning">Pending</span></td>
-                                    <td>
-                                        <div class="sparkbar" data-color="#f39c12" data-height="20">90,80,-90,70,61,-83,68</div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="pages/examples/invoice.html">OR7429</a></td>
-                                    <td>iPhone 6 Plus</td>
-                                    <td><span class="badge badge-danger">Delivered</span></td>
-                                    <td>
-                                        <div class="sparkbar" data-color="#f56954" data-height="20">90,-80,90,70,-61,83,63</div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <!-- /.card-header -->
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table m-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Order ID</th>
+                                            <th>Item</th>
+                                            <th>Status</th>
+                                            <th>Popularity</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a
+                                                    href="pages/examples/invoice.html"
+                                                    >OR9842</a
+                                                >
+                                            </td>
+                                            <td>Call of Duty IV</td>
+                                            <td>
+                                                <span
+                                                    class="badge badge-success"
+                                                    >Shipped</span
+                                                >
+                                            </td>
+                                            <td>
+                                                <div
+                                                    class="sparkbar"
+                                                    data-color="#00a65a"
+                                                    data-height="20"
+                                                >
+                                                    90,80,90,-70,61,-83,63
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a
+                                                    href="pages/examples/invoice.html"
+                                                    >OR1848</a
+                                                >
+                                            </td>
+                                            <td>Samsung Smart TV</td>
+                                            <td>
+                                                <span
+                                                    class="badge badge-warning"
+                                                    >Pending</span
+                                                >
+                                            </td>
+                                            <td>
+                                                <div
+                                                    class="sparkbar"
+                                                    data-color="#f39c12"
+                                                    data-height="20"
+                                                >
+                                                    90,80,-90,70,61,-83,68
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a
+                                                    href="pages/examples/invoice.html"
+                                                    >OR7429</a
+                                                >
+                                            </td>
+                                            <td>iPhone 6 Plus</td>
+                                            <td>
+                                                <span class="badge badge-danger"
+                                                    >Delivered</span
+                                                >
+                                            </td>
+                                            <td>
+                                                <div
+                                                    class="sparkbar"
+                                                    data-color="#f56954"
+                                                    data-height="20"
+                                                >
+                                                    90,-80,90,70,-61,83,63
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a
+                                                    href="pages/examples/invoice.html"
+                                                    >OR7429</a
+                                                >
+                                            </td>
+                                            <td>Samsung Smart TV</td>
+                                            <td>
+                                                <span class="badge badge-info"
+                                                    >Processing</span
+                                                >
+                                            </td>
+                                            <td>
+                                                <div
+                                                    class="sparkbar"
+                                                    data-color="#00c0ef"
+                                                    data-height="20"
+                                                >
+                                                    90,80,-90,70,-61,83,63
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a
+                                                    href="pages/examples/invoice.html"
+                                                    >OR1848</a
+                                                >
+                                            </td>
+                                            <td>Samsung Smart TV</td>
+                                            <td>
+                                                <span
+                                                    class="badge badge-warning"
+                                                    >Pending</span
+                                                >
+                                            </td>
+                                            <td>
+                                                <div
+                                                    class="sparkbar"
+                                                    data-color="#f39c12"
+                                                    data-height="20"
+                                                >
+                                                    90,80,-90,70,61,-83,68
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a
+                                                    href="pages/examples/invoice.html"
+                                                    >OR7429</a
+                                                >
+                                            </td>
+                                            <td>iPhone 6 Plus</td>
+                                            <td>
+                                                <span class="badge badge-danger"
+                                                    >Delivered</span
+                                                >
+                                            </td>
+                                            <td>
+                                                <div
+                                                    class="sparkbar"
+                                                    data-color="#f56954"
+                                                    data-height="20"
+                                                >
+                                                    90,-80,90,70,-61,83,63
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
+                        <!-- /.card-body -->
                     </div>
-                <!-- /.card-body -->
+                    <!-- /.card -->
+                    <!-- /.card -->
                 </div>
-                <!-- /.card -->
-                <!-- /.card -->
-            </div>
-            <!-- /.col -->
+                <!-- /.col -->
 
-            <div class="col-md-4">
-                <!-- Info Boxes Style 2 -->
-                <div class="info-box mb-3 bg-secondary">
-                <span class="info-box-icon"><i class="fas fa-tag"></i></span>
+                <div class="col-md-4">
+                    <!-- Info Boxes Style 2 -->
+                    <div class="info-box mb-3 bg-secondary">
+                        <span class="info-box-icon"
+                            ><i class="fas fa-tag"></i
+                        ></span>
 
-                <div class="info-box-content">
-                    <span class="info-box-text">Inventory</span>
-                    <span class="info-box-number">5,200</span>
-                </div>
-                <!-- /.info-box-content -->
-                </div>
-                <!-- /.info-box -->
-                <div class="info-box mb-3 bg-success">
-                <span class="info-box-icon"><i class="far fa-heart"></i></span>
+                        <div class="info-box-content">
+                            <span class="info-box-text">Inventory</span>
+                            <span class="info-box-number">5,200</span>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                    <div class="info-box mb-3 bg-success">
+                        <span class="info-box-icon"
+                            ><i class="far fa-heart"></i
+                        ></span>
 
-                <div class="info-box-content">
-                    <span class="info-box-text">Mentions</span>
-                    <span class="info-box-number">92,050</span>
-                </div>
-                <!-- /.info-box-content -->
-                </div>
-                <!-- /.info-box -->
-                <div class="info-box mb-3 bg-danger">
-                <span class="info-box-icon"><i class="fas fa-cloud-download-alt"></i></span>
+                        <div class="info-box-content">
+                            <span class="info-box-text">Mentions</span>
+                            <span class="info-box-number">92,050</span>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                    <div class="info-box mb-3 bg-danger">
+                        <span class="info-box-icon"
+                            ><i class="fas fa-cloud-download-alt"></i
+                        ></span>
 
-                <div class="info-box-content">
-                    <span class="info-box-text">Downloads</span>
-                    <span class="info-box-number">114,381</span>
-                </div>
-                <!-- /.info-box-content -->
-                </div>
-                <!-- /.info-box -->
-                <div class="info-box mb-3 bg-info">
-                <span class="info-box-icon"><i class="far fa-comment"></i></span>
+                        <div class="info-box-content">
+                            <span class="info-box-text">Downloads</span>
+                            <span class="info-box-number">114,381</span>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                    <div class="info-box mb-3 bg-info">
+                        <span class="info-box-icon"
+                            ><i class="far fa-comment"></i
+                        ></span>
 
-                <div class="info-box-content">
-                    <span class="info-box-text">Direct Messages</span>
-                    <span class="info-box-number">163,921</span>
+                        <div class="info-box-content">
+                            <span class="info-box-text">Direct Messages</span>
+                            <span class="info-box-number">163,921</span>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
                 </div>
-                <!-- /.info-box-content -->
-                </div>
-                <!-- /.info-box -->
-            </div>
-            <!-- /.col -->
+                <!-- /.col -->
             </div>
             <!-- /.row -->
-        </div><!--/. container-fluid -->
+        </div>
+        <!--/. container-fluid -->
     </section>
 </template>
 
 <script>
-    export default {
-        mounted() {
-            console.log('Component mounted.')
-        }
+export default {
+    mounted() {
+        /*
+         * BAR CHART
+         * ---------
+         */
+
+        var bar_data = {
+            data: [
+                [1, 10],
+                [2, 8],
+                [3, 4],
+                [4, 13],
+                [5, 17],
+                [6, 9]
+            ],
+            bars: { show: true }
+        };
+        $.plot("#bar-chart", [bar_data], {
+            grid: {
+                borderWidth: 1,
+                borderColor: "#f3f3f3",
+                tickColor: "#f3f3f3"
+            },
+            series: {
+                bars: {
+                    show: true,
+                    barWidth: 0.5,
+                    align: "center"
+                }
+            },
+            colors: ["#3c8dbc"],
+            xaxis: {
+                ticks: [
+                    [1, "January"],
+                    [2, "February"],
+                    [3, "March"],
+                    [4, "April"],
+                    [5, "May"],
+                    [6, "June"]
+                ]
+            }
+        });
+        /* END BAR CHART */
+        console.log("Component mounted.");
     }
+};
 </script>
