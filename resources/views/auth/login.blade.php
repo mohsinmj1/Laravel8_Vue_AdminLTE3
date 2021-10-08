@@ -8,8 +8,8 @@
             <div class="col-md-5 mx-auto">
                 <div class="card">
                     <div class="card-body">
-                        <div class="card_body_logo pb-3 pt-1">
-                            <img src="{{asset('images/logo.gif')}}" alt="" class="img-fluid">
+                        <div class=" pb-3 pt-1 text-center">
+                            <img src="{{asset('images/logo1.png')}}" alt="" class="img-fluid">
                         </div>
                         <hr>
                         <form method="POST" action="{{ route('login') }}" class="px-3">

@@ -9,6 +9,10 @@
                     <div class="card-header">{{ __('Reset Password') }}</div>
 
                     <div class="card-body">
+                        <div class=" pb-3 pt-1 text-center">
+                            <img src="{{asset('images/logo1.png')}}" alt="" class="img-fluid">
+                        </div>
+                        <hr>
                         <form method="POST" action="{{ route('password.update') }}">
                             @csrf
 
