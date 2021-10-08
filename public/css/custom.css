@@ -24,3 +24,23 @@ h3.card-title {
     border-bottom: 2px solid #009ada;
     text-align: center;
 }
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.upload-btn-wrapper .btn {
+    font-size: 14px;
+    background-color: #7266ba !important;
+    border: 1px solid #7266ba !important;
+    color: #fff;
+}
+.upload-btn-wrapper input[type="file"] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}

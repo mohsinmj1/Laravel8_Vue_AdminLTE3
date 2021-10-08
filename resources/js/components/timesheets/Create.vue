@@ -33,7 +33,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-white">
+            <div class="bg-white pb-4">
                 <div class="row">
                     <div class="col-lg-12 mb-2">
                         <ul
@@ -42,20 +42,13 @@
                             role="tablist"
                         >
                             <li class="nav-item">
-                                <a
-                                    class="nav-link timesheet_color"
-                                    id="custom-tabs-three-home-tab"
-                                    data-toggle="pill"
-                                    href="#custom-tabs-three-home"
-                                    role="tab"
-                                    aria-controls="custom-tabs-three-home"
-                                    aria-selected="true"
+                                <a class="nav-link timesheet_color"
                                     >Placement</a
                                 >
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 px-4 mt-2 mb-2">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div
@@ -158,6 +151,216 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- toggle -->
+                    <div class="col-lg-12 px-4">
+                        <button
+                            class="btn btn-primary w-100 pt-1 pb-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseExample"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                        >
+                            <span><i class="fas fa-chevron-down"></i></span>
+                            Additional Details
+                        </button>
+                        <div class="collapse" id="collapseExample">
+                            <div class="col-lg-12 mt-1">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div
+                                            class="card card-primary card-tabs"
+                                        >
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="p-2 pl-4">
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-lg-6"
+                                                            >
+                                                                <h6>
+                                                                    Sales
+                                                                    Project:
+                                                                </h6>
+                                                                <h6>
+                                                                    Project
+                                                                    Code:
+                                                                </h6>
+                                                                <h6>
+                                                                    Client Site:
+                                                                </h6>
+                                                                <h6>
+                                                                    Timesheet
+                                                                    Approval:
+                                                                </h6>
+                                                                <h6>
+                                                                    Chargeable
+                                                                    Expense
+                                                                    Approval..
+                                                                </h6>
+                                                                <h6>
+                                                                    Non-Chargeable
+                                                                    Expense A..
+                                                                </h6>
+                                                            </div>
+                                                            <div
+                                                                class="col-lg-6 mt-auto"
+                                                            >
+                                                                <h6>
+                                                                    Wights
+                                                                    Approval
+                                                                    (Katie)
+                                                                </h6>
+                                                                <h6>
+                                                                    Wights
+                                                                    Approval
+                                                                    (Katie)
+                                                                </h6>
+                                                                <h6>
+                                                                    Agency
+                                                                    Consultant
+                                                                    Approval
+                                                                </h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div
+                                            class="card card-primary card-tabs"
+                                        >
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="p-2 pl-4">
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-lg-5"
+                                                            >
+                                                                <h6>
+                                                                    Timesheet
+                                                                    Duration:
+                                                                </h6>
+                                                                <h6>
+                                                                    TA Terminal
+                                                                    Ref:
+                                                                </h6>
+                                                                <h6>
+                                                                    Timesheet
+                                                                    Layout:
+                                                                </h6>
+                                                                <h6>
+                                                                    Charge
+                                                                    Currency:
+                                                                </h6>
+                                                                <h6>
+                                                                    Timesheet
+                                                                    Pay
+                                                                    Currency:
+                                                                </h6>
+                                                                <h6>
+                                                                    Expense Pay
+                                                                    Currency:
+                                                                </h6>
+                                                            </div>
+                                                            <div
+                                                                class="col-lg-7"
+                                                            >
+                                                                <h6>
+                                                                    weekly
+                                                                </h6>
+                                                                <h6>&nbsp;</h6>
+                                                                <h6>
+                                                                    Standard
+                                                                </h6>
+                                                                <h6>
+                                                                    GBP
+                                                                </h6>
+                                                                <h6>
+                                                                    GBP
+                                                                </h6>
+                                                                <h6>
+                                                                    GBP GBP
+                                                                </h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End toggle -->
+                </div>
+            </div>
+            <div class="col-lg-12 px-0 mt-3">
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            IMPORTANT TIMESHEET INFORMATION
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="mb-0">
+                            Please ensure that your timesheet is submitted by
+                            Monday 9:00am the following week. The following
+                            details must be checked and confirmed before
+                            submitting:
+                        </p>
+                        <ul class="mt-0">
+                            <li>Your <strong>rates</strong> are correct</li>
+                            <li>
+                                Your <strong>project codes </strong> are correct
+                            </li>
+                            <li>Your <strong> hours </strong>are correct</li>
+                            <li>
+                                The <strong> date range </strong> is correct
+                            </li>
+                            <li>
+                                The summary at the bottom of the page shows the
+                                <strong> correct total for your wages </strong>
+                            </li>
+                        </ul>
+                        <p>
+                            If something is not accurate or you are having any
+                            difficulties then please speak with your line
+                            manager for assistance.
+                        </p>
+                        <strong
+                            >Changes which need to be made after the cut-off
+                            time of 9:00am on Monday will result in delays in
+                            receiving your correct wages, please double check
+                            all details very carefully before
+                            submitting.</strong
+                        >
+                        <p>Thank you</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 px-0 mt-0">
+                <div class="card card-primary card-outline card-tabs">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="p-2 pl-4">
+                                <div class="timesheet_create_tit">
+                                    <h2 class="pb-2">
+                                        PAPER SHEETS
+                                    </h2>
+                                    <div class="upload-btn-wrapper">
+                                        <button class="btn">
+                                            Upload Paper
+                                        </button>
+                                        <input type="file" name="myfile" />
                                     </div>
                                 </div>
                             </div>
