@@ -368,6 +368,156 @@
                     </div>
                 </div>
             </div>
+            <div class="col-lg-12 px-0 mt-0">
+                <div class="card card-primary card-outline card-tabs">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="p-2 pl-4">
+                                <div class="timesheet_create_tit">
+                                    <h2 class="pb-2">
+                                        RATE INFORMATION
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <table
+                                class="table table-responsive table text-nowrap  rate_information"
+                            >
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Rate</th>
+
+                                        <th>Period</th>
+
+                                        <th style="text-align:center">Pay</th>
+
+                                        <th style="text-align:center">
+                                            Charge
+                                        </th>
+
+                                        <th style="text-align:center">
+                                            Total Units
+                                        </th>
+
+                                        <th style="text-align:center">
+                                            Total Pay
+                                        </th>
+
+                                        <th style="text-align:center">
+                                            Total Charge
+                                        </th>
+
+                                        <th style="text-align:center">
+                                            Margin
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- ngRepeat: rate in rates | filter:{isViewable: true} -->
+                                    <tr class="ng-scope">
+                                        <td style="height:26px;"></td>
+                                        <td>
+                                            02.0100 - FABRICATION - SUPERVISION
+                                        </td>
+
+                                        <td>Hourly</td>
+
+                                        <td style="text-align:center">
+                                            GBP19.00
+                                        </td>
+
+                                        <td style="text-align:center">
+                                            GBP21.50
+                                        </td>
+
+                                        <!-- ngIf: rate.fields.indexOf('finish') > -1 || rate.fields.indexOf('hours') > -1 -->
+                                        <td style="text-align:center">
+                                            00:00
+                                        </td>
+                                        <td style="text-align:center">
+                                            GBP0.00
+                                        </td>
+
+                                        <td style="text-align:center">
+                                            GBP0.00
+                                        </td>
+
+                                        <td style="text-align:center">
+                                            GBP0.00 (0%)
+                                        </td>
+                                    </tr>
+                                    <!-- end ngRepeat: rate in rates | filter:{isViewable: true} -->
+                                    <tr class="ng-scope">
+                                        <td style="height:26px;"></td>
+                                        <td>
+                                            02.0105 - FABRICATION - UNPACKING
+                                            CUT PARTS
+                                        </td>
+
+                                        <td>Hourly</td>
+
+                                        <td style="text-align:center">
+                                            GBP19.00
+                                        </td>
+
+                                        <td style="text-align:center">
+                                            GBP21.50
+                                        </td>
+
+                                        <!-- ngIf: rate.fields.indexOf('finish') > -1 || rate.fields.indexOf('hours') > -1 -->
+                                        <td style="text-align:center">
+                                            00:00
+                                        </td>
+                                        <!-- end ngIf: rate.fields.indexOf('finish') > -1 || rate.fields.indexOf('hours') > -1 -->
+                                        <!-- ngIf: rate.fields.indexOf('finish') == -1 && rate.fields.indexOf('hours') == -1 -->
+
+                                        <td style="text-align:center">
+                                            GBP0.00
+                                        </td>
+
+                                        <td style="text-align:center">
+                                            GBP0.00
+                                        </td>
+
+                                        <td style="text-align:center">
+                                            GBP0.00 (0%)
+                                        </td>
+                                    </tr>
+                                    <!-- end ngRepeat: rate in rates | filter:{isViewable: true} -->
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+
+                                        <td></td>
+
+                                        <td></td>
+
+                                        <td></td>
+
+                                        <td></td>
+
+                                        <td style="text-align:center">
+                                            <strong>GBP0.00</strong>
+                                        </td>
+
+                                        <td style="text-align:center">
+                                            <strong>GBP0.00</strong>
+                                        </td>
+
+                                        <td style="text-align:center">
+                                            <strong>GBP0.00 (0%)</strong>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </template>

@@ -44,3 +44,7 @@ h3.card-title {
     top: 0;
     opacity: 0;
 }
+
+.rate_information .table thead th {
+    border-bottom: 1px solid #dee2e6 !important;
+}
