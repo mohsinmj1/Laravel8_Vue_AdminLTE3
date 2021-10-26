@@ -25,6 +25,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+//Route::get('draft', 'TimesheetController@getDraft');
 
 Route::namespace('App\\Http\\Controllers\\API\V1')->group(function () {
     Route::get('profile', 'ProfileController@profile');
@@ -33,11 +34,13 @@ Route::namespace('App\\Http\\Controllers\\API\V1')->group(function () {
     Route::get('tag/list', 'TagController@list');
     Route::get('category/list', 'CategoryController@list');
     Route::post('product/upload', 'ProductController@upload');
-
+    Route::get('draft', 'TimesheetController@getDaft');
     Route::apiResources([
         'user' => 'UserController',
         'product' => 'ProductController',
         'category' => 'CategoryController',
+        'draft' => 'TimesheetController',
         'tag' => 'TagController',
     ]);
+   
 });
