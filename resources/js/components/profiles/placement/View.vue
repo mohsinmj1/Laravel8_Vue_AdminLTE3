@@ -485,6 +485,78 @@
             </div>  
 	    </div>
     </div>
+
+     <div class="row">
+
+          <div class="col-12">
+        
+            <div class="card">
+              <div class="card-header" style="background-color:white;">
+                    <button type="submit" class="btn btn-light">Choose Column</button>
+                <div class="card-tools">
+                  
+                  <!-- <button type="button" class="btn btn-sm btn-primary" @click="newModal">
+                      <i class="fa fa-plus-square"></i>
+                      Add New
+                  </button> -->
+                </div>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body table-responsive p-0">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Submit</th>
+                      <th>Worker</th>
+                      <th>Worker Type</th>
+                      <th>Worker Ref</th>
+                      <th>Worker Wxt Ref</th>
+                      <th>Ltd Company Name</th>
+                      <th>Worker Invoice Period </th>
+                      <th>Timesheet Start</th>
+                      <th>Paroll/Frequency</th>
+                      <th>Provider</th>
+                      <th>Consultant</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                     <tr v-for="product in products.data" :key="product.id">
+
+                      <td>{{product.id}}</td>
+                      <td><div class="icheck-primary d-inline">
+                        <input type="checkbox" id="checkboxPrimary1" checked>
+                        <label for="checkboxPrimary1">
+                        </label>
+                      </div></td>
+                      <td>{{product.name}}</td>
+                      <td>{{product.description | truncate(30, '...')}}</td>
+                      <td>{{product.category.name}}</td>
+                      <td>{{product.price}}</td>
+                      <td>{{product.category.name}}</td>
+                      <td>{{product.name}}</td>
+                      <td>{{product.description | truncate(30, '...')}}</td>
+                      <td>{{product.category.name}}</td>
+                      <td>{{product.price}}</td>
+                      <td>{{product.category.name}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+              <div class="card-footer">
+                  <pagination :data="products" @pagination-change-page="getResults"></pagination>
+                    <button type="submit" class="btn btn-info">Download Report</button>
+                    <button type="submit" class="btn btn-info">Download Details Report</button>
+                    <button type="submit" class="btn btn-info">CSV</button>
+
+              </div>
+
+            </div>
+            <!-- /.card -->
+          </div>
+        </div>
+
 </section>
 </template>
 
