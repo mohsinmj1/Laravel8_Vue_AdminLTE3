@@ -11,6 +11,51 @@ export default [
         path: "/timesheets/create",
         component: require("./components/timesheets/Create.vue").default
     },
+      {
+        path: "/timesheets/draft",
+        component: require("./components/timesheets/Draft.vue").default
+    },
+    {
+        path: "/timesheets/unauthorised",
+        component: require("./components/timesheets/Unauthorised.vue").default
+    },
+    {
+        path: "/timesheets/approved",
+        component: require("./components/timesheets/Approved.vue").default
+    },
+    {
+        path: "/timesheets/reject",
+        component: require("./components/timesheets/Reject.vue").default
+    },
+
+    {
+        path: "/expenses/create",
+        component: require("./components/expenses/Create.vue").default
+    },
+      {
+        path: "/expenses/draft",
+        component: require("./components/expenses/Draft.vue").default
+    },
+    {
+        path: "/expenses/unauthorised",
+        component: require("./components/expenses/Unauthorised.vue").default
+    },
+    {
+        path: "/expenses/approved",
+        component: require("./components/expenses/Approved.vue").default
+    },
+    {
+        path: "/profiles/placement/create",
+        component: require("./components/profiles/placement/Create.vue").default
+    },
+    {
+        path: "/profiles/placement/view",
+        component: require("./components/profiles/placement/View.vue").default
+    },
+    {
+        path: "/forms/validation",
+        component: require("./components/forms/Validation.vue").default
+    },
     {
         path: "/forms/general",
         component: require("./components/forms/General.vue").default
@@ -43,6 +88,10 @@ export default [
     {
         path: "/product/category",
         component: require("./components/product/Category.vue").default
+    },
+    {
+        path: "/forms/validation",
+        component: require("./components/Profile.vue").default
     },
     { path: "*", component: require("./components/NotFound.vue").default }
 ];
