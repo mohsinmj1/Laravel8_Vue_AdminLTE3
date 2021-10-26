@@ -44,5 +44,49 @@ export default [
         path: "/product/category",
         component: require("./components/product/Category.vue").default
     },
+    {
+        path: "/pay/listcreditnotes",
+        component: require("./components/pay/Listcreditnotes.vue").default
+    },
+    {
+        path: "/pay/listinvoice",
+        component: require("./components/pay/Listinvoice.vue").default
+    },
+    {
+        path: "/pay/search",
+        component: require("./components/pay/Search.vue").default
+    },    
+    {
+        path: "/sales/listcreditnotes",
+        component: require("./components/sales/Listcreditnotes.vue").default
+    },
+    {
+        path: "/sales/purchaseorder",
+        component: require("./components/sales/Purchaseorder.vue").default
+    },
+    {
+        path: "/sales/listinvoice",
+        component: require("./components/sales/Listinvoice.vue").default
+    },
+    {
+        path: "/sales/search",
+        component: require("./components/sales/Search.vue").default
+    },
+    {
+        path: "/sales/createpurchaseorder",
+        component: require("./components/sales/CreatePurchaseorder.vue").default
+    },
+    {
+        path: "/myaccount/personaldetails",
+        component: require("./components/myaccount/Personaldetails.vue").default
+    },
+    {
+        path: "/myaccount/notification",
+        component: require("./components/myaccount/Notification.vue").default
+    },
+    {
+        path: "/setting/configuration",
+        component: require("./components/setting/Configuration.vue").default
+    },
     { path: "*", component: require("./components/NotFound.vue").default }
 ];

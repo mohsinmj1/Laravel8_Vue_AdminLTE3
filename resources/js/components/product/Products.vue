@@ -138,7 +138,7 @@
         },
         data () {
             return {
-                editmode: false,
+                editmode: true,
                 products : {},
                 form: new Form({
                     id : '',
