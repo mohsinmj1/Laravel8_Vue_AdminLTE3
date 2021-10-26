@@ -117,8 +117,108 @@
       
      
         </ul>
+        
       </li>
-
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <!-- <i class="fas fa-edit"></i> -->
+          <i class="nav-icon  fas fa-clock"></i>
+          <p>
+          Sales
+            <i class="fas fa-angle-left right"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <router-link to="/sales/listinvoice" class="nav-link ">
+              <i class="far fa-circle nav-icon"></i>
+              <p>List Invoice</p>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/sales/listcreditnotes" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>List Credit Notes </p>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/sales/purchaseorder" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Purchase Order </p>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/sales/search" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Search</p>
+            </router-link>
+          </li>          
+        </ul>        
+      </li>     
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <!-- <i class="fas fa-edit"></i> -->
+          <i class="nav-icon  fas fa-clock"></i>
+          <p>
+          Pay
+            <i class="fas fa-angle-left right"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <router-link to="/pay/listinvoice" class="nav-link ">
+              <i class="far fa-circle nav-icon"></i>
+              <p>List Invoice</p>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/pay/listcreditnotes" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>List Credit Notes </p>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/pay/search" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Search</p>
+            </router-link>
+          </li>          
+        </ul>        
+      </li>      
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <!-- <i class="fas fa-edit"></i> -->
+          <i class="nav-icon  fas fa-clock"></i>
+          <p>
+          My Account
+            <i class="fas fa-angle-left right"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <router-link to="/myaccount/personaldetails" class="nav-link ">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Personal Details</p>
+            </router-link>
+          </li>               
+        </ul>    
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <router-link to="/myaccount/notification" class="nav-link ">
+              <i class="far fa-circle nav-icon"></i>
+              <p>My Notification Settings</p>
+            </router-link>
+          </li>               
+        </ul>     
+      </li>
+      <li class="nav-item">
+        <router-link to="/setting/configuration" class="nav-link">
+          <i class="nav-icon fas fa-list orange"></i>
+          <p>
+            Settings
+          </p>
+        </router-link>
+      </li>
       <li class="nav-item">
         <router-link to="/products" class="nav-link">
           <i class="nav-icon fas fa-list orange"></i>
