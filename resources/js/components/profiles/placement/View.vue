@@ -484,8 +484,12 @@
                 </div>
             </div>  
 	    </div>
-        <div class="row">
+    </div>
+
+     <div class="row">
+
           <div class="col-12">
+        
             <div class="card">
               <div class="card-header" style="background-color:white;">
                     <button type="submit" class="btn btn-light">Choose Column</button>
@@ -503,27 +507,17 @@
                   <thead>
                     <tr>
                       <th>ID</th>
-                      <th>Action</th>
-                      <th>Ref</th>
-                      <th>Start</th>
-                      <th>End</th>
-                      <th>Job Title</th>
-                      <th>Contractor</th>
-                      <th>Provider </th>
-                      <th>Pyroll</th>
+                      <th>Submit</th>
+                      <th>Worker</th>
+                      <th>Worker Type</th>
+                      <th>Worker Ref</th>
+                      <th>Worker Wxt Ref</th>
+                      <th>Ltd Company Name</th>
+                      <th>Worker Invoice Period </th>
+                      <th>Timesheet Start</th>
+                      <th>Paroll/Frequency</th>
+                      <th>Provider</th>
                       <th>Consultant</th>
-                      <th>Client Name</th>
-                      <th>Client Ref</th>
-                      <th>Manager</th>
-                      <th>Commission Percentage</th>
-                      <th>Created</th>
-                      <th>Modified</th>
-                      <th>Perm Placement</th>
-                      <th>Perm Invoice</th>
-                      <th>Default Rate</th>
-                      <th>Default Rate Pay</th>
-                      <th>Default Rate Charge</th>
-                      <th>Default Rate Type</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -545,17 +539,6 @@
                       <td>{{product.category.name}}</td>
                       <td>{{product.price}}</td>
                       <td>{{product.category.name}}</td>
-                       <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
-                       <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
-                       <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
-                       <td>{{product.category.name}}</td>
-                    
                     </tr>
                   </tbody>
                 </table>
@@ -573,7 +556,7 @@
             <!-- /.card -->
           </div>
         </div>
-    </div>
+
 </section>
 </template>
 
