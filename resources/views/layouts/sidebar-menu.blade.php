@@ -53,11 +53,23 @@
               <i class="far fa-circle nav-icon"></i>
               <p>Search </p>
             </router-link>
-          </li>
+          </li>          
           <li class="nav-item">
             <router-link to="/timesheets/export" class="nav-link">
               <i class="far fa-circle nav-icon"></i>
               <p>Export </p>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/timesheets/missing" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Missing </p>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/timesheets/reminder" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Send reminders </p>
             </router-link>
           </li>
         </ul>
@@ -100,6 +112,12 @@
             <router-link to="/expenses/reject" class="nav-link">
               <i class="far fa-circle nav-icon"></i>
               <p>Reject </p>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/expenses/search" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Search </p>
             </router-link>
           </li>
         </ul>
@@ -191,7 +209,13 @@
               <i class="far fa-circle nav-icon"></i>
               <p>Search</p>
             </router-link>
-          </li>          
+          </li>    
+          <li class="nav-item">
+            <router-link to="/pay/generate-invoice" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Generate Invoice</p>
+            </router-link>
+          </li>         
         </ul>        
       </li>      
       <li class="nav-item">

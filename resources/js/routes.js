@@ -32,6 +32,18 @@ export default [
         component: require("./components/timesheets/Search.vue").default
     },
     {
+        path: "/timesheets/export",
+        component: require("./components/timesheets/Export.vue").default
+    },
+    {
+        path: "/timesheets/missing",
+        component: require("./components/timesheets/Missing.vue").default
+    },
+    {
+        path: "/timesheets/reminder",
+        component: require("./components/timesheets/Reminders.vue").default
+    },
+    {
         path: "/expenses/create",
         component: require("./components/expenses/Create.vue").default
     },
@@ -46,6 +58,10 @@ export default [
     {
         path: "/expenses/approved",
         component: require("./components/expenses/Approved.vue").default
+    },
+    {
+        path: "/expenses/search",
+        component: require("./components/expenses/Search.vue").default
     },
     {
         path: "/profiles/placement/create",
@@ -103,7 +119,15 @@ export default [
     {
         path: "/pay/search",
         component: require("./components/pay/Search.vue").default
-    },    
+    },   
+    {
+        path: "/pay/generate-invoice",
+        component: require("./components/pay/Approved.vue").default
+    },  
+    {
+        path: "/pay/generate-invoice-print",
+        component: require("./components/pay/invoice.png").default
+    }, 
     {
         path: "/sales/listcreditnotes",
         component: require("./components/sales/Listcreditnotes.vue").default
