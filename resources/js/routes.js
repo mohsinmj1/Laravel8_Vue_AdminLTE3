@@ -49,6 +49,10 @@ export default [
         component: require("./components/profiles/placement/Create.vue").default
     },
     {
+        path: "/reports/margin",
+        component: require("./components/reports/margin.vue").default
+    },
+    {
         path: "/profiles/placement/view",
         component: require("./components/profiles/placement/View.vue").default
     },

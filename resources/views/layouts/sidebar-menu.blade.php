@@ -114,10 +114,26 @@
               <p>View </p>
             </router-link>
           </li>
-      
-     
         </ul>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <!-- <i class="fas fa-edit"></i> -->
+          <i class="nav-icon  fas fa-clock"></i>
+          <p>
+          Reports
+            <i class="fas fa-angle-left right"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <router-link to="/reports/margin" class="nav-link ">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Margin Report</p>
+            </router-link>
+          </li>
         
+        </ul>
       </li>
       <li class="nav-item">
         <a href="#" class="nav-link">
