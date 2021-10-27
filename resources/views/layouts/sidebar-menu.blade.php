@@ -48,6 +48,18 @@
               <p>Reject </p>
             </router-link>
           </li>
+          <li class="nav-item">
+            <router-link to="/timesheets/search" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Search </p>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/timesheets/export" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Export </p>
+            </router-link>
+          </li>
         </ul>
       </li>
       <li class="nav-item">
@@ -113,11 +125,8 @@
               <i class="far fa-circle nav-icon"></i>
               <p>View </p>
             </router-link>
-          </li>
-      
-     
-        </ul>
-        
+          </li> 
+        </ul>        
       </li>
       <li class="nav-item">
         <a href="#" class="nav-link">
@@ -210,6 +219,24 @@
             </router-link>
           </li>               
         </ul>     
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <!-- <i class="fas fa-edit"></i> -->
+          <i class="nav-icon  fas fa-clock"></i>
+          <p>
+          Ateca Consulting Ltd
+            <i class="fas fa-angle-left right"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <router-link to="/agency/edit" class="nav-link ">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Edit Agency</p>
+            </router-link>
+          </li>          
+        </ul>        
       </li>
       <li class="nav-item">
         <router-link to="/setting/configuration" class="nav-link">

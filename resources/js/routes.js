@@ -27,7 +27,10 @@ export default [
         path: "/timesheets/reject",
         component: require("./components/timesheets/Reject.vue").default
     },
-
+    {
+        path: "/timesheets/search",
+        component: require("./components/timesheets/Search.vue").default
+    },
     {
         path: "/expenses/create",
         component: require("./components/expenses/Create.vue").default
@@ -136,6 +139,10 @@ export default [
     {
         path: "/forms/validation",
         component: require("./components/Profile.vue").default
+    },
+    {
+        path: "/agency/edit",
+        component: require("./components/agency/Edit.vue").default 
     },
     { path: "*", component: require("./components/NotFound.vue").default }
 ];
