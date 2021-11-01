@@ -359,6 +359,8 @@
                             <div class="col-lg-6">
                                 <label for="placement" class="d-block mb-1"
                                     >Project Code</label>
+                                     <button class="btn btn-info"@click="showModal">show modal</button>
+    <example-modal ref="modal"></example-modal>
                                 <input
                                     type="text"
                                     placeholder=""
@@ -730,7 +732,9 @@
                 </div>
             </div>
         </div>
+        
     </section>
+    
 </template>
 <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
 <script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
