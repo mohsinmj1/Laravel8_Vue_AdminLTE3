@@ -92,6 +92,14 @@ export default [
         component: require("./components/profiles/worker/View.vue").default
     },
     {
+        path: "/profiles/consultants/create",
+        component: require("./components/profiles/consultants/Create.vue").default
+    },
+    {
+        path: "/profiles/consultants/view",
+        component: require("./components/profiles/consultants/View.vue").default
+    },
+    {
         path: "/forms/validation",
         component: require("./components/forms/Validation.vue").default
     },
@@ -139,15 +147,15 @@ export default [
     {
         path: "/pay/search",
         component: require("./components/pay/Search.vue").default
-    },   
+    },
     {
         path: "/pay/generate-invoice",
         component: require("./components/pay/Approved.vue").default
-    },  
+    },
     {
         path: "/pay/generate-invoice-print",
         component: require("./components/pay/Invoiceprint.vue").default
-    }, 
+    },
     {
         path: "/sales/listcreditnotes",
         component: require("./components/sales/Listcreditnotes.vue").default
@@ -186,7 +194,7 @@ export default [
     },
     {
         path: "/agency/edit",
-        component: require("./components/agency/Edit.vue").default 
+        component: require("./components/agency/Edit.vue").default
     },
     { path: "*", component: require("./components/NotFound.vue").default }
 ];
