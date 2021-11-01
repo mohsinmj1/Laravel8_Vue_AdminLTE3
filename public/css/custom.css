@@ -48,3 +48,7 @@ h3.card-title {
 .rate_information .table thead th {
     border-bottom: 1px solid #dee2e6 !important;
 }
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #444;
+    line-height: 17px;
+}

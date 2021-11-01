@@ -347,6 +347,219 @@
                     </div>
                 </div>
             </div>
+             <div class="col-lg-12 px-0 mt-3">
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            Timesheet - Not Started
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row mt-2">
+                            <div class="col-lg-6">
+                                <label for="placement" class="d-block mb-1"
+                                    >Project Code</label>
+                                     <button class="btn btn-info"@click="showModal">show modal</button>
+    <example-modal ref="modal"></example-modal>
+                                <input
+                                    type="text"
+                                    placeholder=""
+                                    class="w-100"
+                                />
+                            </div>                           
+                        </div>
+                        <div class="row mt-2">                            
+                            <div class="col-lg-2">
+                                <label for="Date" class="d-block mb-1">Date</label>
+                            </div>      
+                            <div class="col-lg-2">
+                                <label for="Rate" class="d-block mb-1">Rate</label>
+                            </div>     
+                             <div class="col-lg-1">
+                                <label for="Start" class="d-block mb-1">Start</label>
+                            </div>      
+                            <div class="col-lg-1">
+                                <label for="Break" class="d-block mb-1">Break</label>
+                            </div>
+                            <div class="col-lg-1">
+                                <label for="Finish" class="d-block mb-1">Finish</label>
+                            </div>    
+                            <div class="col-lg-1">
+                                <label for="Hours" class="d-block mb-1">Hours</label>
+                            </div> 
+                            <div class="col-lg-1">
+                                <label for="Unit" class="d-block mb-1">Units</label>
+                            </div>    
+                            <div class="col-lg-1">
+                                <label for="Project Code" class="d-block mb-1">Code</label>
+                            </div>   
+                            <div class="col-lg-1">
+                                <label for="Comment" class="d-block mb-1">Coment</label>
+                            </div>    
+                            <div class="col-lg-1">
+                                <!-- <label for="placement" class="d-block mb-1">Comment</label> -->
+                            </div>                   
+                        </div>                        
+                        <div class="row mt-2" style="border-bottom:1px solid #D3D3D3">
+                            <div class="col-lg-2" style="font-size:12px;">
+                                <div width="80px" style="padding-top:4px">
+                                    <div style="float:left;"><i class="fas fa-plus" style="color:green"></i>
+                                    </div>
+                                    <div style="float:left;;margin-left:30px">Mon 18/10/2021
+                                    </div>
+                                </div>                                                     
+                            </div>       
+                            <div class="col-lg-2">
+                                <select class="form-control select2" style="width:163px">                                    
+                                    <option value="1">02.0100 (DAY) - FABRICATION - SUPERVISION</option>
+                                    <option value="2">02.0100 (NIGHT) - FABRICATION - SUPERVISION</option>
+                                    <option value="3">02.0105 (DAY) - FABRICATION - UNPACKING CUT PARTS</option>
+                                </select>
+                            </div>     
+                            <div class="col-lg-1">
+                                <input type="text" style="width:79px" placeholder="hh:mm">
+                            </div>      
+                            <div class="col-lg-1">
+                                <input type="text" style="width:79px" placeholder="hh:mm">
+                            </div>
+                            <div class="col-lg-1">
+                               <input type="text" style="width:79px" placeholder="hh:mm">
+                            </div>    
+                            <div class="col-lg-1">
+                                00:00
+                            </div> 
+                            <div class="col-lg-1">
+                               
+                            </div>    
+                            <div class="col-lg-1">
+                                <input type="text" style="width:79px">
+                            </div>   
+                            <div class="col-lg-1">
+                                <input type="text" style="width:79px">
+                            </div>    
+                            <div class="col-lg-1">
+                                
+                            </div>                   
+                        </div>
+                        <div class="row mt-2" style="border-bottom:1px solid #D3D3D3">                           
+                             <div class="col-lg-2" style="font-size:12px;">
+                                <div width="80px" style="padding-top:4px">
+                                    <div style="float:left;"><i class="fas fa-plus" style="color:green"></i>
+                                    </div>
+                                    <div style="float:left;;margin-left:30px">Tue 19/10/2021
+                                    </div>
+                                </div>                                                     
+                            </div>     
+                            <div class="col-lg-2">
+                                <select class="form-control select2" style="width:163px">                                    
+                                    <option value="1">02.0100 (DAY) - FABRICATION - SUPERVISION</option>
+                                    <option value="2">02.0100 (NIGHT) - FABRICATION - SUPERVISION</option>
+                                    <option value="3">02.0105 (DAY) - FABRICATION - UNPACKING CUT PARTS</option>
+                                </select>
+                            </div>     
+                            <div class="col-lg-1">
+                                <input type="text" style="width:79px" placeholder="hh:mm">
+                            </div>      
+                            <div class="col-lg-1">
+                                <input type="text" style="width:79px" placeholder="hh:mm">
+                            </div>
+                            <div class="col-lg-1">
+                               <input type="text" style="width:79px" placeholder="hh:mm">
+                            </div>    
+                            <div class="col-lg-1">
+                                00:00
+                            </div> 
+                            <div class="col-lg-1">
+                               
+                            </div>    
+                            <div class="col-lg-1">
+                                <input type="text" style="width:79px">
+                            </div>   
+                            <div class="col-lg-1">
+                                <input type="text" style="width:79px">
+                            </div>    
+                            <div class="col-lg-1">
+                                
+                            </div>                   
+                        </div>
+                        <div class="row mt-2" style="border-bottom:1px solid #D3D3D3">                           
+                             <div class="col-lg-2" style="font-size:12px;">
+                                <div width="80px" style="padding-top:4px">
+                                    <div style="float:left;"><i class="fas fa-plus" style="color:green"></i>
+                                    </div>
+                                    <div style="float:left;;margin-left:30px">Wed 20/10/2021
+                                    </div>
+                                </div>                                                     
+                            </div>      
+                            <div class="col-lg-2">
+                                <select class="form-control select2" style="width:163px">                                    
+                                    <option value="1">02.0100 (DAY) - FABRICATION - SUPERVISION</option>
+                                    <option value="2">02.0100 (NIGHT) - FABRICATION - SUPERVISION</option>
+                                    <option value="3">02.0105 (DAY) - FABRICATION - UNPACKING CUT PARTS</option>
+                                </select>
+                            </div>     
+                            <div class="col-lg-1">
+                                <input type="text" style="width:79px" placeholder="hh:mm">
+                            </div>      
+                            <div class="col-lg-1">
+                                <input type="text" style="width:79px" placeholder="hh:mm">
+                            </div>
+                            <div class="col-lg-1">
+                               <input type="text" style="width:79px" placeholder="hh:mm">
+                            </div>    
+                            <div class="col-lg-1">
+                                00:00
+                            </div> 
+                            <div class="col-lg-1">
+                               
+                            </div>    
+                            <div class="col-lg-1">
+                                <input type="text" style="width:79px">
+                            </div>   
+                            <div class="col-lg-1">
+                                <input type="text" style="width:79px">
+                            </div>    
+                            <div class="col-lg-1">
+                                
+                            </div>                   
+                        </div>                      
+                        <div class="row mt-2">
+                            <div class="col-lg-6">
+                                <label for="placement" class="d-block mb-1"
+                                    >Internal Comment</label>
+                                <input
+                                    type="text"
+                                    placeholder=""
+                                    class="w-100"
+                                />
+                            </div>                           
+                        </div>
+                        <div class="row mt-2">
+                            <div style="padding-right:10px">
+                                <button class="btn btn-danger" type="submit">
+                                    Cancel
+                                </button>
+                            </div> 
+                            <div style="padding-right:10px">
+                                <button class="btn btn-success" type="submit">
+                                    Save as Draft
+                                </button>
+                            </div>  
+                            <div style="padding-right:10px">
+                                <button class="btn btn-success" type="submit">
+                                    Save and Submit
+                                </button>
+                            </div>     
+                            <div style="padding-right:10px">
+                                <button class="btn btn-primary" type="submit">
+                                    Copy from Previous
+                                </button>
+                            </div>                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <div class="col-lg-12 px-0 mt-0">
                 <div class="card card-primary card-outline card-tabs">
                     <div class="row">
@@ -519,5 +732,30 @@
                 </div>
             </div>
         </div>
+        
     </section>
+    
 </template>
+<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="../../plugins/jszip/jszip.min.js"></script>
+<script src="../../plugins/pdfmake/pdfmake.min.js"></script>
+<script src="../../plugins/pdfmake/vfs_fonts.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<script>
+
+    export default {
+
+        mounted() {
+            //Initialize Select2 Elements
+            $('.select2').select2()   
+            console.log('Creat Timesheet mounted.');
+        }
+    }
+</script>

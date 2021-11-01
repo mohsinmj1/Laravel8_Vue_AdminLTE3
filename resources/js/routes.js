@@ -11,7 +11,7 @@ export default [
         path: "/timesheets/create",
         component: require("./components/timesheets/Create.vue").default
     },
-      {
+    {
         path: "/timesheets/draft",
         component: require("./components/timesheets/Draft.vue").default
     },
@@ -27,12 +27,27 @@ export default [
         path: "/timesheets/reject",
         component: require("./components/timesheets/Reject.vue").default
     },
-
+    {
+        path: "/timesheets/search",
+        component: require("./components/timesheets/Search.vue").default
+    },
+    {
+        path: "/timesheets/export",
+        component: require("./components/timesheets/Export.vue").default
+    },
+    {
+        path: "/timesheets/missing",
+        component: require("./components/timesheets/Missing.vue").default
+    },
+    {
+        path: "/timesheets/reminder",
+        component: require("./components/timesheets/Reminders.vue").default
+    },
     {
         path: "/expenses/create",
         component: require("./components/expenses/Create.vue").default
     },
-      {
+    {
         path: "/expenses/draft",
         component: require("./components/expenses/Draft.vue").default
     },
@@ -45,12 +60,45 @@ export default [
         component: require("./components/expenses/Approved.vue").default
     },
     {
+        path: "/expenses/search",
+        component: require("./components/expenses/Search.vue").default
+    },
+    // {
+    //     path: "/reports/margin",
+    //     component: require("./components/reports/margin.vue").default
+    // },
+    {
         path: "/profiles/placement/create",
         component: require("./components/profiles/placement/Create.vue").default
     },
     {
         path: "/profiles/placement/view",
         component: require("./components/profiles/placement/View.vue").default
+    },
+    {
+        path: "/profiles/clients/view",
+        component: require("./components/profiles/placement/Client.vue").default
+    },
+    {
+        path: "/profiles/placement/clientedit",
+        component: require("./components/profiles/placement/ClientEdit.vue")
+            .default
+    },
+    {
+        path: "/profiles/workers/create",
+        component: require("./components/profiles/worker/Create.vue").default
+    },
+    {
+        path: "/profiles/workers/view",
+        component: require("./components/profiles/worker/View.vue").default
+    },
+    {
+        path: "/profiles/umbrellas/create",
+        component: require("./components/profiles/umbrellas/Create.vue").default
+    },
+    {
+        path: "/profiles/umbrellas/view",
+        component: require("./components/profiles/umbrellas/View.vue").default
     },
     {
         path: "/forms/validation",
@@ -90,8 +138,65 @@ export default [
         component: require("./components/product/Category.vue").default
     },
     {
+        path: "/pay/listcreditnotes",
+        component: require("./components/pay/Listcreditnotes.vue").default
+    },
+    {
+        path: "/pay/listinvoice",
+        component: require("./components/pay/Listinvoice.vue").default
+    },
+    {
+        path: "/pay/search",
+        component: require("./components/pay/Search.vue").default
+    },
+    {
+        path: "/pay/generate-invoice",
+        component: require("./components/pay/Approved.vue").default
+    },
+    {
+        path: "/pay/generate-invoice-print",
+        component: require("./components/pay/Invoiceprint.vue").default
+    },
+
+    {
+        path: "/sales/listcreditnotes",
+        component: require("./components/sales/Listcreditnotes.vue").default
+    },
+    {
+        path: "/sales/purchaseorder",
+        component: require("./components/sales/Purchaseorder.vue").default
+    },
+    {
+        path: "/sales/listinvoice",
+        component: require("./components/sales/Listinvoice.vue").default
+    },
+    {
+        path: "/sales/search",
+        component: require("./components/sales/Search.vue").default
+    },
+    {
+        path: "/sales/createpurchaseorder",
+        component: require("./components/sales/CreatePurchaseorder.vue").default
+    },
+    {
+        path: "/myaccount/personaldetails",
+        component: require("./components/myaccount/Personaldetails.vue").default
+    },
+    {
+        path: "/myaccount/notification",
+        component: require("./components/myaccount/Notification.vue").default
+    },
+    {
+        path: "/setting/configuration",
+        component: require("./components/setting/Configuration.vue").default
+    },
+    {
         path: "/forms/validation",
         component: require("./components/Profile.vue").default
+    },
+    {
+        path: "/agency/edit",
+        component: require("./components/agency/Edit.vue").default
     },
     { path: "*", component: require("./components/NotFound.vue").default }
 ];
