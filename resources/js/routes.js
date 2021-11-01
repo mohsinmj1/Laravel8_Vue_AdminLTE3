@@ -72,6 +72,14 @@ export default [
         component: require("./components/profiles/placement/View.vue").default
     },
     {
+        path: "/profiles/placement/client",
+        component: require("./components/profiles/placement/Client.vue").default
+    },
+    {
+        path: "/profiles/placement/clientedit",
+        component: require("./components/profiles/placement/ClientEdit.vue").default
+    },
+    {
         path: "/forms/validation",
         component: require("./components/forms/Validation.vue").default
     },
@@ -126,7 +134,7 @@ export default [
     },  
     {
         path: "/pay/generate-invoice-print",
-        component: require("./components/pay/invoice.png").default
+        component: require("./components/pay/Invoiceprint.vue").default
     }, 
     {
         path: "/sales/listcreditnotes",
