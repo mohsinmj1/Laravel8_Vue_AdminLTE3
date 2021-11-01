@@ -93,6 +93,14 @@ export default [
         component: require("./components/profiles/worker/View.vue").default
     },
     {
+        path: "/profiles/consultants/create",
+        component: require("./components/profiles/consultants/Create.vue").default
+    },
+    {
+        path: "/profiles/consultants/view",
+        component: require("./components/profiles/consultants/View.vue").default
+    },
+    {
         path: "/profiles/umbrellas/create",
         component: require("./components/profiles/umbrellas/Create.vue").default
     },
@@ -157,7 +165,6 @@ export default [
         path: "/pay/generate-invoice-print",
         component: require("./components/pay/Invoiceprint.vue").default
     },
-
     {
         path: "/sales/listcreditnotes",
         component: require("./components/sales/Listcreditnotes.vue").default
