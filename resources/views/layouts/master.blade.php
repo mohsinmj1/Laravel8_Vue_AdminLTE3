@@ -122,9 +122,9 @@
     {{-- ./wrapper --}}
 
     @auth
-    <script>
-    window.user = @json(auth()-> user())
-    </script>
+        <script>
+            window.user = @json(auth()->user())
+        </script>
     @endauth
     <script src="{{ mix('/js/app.js') }}"></script>
 

@@ -11,7 +11,7 @@ export default [
         path: "/timesheets/create",
         component: require("./components/timesheets/Create.vue").default
     },
-      {
+    {
         path: "/timesheets/draft",
         component: require("./components/timesheets/Draft.vue").default
     },
@@ -47,7 +47,7 @@ export default [
         path: "/expenses/create",
         component: require("./components/expenses/Create.vue").default
     },
-      {
+    {
         path: "/expenses/draft",
         component: require("./components/expenses/Draft.vue").default
     },
@@ -63,10 +63,10 @@ export default [
         path: "/expenses/search",
         component: require("./components/expenses/Search.vue").default
     },
-    {
-        path: "/reports/margin",
-        component: require("./components/reports/margin.vue").default
-    },
+    // {
+    //     path: "/reports/margin",
+    //     component: require("./components/reports/margin.vue").default
+    // },
     {
         path: "/profiles/placement/create",
         component: require("./components/profiles/placement/Create.vue").default
@@ -81,6 +81,14 @@ export default [
     },
     {
         path: "/profiles/workers/view",
+        component: require("./components/profiles/worker/View.vue").default
+    },
+    {
+        path: "/profiles/umbrellas/create",
+        component: require("./components/profiles/worker/Create.vue").default
+    },
+    {
+        path: "/profiles/umbrellas/view",
         component: require("./components/profiles/worker/View.vue").default
     },
     {
@@ -131,15 +139,15 @@ export default [
     {
         path: "/pay/search",
         component: require("./components/pay/Search.vue").default
-    },   
+    },
     {
         path: "/pay/generate-invoice",
         component: require("./components/pay/Approved.vue").default
-    },  
+    },
     {
         path: "/pay/generate-invoice-print",
         component: require("./components/pay/invoice.png").default
-    }, 
+    },
     {
         path: "/sales/listcreditnotes",
         component: require("./components/sales/Listcreditnotes.vue").default
@@ -178,7 +186,7 @@ export default [
     },
     {
         path: "/agency/edit",
-        component: require("./components/agency/Edit.vue").default 
+        component: require("./components/agency/Edit.vue").default
     },
     { path: "*", component: require("./components/NotFound.vue").default }
 ];
