@@ -6,6 +6,7 @@
           <div class="col-12">
             <div class="card">
               <div class="card-header" style="background-color:white;">
+                
                 <h3 class="card-title" style="padding-top:10px;">Generate Invoice</h3>
                     <button style="margin-left:20px;" type="submit" class="btn btn-light">Choose Column</button>
                     <div class="card-tools">
@@ -165,10 +166,17 @@
                     </tr>
                   </tbody>
                 </table>
+         
               </div>
               <!-- /.card-body -->
               <div class="card-footer">
                   <pagination :data="products" @pagination-change-page="getResults"></pagination>
+                  
+                      <router-link to="/pay/generate-invoice-print" style="text-decoration:none">
+                         <p>Generate invoice</p>
+                      </router-link> 
+                  
+                    
                     <button type="submit" class="btn btn-primary">Generate</button>
                     <button type="submit" class="btn btn-info">Print Report</button>
                     <!-- <button type="submit" class="btn btn-info">Print Details Report</button>
@@ -177,6 +185,7 @@
                     <button type="submit" class="btn btn-info">Reset Column</button> -->
               </div>
             </div>
+
             <!-- /.card -->
           </div>
         </div>
@@ -191,10 +200,11 @@
       components: {
           VueTagsInput,
         },
+        
         data () {
             return {
                 editmode: false,
-                products : {},
+                products : {},               
                 form: new Form({
                     id : '',
                     category : '',
@@ -204,7 +214,8 @@
                     photo: '',
                     category_id: '',
                     price: '',
-                    photoUrl: '',
+                    photoUrl: '',              
+                   
                 }),
                 categories: [],
               

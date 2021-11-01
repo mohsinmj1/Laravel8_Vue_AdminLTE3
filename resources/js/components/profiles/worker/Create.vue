@@ -48,28 +48,28 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Create Placement </h2>
+                    <h2>Create Workers </h2>
                 </div>
             </div>
             <div class="bg-white pb-4">
                 <div class="card-body">
                     <ul class="nav nav-tabs" id="custom-content-below-tab" role="tablist">
-                        <li class="nav-item" style="width:16.66%">
+                        <li class="nav-item" style="width:20%">
                             <a class="nav-link active" id="custom-content-below-general-tab" data-toggle="pill" href="#custom-content-below-general" role="tab" aria-controls="custom-content-below-general" aria-selected="true">Main</a>
                         </li>
-                        <li class="nav-item" style="width:16.66%;border-bottom:blue">
+                        <li class="nav-item" style="width:20%;border-bottom:blue">
                             <a class="nav-link" id="custom-content-below-timesheet-tab" data-toggle="pill" href="#custom-content-below-timesheet" role="tab" aria-controls="custom-content-below-timesheet" aria-selected="false">Employement Details</a>
                         </li>
-                        <li class="nav-item" style="width:16.66%">
+                        <li class="nav-item" style="width:20%">
                             <a class="nav-link" id="custom-content-below-expenses-tab" data-toggle="pill" href="#custom-content-below-expenses" role="tab" aria-controls="custom-content-below-expenses" aria-selected="false">Limited Company</a>
                         </li>
-                        <li class="nav-item" style="width:16.66%">
+                        <li class="nav-item" style="width:20%">
                             <a class="nav-link" id="custom-content-below-invoicing-tab" data-toggle="pill" href="#custom-content-below-invoicing" role="tab" aria-controls="custom-content-below-invoicing" aria-selected="false">Bank Accounts</a>
                         </li>
-                        <li class="nav-item" style="width:16.66%">
+                        <!-- <li class="nav-item" style="width:20%">
                             <a class="nav-link" id="custom-content-below-financial-tab" data-toggle="pill" href="#custom-content-below-financial" role="tab" aria-controls="custom-content-below-financial" aria-selected="false">CIS</a>
-                        </li>
-                        <li class="nav-item" style="width:16.66%">
+                        </li> -->
+                        <li class="nav-item" style="width:20%">
                             <a class="nav-link" id="custom-content-below-advance-tab" data-toggle="pill" href="#custom-content-below-advance" role="tab" aria-controls="custom-content-below-advance" aria-selected="false">Advanced</a>
                         </li>
                     </ul><br>
@@ -844,7 +844,7 @@
                         <!------third tab end ----->
                         </div>
                         <!----- invoce tab end ----->
-                        <div class="tab-pane fade" id="custom-content-below-financial" role="tabpanel" aria-labelledby="custom-content-below-financial-tab">
+                        <!-- <div class="tab-pane fade" id="custom-content-below-financial" role="tabpanel" aria-labelledby="custom-content-below-financial-tab">
                           <div class="row">
                             <div class="col-lg-6">
                                 <div class="card card-primary card-outline card-tabs">
@@ -1096,7 +1096,7 @@
                                 </div>
                             </div>
                         </div>
-                        </div>
+                        </div> -->
                         <!------fourth tab end -->
                         <div class="tab-pane fade" id="custom-content-below-advance" role="tabpanel" aria-labelledby="custom-content-below-advance-tab">
                             <div class="col-sm-12">

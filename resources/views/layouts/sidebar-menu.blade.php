@@ -155,28 +155,17 @@
                 </ul>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <router-link to="/profiles/clients/view" class="nav-link ">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>
-                        Workers
-                        <i class="fas fa-angle-left right"></i>
-                    </p>
-                </a>
-                <ul class="nav nav-treeview">
-                    <li class="nav-item">
-                        <router-link to="/profiles/workers/create" class="nav-link ">
-                            <i class="far fa-circle nav-icon"></i>
-                            <p>Create</p>
-                        </router-link>
-                    </li>
-                    <li class="nav-item">
-                        <router-link to="/profiles/workers/view" class="nav-link">
-                            <i class="far fa-circle nav-icon"></i>
-                            <p>View </p>
-                        </router-link>
-                    </li>
+                    <p>Clients</p>
+                </router-link>
+            </li>
 
-                </ul>
+            <li class="nav-item">
+                <router-link to="/profiles/workers/view" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Workers </p>
+                </router-link>
             </li>
             <li class="nav-item">
                 <router-link to="/profiles/umbrellas/view" class="nav-link">
@@ -206,6 +195,12 @@
             <router-link to="/profiles/placement/view" class="nav-link">
               <i class="far fa-circle nav-icon"></i>
               <p>View </p>
+            </router-link>
+          </li> 
+          <li class="nav-item">
+            <router-link to="/profiles/placement/client" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Client </p>
             </router-link>
           </li> 
         </ul>        
