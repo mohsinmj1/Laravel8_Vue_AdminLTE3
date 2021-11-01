@@ -52,12 +52,8 @@
       </li>
       <li class="nav-item">
         <a href="#" class="nav-link">
-          <!-- <i class="fas fa-edit"></i> -->
-          <i class="nav-icon  fas fa-clock"></i>
-          <p>
-          Expenses
-            <i class="fas fa-angle-left right"></i>
-          </p>
+          <i class="nav-icon fas fa-credit-card"></i>
+          <p>Expenses<i class="fas fa-angle-left right"></i></p>
         </a>
         <ul class="nav nav-treeview">
           <!-- <li class="nav-item">
