@@ -93,21 +93,20 @@ export default [
         component: require("./components/profiles/worker/View.vue").default
     },
     {
-<<<<<<< HEAD
         path: "/profiles/consultants/create",
         component: require("./components/profiles/consultants/Create.vue").default
     },
     {
         path: "/profiles/consultants/view",
         component: require("./components/profiles/consultants/View.vue").default
-=======
+    },
+    {
         path: "/profiles/umbrellas/create",
         component: require("./components/profiles/umbrellas/Create.vue").default
     },
     {
         path: "/profiles/umbrellas/view",
         component: require("./components/profiles/umbrellas/View.vue").default
->>>>>>> 783adb06f87cc45263fa3d01f5b27faa329a677c
     },
     {
         path: "/forms/validation",
