@@ -165,10 +165,6 @@ export default [
         path: "/pay/generate-invoice-print",
         component: require("./components/pay/Invoiceprint.vue").default
     },
-<<<<<<< HEAD
-=======
-
->>>>>>> 783adb06f87cc45263fa3d01f5b27faa329a677c
     {
         path: "/sales/listcreditnotes",
         component: require("./components/sales/Listcreditnotes.vue").default
