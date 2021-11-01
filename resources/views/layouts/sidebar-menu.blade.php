@@ -48,6 +48,30 @@
               <p>Reject </p>
             </router-link>
           </li>
+          <li class="nav-item">
+            <router-link to="/timesheets/search" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Search </p>
+            </router-link>
+          </li>          
+          <li class="nav-item">
+            <router-link to="/timesheets/export" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Export </p>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/timesheets/missing" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Missing </p>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/timesheets/reminder" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Send reminders </p>
+            </router-link>
+          </li>
         </ul>
       </li>
       <li class="nav-item">
@@ -90,11 +114,74 @@
               <p>Reject </p>
             </router-link>
           </li>
+          <li class="nav-item">
+            <router-link to="/expenses/search" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Search </p>
+            </router-link>
+          </li>
         </ul>
       </li>
       <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-plus-square"></i>
+              <p>
+                Profiles
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>
+                    Placement
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <router-link to="/profiles/placement/create" class="nav-link ">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Create</p>
+                    </router-link>
+                  </li>
+                  <li class="nav-item">
+                    <router-link to="/profiles/placement/view" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>View </p>
+                    </router-link>
+                  </li> 
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>
+                   Workers
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <router-link to="/profiles/workers/create" class="nav-link ">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Create</p>
+                  </router-link>
+                </li>
+                <li class="nav-item">
+                  <router-link to="/profiles/workers/view" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>View </p>
+                  </router-link>
+                </li> 
+             
+                </ul>
+              </li>
+            </ul>
+          </li>
+      <!-- <li class="nav-item">
         <a href="#" class="nav-link">
-          <!-- <i class="fas fa-edit"></i> -->
           <i class="nav-icon  fas fa-clock"></i>
           <p>
           Profiles
@@ -102,6 +189,7 @@
           </p>
         </a>
         <ul class="nav nav-treeview">
+        
           <li class="nav-item">
             <router-link to="/profiles/placement/create" class="nav-link ">
               <i class="far fa-circle nav-icon"></i>
@@ -113,28 +201,9 @@
               <i class="far fa-circle nav-icon"></i>
               <p>View </p>
             </router-link>
-          </li>
-        </ul>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">
-          <!-- <i class="fas fa-edit"></i> -->
-          <i class="nav-icon  fas fa-clock"></i>
-          <p>
-          Reports
-            <i class="fas fa-angle-left right"></i>
-          </p>
-        </a>
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <router-link to="/reports/margin" class="nav-link ">
-              <i class="far fa-circle nav-icon"></i>
-              <p>Margin Report</p>
-            </router-link>
-          </li>
-        
-        </ul>
-      </li>
+          </li> 
+        </ul>        
+      </li> -->
       <li class="nav-item">
         <a href="#" class="nav-link">
           <!-- <i class="fas fa-edit"></i> -->
@@ -198,7 +267,13 @@
               <i class="far fa-circle nav-icon"></i>
               <p>Search</p>
             </router-link>
-          </li>          
+          </li>    
+          <li class="nav-item">
+            <router-link to="/pay/generate-invoice" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Generate Invoice</p>
+            </router-link>
+          </li>         
         </ul>        
       </li>      
       <li class="nav-item">
@@ -226,6 +301,24 @@
             </router-link>
           </li>               
         </ul>     
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <!-- <i class="fas fa-edit"></i> -->
+          <i class="nav-icon  fas fa-clock"></i>
+          <p>
+          Ateca Consulting Ltd
+            <i class="fas fa-angle-left right"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <router-link to="/agency/edit" class="nav-link ">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Edit Agency</p>
+            </router-link>
+          </li>          
+        </ul>        
       </li>
       <li class="nav-item">
         <router-link to="/setting/configuration" class="nav-link">
