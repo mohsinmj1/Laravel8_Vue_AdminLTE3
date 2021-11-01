@@ -177,6 +177,12 @@
                       </router-link> 
                   
                     
+                    <button type="submit" class="btn btn-primary">Generate</button>
+                    <button type="submit" class="btn btn-info">Print Report</button>
+                    <!-- <button type="submit" class="btn btn-info">Print Details Report</button>
+                    <button type="submit" class="btn btn-info">CSV</button>
+                    <button type="submit" class="btn btn-info">Default CSV</button>
+                    <button type="submit" class="btn btn-info">Reset Column</button> -->
               </div>
             </div>
 

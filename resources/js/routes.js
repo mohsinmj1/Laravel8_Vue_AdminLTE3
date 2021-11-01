@@ -64,6 +64,10 @@ export default [
         component: require("./components/expenses/Search.vue").default
     },
     {
+        path: "/reports/margin",
+        component: require("./components/reports/margin.vue").default
+    },
+    {
         path: "/profiles/placement/create",
         component: require("./components/profiles/placement/Create.vue").default
     },
@@ -78,6 +82,14 @@ export default [
     {
         path: "/profiles/placement/clientedit",
         component: require("./components/profiles/placement/ClientEdit.vue").default
+    },
+    {
+        path: "/profiles/workers/create",
+        component: require("./components/profiles/worker/Create.vue").default
+    },
+    {
+        path: "/profiles/workers/view",
+        component: require("./components/profiles/worker/View.vue").default
     },
     {
         path: "/forms/validation",
