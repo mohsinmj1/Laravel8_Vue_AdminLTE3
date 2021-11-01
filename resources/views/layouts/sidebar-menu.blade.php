@@ -158,6 +158,29 @@
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>
+                    Clients
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <router-link to="/profiles/placement/client" class="nav-link ">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Create</p> 
+                    </router-link>
+                  </li>
+                  <li class="nav-item">
+                    <router-link to="/profiles/placement/clientedit" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Client Edit </p>
+                    </router-link>
+                  </li> 
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>
                    Workers
                     <i class="fas fa-angle-left right"></i>
                   </p>
