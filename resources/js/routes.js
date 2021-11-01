@@ -94,11 +94,11 @@ export default [
     },
     {
         path: "/profiles/umbrellas/create",
-        component: require("./components/profiles/worker/Create.vue").default
+        component: require("./components/profiles/umbrellas/Create.vue").default
     },
     {
         path: "/profiles/umbrellas/view",
-        component: require("./components/profiles/worker/View.vue").default
+        component: require("./components/profiles/umbrellas/View.vue").default
     },
     {
         path: "/forms/validation",
