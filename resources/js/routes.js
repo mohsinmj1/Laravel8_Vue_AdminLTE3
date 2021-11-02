@@ -76,6 +76,14 @@ export default [
         component: require("./components/profiles/placement/View.vue").default
     },
     {
+        path: "/profiles/manager/create",
+        component: require("./components/profiles/manager/Create.vue").default
+    },
+    {
+        path: "/profiles/manager/view",
+        component: require("./components/profiles/manager/View.vue").default
+    },
+    {
         path: "/rates/create",
         component: require("./components/rates/Create.vue").default
     },
@@ -98,7 +106,8 @@ export default [
     },
     {
         path: "/profiles/consultants/create",
-        component: require("./components/profiles/consultants/Create.vue").default
+        component: require("./components/profiles/consultants/Create.vue")
+            .default
     },
     {
         path: "/profiles/consultants/view",
