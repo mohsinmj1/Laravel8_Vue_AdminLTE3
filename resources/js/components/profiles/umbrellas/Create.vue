@@ -2337,19 +2337,20 @@ label {
                           </div>
                           <div class="row">
                             <div class="col-lg-12">
-                              <table class="table table-borderless">
+                              <table class="table table-striped">
                                 <thead>
                                   <tr>
-                                    <th scope="col">Date</th>
-                                    <th scope="col">Time</th>
-                                    <th scope="col">User</th>
-                                    <th scope="col">Event</th>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                    <th>User</th>
+                                    <th>Event</th>
                                   </tr>
                                 </thead>
                                 <tbody>
                                   <tr>
                                     <td>Mark</td>
                                     <td>Otto</td>
+                                    <td>@mdo</td>
                                     <td>@mdo</td>
                                   </tr>
                                 </tbody>
