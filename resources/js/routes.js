@@ -76,6 +76,10 @@ export default [
         component: require("./components/profiles/placement/View.vue").default
     },
     {
+        path: "/rates/create",
+        component: require("./components/rates/Create.vue").default
+    },
+    {
         path: "/profiles/clients/view",
         component: require("./components/profiles/placement/Client.vue").default
     },
