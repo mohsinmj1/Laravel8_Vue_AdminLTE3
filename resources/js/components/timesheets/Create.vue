@@ -417,7 +417,8 @@
                                 </select>
                             </div>     
                             <div class="col-lg-1">
-                                <input type="text" style="width:79px" placeholder="hh:mm">
+                                <button class="btn btn-success py-0 px-4" style="line-height:26px;" data-toggle="modal" data-target="#modal-start-time">Start</button>
+                                <!-- <input type="text" style="width:79px" placeholder="hh:mm"> -->
                             </div>      
                             <div class="col-lg-1">
                                 <input type="text" style="width:79px" placeholder="hh:mm">
@@ -732,7 +733,50 @@
                 </div>
             </div>
         </div>
-        
+        <div class="modal fade" id="modal-start-time">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Time Record</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-4">Task: </div>
+                            <div class="col-md-4">________________________________</div>
+                        </div>
+                        <br/>
+
+                        <div class="row">
+                            <div class="col-md-4">Start : </div>
+                            <div class="col-md-4">09:15</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">Break : </div>
+                            <div class="col-md-4">00:30</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">End : </div>
+                            <div class="col-md-4">17:20</div>
+                        </div>
+
+                    </div>
+                    <!-- justify-content-between -->
+                    <div class="modal-footer ">
+
+                        <button type="button" class="btn btn-warning"> Pause </button>
+                        <button type="button" class="btn btn-success"> Finish </button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"> Close </button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+              <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
     </section>
     
 </template>

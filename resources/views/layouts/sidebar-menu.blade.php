@@ -291,14 +291,7 @@
             </ul>
         </li>
 
-        <li class="nav-item">
-            <router-link to="/setting/configuration" class="nav-link">
-                <i class="nav-icon fas fa-list orange"></i>
-                <p>
-                    Settings
-                </p>
-            </router-link>
-        </li>
+
         <li class="nav-item">
             <router-link to="/products" class="nav-link">
                 <i class="nav-icon fas fa-list orange"></i>
@@ -364,7 +357,18 @@
                     </p>
                 </a>
                 <ul class="nav nav-treeview">
-
+                    <li class="nav-item">
+                        <router-link to="/rates/create" class="nav-link">
+                            <i class="nav-icon fas fa-cash-register green"></i>
+                            <p>Rate Template</p>
+                        </router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/setting/configuration" class="nav-link">
+                            <i class="nav-icon fas fa-list orange"></i>
+                            <p>Configrations</p>
+                        </router-link>
+                    </li>
                     <li class="nav-item">
                         <router-link to="/product/category" class="nav-link">
                             <i class="nav-icon fas fa-list-ol green"></i>
