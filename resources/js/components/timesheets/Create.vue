@@ -417,7 +417,8 @@
                                 </select>
                             </div>     
                             <div class="col-lg-1">
-                                <input type="text" style="width:79px" placeholder="hh:mm">
+                                <button class="btn btn-success"  data-toggle="modal" data-target="#modal-start-time">start</button>
+                                <!-- <input type="text" style="width:79px" placeholder="hh:mm"> -->
                             </div>      
                             <div class="col-lg-1">
                                 <input type="text" style="width:79px" placeholder="hh:mm">
@@ -732,7 +733,32 @@
                 </div>
             </div>
         </div>
-        
+        <div class="modal fade" id="modal-start-time">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Default Modal</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                    </div>
+                    <!-- justify-content-between -->
+                    <div class="modal-footer ">
+
+                        <button type="button" class="btn btn-primary">Pause</button>
+                        <button type="button" class="btn btn-primary">Finish changes</button>
+                        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+              <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
     </section>
     
 </template>
