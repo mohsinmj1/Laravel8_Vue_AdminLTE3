@@ -677,7 +677,7 @@
                       </button>
                       <ul id="" class="dropdown-menu">
                         <li><a href="#">Messages</a></li>
-                        <li><a href="#">Change Roles</a></li>
+                        <li><a href="/profiles/manager/role">Change Roles</a></li>
                         <li><a href="#">Switch To</a></li>
                         <li><a href="#">Workers</a></li>
                         <li><a href="#">Consultants</a></li>

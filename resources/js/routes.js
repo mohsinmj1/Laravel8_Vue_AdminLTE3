@@ -65,7 +65,11 @@ export default [
     },
     {
         path: "/reports/margin",
-        component: require("./components/reports/margin.vue").default
+        component: require("./components/reports/Margin.vue").default
+    },
+    {
+        path: "/profiles/manager/role",
+        component: require("./components/profiles/manager/Role.vue").default
     },
     {
         path: "/profiles/placement/create",
