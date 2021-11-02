@@ -57,10 +57,10 @@
             </a>
             <ul class="nav nav-treeview">
                 <li class="nav-item">
-                      <router-link to="/expenses/create" class="nav-link ">
+                    <router-link to="/expenses/create" class="nav-link ">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Create</p>
-                      </router-link>
+                    </router-link>
                 </li>
                 <li class="nav-item">
                     <router-link to="/expenses/draft" class="nav-link">
@@ -170,31 +170,37 @@
                 </p>
             </a>
             <ul class="nav nav-treeview">
-                <li class="nav-item">
+                <li class="nav-item pl-2">
+                    <router-link to="/profiles/manager/view" class="nav-link ">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Manager</p>
+                    </router-link>
+                </li>
+                <li class="nav-item pl-2">
                     <router-link to="/profiles/clients/view" class="nav-link ">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Clients</p>
                     </router-link>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item pl-2">
                     <router-link to="/profiles/consultants/view" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Consultants</p>
                     </router-link>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item pl-2">
                     <router-link to="/profiles/umbrellas/view" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Umbrellas </p>
                     </router-link>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item pl-2">
                     <router-link to="/profiles/workers/view" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Workers </p>
                     </router-link>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item pl-2">
                     <a href="#" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>
