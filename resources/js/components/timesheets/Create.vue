@@ -417,7 +417,7 @@
                                 </select>
                             </div>     
                             <div class="col-lg-1">
-                                <button class="btn btn-success py-0 px-4" style="line-height:26px;" data-toggle="modal" data-target="#modal-start-time">start</button>
+                                <button class="btn btn-success py-0 px-4" style="line-height:26px;" data-toggle="modal" data-target="#modal-start-time">Start</button>
                                 <!-- <input type="text" style="width:79px" placeholder="hh:mm"> -->
                             </div>      
                             <div class="col-lg-1">
@@ -748,7 +748,7 @@
                             <div class="col-md-4">________________________________</div>
                         </div>
                         <br/>
-                        
+
                         <div class="row">
                             <div class="col-md-4">Start : </div>
                             <div class="col-md-4">09:15</div>
