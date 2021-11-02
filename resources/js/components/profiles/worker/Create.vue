@@ -322,99 +322,7 @@
                         </div>
                         <!------first tab end -->
                         <div class="tab-pane fade" id="custom-content-below-timesheet" role="tabpanel" aria-labelledby="custom-content-below-timesheet-tab">
-                                <div class="panel panel-border panel-primary" style="border-top:3px solid #009ada">
-                                    <div class="panel-heading">
-                                    <h3 class="panel-title">Entry</h3></div>
-                                    <div class="panel-body">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="row">
-                                                    <div class="col-sm-12"><div class="form-group">
-                                                        <label class="control-label" for="null">Timesheet Duration <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="This determines the length of the timesheet including the day on which it begins or ends."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
-                                                        <select name="timesheetDuration" id="timesheetDuration" class="form-control input-sm null" onchange="showMonthlyRateCol(this);">
-                                                            <option value="weekly">weekly</option>
-                                                            <option value="weekly_tue-mon">weekly_tue-mon</option>
-                                                            <option value="weekly_wed-tue">weekly_wed-tue</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                    <div class="col-sm-12">
-                                                        <div class="form-group"> 
-                                                            <label class="control-label" for="contractedHours">Contracted Hours Per Week <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="This is used in forecasting. The calculations are based on the default rate and the number of hours entered here. If you have the AWR module, this will also be used in the calculations."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
-                                                            <input type="text" format="1" label="Contracted Hours Per Week" name="contractedHours" tooltip="This is used in forecasting. The calculations are based on the default rate and the number of hours entered here. If you have the AWR module, this will also be used in the calculations." value="" id="contractedHours" class="form-control input-sm">
-                                                        </div>
-                                                    </div>
-                        
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="row">
-                                                    <div class="col-sm-12"><div class="form-group">
-                                                        <label class="control-label" for="tsLayout">Timesheet Layout</label>
-                                                        <select name="tsLayout" id="tsLayout" class="form-control input-sm null" onchange="">
-                                                            <option value="0">Standard</option>
-                                                            <option value="1">Calendar</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-
-                                                    <div class="col-sm-12"><div class="form-group">
-                                                        <label class="control-label" for="roundTimeMins">Round time to nearest (minutes) <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="On the timesheet entry screens, when entering time and hours, values will be rounded to the time entered here. e.g. If you enter 15 here, then times will be rounded to the nearest quarter of an hour."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
-                                                        <input type="text" format="1" label="Round time to nearest (minutes)" name="roundTimeMins" tooltip="On the timesheet entry screens, when entering time and hours, values will be rounded to the time entered here. e.g. If you enter 15 here, then times will be rounded to the nearest quarter of an hour." value="1" id="roundTimeMins" class="form-control input-sm">
-                                                    </div>
-                                                </div>
-                        
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="row">
-                                                    <div class="col-sm-6">
-                                                        <div class="form-group">
-                                                            <label class="control-label" for="tsPayCurrency">Timesheet Pay Currency</label>
-                                                                <select name="tsPayCurrency" id="tsPayCurrency" class="form-control input-sm null" onchange="updatePayCurrency(this);" disabled="">
-                                                                    <option value="GBP" selected="selected">GBP</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                    <div class="col-sm-4">
-                                                        <br><div class="checkbox checkbox-primary m-t-0">
-                                                        <input type="checkbox" name="useDefaultTSPayCurrency" id="useDefaultTSPayCurrency" checked="checked" onclick="clickUseDefaultTSPayCurrency(this);">
-                                                        <label class="control-label" style="font-weight: 700 !important;">Use Default</label></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="row">
-                                                    <div class="col-sm-6"><div class="form-group">
-                                                        <label class="control-label" for="holidayCalendarCode">Holiday Calendar</label>
-                                                            <select name="holidayCalendarCode" id="holidayCalendarCode" class="form-control input-sm null" onchange="">
-                                                                <option value="null">No Public Holidays</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-sm-6">
-                                                        <div class="form-group">
-                                                            <label class="control-label" for="timeZone">Time Zone <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="The selected time zone is used to calculate the duration of overnight shifts during daylight savings changes."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
-                                                            <select name="timeZone" id="timeZone" class="form-control input-sm null" onchange="">
-                                                                <option value="null">Default</option>
-                                                                <option value="Africa/Abidjan">Africa/Abidjan</option>
-                                                                <option value="Africa/Accra">Africa/Accra</option>
-                                                                <option value="Africa/Addis_Ababa">Africa/Addis_Ababa</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                
-                                            </div>
-                                            <div class="col-sm-6">
-                                            
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                             
                     
                         <div class="card card-primary card-outline card-tabs">
                             <div class="row">
@@ -422,33 +330,19 @@
                                     <div class="p-2 pl-4">
                                         <div class="timesheet_create_tit">
                                             <h2 class="pb-2">
-                                                Approval
+                                                TAX & N.I. DETAILS
                                             </h2>
                                         </div>
                                         <div class="row">
-                                            <div class="col-lg-6">
-                                                <label for="client" class="d-block mb-1">Timesheet</label>
-                                                <select class="form-control select2" style="width:100%">                                    
-                                                    <option value="1">Agency Consultant Approval</option>
-                                                    <option value="2">Auto Approval Route</option>
-                                                    <option value="3">Client Manager Approval</option>
-                                                    <option value="4">SMS Ltd</option>
-                                                    <option value="5">Select Manager</option>
-                                                    <option value="6">Weights Approval (Katie)</option>
-                                                </select>
+                                            <div class="col-lg-4">
+                                                <label for="client" class="d-block mb-1">National Insurance Number ?</label>
+                                                    <input type="text" class="form-control form-control-sm" placeholder="Search">
                                             </div>
-                                            <div class="col-lg-2">
-                                                <label for="client" class="d-block mb-1">Email Approval <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="The approver can reply to authorisation emails to authorise timesheets without the need to sign in to InTime."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
-                                                <select class="form-control select2" style="width:100%" disabled>                                    
-                                                    <option value="1">No</option>                                                           
-                                                </select>
+                                            <div class="col-lg-4">
+                                                <label for="client" class="d-block mb-1">Unique Tax Reference  <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="The approver can reply to authorisation emails to authorise timesheets without the need to sign in to InTime."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
+                                                    <input type="text" class="form-control form-control-sm" placeholder="Search">
                                             </div>   
-                                            <div class="col-lg-2">
-                                                <div class="custom-control custom-checkbox" style="margin-top:28px">
-                                                    <input type="checkbox" checked class="custom-control-input" id="customCheck1">
-                                                    <label class="custom-control-label"  for="customCheck1">Use Default</label>
-                                                </div>
-                                            </div>                                           
+                                                                                    
                                         </div>                                       
                                     </div>
                                 </div>
@@ -457,118 +351,292 @@
                         </div>
                         <!------2nd tab end -->
                         <div class="tab-pane fade" id="custom-content-below-expenses" role="tabpanel" aria-labelledby="custom-content-below-expenses-tab">
-                          <div class="card card-primary card-outline card-tabs">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="p-2 pl-4">
-                                        <div class="timesheet_create_tit">
-                                            <h2 class="pb-2">
-                                                Entry
-                                            </h2>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <label for="client" class="d-block mb-1">Expense Timesheet Group <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Alternative managers for expense approval. If you leave this blank, the altenative managers on the general tab will be used."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
-                                                <select class="form-control select2" style="width:100%">                                    
-                                                    <option value="1">Default</option>
-                                                    <option value="2">Adjustment Invoice</option>
-                                                    <option value="3">No Expense Paid</option>                                                   
-                                                </select>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <label for="client" class="d-block mb-1">Expense Pay Currency </label>
-                                                <select class="form-control select2" style="width:100%" disabled>                                    
-                                                    <option value="1">GBP</option>                                                           
-                                                </select>
-                                            </div>   
-                                            <div class="col-lg-2">
-                                                <div class="custom-control custom-checkbox" style="margin-top:28px">
-                                                    <input type="checkbox" checked class="custom-control-input" id="customCheck1">
-                                                    <label class="custom-control-label"  for="customCheck1">Use Default</label>
+           
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card card-primary card-outline card-tabs">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="p-2 pl-4">
+                                                <div class="timesheet_create_tit">
+                                                    <h2 class="pb-2">
+                                                        Company Details
+                                                    </h2>
                                                 </div>
-                                            </div>                                           
-                                        </div>                                       
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Company Name *</label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
+                                                        </div>
+                                                    </div>                                       
+                                                </div> 
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Company Number </label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
+                                                        </div>
+                                                    </div>                                       
+                                                </div>   
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Company Sales VAT Number </label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
+                                                        </div>
+                                                    </div>                                       
+                                                </div>   
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">VAT Code </label>
+                                                        <select class="form-control select2" style="width:100%">                                    
+                                                            <option value="T0">None (T0)</option>
+                                                            <option value="T1" selected="selected">Standard (T1)</option>
+                                                        </select>
+                                                    </div>                                       
+                                                </div>   
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Default Currency </label>
+                                                        <select class="form-control select2" style="width:100%">                                    
+                                                            <option value=""></option>
+                                                            <option value="GBP" selected="selected">GBP</option>
+                                                        </select>
+                                                    </div>                                       
+                                                </div>                                                                                                                                                                   
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                </div> 
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card card-primary card-outline card-tabs">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="p-2 pl-4">
+                                                <div class="timesheet_create_tit">
+                                                    <h2 class="pb-2">
+                                                        Main Address
+                                                    </h2>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Firstname </label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
+                                                        </div>
+                                                    </div>                                       
+                                                </div>       
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Lastname </label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
+                                                        </div>
+                                                    </div>                                       
+                                                </div>   
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Email </label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
+                                                        </div>
+                                                    </div>                                       
+                                                </div>   
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Department</label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
+                                                        </div>
+                                                    </div>                                       
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Telephone </label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
+                                                        </div>
+                                                    </div>                                       
+                                                </div>   
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Mobile </label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
+                                                        </div>
+                                                    </div>                                       
+                                                </div>   
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Address Line 1 </label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
+                                                        </div>
+                                                    </div>                                       
+                                                </div>   
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Address Line 2 </label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
+                                                        </div>
+                                                    </div>                                       
+                                                </div>   
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Town/City </label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
+                                                        </div>
+                                                    </div>                                       
+                                                </div>   
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Company Sales VAT Number </label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
+                                                        </div>
+                                                    </div>                                       
+                                                </div>   
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">County </label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
+                                                        </div>
+                                                    </div>                                       
+                                                </div>   
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Postcode </label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
+                                                        </div>
+                                                    </div>                                       
+                                                </div>   
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Country Code</label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
+                                                        </div>
+                                                    </div>                                       
+                                                </div>                                                                                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card card-primary card-outline card-tabs">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="p-2 pl-12">
+                                                <div class="timesheet_create_tit">
+                                                    <h2 class="pb-2">
+                                                        INVOICING DETAILS
+                                                    </h2>
+                                                </div>
+                                                
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Invoice Period</label>
+                                                        <select class="form-control select2">                                    
+                                                            <option value="">Agency Default</option>
+                                                            <option value="2372">Agency Consultant Approval</option>
+                                                            <option value="2376">Auto Approval Route</option>
+                                                            <option value="2368">Client Manager Approval</option>
+                                                            <option value="2467">SMS Ltd</option>
+                                                            <option value="2377">Select Manager</option>
+                                                            <option value="2454">Wights Approval (Katie)</option>
+                                                        </select>
+                                                    </div>                                                                                          
+                                                </div>   
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Deliver Invoices By</label>
+                                                        <select class="form-control select2">                                    
+                                                           <option value="">Agency Default</option>
+                                                          
+                                                        </select>
+                                                    </div>                                                                                          
+                                                </div>  
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Default Non Chargeable Expense Approval Route</label>
+                                                        <select class="form-control select2">                                    
+                                                            <option value="">Agency Default</option>
+                                                            <option value="2372">Agency Consultant Approval</option>
+                                                            <option value="2376">Auto Approval Route</option>
+                                                            <option value="2368">Client Manager Approval</option>
+                                                            <option value="2467">SMS Ltd</option>
+                                                            <option value="2377">Select Manager</option>
+                                                            <option value="2454">Wights Approval (Katie)</option>
+                                                        </select>
+                                                    </div>                                                                                          
+                                                </div>    
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <label for="client" class="d-block mb-1">Days </label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-sm" >                                                      
+                                                        </div>
+                                                    </div>   
+                                                     <div class="col-lg-6">
+                                                        <label for="client" class="d-block mb-1">Type  </label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-sm" >                                                      
+                                                        </div>
+                                                    </div>                                      
+                                                </div>   
+                                                   <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Additional Text To Incl Company Invoice</label>
+                                                        <div class="input-group">
+                                                            <textarea type="text" class="form-control form-control-sm" row="7">  </textarea>                                                         
+                                                        </div>
+                                                    </div>                                       
+                                                </div>                                                                                                          
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
                             </div>
                         </div>
-                        <div class="card card-primary card-outline card-tabs">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="p-2 pl-4">
-                                        <div class="timesheet_create_tit">
-                                            <h2 class="pb-2">
-                                                Approval
-                                            </h2>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card card-primary card-outline card-tabs">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="p-2 pl-4">
+                                                <div class="timesheet_create_tit">
+                                                    <h2 class="pb-2">
+                                                        References
+                                                    </h2>
+                                                    <p>A reference will be allocated for this Client</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Client Accounts Ref</label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
+                                                        </div>
+                                                    </div>                                       
+                                                </div> 
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Debtor Number </label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
+                                                        </div>
+                                                    </div>                                       
+                                                </div>                                                                                                                                                                                                                  
+                                            </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-lg-3">
-                                                <label for="client" class="d-block mb-1">Chargeable Expense</label>
-                                                <select class="form-control select2" style="width:100%">                                    
-                                                    <option value="1">Agency Consultant Approval</option>
-                                                    <option value="2">Auto Approval Route</option>
-                                                    <option value="3">Client Manager Approval</option>
-                                                    <option value="4">SMS Ltd</option>
-                                                    <option value="5">Select Manager</option>
-                                                    <option value="6">Weights Approval (Katie)</option>                                                 
-                                                </select>
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <label for="client" class="d-block mb-1">Non-Chargeable Expense</label>
-                                                <select class="form-control select2" style="width:100%">                                    
-                                                    <option value="1">Agency Consultant Approval</option>
-                                                    <option value="2">Auto Approval Route</option>
-                                                    <option value="3">Client Manager Approval</option>
-                                                    <option value="4">SMS Ltd</option>
-                                                    <option value="5">Select Manager</option>
-                                                    <option value="6">Weights Approval (Katie)</option>                                                 
-                                                </select>
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <label for="client" class="d-block mb-1">Expense Email Approval </label>
-                                                <select class="form-control select2" style="width:100%" disabled>                                    
-                                                    <option value="1">Yes</option>                                                           
-                                                </select>
-                                            </div>   
-                                            <div class="col-lg-3">
-                                                <div class="custom-control custom-checkbox" style="margin-top:28px">
-                                                    <input type="checkbox" checked class="custom-control-input" id="customCheck1">
-                                                    <label class="custom-control-label"  for="customCheck1">Use Default</label>
-                                                </div>
-                                            </div>                                           
-                                        </div>    
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <label for="client" class="d-block mb-1">Primary Expense Approver<a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Manager for approving expenses. If you leave this blank, the manager on the general tab  will be used."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control form-control-sm">
-                                                    <div class="input-group-append">
-                                                    <button class="btn btn-primary fa-icon" type="button">
-                                                        <i class="fa fa-search"></i>
-                                                    </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <label for="client" class="d-block mb-1">Alternative Managers</label>
-                                                <div class="form-group">                                                     
-                                                        <select class="duallistbox" style="width:100%;height:138px" multiple="multiple">
-                                                            <option selected></option>
-                                                            <option></option>
-                                                            <option></option>
-                                                            <option></option>
-                                                            <option></option>
-                                                            <option></option>
-                                                            <option></option>
-                                                        </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2">
-                                               
-                                            </div>
-                                        </div>                                   
                                     </div>
-                                </div>
+                                </div> 
                             </div>
                         </div>
  
@@ -576,271 +644,87 @@
                         <!------third expense tab end -->
                         <div class="tab-pane fade" id="custom-content-below-invoicing" role="tabpanel" aria-labelledby="custom-content-below-invoicing-tab">
                             <!-----  first card start ------->
-                            <div class="panel panel-border panel-primary " style="border-top:3px solid #009ada">
-                                <div class="panel-heading">
-                                     <h3 class="panel-title">Charge Terms</h3>
-                                </div>
-                                    <div class="panel-body">
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                        If you wish to override the default invoicing terms for this placement only, you can do so here.<br>
-                                                    </div>
-
-                                                    <div class="col-sm-6">
-                                                        <div class="row">
-                                                            <div class="col-sm-6"><div class="form-group"><label class="control-label" for="chargeTerms">Terms</label>
-                                                                <select name="chargeTerms" id="chargeTerms" class="form-control form-control-sm " onchange="" disabled="">
-                                                                    <option value="462655" selected="selected">Default Charge Terms</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                             <div class="col-sm-4">
-                                                                <br>
-                                                                <div class="checkbox checkbox-primary m-t-0">
-                                                                    <input type="checkbox"  checked="checked" >
-                                                                    <label class="control-label" style="font-weight: 700 !important;">Use Default</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <div class="row">
-                                                            <div class="col-sm-3"><div class="form-group"><label class="control-label" for="chargeCurrency">Currency</label>
-                                                                <select name="chargeCurrency" id="chargeCurrency" class="form-control form-control-sm" onchange="updateChargeCurrency(this);" disabled="">
-                                                                    <option value="GBP" selected="selected">GBP</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                            <div class="col-sm-4">
-                                                                <br>
-                                                                <div class="checkbox checkbox-primary m-t-0">
-                                                                    <input type="checkbox" name="useDefaultChargeCurrency" id="useDefaultChargeCurrency" checked="checked" onclick="clickUseDefaultChargeCurrency(this);">
-                                                                    <label class="control-label" style="font-weight: 700 !important;">Use Default</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-3"><div class="form-group"> <label class="control-label" for="chargeTermsDays">Terms Days</label><input type="text" label="Terms Days" format="4" id="chargeTermsDays" name="chargeTermsDays" value="" class="form-control form-control-sm" disabled=""></div>
-                                                        </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="row">
-                                                    <div class="col-sm-6"><div class="form-group"><label class="control-label" for="chargeTermsType">Terms Type</label>
-                                                    <select name="chargeTermsType" id="chargeTermsType" class="form-control form-control-sm" onchange="" disabled="">
-                                                        <option value="">Choose</option>
-                                                        <option value="As Per Agreed Terms and Conditions">As Per Agreed Terms and Conditions</option>
-                                                        <option value="Days From Invoice Date">Days From Invoice Date</option>
-                                                        <option value="Days from Month End">Days from Month End</option>
-                                                        <option value="Days from End of Next Month">Days from End of Next Month</option>
-                                                        <option value="Days from End of Month After Next">Days from End of Month After Next</option>
-                                                        <option value="Working Days From Invoice Date">Working Days From Invoice Date</option>
-                                                        <option value="Days from Sheet End Date">Days from Sheet End Date</option>
-                                                    </select>
-                                                    </div>
-                                                </div>
-                                                    <div class="col-sm-6"><div class="form-group"><label class="control-label">Terms Extra Text</label> <textarea name="chargeTermsExtraText" id="chargeTermsExtraText" maxlength="255" class="form-control" rows="2" style="line-height: 1; font-size: 12px; margin: 0; padding: 0;" onkeyup="" disabled=""></textarea></div></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                   <!-----  first card end ------->
-                                   <!-----  2nd card end ------->
-                                <div class="panel panel-border panel-primary card" style="border-top:3px solid #009ada">
-                                    <div class="panel-heading"><h3 class="panel-title">Pay Terms</h3>
-                                    </div>
-
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="row">
-                                                        <div class="col-sm-12">
-                                                            If you wish to override the default invoicing terms for this placement only, you can do so here.<br>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <div class="row">
-                                                                <div class="col-sm-6"><div class="form-group"><label class="control-label" for="payTerms">Terms</label>
-                                                                    <select name="payTerms" id="payTerms" class="form-control form-control-sm" onchange="" disabled="">
-                                                                            <option value="462656" selected="selected">Default Pay Terms</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                                <div class="col-sm-4">
-                                                                    <br>
-                                                                    <div class="checkbox checkbox-primary m-t-0">
-                                                                        <input type="checkbox" name="useDefaultPayTerms" id="useDefaultPayTerms" checked="checked" >
-                                                                        <label class="control-label" style="font-weight: 700 !important;">Use Default</label></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <div class="row">
-                                                                <div class="col-sm-3"><div class="form-group"> <label class="control-label" for="payTermsDays">Terms Days</label>
-                                                                    <input type="text" label="Terms Days" format="4" id="payTermsDays" name="payTermsDays" value="" class="form-control form-control-sm" disabled=""></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="row">
-                                                        <div class="col-sm-6"><div class="form-group"><label class="control-label" for="payTermsType">Terms Type</label>
-                                                            <select name="payTermsType" id="payTermsType" class="form-control form-control-sm" onchange="" disabled="">
-                                                                <option value="">Choose</option>
-                                                                <option value="As Per Agreed Terms and Conditions">As Per Agreed Terms and Conditions</option>
-                                                                <option value="Days From Invoice Date">Days From Invoice Date</option>
-                                                                <option value="Days from Month End">Days from Month End</option>
-                                                                <option value="Days from End of Next Month">Days from End of Next Month</option>
-                                                                <option value="Days from End of Month After Next">Days from End of Month After Next</option>
-                                                                <option value="Working Days From Invoice Date">Working Days From Invoice Date</option>
-                                                                <option value="Days from Sheet End Date">Days from Sheet End Date</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                        <div class="col-sm-6"><div class="form-group"><label class="control-label">Terms Extra Text</label> <textarea  maxlength="255" class="form-control" rows="2" style="line-height: 1; font-size: 12px; margin: 0; padding: 0;" onkeyup="" disabled=""></textarea></div></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <!-----  2nd card end ------->
-                                <!-----third tab start --->
-                                <div class="panel panel-border panel-primary" style="border-top:3px solid #009ada">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">Sales Invoice Contact</h3>
-                                    </div>
-                                <div class="panel-body">
+                                <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card card-primary card-outline card-tabs">
                                     <div class="row">
-                                         <div class="col-sm-6">
-                                            <div class="col-sm-6">
-                                                <div class="row"><br>
-                                                    <div class="checkbox checkbox-primary m-t-0">
-                                                        <input type="checkbox" id="overrideSalesInvoiceContact" name="overrideSalesInvoiceContact">
-                                                         <label class="control-label" style="font-weight: 700 !important;">Override Default Sales Invoice Contact</label>
-                                                    </div>
+                                        <div class="col-lg-12">
+                                            <div class="p-2 pl-4">
+                                                <div class="timesheet_create_tit">
+                                                    <h2 class="pb-2">
+                                                        Company Details
+                                                    </h2>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                        <div class="row">
-                                            <div class="col-sm-6">
                                                 <div class="row">
-                                                    <div class="col-sm-12">
-                                                        <div class="form-group"> 
-                                                            <label class="control-label" for="salesInvContactFrontendRef">Contact Frontend Ref</label>
-                                                            <input type="text" format="1" name="salesInvContactFrontendRef" label="Contact Frontend Ref" id="salesInvContactFrontendRef" class="form-control form-control-sm" value="">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Company Name *</label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
-                                            <div class="col-sm-12">
-                                                <div class="form-group">
-                                                    <label class="control-label" for="salesInvDepartment">Department</label>
-                                                    <input type="text" format="1" name="salesInvDepartment" label="Department" id="salesInvDepartment" class="form-control form-control-sm" value="">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-sm-12">
-                                                <div class="form-group">
-                                                    <label class="control-label" for="salesInvFirstname">First Name</label>
-                                                    <input type="text" format="1" name="salesInvFirstname" label="First Name" id="salesInvFirstname" class="form-control form-control-sm" value="">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <div class="form-group"> 
-                                                    <label class="control-label" for="salesInvMiddlename">Middle Name</label>
-                                                    <input type="text" format="1" name="salesInvMiddlename" label="Middle Name" id="salesInvMiddlename" class="form-control form-control-sm" value="">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <div class="form-group"> 
-                                                    <label class="control-label" for="salesInvLastname">Last Name</label>
-                                                    <input type="text" format="1" name="salesInvLastname" label="Last Name" id="salesInvLastname" class="form-control form-control-sm" value="">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <div class="form-group"> 
-                                                    <label class="control-label" for="salesInvEmail">Email</label>
-                                                    <input type="text" format="1" name="salesInvEmail" label="Email" id="salesInvEmail" class="form-control form-control-sm" value="">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <div class="form-group"> 
-                                                    <label class="control-label" for="salesInvPhone">Phone</label
-                                                    ><input type="text" format="1" name="salesInvPhone" label="Phone" id="salesInvPhone" class="form-control form-control-sm" value="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                        <div class="col-sm-6">
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="form-group"> 
-                                                        <label class="control-label" for="salesInvStreet1">Street 1</label>
-                                                        <input type="text" format="1" name="salesInvStreet1" label="Street 1" id="salesInvStreet1" class="form-control form-control-sm" value="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-12">
-                                                    <div class="form-group"> 
-                                                        <label class="control-label" for="salesInvStreet2">Street 2</label>
-                                                        <input type="text" format="1" name="salesInvStreet2" label="Street 2" id="salesInvStreet2" class="form-control form-control-sm" value="">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-sm-12">
-                                                    <div class="form-group"> 
-                                                        <label class="control-label" for="salesInvTown">Town</label>
-                                                        <input type="text" format="1" name="salesInvTown" label="Town" id="salesInvTown" class="form-control form-control-sm" value="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-12">
-                                                    <div class="form-group"> 
-                                                        <label class="control-label" for="salesInvCounty">County</label>
-                                                        <input type="text" format="1" name="salesInvCounty" label="County" id="salesInvCounty" class="form-control form-control-sm" value="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-12">
-                                                    <div class="form-group"> 
-                                                        <label class="control-label" for="salesInvCountry">Country</label>
-                                                        <input type="text" format="1" name="salesInvCountry" label="Country" id="salesInvCountry" class="form-control form-control-sm" value="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-12">
-                                                    <div class="form-group">
-                                                        <label class="control-label" for="null">Country Code</label>
-                                                        <select name="salesInvCountryCode" id="salesInvCountryCode" class="form-control form-control-sm" onchange="">
-                                                            <option value="">Select One...</option>
-                                                            <option value="AD">AD</option>
-                                                            <option value="AE">AE</option>
-                                                            <option value="AF">AF</option>
-                                                            <option value="AG">AG</option>
-                                                            <option value="AI">AI</option>
-                                                            <option value="AL">AL</option>
-                                                            <option value="AM">AM</option>
-                                                            <option value="AN">AN</option>
-                                                            <option value="AO">AO</option>
-                                                            <option value="AQ">AQ</option>
-                                                            <option value="AR">AR</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            <div class="col-sm-12">
-                                                <div class="form-group"> 
-                                                    <label class="control-label" for="salesInvPostcode">Postcode</label>
-                                                    <input type="text" format="1" name="salesInvPostcode" label="Postcode" id="salesInvPostcode" class="form-control form-control-sm" value="">
-                                                </div>
+                                                    </div>                                       
+                                                </div> 
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Company Number </label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
+                                                        </div>
+                                                    </div>                                       
+                                                </div>   
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Company Sales VAT Number </label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
+                                                        </div>
+                                                    </div>                                       
+                                                </div>   
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="form-group"> 
+                                                            <label class="control-label" for="workerDetails.buildingSocRollNum">Building Society Ref</label>
+                                                            <input type="text" label="Building Society Ref" id="workerDetails.buildingSocRollNum" name="workerDetails.buildingSocRollNum" maxlength="50" value="" class="form-control form-control-sm">
+                                                        </div>
+                                                    </div>                                       
+                                                </div>   
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                         <div class="form-group"> 
+                                                            <label class="control-label" for="workerDetails.buildingSocRollNum">IBAN</label>
+                                                            <input type="text" label="Building Society Ref" id="workerDetails.buildingSocRollNum" name="workerDetails.buildingSocRollNum" maxlength="50" value="" class="form-control form-control-sm">
+                                                        </div>
+                                                    </div>                                       
+                                                </div>  
+                                                 <div class="row">
+                                                    <div class="col-lg-12">
+                                                         <div class="form-group"> 
+                                                            <label class="control-label" for="workerDetails.buildingSocRollNum">Swift</label>
+                                                            <input type="text" label="Building Society Ref" id="workerDetails.buildingSocRollNum" name="workerDetails.buildingSocRollNum" maxlength="50" value="" class="form-control form-control-sm">
+                                                        </div>
+                                                    </div>                                       
+                                                </div> 
+                                                 <div class="row">
+                                                    <div class="col-lg-12">
+                                                         <div class="form-group"> 
+                                                            <label class="control-label" for="workerDetails.buildingSocRollNum">Bank Financial Institution Number</label>
+                                                            <input type="text" label="Building Society Ref" id="workerDetails.buildingSocRollNum" name="workerDetails.buildingSocRollNum" maxlength="50" value="" class="form-control form-control-sm">
+                                                        </div>
+                                                    </div>                                       
+                                                </div>  
+                                                 <div class="row">
+                                                    <div class="col-lg-12">
+                                                         <div class="form-group"> 
+                                                            <label class="control-label" for="workerDetails.buildingSocRollNum">Agency Account to Pay From</label>
+                                                            <input type="text" label="Building Society Ref" id="workerDetails.buildingSocRollNum" name="workerDetails.buildingSocRollNum" maxlength="50" value="" class="form-control form-control-sm">
+                                                        </div>
+                                                    </div>                                       
+                                                </div>                                                                                                                                                                  
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> 
                             </div>
-                            <button type="submit" class="btn btn-success waves-effect w-md m-b-5" name="Save" value="Save" onclick="return validateAll();">Save</button>
-                        </div>
+                            </div>
                         <!------third tab end ----->
                         </div>
                         <!----- invoce tab end ----->

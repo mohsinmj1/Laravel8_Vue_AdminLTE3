@@ -24,29 +24,79 @@
                 <table class="table table-hover">
                   <thead>
                     <tr>
-                      <th>ID</th>
-                      <th>Submit</th>
-                      <th>Worker</th>
-                      <th>Worker Type</th>
-                      <th>Worker Ref</th>
-                      <th>Worker Wxt Ref</th>
-                      <th>Ltd Company Name</th>
-                      <th>Worker Invoice Period </th>
-                      <th>Timesheet Start</th>
-                      <th>Paroll/Frequency</th>
-                      <th>Provider</th>
-                      <th>Consultant</th>
+                        <th>ID</th>
+                        <th>Worker</th>
+                        <th>Worker Type</th>
+                        <th>Worker Ref</th>
+                        <th>Worker Wxt Ref</th>
+                        <th>Ltd Company Name</th>
+                        <th>Worker Invoice Period </th>
+                        <th>Timesheet Start</th>
+                        <th>Paroll/Frequency</th>
+                        <th>Provider</th>
+                        <th>Consultant</th>
+                        <th>Description</th>
+                        <th>Client</th>
+                        <th>Manager</th>
+                        <th>Placement</th>
+                        <th>Project Code</th>
+                        <th>Placement Start</th>
+                        <th>Placement End</th>
+                        <!-- <th>Freehand Ref</th>
+                        <th>Payroll Ref</th> -->
+                        <th>Worker First Name</th>
+                        <th>Worker Last Name</th>
+                        <th>Agency Name</th>
+                        <th>Job Title</th>
+                        <th>Job Description</th>
+                        <th>Pending Approvers</th>
+                        <th>Period Ending</th>
+                        <th>Status</th>
+                        <th>Hours</th>
+                        <th>Chargeable Hours</th>
+                        <th>Payable Hours</th>
+                        <th>Units</th>
+                        <th>Chargeable  Units</th>
+                        <th>Payable  Unit</th>
+                        <th>Pay</th>
+                        <th>Pay Currency</th>
+                        <th>Client Acc Ref</th>
+                        <th>Exported Date</th>
+                        <th>Total Cost</th>
+                        <th>Purchase Nominal</th>
+                        <th>Sales Nominal</th>
+                        <th>Supplier Accounts Ref</th>
+                        <th>Workers Accounts Ref</th>
+                        <th>Supplier Gender</th>
+                        <th>Exchange rate Pay</th>
+                        <th>Exchange rate Charge</th>
+                        <th>Charge</th>
+                        <th>Charge Currency</th>
+                        <th>Funds Received</th>
+                        <th>Charge GBP</th>
+                        <th>Type</th>
+                        <th>Approved By</th>
+                        <th>Submitted</th>
+                        <th>Submitted By</th>
+                        <th>Client Country</th>
+                        <th>Client Invoice Street1</th>
+                        <th>Client Invoice Street2	</th>
+                        <th>Client Invoice Town</th>
+                        <th>Client Invoice Postcode</th>
+                        <th>Client Invoice Country</th>
+                        <th>Client Ref</th>
+                        <th>Client Site</th>
+                        <!-- <th>Paper</th>
+                        <th>Sales Project</th> -->
+                        <th>Hours Worked</th>
+                        <th>Paid Date</th>
+
                     </tr>
                   </thead>
                   <tbody>
                      <tr v-for="product in products.data" :key="product.id">
 
                       <td>{{product.id}}</td>
-                      <td><div class="icheck-primary d-inline">
-                        <input type="checkbox" id="checkboxPrimary1" checked>
-                        <label for="checkboxPrimary1">
-                        </label>
-                      </div></td>
                       <td>{{product.name}}</td>
                       <td>{{product.description | truncate(30, '...')}}</td>
                       <td>{{product.category.name}}</td>
@@ -55,6 +105,61 @@
                       <td>{{product.name}}</td>
                       <td>{{product.description | truncate(30, '...')}}</td>
                       <td>{{product.category.name}}</td>
+                      <td>{{product.price}}</td>
+                      <td>{{product.category.name}}</td>
+                       <td>{{product.id}}</td>
+                      <td>{{product.name}}</td>
+                      <td>{{product.description | truncate(30, '...')}}</td>
+                      <td>{{product.category.name}}</td>
+                      <td>{{product.price}}</td>
+                      <td>{{product.category.name}}</td>
+                      <td>{{product.name}}</td>
+                      <td>{{product.description | truncate(30, '...')}}</td>
+                      <td>{{product.category.name}}</td>
+                      <td>{{product.price}}</td>
+                      <td>{{product.category.name}}</td>
+                       <td>{{product.id}}</td>
+                      <td>{{product.name}}</td>
+                      <td>{{product.description | truncate(30, '...')}}</td>
+                      <td>{{product.category.name}}</td>
+                      <td>{{product.price}}</td>
+                      <td>{{product.category.name}}</td>
+                      <td>{{product.name}}</td>
+                      <td>{{product.description | truncate(30, '...')}}</td>
+                      <td>{{product.category.name}}</td>
+                      <td>{{product.price}}</td>
+                      <td>{{product.category.name}}</td>
+                       <td>{{product.id}}</td>
+                      <td>{{product.name}}</td>
+                      <td>{{product.description | truncate(30, '...')}}</td>
+                      <td>{{product.category.name}}</td>
+                      <td>{{product.price}}</td>
+                      <td>{{product.category.name}}</td>
+                      <td>{{product.name}}</td>
+                      <td>{{product.description | truncate(30, '...')}}</td>
+                      <td>{{product.category.name}}</td>
+                      <td>{{product.price}}</td>
+                      <td>{{product.category.name}}</td>
+                       <td>{{product.id}}</td>
+                      <td>{{product.name}}</td>
+                      <td>{{product.description | truncate(30, '...')}}</td>
+                      <td>{{product.category.name}}</td>
+                      <!-- <td>{{product.price}}</td>
+                      <td>{{product.category.name}}</td> -->
+                      <td>{{product.name}}</td>
+                      <td>{{product.description | truncate(30, '...')}}</td>
+                      <td>{{product.category.name}}</td>
+                      <td>{{product.price}}</td>
+                      <td>{{product.category.name}}</td>
+                       <td>{{product.id}}</td>
+                      <td>{{product.name}}</td>
+                      <td>{{product.description | truncate(30, '...')}}</td>
+                      <td>{{product.category.name}}</td>
+                      <td>{{product.price}}</td>
+                      <td>{{product.category.name}}</td>
+                      <td>{{product.name}}</td>
+                      <!-- <td>{{product.description | truncate(30, '...')}}</td>
+                      <td>{{product.category.name}}</td> -->
                       <td>{{product.price}}</td>
                       <td>{{product.category.name}}</td>
                     </tr>
