@@ -125,18 +125,18 @@
                                   href="/configuration/smsOptions"
                                   >SMS Settings</a
                                 >
-                                <a
+                                <!--<a
                                   class="list-group-item"
                                   style="text-decoration: none"
                                   href="/configuration/ssl"
                                   >SSL Certificate</a
-                                >
-                                <a
+                                >-->
+                                <!--<a
                                   class="list-group-item"
                                   style="text-decoration: none"
                                   href="/configuration/security"
                                   >Security Settings</a
-                                >
+                                >-->
                                 <a
                                   class="list-group-item"
                                   style="text-decoration: none"
