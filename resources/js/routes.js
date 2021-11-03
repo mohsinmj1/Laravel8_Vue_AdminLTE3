@@ -101,6 +101,10 @@ export default [
             .default
     },
     {
+        path: "/profiles/workers/starter-form",
+        component: require("./components/profiles/worker/StarterForm.vue").default
+    },
+    {
         path: "/profiles/workers/create",
         component: require("./components/profiles/worker/Create.vue").default
     },
@@ -222,5 +226,10 @@ export default [
         path: "/agency/edit",
         component: require("./components/agency/Edit.vue").default
     },
+    {
+        path: "/agency/create",
+        component: require("./components/agency/Create.vue").default
+    },
+
     { path: "*", component: require("./components/NotFound.vue").default }
 ];

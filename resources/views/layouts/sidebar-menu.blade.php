@@ -171,6 +171,12 @@
             </a>
             <ul class="nav nav-treeview">
                 <li class="nav-item pl-2">
+                    <router-link to="/agency/create" class="nav-link ">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Create Agency</p>
+                    </router-link>
+                </li>
+                <li class="nav-item pl-2">
                     <router-link to="/profiles/manager/view" class="nav-link ">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Manager</p>
@@ -198,6 +204,12 @@
                     <router-link to="/profiles/workers/view" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Workers </p>
+                    </router-link>
+                </li>
+                <li class="nav-item pl-2">
+                    <router-link to="/profiles/workers/starter-form" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Starter Form </p>
                     </router-link>
                 </li>
                 <li class="nav-item pl-2">
@@ -272,36 +284,16 @@
                 </li>
             </ul>
         </li>
-        <li class="nav-item">
-            <a href="#" class="nav-link">
-                <!-- <i class="fas fa-edit"></i> -->
-                <i class="nav-icon  fas fa-clock"></i>
-                <p>
-                    Ateca Consulting Ltd
-                    <i class="fas fa-angle-left right"></i>
-                </p>
-            </a>
-            <ul class="nav nav-treeview">
-                <li class="nav-item">
-                    <router-link to="/agency/edit" class="nav-link ">
-                        <i class="far fa-circle nav-icon"></i>
-                        <p>Edit Agency</p>
-                    </router-link>
-                </li>
-            </ul>
-        </li>
-
-
-        <li class="nav-item">
+        {{--<li class="nav-item">
             <router-link to="/products" class="nav-link">
                 <i class="nav-icon fas fa-list orange"></i>
                 <p>
                     Product
                 </p>
             </router-link>
-        </li>
+        </li>--}}
 
-        <li class="nav-item">
+        {{--<li class="nav-item">
             <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-edit"></i>
                 <p>
@@ -335,7 +327,7 @@
                     </router-link>
                 </li>
             </ul>
-        </li>
+        </li>--}}
         @can('isAdmin')
             <li class="nav-item">
                 <router-link to="/users" class="nav-link">
@@ -369,7 +361,7 @@
                             <p>Configrations</p>
                         </router-link>
                     </li>
-                    <li class="nav-item">
+                    {{--<li class="nav-item">
                         <router-link to="/product/category" class="nav-link">
                             <i class="nav-icon fas fa-list-ol green"></i>
                             <p>
@@ -393,7 +385,7 @@
                                 Developer
                             </p>
                         </router-link>
-                    </li>
+                    </li>--}}
                 </ul>
             </li>
 

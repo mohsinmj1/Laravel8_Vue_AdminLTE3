@@ -1,16 +1,9 @@
-<style>
-.control-label {
-  font-size: 12px;
-}
-</style>
-
-
 <template>
   <section class="content">
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12">
-          <h2>Margin Report</h2>
+          <h2>Create Margin Report</h2>
         </div>
       </div>
       <div class="bg-white mb-4">
@@ -3909,5 +3902,8 @@ export default {
 <style>
 .pg-ul ul {
   margin-bottom: 0px;
+}
+.control-label {
+  font-size: 12px;
 }
 </style>
