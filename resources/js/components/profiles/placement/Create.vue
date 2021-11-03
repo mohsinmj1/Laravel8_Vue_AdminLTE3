@@ -76,11 +76,11 @@
                                href="#custom-content-below-invoicing" role="tab"
                                aria-controls="custom-content-below-invoicing" aria-selected="false">Invoicing</a>
                         </li>
-                        <li class="nav-item" style="width:16.66%">
+                        <!--<li class="nav-item" style="width:16.66%">
                             <a class="nav-link" id="custom-content-below-financial-tab" data-toggle="pill"
                                href="#custom-content-below-financial" role="tab"
                                aria-controls="custom-content-below-financial" aria-selected="false">Financials</a>
-                        </li>
+                        </li>-->
                         <li class="nav-item" style="width:16.66%">
                             <a class="nav-link" id="custom-content-below-advance-tab" data-toggle="pill"
                                href="#custom-content-below-advance" role="tab"
@@ -172,7 +172,7 @@
                                     <label for="client" class="d-block mb-1">Job Description</label>
                                     <div class="input-group">
                                         <textarea type="text" class="form-control form-control-sm" row="7"
-                                                  placeholder="Auto Generated"></textarea>
+                                                  placeholder=""></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -233,7 +233,7 @@
                                     <div class="col-lg-7" style="padding-left:0px">
                                         <div class="col-lg-12 row">
                                             <div class="col-lg-5">
-                                                <label for="client" class="d-block mb-1">Job Description</label>
+                                                <label for="client" class="d-block mb-1">Alternative Managers</label>
                                                 <div class="input-group">
                                                     <select name="altManager_from[]" id="altManager"
                                                             class="form-control input-sm" size="8" multiple="multiple">
@@ -256,7 +256,7 @@
                                             </div>
                                             <div class="col-lg-5">
                                                 <div class="row">
-                                                    <label for="client" class="d-block mb-1">Job Description</label>
+                                                    <label for="client" class="d-block mb-1">Alternative Managers</label>
                                                     <div class="input-group">
                                                         <select name="altManager_from[]" id="altManager"
                                                                 class="form-control input-sm" size="8"
@@ -319,15 +319,15 @@
                                                 <th class="number" style="">Charge<br>(<span
                                                         id="rateChargeCurr">GBP</span>)
                                                 </th>
-                                                <th style="white-space:nowrap;">Pay Element</th>
+                                                <!--<th style="white-space:nowrap;">Pay Element</th>-->
                                                 <th style="display:none;">Period</th>
                                                 <th class="number" style="white-space:nowrap;">Duration<br>(mins)</th>
                                                 <th style="white-space:nowrap;">Fields</th>
                                                 <th style="text-align:center">Show Comment Box</th>
                                                 <th style="text-align:center">Worker Can Select</th>
-                                                <th style="white-space:nowrap;">Time Pattern</th>
-                                                <th style="white-space:nowrap;">Frontend Ref</th>
-                                                <th style="white-space:nowrap;">Backend Ref</th>
+                                                <!--<th style="white-space:nowrap;">Time Pattern</th>-->
+                                                <!--<th style="white-space:nowrap;">Frontend Ref</th>
+                                                <th style="white-space:nowrap;">Backend Ref</th>-->
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -346,8 +346,8 @@
                                                 </td>
                                                 <td><input style="min-width:65px;" class="form-control input-xs"
                                                            id="ratePay0" type="text" name="pay" value=""></td>
-                                                <td><input style="min-width:65px;" class="form-control input-xs"
-                                                           id="rateCharge0" type="text" name="charge" value=""></td>
+                                                <!--<td><input style="min-width:65px;" class="form-control input-xs"
+                                                           id="rateCharge0" type="text" name="charge" value=""></td>-->
                                                 <td>
                                                     <select name="payElement" style="min-width:200px;"
                                                             id="ratePayElement0" class="form-control input-xs">
@@ -395,16 +395,16 @@
                                                 <td style="text-align:center"><input type="checkbox" id="workerSelect0"
                                                                                      class="" name="workerSelect0"
                                                                                      checked="checked"></td>
-                                                <td>
+                                                <!--<td>
                                                     <select name="timePattern" style="min-width:150px;"
                                                             id="rateTimePattern0" class="form-control input-xs">
                                                         <option value="Default">Default</option>
                                                     </select>
-                                                </td>
-                                                <td><input style="min-width:40px;" class="form-control input-xs"
+                                                </td>-->
+                                                <!--<td><input style="min-width:40px;" class="form-control input-xs"
                                                            id="ratefRef0" type="text" name="fRef" value=""></td>
                                                 <td><input style="min-width:40px;" class="form-control input-xs"
-                                                           id="ratebRef0" type="text" name="bRef" value=""></td>
+                                                           id="ratebRef0" type="text" name="bRef" value=""></td>-->
                                             </tr>
                                             </tbody>
                                         </table>
@@ -610,7 +610,7 @@
                                                 </h2>
                                             </div>
                                             <div class="row">
-                                                <div class="col-lg-6">
+                                                <!--<div class="col-lg-6">
                                                     <label for="client" class="d-block mb-1">Expense Timesheet Group <a
                                                             href="javascript:void(0);" data-toggle="tooltip"
                                                             data-placement="top" title=""
@@ -621,7 +621,7 @@
                                                         <option value="2">Adjustment Invoice</option>
                                                         <option value="3">No Expense Paid</option>
                                                     </select>
-                                                </div>
+                                                </div>-->
                                                 <div class="col-lg-2">
                                                     <label for="client"
                                                            class="d-block mb-1">Expense Pay Currency </label>
@@ -708,7 +708,7 @@
                                                <div class="col-lg-7" style="padding-left:0px">
                                         <div class="col-lg-12 row">
                                             <div class="col-lg-5">
-                                                <label for="client" class="d-block mb-1">Description</label>
+                                                <label for="client" class="d-block mb-1">Alternative Manager</label>
                                                 <div class="input-group">
                                                     <select name="altManager_from[]" id="altManager"
                                                             class="form-control input-sm" size="8" multiple="multiple">
@@ -731,7 +731,7 @@
                                             </div>
                                             <div class="col-lg-5">
                                                 <div class="row">
-                                                    <label for="client" class="d-block mb-1"> Description</label>
+                                                    <label for="client" class="d-block mb-1"> Alternative Manager</label>
                                                     <div class="input-group">
                                                         <select name="altManager_from[]" id="altManager"
                                                                 class="form-control input-sm" size="8"
@@ -770,7 +770,7 @@
                         <div class="tab-pane fade" id="custom-content-below-invoicing" role="tabpanel"
                              aria-labelledby="custom-content-below-invoicing-tab">
                             <!-----  first card start ------->
-                            <div class="panel panel-border panel-primary " style="border-top:3px solid #009ada">
+                            <!--<div class="panel panel-border panel-primary " style="border-top:3px solid #009ada">
                                 <div class="panel-heading">
                                     <h3 class="panel-title">Charge Terms</h3>
                                 </div>
@@ -886,10 +886,10 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
                             <!-----  first card end ------->
                             <!-----  2nd card end ------->
-                            <div class="panel panel-border panel-primary card" style="border-top:3px solid #009ada">
+                            <!--<div class="panel panel-border panel-primary card" style="border-top:3px solid #009ada">
                                 <div class="panel-heading"><h3 class="panel-title">Pay Terms</h3>
                                 </div>
 
@@ -983,7 +983,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
                             <!-----  2nd card end ------->
                             <!-----third tab start --->
                             <div class="panel panel-border panel-primary" style="border-top:3px solid #009ada">
@@ -1008,7 +1008,7 @@
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <div class="row">
-                                                <div class="col-sm-12">
+                                                <!--<div class="col-sm-12">
                                                     <div class="form-group">
                                                         <label class="control-label" for="salesInvContactFrontendRef">Contact Frontend Ref</label>
                                                         <input type="text" format="1" name="salesInvContactFrontendRef"
@@ -1016,7 +1016,7 @@
                                                                id="salesInvContactFrontendRef"
                                                                class="form-control form-control-sm" value="">
                                                     </div>
-                                                </div>
+                                                </div>-->
                                                 <div class="col-sm-12">
                                                     <div class="form-group">
                                                         <label class="control-label"
@@ -1566,7 +1566,7 @@
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
-                                            <div class="panel panel-border panel-primary"
+                                            <!--<div class="panel panel-border panel-primary"
                                                  style="border-top:3px solid #009ada">
                                                 <div class="panel-heading"><h3 class="panel-title">Holiday Accrual</h3>
                                                 </div>
@@ -1591,7 +1591,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div>-->
                                         </div>
                                         <!-- <div class="col-sm-6">
                                             <div class="panel panel-border panel-primary"
