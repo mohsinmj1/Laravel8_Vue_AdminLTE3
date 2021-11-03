@@ -506,29 +506,33 @@
                 <table class="table table-hover">
                   <thead>
                     <tr>
-                      <th>ID</th>
-                      <th>Submit</th>
-                      <th>Worker</th>
-                      <th>Worker Type</th>
-                      <th>Worker Ref</th>
-                      <th>Worker Wxt Ref</th>
-                      <th>Ltd Company Name</th>
-                      <th>Worker Invoice Period </th>
-                      <th>Timesheet Start</th>
-                      <th>Paroll/Frequency</th>
-                      <th>Provider</th>
-                      <th>Consultant</th>
+                      <th>Reference ID</th>
+                      <th>Start date</th>
+                      <th>	End date</th>
+                      <th>Job title </th>
+                      <th>Contractor clickable</th>
+                      <th>Provider clickable</th>
+                      <th>Payroll</th>
+                      <th>Consultant clickable </th>
+                      <th>Client name clickable</th>
+                      <th>Client reference ID</th>
+                      <th>Manager clickable </th>
+                      <th>Created at</th>
+                       <th>Modified at</th>
+                      <th>Default rate</th>
+                      <th>	Default rate pay</th>
+                      <th>Default rate charge </th>
+                      <th>Default rate type </th>
+                      <th>Predicted margin </th>
+                      <th>Action </th>
+                     
                     </tr>
                   </thead>
                   <tbody>
                      <tr v-for="product in products.data" :key="product.id">
 
                       <td>{{product.id}}</td>
-                      <td><div class="icheck-primary d-inline">
-                        <input type="checkbox" id="checkboxPrimary1" checked>
-                        <label for="checkboxPrimary1">
-                        </label>
-                      </div></td>
+                      <td></td>
                       <td>{{product.name}}</td>
                       <td>{{product.description | truncate(30, '...')}}</td>
                       <td>{{product.category.name}}</td>
@@ -539,6 +543,18 @@
                       <td>{{product.category.name}}</td>
                       <td>{{product.price}}</td>
                       <td>{{product.category.name}}</td>
+                       <td>{{product.category.name}}</td>
+                      <td>{{product.price}}</td>
+                      <td>{{product.category.name}}</td>
+                       <td>{{product.category.name}}</td>
+                      <td>{{product.price}}</td>
+                      <td>{{product.category.name}}</td>
+                      <td><div class="btn-group btn-xs dropdown dropdown-actions-table">
+                          <a href="/placement/edit?placement=235742" class="btn btn-primary btn-xs waves-effect waves-light">Edit</a><button onmouseup="scrollToBottom(this);" type="button" class="btn btn-primary btn-xs dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-expanded="false"><i class="caret"></i></button><ul id="undefined" class="dropdown-menu" role="menu"><li>
+                          <a href="/summary/placement?id=235742">View Summary</a>
+                          </li></ul>
+                          </div>
+                        </td>
                     </tr>
                   </tbody>
                 </table>
