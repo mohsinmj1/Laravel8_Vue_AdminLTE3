@@ -129,46 +129,64 @@
                             </select>
                           </div>
                         </div>
-                        <div class="col-sm-4">
-                          <div class="form-group input-group-sm">
-                            <label class="control-label">Created Date</label>
-                            <div class="input-group input-group-sm">
-                              <input
-                                type="text"
-                                class="form-control"
-                                placeholder="dd/MM/yyyy"
-                              />
-                              <button
-                                class="btn btn-sm rounded-0 bg-primary px-2"
+                        <div class="col-lg-4">
+                          <label for="client" class="d-block mb-1"
+                            >Created Date</label
+                          >
+                          <div class="input-group">
+                            <input
+                              type="date"
+                              class="form-control form-control-sm"
+                            />
+                            <div class="input-group-append">
+                              <span
+                                class="input-group-text to"
+                                id="validationTooltipUsernamePrepend"
+                                >to</span
                               >
-                                to
-                              </button>
-                              <input
-                                type="text"
-                                class="form-control"
-                                placeholder="dd/MM/yyyy"
-                              />
-                              <div class="input-group-btn">
+                            </div>
+                            <input
+                              type="date"
+                              class="form-control form-control-sm"
+                            />
+                            <div class="input-group-append">
+                              <div class="dropdown">
                                 <button
+                                  class="
+                                    btn btn-primary btn-size
+                                    dropdown-toggle
+                                  "
                                   type="button"
-                                  class="btn btn-primary btn-sm dropdown-toggle"
+                                  id="dropdownMenuButton"
                                   data-toggle="dropdown"
+                                  aria-haspopup="true"
+                                  aria-expanded="false"
                                 >
-                                  Options <span class="caret"></span>
+                                  option
                                 </button>
-                                <ul class="dropdown-menu">
-                                  <li><a href="#">Today</a></li>
-                                  <li><a href="#">Yesterday</a></li>
-                                  <li class="divider"></li>
-                                  <li><a href="#">Last 7 Days</a></li>
-                                  <li><a href="#">Last 30 Days</a></li>
-                                  <li class="divider"></li>
-                                  <li><a href="#">This Week</a></li>
-                                  <li><a href="#">Last Week</a></li>
-                                  <li class="divider"></li>
-                                  <li><a href="#">This Month</a></li>
-                                  <li><a href="#">Last Month</a></li>
-                                </ul>
+                                <div
+                                  class="dropdown-menu"
+                                  aria-labelledby="dropdownMenuButton"
+                                >
+                                  <a class="dropdown-item" href="#">Today</a>
+                                  <a class="dropdown-item" href="#"
+                                    >Yesterday</a
+                                  >
+                                  <hr />
+                                  <a class="dropdown-item" href="#"
+                                    >Last 7 Days</a
+                                  >
+                                  <a class="dropdown-item" href="#"
+                                    >Last 30 Days</a
+                                  >
+                                  <hr />
+                                  <a class="dropdown-item" href="#"
+                                    >This Week</a
+                                  >
+                                  <a class="dropdown-item" href="#"
+                                    >Last Week</a
+                                  >
+                                </div>
                               </div>
                             </div>
                           </div>

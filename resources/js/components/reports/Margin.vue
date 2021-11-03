@@ -12,7 +12,11 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
+<<<<<<< HEAD
                     <h2>Create Margin Report </h2>
+=======
+                    <h2>Margin Report </h2>
+>>>>>>> b392e69e65e41c09ffcd53e9dac1b1f760f207d2
                 </div>
             </div>
             <div class="bg-white pb-4">
