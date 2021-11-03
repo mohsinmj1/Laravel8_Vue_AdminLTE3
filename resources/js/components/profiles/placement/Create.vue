@@ -98,7 +98,7 @@
                                         <input type="text" class="form-control" readonly placeholder="Auto Generated">
                                     </div>
                                 </div>
-                                <div class="custom-control custom-checkbox col-lg-1" style="padding-top: 30px;">
+                                <!-- <div class="custom-control custom-checkbox col-lg-1" style="padding-top: 30px;">
                                     <div class="input-group">
                                         <input type="checkbox" class="custom-control-input" id="customCheck1">
                                         <label class="custom-control-label" for="customCheck1">Perm</label>
@@ -106,8 +106,8 @@
                                            title="" data-original-title="Classify this placement as perm."><span
                                                 class="badge badge-primary badge-tooltip"><small>?</small></span></a>
                                     </div>
-                                </div>
-                                <div class="custom-control custom-checkbox col-lg-1" style="padding-top: 30px;">
+                                </div> -->
+                                <!-- <div class="custom-control custom-checkbox col-lg-1" style="padding-top: 30px;">
                                     <div class="input-group">
                                         <input type="checkbox" class="custom-control-input" id="customCheck1">
                                         <label class="custom-control-label" for="customCheck1">Bulk</label>
@@ -116,8 +116,8 @@
                                            data-original-title="if tiked then timesheet can be enter using the bulk entry timesheet option.No reminder email will be send.."><span
                                                 class="badge badge-primary badge-tooltip"><small>?</small></span></a>
                                     </div>
-                                </div>
-                                <div class="custom-control custom-checkbox col-lg-2" style="padding-top: 30px;">
+                                </div> -->
+                                <!-- <div class="custom-control custom-checkbox col-lg-2" style="padding-top: 30px;">
                                     <div class="input-group">
                                         <input type="checkbox" class="custom-control-input" id="customCheck1">
                                         <label class="custom-control-label" for="customCheck1">Agency</label>
@@ -126,7 +126,7 @@
                                            data-original-title="Only Administrators and Consultants can enter timesheets for this placement if ticked."><span
                                                 class="badge badge-primary badge-tooltip"><small>?</small></span></a>
                                     </div>
-                                </div>
+                                </div> -->
 
                                 <div class="col-lg-3">
                                     <label for="client" class="d-block mb-1">Start Date*</label>
@@ -470,7 +470,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="col-sm-12">
+                                                <!-- <div class="col-sm-12">
                                                     <div class="form-group">
                                                         <label class="control-label" for="roundTimeMins">Round time to nearest (minutes) <a
                                                                 href="javascript:void(0);" data-toggle="tooltip"
@@ -484,7 +484,7 @@
                                                                value="1" id="roundTimeMins"
                                                                class="form-control input-sm">
                                                     </div>
-                                                </div>
+                                                </div> -->
 
                                             </div>
                                         </div>
@@ -512,7 +512,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6">
+                                        <!-- <div class="col-sm-6">
                                             <div class="row">
                                                 <div class="col-sm-6">
                                                     <div class="form-group">
@@ -542,7 +542,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div class="col-sm-6">
 
                                         </div>
@@ -705,22 +705,57 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-3">
-                                                    <label for="client"
-                                                           class="d-block mb-1">Alternative Managers</label>
-                                                    <div class="form-group">
-                                                        <select class="duallistbox" style="width:100%;height:138px"
-                                                                multiple="multiple">
-                                                            <option selected></option>
-                                                            <option></option>
-                                                            <option></option>
-                                                            <option></option>
-                                                            <option></option>
-                                                            <option></option>
-                                                            <option></option>
-                                                        </select>
+                                               <div class="col-lg-7" style="padding-left:0px">
+                                        <div class="col-lg-12 row">
+                                            <div class="col-lg-5">
+                                                <label for="client" class="d-block mb-1">Description</label>
+                                                <div class="input-group">
+                                                    <select name="altManager_from[]" id="altManager"
+                                                            class="form-control input-sm" size="8" multiple="multiple">
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2" style="padding-top:35px">
+                                                <button type="button" id="altManager_rightAll"
+                                                        class="btn btn-block btn-primary btn-sm"><i
+                                                        class="fa fa-forward" aria-hidden="true"></i></button>
+                                                <button type="button" id="altManager_rightSelected"
+                                                        class="btn btn-block btn-light btn-xs"><i
+                                                        class="fa fa-angle-right" aria-hidden="true"></i></button>
+                                                <button type="button" id="altManager_leftSelected"
+                                                        class="btn btn-block btn-light btn-xs"><i
+                                                        class="fa fa-angle-left" aria-hidden="true"></i></button>
+                                                <button type="button" id="altManager_leftAll"
+                                                        class="btn btn-block btn-primary btn-sm"><i
+                                                        class="fa fa-backward" aria-hidden="true"></i></button>
+                                            </div>
+                                            <div class="col-lg-5">
+                                                <div class="row">
+                                                    <label for="client" class="d-block mb-1"> Description</label>
+                                                    <div class="input-group">
+                                                        <select name="altManager_from[]" id="altManager"
+                                                                class="form-control input-sm" size="8"
+                                                                multiple="multiple"> </select>
+
                                                     </div>
                                                 </div>
+                                                <div class="row">
+                                                    <div class="col-sm-5">
+                                                        <button type="button" style="padding: 0px;width: 70px;"
+                                                                id="altManager_move_up" class="btn btn-block btn-light">
+                                                            <i class="fa fa-arrow-up"></i></button>
+                                                    </div>
+                                                    <div class="col-sm-5">
+                                                        <button type="button" style="padding: 0px;width: 70px;"
+                                                                id="altManager_move_down"
+                                                                class="btn btn-block btn-light "><i
+                                                                class="fa fa-arrow-down"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                     
+                                    </div>
                                                 <div class="col-lg-2">
 
                                                 </div>
@@ -1558,7 +1593,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6">
+                                        <!-- <div class="col-sm-6">
                                             <div class="panel panel-border panel-primary"
                                                  style="border-top:3px solid #009ada">
                                                 <div class="panel-heading"><h3 class="panel-title">Notice Period</h3>
@@ -1589,12 +1624,12 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
 
                                     </div>
                                 </div>
                             </div>
-                            <div class="panel panel-border panel-primary" style="border-top:3px solid #009ada">
+                            <!-- <div class="panel panel-border panel-primary" style="border-top:3px solid #009ada">
                                 <a data-toggle="collapse" href="#tagsPanel" aria-expanded="false" class="collapsed">
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
@@ -1649,8 +1684,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="panel panel-border panel-primary" style="border-top:3px solid #009ada">
+                            </div> -->
+                            <!-- <div class="panel panel-border panel-primary" style="border-top:3px solid #009ada">
                                 <a data-toggle="collapse" href="#filtersPanel" aria-expanded="false" class="collapsed">
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
@@ -1708,7 +1743,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                         </div>
                         <!------fivth tab end -->

@@ -63,10 +63,7 @@ export default [
         path: "/expenses/search",
         component: require("./components/expenses/Search.vue").default
     },
-    {
-        path: "/reports/margin",
-        component: require("./components/reports/Margin.vue").default
-    },
+   
     {
         path: "/profiles/manager/role",
         component: require("./components/profiles/manager/Role.vue").default
