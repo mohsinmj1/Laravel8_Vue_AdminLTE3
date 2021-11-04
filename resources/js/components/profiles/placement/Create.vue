@@ -411,8 +411,14 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-sm-12"><button name="addRate" class="btn btn-primary waves-effect waves-light" type="button" value="Add Rate" onclick="newRate();">Add Rate</button></div>
                             <!-------------- bottom card end ------------->
+                            <br>
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn btn-success waves-effect w-md m-b-5" name="Save" value="Save" onclick="return validateAll();">Save</button>
+                            </div>
                         </div>
+
                         <!------first tab end -->
                         <div class="tab-pane fade" id="custom-content-below-timesheet" role="tabpanel"
                              aria-labelledby="custom-content-below-timesheet-tab">
@@ -1565,7 +1571,9 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        
                                         <div class="col-sm-6">
+                                            
                                             <!--<div class="panel panel-border panel-primary"
                                                  style="border-top:3px solid #009ada">
                                                 <div class="panel-heading"><h3 class="panel-title">Holiday Accrual</h3>
@@ -1629,6 +1637,7 @@
                                     </div>
                                 </div>
                             </div>
+                            
                             <!-- <div class="panel panel-border panel-primary" style="border-top:3px solid #009ada">
                                 <a data-toggle="collapse" href="#tagsPanel" aria-expanded="false" class="collapsed">
                                     <div class="panel-heading">
