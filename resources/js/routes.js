@@ -60,6 +60,10 @@ export default [
         component: require("./components/expenses/Approved.vue").default
     },
     {
+        path: "/expenses/reject",
+        component: require("./components/expenses/Reject.vue").default
+    },
+    {
         path: "/expenses/search",
         component: require("./components/expenses/Search.vue").default
     },
