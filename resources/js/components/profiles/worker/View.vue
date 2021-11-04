@@ -183,13 +183,14 @@
                             <label class="control-label" for="placementItrisId"
                               >Worker Type</label
                             >
-                            <input
-                              type="text"
-                              format="2"
-                              label="Placement Ref"
-                              class="form-control form-control-sm"
-                              value=""
-                            />
+                            <select class="form-control form-control-sm">
+                              <option value="">
+                                Please Select Worker Type
+                              </option>
+                              <option value="">PAYE</option>
+                              <option value="">LTD</option>
+                              <option value="">External Contractor</option>
+                            </select>
                           </div>
                         </div>
                         <div class="col-sm-3">
@@ -197,29 +198,16 @@
                             <label class="control-label" for="jobTitle"
                               >Payroll</label
                             >
-                            <input
-                              type="text"
-                              format="2"
-                              label="Job Title"
-                              name="jobTitle"
-                              size="20"
-                              id="jobTitle"
-                              class="form-control form-control-sm"
-                              value=""
-                            />
+                            <select class="form-control form-control-sm">
+                              <option value="">Please Select Payroll</option>
+                              <option value="">Weekly Paid</option>
+                            </select>
                           </div>
                         </div>
                         <div class="col-sm-3">
                           <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Leaver Status</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
+                            <label class="control-label">Leaver Status</label>
+                            <select class="form-control form-control-sm">
                               <option value="Active">Yes</option>
                               <option value="Inactive">No</option>
                             </select>
@@ -230,16 +218,10 @@
                             <label class="control-label" for="jobTitle"
                               >Currency</label
                             >
-                            <input
-                              type="text"
-                              format="2"
-                              label="Job Title"
-                              name="jobTitle"
-                              size="20"
-                              id="jobTitle"
-                              class="form-control form-control-sm"
-                              value=""
-                            />
+                            <select class="form-control form-control-sm">
+                              <option value="">Please Select Currency</option>
+                              <option value="GBP">GBP</option>
+                            </select>
                           </div>
                         </div>
                       </div>
