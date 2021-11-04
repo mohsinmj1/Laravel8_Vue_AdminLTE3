@@ -283,7 +283,7 @@
                                             <label for="client" class="d-block mb-1">Internal Agency Comments</label>
                                             <div class="input-group">
                                                 <textarea type="text" class="form-control form-control-sm" row="2"
-                                                          placeholder="Auto Generated"></textarea>
+                                                         ></textarea>
                                             </div>
                                         </div>
                                     </div>

@@ -87,6 +87,12 @@
                     </router-link>
                 </li>
                 <li class="nav-item">
+                    <router-link to="/expenses/authorise" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Authorise</p>
+                    </router-link>
+                </li>
+                <li class="nav-item">
                     <router-link to="/expenses/draft" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Drafts </p>

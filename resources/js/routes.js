@@ -52,6 +52,10 @@ export default [
         component: require("./components/expenses/Draft.vue").default
     },
     {
+        path: "/expenses/authorise",
+        component: require("./components/expenses/Authorise.vue").default
+    },
+    {
         path: "/expenses/unauthorised",
         component: require("./components/expenses/Unauthorised.vue").default
     },

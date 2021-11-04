@@ -643,9 +643,10 @@
                         <table class="table table-hover">
                             <thead>
                             <tr>
-                                <th>Reference ID</th>
-                                <th>Start date</th>
-                                <th>End date</th>
+                                <th>Action </th>
+                                <th>Ref</th>
+                                <th>Start</th>
+                                <th>End </th>
                                 <th>Job title </th>
                                 <th>Contractor</th>
                                 <th>Provider</th>
@@ -661,7 +662,7 @@
                                 <th>Default rate charge </th>
                                 <th>Default rate type </th>
                                 <th>Predicted margin </th>
-                                <th>Action </th>
+                              
 
                             </tr>
                             </thead>

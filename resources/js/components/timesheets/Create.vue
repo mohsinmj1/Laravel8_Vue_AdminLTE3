@@ -359,7 +359,7 @@
                             <div class="col-lg-6">
                                 <label for="placement" class="d-block mb-1"
                                     >Project Code</label>
-                                     <button class="btn btn-info"@click="showModal">show modal</button>
+                                     <!-- <button class="btn btn-info"@click="showModal">show modal</button> -->
     <example-modal ref="modal"></example-modal>
                                 <input
                                     type="text"
