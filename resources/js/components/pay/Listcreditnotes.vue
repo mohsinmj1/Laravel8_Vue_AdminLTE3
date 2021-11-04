@@ -207,17 +207,6 @@
                   </select>
                 </div>
                 <div class="col-lg-3">
-                  <label for="client" class="d-block mb-1">Perm Invoice</label>
-                  <select class="form-control select2">
-                    <option value="1">All</option>
-                    <option value="2">Perm</option>
-                    <option value="3">Not Perm</option>
-                  </select>
-                </div>
-              </div>
-              <br />
-              <div class="row">
-                <div class="col-lg-3">
                   <label for="client" class="d-block mb-1"
                     >Credited Status</label
                   >
@@ -227,7 +216,20 @@
                     <option value="3">No</option>
                   </select>
                 </div>
-                <div class="col-lg-3">
+              </div>
+              <br />
+              <div class="row">
+                <!-- <div class="col-lg-3">
+                  <label for="client" class="d-block mb-1"
+                    >Credited Status</label
+                  >
+                  <select class="form-control select2">
+                    <option value="1">All</option>
+                    <option value="2">Yes</option>
+                    <option value="3">No</option>
+                  </select>
+                </div> -->
+                <!-- <div class="col-lg-3">
                   <label for="client" class="d-block mb-1"
                     >Supplier Invoice Status</label
                   >
@@ -238,7 +240,7 @@
                     <option value="UNMATCHED">Un-matched</option>
                     <option value="ACCEPTED">Accepted</option>
                   </select>
-                </div>
+                </div> -->
               </div>
               <br />
               <div class="row">

@@ -21,7 +21,7 @@
                 <h2>Clients  </h2>
             </div>
             <div class="col-lg-6" style="text-align:right">
-                <button class="btn btn-primary"><router-link style="color:white;text-decoration: none" to="/profiles/placement/clientedit">Create</router-link></button>
+                <button class="btn btn-primary"><router-link style="color:white;text-decoration: none" to="/profiles/client/create">Create</router-link></button>
             </div>
         </div>
         <div class="panel-group panel-group-joined" id="filter-panel"  style="border-top:3px solid #009ada">
