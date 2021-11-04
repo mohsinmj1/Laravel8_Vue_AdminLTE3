@@ -177,16 +177,6 @@ label {
                                 </option>
                               </select>
                             </div>
-                            <div class="col-lg-12">
-                              <div
-                                class="input-group d-flex align-items-center"
-                              >
-                                <input type="checkbox" />
-                                <label class="ml-3 mb-0"
-                                  >Processing On Hold
-                                </label>
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>

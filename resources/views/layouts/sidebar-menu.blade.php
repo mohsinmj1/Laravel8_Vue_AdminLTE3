@@ -48,6 +48,30 @@
                         <p>Reject </p>
                     </router-link>
                 </li>
+                <li class="nav-item">
+                    <router-link to="/timesheets/search" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Search </p>
+                    </router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link to="/timesheets/export" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Export </p>
+                    </router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link to="/timesheets/missing" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Missing </p>
+                    </router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link to="/timesheets/reminder" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Send Reminders </p>
+                    </router-link>
+                </li>
             </ul>
         </li>
         <li class="nav-item">
@@ -171,7 +195,7 @@
             </a>
             <ul class="nav nav-treeview">
                 <li class="nav-item pl-2">
-                    <router-link to="/agency/create" class="nav-link ">
+                    <router-link to="/agency/view" class="nav-link ">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Create Agency</p>
                     </router-link>
@@ -183,7 +207,7 @@
                     </router-link>
                 </li>
                 <li class="nav-item pl-2">
-                    <router-link to="/profiles/clients/view" class="nav-link ">
+                    <router-link to="/profiles/client/view" class="nav-link ">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Clients</p>
                     </router-link>
@@ -284,16 +308,16 @@
                 </li>
             </ul>
         </li>
-        {{--<li class="nav-item">
+        {{-- <li class="nav-item">
             <router-link to="/products" class="nav-link">
                 <i class="nav-icon fas fa-list orange"></i>
                 <p>
                     Product
                 </p>
             </router-link>
-        </li>--}}
+        </li> --}}
 
-        {{--<li class="nav-item">
+        {{-- <li class="nav-item">
             <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-edit"></i>
                 <p>
@@ -327,7 +351,7 @@
                     </router-link>
                 </li>
             </ul>
-        </li>--}}
+        </li> --}}
         @can('isAdmin')
             <li class="nav-item">
                 <router-link to="/users" class="nav-link">
@@ -361,7 +385,7 @@
                             <p>Configrations</p>
                         </router-link>
                     </li>
-                    {{--<li class="nav-item">
+                    {{-- <li class="nav-item">
                         <router-link to="/product/category" class="nav-link">
                             <i class="nav-icon fas fa-list-ol green"></i>
                             <p>
@@ -385,7 +409,7 @@
                                 Developer
                             </p>
                         </router-link>
-                    </li>--}}
+                    </li> --}}
                 </ul>
             </li>
 

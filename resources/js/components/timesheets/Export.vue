@@ -59,20 +59,22 @@ background-color: #227DC7;
                                             </h2>
                                         </div>
                                         <div class="row">
-                                            <div class="col-lg-3">
+                                            <div class="col-lg-2">
                                                 <label for="client" class="d-block mb-1">Status</label>
                                                 <select class="form-control select2" style="width:100%">                                    
-                                                    <option value="ALL">All</option>
-                                                    <option value="DRAFT">Draft</option>
-                                                    <option value="REJECTED">Rejected</option>
-                                                    <option value="SUBMITTED">Unauthorised</option>
-                                                    <option value="APPROVED">Approved</option>
-                                                    <option value="EXPORTED">Exported</option>
-                                                    <option value="APPROVED_OR_EXPORTED">Approved/Exported</option>
-                                                    <option value="MISSING">Missing</option>
+                                                    <option value="Approved">Approved</option>                                                    
                                                 </select>
-                                            </div>  
-                                            <div class="col-lg-3">
+                                            </div> 
+                                            <div class="col-lg-2">
+                                                <label for="client" class="d-block mb-1">Sheet Type</label>
+                                                <select class="form-control select2" style="width:100%">                                    
+                                                    <option value="ALL">All</option>
+                                                    <option value="TIMESHEET">Timesheets</option>
+                                                    <option value="EXPENSE">Expense Items</option>
+                                                    <option value="INV_ADJUSTMENT">Invoice Adjustments</option>
+                                                </select>
+                                            </div>   
+                                            <div class="col-lg-2">
                                                 <label for="client" class="d-block mb-1">Timesheet ID Range</label>
                                                 <div class="input-group">
                                                     <input type="text" class="form-control form-control-sm ">
@@ -81,7 +83,27 @@ background-color: #227DC7;
                                                     </div>
                                                     <input type="text" class="form-control form-control-sm">                                                    
                                                 </div>  
-                                            </div>                                         
+                                            </div>      
+                                            <div class="col-lg-2">
+                                                <label for="client" class="d-block mb-1">Expense ID Range</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control form-control-sm ">
+                                                    <div class="input-group-append">
+                                                        <span  class="input-group-text to" id="validationTooltipUsernamePrepend">to</span>
+                                                    </div>
+                                                    <input type="text" class="form-control form-control-sm">                                                    
+                                                </div>  
+                                            </div>    
+                                            <div class="col-lg-2">
+                                                <label for="client" class="d-block mb-1">Expense Claim ID Range</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control form-control-sm ">
+                                                    <div class="input-group-append">
+                                                        <span  class="input-group-text to" id="validationTooltipUsernamePrepend">to</span>
+                                                    </div>
+                                                    <input type="text" class="form-control form-control-sm">                                                    
+                                                </div>  
+                                            </div>                                    
                                         </div>   
                                         <div class="row">
                                             <div class="col-lg-6">
