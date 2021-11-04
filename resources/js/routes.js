@@ -92,12 +92,12 @@ export default [
         component: require("./components/rates/Create.vue").default
     },
     {
-        path: "/profiles/clients/view",
-        component: require("./components/profiles/placement/Client.vue").default
+        path: "/profiles/client/view",
+        component: require("./components/profiles/client/View.vue").default
     },
     {
-        path: "/profiles/placement/clientedit",
-        component: require("./components/profiles/placement/ClientEdit.vue")
+        path: "/profiles/client/create",
+        component: require("./components/profiles/client/Create.vue") 
             .default
     },
     {
