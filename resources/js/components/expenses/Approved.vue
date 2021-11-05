@@ -21,145 +21,71 @@
               <div class="card-body table-responsive p-0">
                 <table class="table table-hover">
                   <thead>
-                    <tr>
+                   
+                       <tr>
                         <th>ID</th>
                         <th>Worker</th>
-                        <th>Worker Type</th>
-                        <th>Worker Ref</th>
-                        <th>Worker Wxt Ref</th>
-                        <th>Ltd Company Name</th>
-                        <th>Worker Invoice Period </th>
-                        <th>Timesheet Start</th>
-                        <th>Paroll/Frequency</th>
-                        <th>Provider</th>
-                        <th>Consultant</th>
-                        <th>Description</th>
-                        <th>Client</th>
-                        <th>Manager</th>
                         <th>Placement</th>
-                        <th>Project Code</th>
-                        <th>Placement Start</th>
-                        <th>Placement End</th>
-                        <th>Freehand Ref</th>
-                        <th>Payroll Ref</th>
-                        <th>Worker First Name</th>
-                        <th>Worker Last Name</th>
-                        <th>Agency Name</th>
-                        <th>Job Title</th>
-                        <th>Job Description</th>
-                        <th>Pending Approvers</th>
-                        <th>Period Ending</th>
+                        <th>Client</th>
+                        <th>Receipt Date</th>
+                        <th>Description</th>
+                        <th>Unit </th>
                         <th>Status</th>
-                        <th>Hours</th>
-                        <th>Chargeable Hours</th>
-                        <th>Payable Hours</th>
-                        <th>Units</th>
-                        <th>Chargeable  Units</th>
-                        <th>Payable  Unit</th>
+                        <th>Unit Net</th>
+                        <th>Net Total</th>
+                        <th>VAT Rate</th>
+                        <th>Claim Currency</th>
                         <th>Pay</th>
                         <th>Pay Currency</th>
-                        <th>Client Acc Ref</th>
-                        <th>Exported Date</th>
-                        <th>Total Cost</th>
-                        <th>Purchase Nominal</th>
-                        <th>Sales Nominal</th>
-                        <th>Supplier Accounts Ref</th>
-                        <th>Workers Accounts Ref</th>
-                        <th>Supplier Gender</th>
-                        <th>Exchange rate Pay</th>
-                        <th>Exchange rate Charge</th>
+                        <th>Exchange Rate For Pay</th>
+                        <th>Purchase Invoices</th>
+                        <th>Sales Invoices</th>
                         <th>Charge</th>
                         <th>Charge Currency</th>
-                        <th>Funds Received</th>
-                        <th>Charge GBP</th>
-                        <th>Type</th>
-                        <th>Approved By</th>
-                        <th>Submitted</th>
-                        <th>Submitted By</th>
-                        <th>Client Country</th>
-                        <th>Client Invoice Street1</th>
-                        <th>Client Invoice Street2	</th>
-                        <th>Client Invoice Town</th>
-                        <th>Client Invoice Postcode</th>
-                        <th>Client Invoice Country</th>
-                        <th>Client Ref</th>
-                        <th>Client Site</th>
+                        <th>Exchange Rate For Charge</th>
+                        <th>Net (GBP)	</th>
+                        <th>Base Currency</th>
+                        <th>Exchange Rate For Base</th>
+                        <th>Charge Markup</th>
                         <th>Paper</th>
-                        <th>Sales Project</th>
-                        <th>Hours Worked</th>
-                        <th>Paid Date</th>
-
+                        <th>Receipt</th>
+                        <th>Payroll/Frequency</th>
+                        
                     </tr>
                   </thead>
                   <tbody>
                      <tr v-for="product in products.data" :key="product.id">
 
-                      <td>{{product.id}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
                        <td>{{product.id}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
-                       <td>{{product.id}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
-                       <td>{{product.id}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
-                       <td>{{product.id}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
-                       <td>{{product.id}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
+                      <td>Madden,John</td>
+                      <td>Pmt149</td>
+                      <td>Southampton Marine Services Ltd</td>
+                      <td>28/01/2019</td>
+                      <td></td>
+                      <td>1</td>
+                      <td>Submitted</td>
+                      <td>25</td>
+                      <td>25</td>
+                      <td>0</td>
+                       <td>0</td>
+                      <td>	GBP</td>
+                      <td>25</td>
+                      <td>	GBP</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>1</td>
+                      <td>0</td>
+                       <td></td>
+                      <td></td>
+                      <td></td>
+                       <td>0</td>
+                       <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
                     </tr>
                   </tbody>
                 </table>
@@ -167,12 +93,9 @@
               <!-- /.card-body -->
               <div class="card-footer">
                   <pagination :data="products" @pagination-change-page="getResults"></pagination>
-                    <button type="submit" class="btn btn-primary">Submit</button>
                     <button type="submit" class="btn btn-info">Print Report</button>
-                    <button type="submit" class="btn btn-info">Print Details Report</button>
                     <button type="submit" class="btn btn-info">CSV</button>
-                    <button type="submit" class="btn btn-info">Default CSV</button>
-                    <button type="submit" class="btn btn-info">Reset Column</button>
+
 
               </div>
 

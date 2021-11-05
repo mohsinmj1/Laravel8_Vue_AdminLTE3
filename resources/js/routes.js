@@ -52,6 +52,10 @@ export default [
         component: require("./components/expenses/Draft.vue").default
     },
     {
+        path: "/expenses/authorise",
+        component: require("./components/expenses/Authorise.vue").default
+    },
+    {
         path: "/expenses/unauthorised",
         component: require("./components/expenses/Unauthorised.vue").default
     },
@@ -60,13 +64,21 @@ export default [
         component: require("./components/expenses/Approved.vue").default
     },
     {
+        path: "/expenses/reject",
+        component: require("./components/expenses/Reject.vue").default
+    },
+    {
         path: "/expenses/search",
         component: require("./components/expenses/Search.vue").default
     },
-    // {
-    //     path: "/reports/margin",
-    //     component: require("./components/reports/margin.vue").default
-    // },
+    {
+        path: "/reports/margin",
+        component: require("./components/reports/Margin.vue").default
+    },
+    {
+        path: "/profiles/manager/role",
+        component: require("./components/profiles/manager/Role.vue").default
+    },
     {
         path: "/profiles/placement/create",
         component: require("./components/profiles/placement/Create.vue").default
@@ -76,12 +88,29 @@ export default [
         component: require("./components/profiles/placement/View.vue").default
     },
     {
-        path: "/profiles/clients/view",
-        component: require("./components/profiles/placement/Client.vue").default
+        path: "/profiles/manager/create",
+        component: require("./components/profiles/manager/Create.vue").default
     },
     {
-        path: "/profiles/placement/clientedit",
-        component: require("./components/profiles/placement/ClientEdit.vue")
+        path: "/profiles/manager/view",
+        component: require("./components/profiles/manager/View.vue").default
+    },
+    {
+        path: "/rates/create",
+        component: require("./components/rates/Create.vue").default
+    },
+    {
+        path: "/profiles/client/view",
+        component: require("./components/profiles/client/View.vue").default
+    },
+    {
+        path: "/profiles/client/create",
+        component: require("./components/profiles/client/Create.vue") 
+            .default
+    },
+    {
+        path: "/profiles/workers/starter-form",
+        component: require("./components/profiles/worker/StarterForm.vue")
             .default
     },
     {
@@ -94,7 +123,8 @@ export default [
     },
     {
         path: "/profiles/consultants/create",
-        component: require("./components/profiles/consultants/Create.vue").default
+        component: require("./components/profiles/consultants/Create.vue")
+            .default
     },
     {
         path: "/profiles/consultants/view",
@@ -205,5 +235,14 @@ export default [
         path: "/agency/edit",
         component: require("./components/agency/Edit.vue").default
     },
+    {
+        path: "/agency/create",
+        component: require("./components/agency/Create.vue").default
+    },
+    {
+        path: "/agency/view",
+        component: require("./components/agency/view.vue").default
+    },
+
     { path: "*", component: require("./components/NotFound.vue").default }
 ];

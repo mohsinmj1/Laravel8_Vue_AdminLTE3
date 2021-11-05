@@ -24,39 +24,69 @@
                 <table class="table table-hover">
                   <thead>
                     <tr>
-                      <th>ID</th>
-                      <th>Submit</th>
-                      <th>Worker</th>
-                      <th>Worker Type</th>
-                      <th>Worker Ref</th>
-                      <th>Worker Wxt Ref</th>
-                      <th>Ltd Company Name</th>
-                      <th>Worker Invoice Period </th>
-                      <th>Timesheet Start</th>
-                      <th>Paroll/Frequency</th>
-                      <th>Provider</th>
-                      <th>Consultant</th>
+                        <th>ID</th>
+                        <th>Worker</th>
+                        <th>Placement</th>
+                        <th>Client</th>
+                        <th>Receipt Date</th>
+                        <th>Description</th>
+                        <th>Unit </th>
+                        <th>Status</th>
+                        <th>Unit Net</th>
+                        <th>Net Total</th>
+                        <th>VAT Rate</th>
+                        <th>Claim Currency</th>
+                        <th>Pay</th>
+                        <th>Pay Currency</th>
+                        <th>Exchange Rate For Pay</th>
+                        <th>Purchase Invoices</th>
+                        <th>Sales Invoices</th>
+                        <th>Charge</th>
+                        <th>Charge Currency</th>
+                        <th>Exchange Rate For Charge</th>
+                        <th>Net (GBP)	</th>
+                        <th>Base Currency</th>
+                        <th>Exchange Rate For Base</th>
+                        <th>Charge Markup</th>
+                        <th>Paper</th>
+                        <th>Receipt</th>
+                        <th>Payroll/Frequency</th>
+                        
                     </tr>
                   </thead>
                   <tbody>
-                     <tr v-for="product in products.data" :key="product.id">
+                    <tr v-for="product in products.data" :key="product.id">
 
-                      <td>{{product.id}}</td>
-                      <td><div class="icheck-primary d-inline">
-                        <input type="checkbox" id="checkboxPrimary1" checked>
-                        <label for="checkboxPrimary1">
-                        </label>
-                      </div></td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
+                       <td>{{product.id}}</td>
+                      <td>Madden,John</td>
+                      <td>Pmt149</td>
+                      <td>Southampton Marine Services Ltd</td>
+                      <td>28/01/2019</td>
+                      <td></td>
+                      <td>1</td>
+                      <td>Submitted</td>
+                      <td>25</td>
+                      <td>25</td>
+                      <td>0</td>
+                       <td>0</td>
+                      <td>	GBP</td>
+                      <td>25</td>
+                      <td>	GBP</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>1</td>
+                      <td>0</td>
+                       <td></td>
+                      <td></td>
+                      <td></td>
+                       <td>0</td>
+                       <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
                     </tr>
                   </tbody>
                 </table>
@@ -64,12 +94,9 @@
               <!-- /.card-body -->
               <div class="card-footer">
                   <pagination :data="products" @pagination-change-page="getResults"></pagination>
-                    <button type="submit" class="btn btn-primary">Submit</button>
                     <button type="submit" class="btn btn-info">Print Report</button>
-                    <button type="submit" class="btn btn-info">Print Details Report</button>
                     <button type="submit" class="btn btn-info">CSV</button>
-                    <button type="submit" class="btn btn-info">Default CSV</button>
-                    <button type="submit" class="btn btn-info">Reset Column</button>
+            
 
               </div>
 

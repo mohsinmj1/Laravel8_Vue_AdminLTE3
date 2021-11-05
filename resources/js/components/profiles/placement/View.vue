@@ -1,405 +1,493 @@
 <style>
-.dropdown-menu > li > a {
-    padding: 6px 20px;
-}
-.dropdown-menu>li>a {
-    display: block;
-    padding: 3px 20px;
-    clear: both;
-    font-weight: 400;
-    line-height: 1.42857143;
-    color: #333;
-    white-space: nowrap;
-}
+    .dropdown-menu > li > a {
+        padding: 6px 20px;
+    }
+
+    .dropdown-menu > li > a {
+        display: block;
+        padding: 3px 20px;
+        clear: both;
+        font-weight: 400;
+        line-height: 1.42857143;
+        color: #333;
+        white-space: nowrap;
+    }
 </style>
 <template>
 
-<section class="content" >
-    <div class="container-fluid">
-        <div class="row" >
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
                 <div class="col-lg-12">
                     <h2>Placement Search </h2>
                 </div>
-        </div>
-        <div class="panel-group panel-group-joined" id="filter-panel"  style="border-top:3px solid #009ada">
-            <div class="panel panel-border panel-primary">
-                <a data-toggle="collapse" data-parent="#filter-panel" href="#collapseOne" class="" aria-expanded="true">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <i class="fa fa-search"></i> Search Options
-                        </h4>
-                    </div>
-                </a>
-                <div id="collapseOne" class="panel-collapse collapse in" aria-expanded="true" style="">
-                    <div class="panel-body">
-                        <div class="bg-white pb-4">
-                            <div class="card-body">
-                                <ul class="nav nav-tabs" id="custom-content-below-tab" role="tablist">
-                                    <li class="nav-item" style="width:33.33%">
-                                        <a class="nav-link active" id="custom-content-below-home-tab" data-toggle="pill" href="#custom-content-below-home" role="tab" aria-controls="custom-content-below-home" aria-selected="true">Main</a>
-                                    </li>
-                                    <li class="nav-item" style="width:33.33%">
-                                        <a class="nav-link" id="custom-content-below-profile-tab" data-toggle="pill" href="#custom-content-below-profile" role="tab" aria-controls="custom-content-below-profile" aria-selected="false">Financial</a>
-                                    </li>
-                                    <li class="nav-item" style="width:33.33%">
-                                        <a class="nav-link" id="custom-content-below-messages-tab" data-toggle="pill" href="#custom-content-below-messages" role="tab" aria-controls="custom-content-below-messages" aria-selected="false">Data Ranges</a>
-                                    </li>
+            </div>
+            <div class="panel-group panel-group-joined" id="filter-panel" style="border-top:3px solid #009ada">
+                <div class="panel panel-border panel-primary">
+                    <a data-toggle="collapse" data-parent="#filter-panel" href="#collapseOne" class=""
+                       aria-expanded="true">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <i class="fa fa-search"></i> Search Options
+                            </h4>
+                        </div>
+                    </a>
+                    <div id="collapseOne" class="panel-collapse collapse in" aria-expanded="true" style="">
+                        <div class="panel-body">
+                            <div class="bg-white pb-4">
+                                <div class="card-body">
+                                    <ul class="nav nav-tabs" id="custom-content-below-tab" role="tablist">
+                                        <li class="nav-item" style="width:33.33%">
+                                            <a class="nav-link active" id="custom-content-below-home-tab"
+                                               data-toggle="pill" href="#custom-content-below-home" role="tab"
+                                               aria-controls="custom-content-below-home" aria-selected="true">Main</a>
+                                        </li>
+                                        <li class="nav-item" style="width:33.33%">
+                                            <a class="nav-link" id="custom-content-below-profile-tab" data-toggle="pill"
+                                               href="#custom-content-below-profile" role="tab"
+                                               aria-controls="custom-content-below-profile" aria-selected="false">Financial</a>
+                                        </li>
+                                        <li class="nav-item" style="width:33.33%">
+                                            <a class="nav-link" id="custom-content-below-messages-tab"
+                                               data-toggle="pill" href="#custom-content-below-messages" role="tab"
+                                               aria-controls="custom-content-below-messages" aria-selected="false">Data Ranges</a>
+                                        </li>
 
-                                </ul><br>
-                                <div class="tab-content" id="custom-content-below-tabContent">
-                                    <div class="tab-pane fade active show" id="custom-content-below-home" role="tabpanel" aria-labelledby="custom-content-below-home-tab">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="control-label" for="placementItrisId">Placement Ref</label>
-                                                    <input type="text" format="2" label="Placement Ref"  class="form-control form-control-sm" value="">
+                                    </ul>
+                                    <br>
+                                    <div class="tab-content" id="custom-content-below-tabContent">
+                                        <div class="tab-pane fade active show" id="custom-content-below-home"
+                                             role="tabpanel" aria-labelledby="custom-content-below-home-tab">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="placementItrisId">Placement Ref</label>
+                                                        <input type="text" format="2" label="Placement Ref"
+                                                               class="form-control form-control-sm" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="jobTitle">Job Title</label>
+                                                        <input type="text" format="2" label="Job Title" name="jobTitle"
+                                                               size="20" id="jobTitle"
+                                                               class="form-control form-control-sm" value="">
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="control-label" for="jobTitle">Job Title</label>
-                                                    <input type="text" format="2" label="Job Title" name="jobTitle" size="20" id="jobTitle" class="form-control form-control-sm" value="">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label for="client" class="d-block mb-1">Client </label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control form-control-sm"
+                                                               placeholder="Search">
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-primary fa-icon" type="button">
+                                                                <i class="fa fa-search"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label for="client" class="d-block mb-1">Manager </label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control form-control-sm"
+                                                               placeholder="Search">
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-primary fa-icon" type="button">
+                                                                <i class="fa fa-search"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <label for="client" class="d-block mb-1">Client </label>
-                                                    <div class="input-group">
-                                                        <input type="text" class="form-control form-control-sm" placeholder="Search">
-                                                        <div class="input-group-append">
-                                                            <button class="btn btn-primary fa-icon" type="button">
-                                                                <i class="fa fa-search"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <label for="client" class="d-block mb-1">Manager </label>
-                                                    <div class="input-group">
-                                                        <input type="text" class="form-control form-control-sm" placeholder="Search">
-                                                        <div class="input-group-append">
-                                                            <button class="btn btn-primary fa-icon" type="button">
-                                                                <i class="fa fa-search"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                            </div>
-                                        </div>
 
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <label for="client" class="d-block mb-1">Provider </label>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label for="client" class="d-block mb-1">Provider </label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control form-control-sm" placeholder="Search">
+                                                        <input type="text" class="form-control form-control-sm"
+                                                               placeholder="Search">
                                                         <div class="input-group-append">
                                                             <button class="btn btn-primary fa-icon" type="button">
                                                                 <i class="fa fa-search"></i>
                                                             </button>
                                                         </div>
                                                     </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <label for="client" class="d-block mb-1">Worker</label>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label for="client" class="d-block mb-1">Worker</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control form-control-sm" placeholder="Search">
+                                                        <input type="text" class="form-control form-control-sm"
+                                                               placeholder="Search">
                                                         <div class="input-group-append">
                                                             <button class="btn btn-primary fa-icon" type="button">
                                                                 <i class="fa fa-search"></i>
                                                             </button>
                                                         </div>
                                                     </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <label for="client" class="d-block mb-1">Consultant </label>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label for="client" class="d-block mb-1">Consultant </label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control form-control-sm" placeholder="Search">
+                                                        <input type="text" class="form-control form-control-sm"
+                                                               placeholder="Search">
                                                         <div class="input-group-append">
                                                             <button class="btn btn-primary fa-icon" type="button">
                                                                 <i class="fa fa-search"></i>
                                                             </button>
                                                         </div>
                                                     </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <label for="client" class="d-block mb-1">Status (Date filters will overide this)</label>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label for="client" class="d-block mb-1">Status (Date filters will overide this)</label>
                                                     <div class="input-group">
-                                                        <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
+                                                        <select name="placementStatus" id="placementStatus"
+                                                                class="form-control input-sm null" onchange="">
                                                             <option value="Active">Active</option>
                                                             <option value="Inactive">Inactive</option>
                                                             <option value="All">All</option>
                                                         </select>
                                                     </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <label for="client" class="d-block mb-1">Perm Placement </label>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label for="client" class="d-block mb-1">Perm Placement </label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control form-control-sm" placeholder="Search">
+                                                        <input type="text" class="form-control form-control-sm"
+                                                               placeholder="Search">
                                                         <div class="input-group-append">
                                                             <button class="btn btn-primary fa-icon" type="button">
                                                                 <i class="fa fa-search"></i>
                                                             </button>
                                                         </div>
                                                     </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <label for="client" class="d-block mb-1">Payroll</label>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label for="client" class="d-block mb-1">Payroll</label>
                                                     <div class="input-group">
-                                                        <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
+                                                        <select name="placementStatus" id="placementStatus"
+                                                                class="form-control input-sm null" onchange="">
                                                             <option value="Active">Weekly paid</option>
                                                             <option value="Inactive">Weekly</option>
                                                             <option value="All">Weekly</option>
                                                         </select>
                                                     </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <label for="client" class="d-block mb-1">Client Site </label>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label for="client" class="d-block mb-1">Client Site </label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control form-control-sm" placeholder="Search">
+                                                        <input type="text" class="form-control form-control-sm"
+                                                               placeholder="Search">
                                                         <div class="input-group-append">
                                                             <button class="btn btn-primary fa-icon" type="button">
                                                                 <i class="fa fa-search"></i>
                                                             </button>
                                                         </div>
                                                     </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <label for="client" class="d-block mb-1">Project Code</label>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label for="client" class="d-block mb-1">Project Code</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control form-control-sm" placeholder="Search">
+                                                        <input type="text" class="form-control form-control-sm"
+                                                               placeholder="Search">
 
                                                     </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <label for="client" class="d-block mb-1">Project Reference</label>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label for="client" class="d-block mb-1">Project Reference</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control form-control-sm" placeholder="Search">
+                                                        <input type="text" class="form-control form-control-sm"
+                                                               placeholder="Search">
                                                         <div class="input-group-append">
                                                             <button class="btn btn-primary fa-icon" type="button">
                                                                 <i class="fa fa-search"></i>
                                                             </button>
                                                         </div>
                                                     </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <label for="client" class="d-block mb-1">Validated</label>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label for="client" class="d-block mb-1">Validated</label>
                                                     <div class="input-group">
-                                                        <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
+                                                        <select name="placementStatus" id="placementStatus"
+                                                                class="form-control input-sm null" onchange="">
                                                             <option value="Active">Weekly paid</option>
                                                             <option value="Inactive">Weekly</option>
                                                             <option value="All">Weekly</option>
                                                         </select>
                                                     </div>
-                                            </div>
-                                        </div>
-                                        <br>
-                                        <div class="col-sm-12">
-                                                <button type="submit" class="btn btn-primary">Search</button>
-                                                <a class="btn btn-default  waves-light" role="button" >Clear</a>
-                                        </div>
-                                        <!---------1st tab end ----->
-                                    </div>
-                                    <div class="tab-pane fade" id="custom-content-below-profile" role="tabpanel" aria-labelledby="custom-content-below-profile-tab">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="control-label" for="placementItrisId">Sales Sector</label>
-                                                        <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
-                                                            <option value="Active">Choose</option>
-                                                        </select>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="control-label" for="jobTitle">Purchase Sector</label>
-                                                        <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
+                                            <br>
+                                            <div class="col-sm-12">
+                                                <button type="submit" class="btn btn-primary">Search</button>
+                                                <a class="btn btn-default  waves-light" role="button">Clear</a>
+                                            </div>
+                                            <!---------1st tab end ----->
+                                        </div>
+                                        <div class="tab-pane fade" id="custom-content-below-profile" role="tabpanel"
+                                             aria-labelledby="custom-content-below-profile-tab">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label"
+                                                               for="placementItrisId">Sales Sector</label>
+                                                        <select name="placementStatus" id="placementStatus"
+                                                                class="form-control input-sm null" onchange="">
                                                             <option value="Active">Choose</option>
                                                         </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label"
+                                                               for="jobTitle">Purchase Sector</label>
+                                                        <select name="placementStatus" id="placementStatus"
+                                                                class="form-control input-sm null" onchange="">
+                                                            <option value="Active">Choose</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <label for="client" class="d-block mb-1">Sales Branch </label>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label for="client" class="d-block mb-1">Sales Branch </label>
                                                     <div class="input-group">
-                                                        <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
+                                                        <select name="placementStatus" id="placementStatus"
+                                                                class="form-control input-sm null" onchange="">
                                                             <option value="Active">Choose</option>
                                                         </select>
 
                                                     </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <label for="client" class="d-block mb-1">Purchase Branch </label>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label for="client" class="d-block mb-1">Purchase Branch </label>
                                                     <div class="input-group">
-                                                        <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
+                                                        <select name="placementStatus" id="placementStatus"
+                                                                class="form-control input-sm null" onchange="">
                                                             <option value="Active">Choose</option>
                                                         </select>
                                                     </div>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <label for="client" class="d-block mb-1">Sales Location </label>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label for="client" class="d-block mb-1">Sales Location </label>
                                                     <div class="input-group">
-                                                        <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
+                                                        <select name="placementStatus" id="placementStatus"
+                                                                class="form-control input-sm null" onchange="">
                                                             <option value="Active">Choose</option>
                                                         </select>
                                                     </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <label for="client" class="d-block mb-1">Sales Location</label>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label for="client" class="d-block mb-1">Sales Location</label>
                                                     <div class="input-group">
-                                                        <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
+                                                        <select name="placementStatus" id="placementStatus"
+                                                                class="form-control input-sm null" onchange="">
                                                             <option value="Active">Choose</option>
                                                         </select>
                                                     </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <label for="client" class="d-block mb-1">Sales Division </label>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label for="client" class="d-block mb-1">Sales Division </label>
                                                     <div class="input-group">
-                                                        <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
+                                                        <select name="placementStatus" id="placementStatus"
+                                                                class="form-control input-sm null" onchange="">
                                                             <option value="Active">Choose</option>
                                                         </select>
                                                     </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <label for="client" class="d-block mb-1">Purchase Division</label>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label for="client" class="d-block mb-1">Purchase Division</label>
                                                     <div class="input-group">
-                                                    <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
+                                                        <select name="placementStatus" id="placementStatus"
+                                                                class="form-control input-sm null" onchange="">
                                                             <option value="Active">Choose</option>
                                                         </select>
                                                     </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <label for="client" class="d-block mb-1">Sales Department </label>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label for="client" class="d-block mb-1">Sales Department </label>
                                                     <div class="input-group">
-                                                        <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
+                                                        <select name="placementStatus" id="placementStatus"
+                                                                class="form-control input-sm null" onchange="">
                                                             <option value="Active">Choose</option>
                                                         </select>
                                                     </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <label for="client" class="d-block mb-1">Purchase Dept</label>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label for="client" class="d-block mb-1">Purchase Dept</label>
                                                     <div class="input-group">
-                                                        <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
+                                                        <select name="placementStatus" id="placementStatus"
+                                                                class="form-control input-sm null" onchange="">
                                                             <option value="Active">Choose</option>
                                                         </select>
                                                     </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <label for="client" class="d-block mb-1">Sales Project </label>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label for="client" class="d-block mb-1">Sales Project </label>
                                                     <div class="input-group">
-                                                        <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
+                                                        <select name="placementStatus" id="placementStatus"
+                                                                class="form-control input-sm null" onchange="">
                                                             <option value="Active">Choose</option>
                                                         </select>
                                                     </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <label for="client" class="d-block mb-1">Purchase Project</label>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label for="client" class="d-block mb-1">Purchase Project</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control form-control-sm" placeholder="Search">
+                                                        <input type="text" class="form-control form-control-sm"
+                                                               placeholder="Search">
 
                                                     </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <label for="client" class="d-block mb-1">Sales Cost Centre</label>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label for="client" class="d-block mb-1">Sales Cost Centre</label>
                                                     <div class="input-group">
-                                                        <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
+                                                        <select name="placementStatus" id="placementStatus"
+                                                                class="form-control input-sm null" onchange="">
                                                             <option value="Active">Choose</option>
                                                         </select>
                                                     </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <label for="client" class="d-block mb-1">Purchase Cost Centre</label>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label for="client"
+                                                           class="d-block mb-1">Purchase Cost Centre</label>
                                                     <div class="input-group">
-                                                        <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
+                                                        <select name="placementStatus" id="placementStatus"
+                                                                class="form-control input-sm null" onchange="">
                                                             <option value="Active">Choose</option>
                                                         </select>
                                                     </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <br>
-                                        <div class="col-sm-12">
+                                            <br>
+                                            <div class="col-sm-12">
                                                 <button type="submit" class="btn btn-primary">Search</button>
-                                                <a class="btn btn-default  waves-light" role="button" >Clear</a>
+                                                <a class="btn btn-default  waves-light" role="button">Clear</a>
+                                            </div>
+                                            <!-------- 2nd tab end ----->
                                         </div>
-                                        <!-------- 2nd tab end ----->
-                                    </div>
-                                    <div class="tab-pane fade" id="custom-content-below-messages" role="tabpanel" aria-labelledby="custom-content-below-messages-tab">
-                                        <div class="col-sm-">
-                                            <div class="form-group">
-                                                <label class="control-label">Start Date</label>
+                                        <div class="tab-pane fade" id="custom-content-below-messages" role="tabpanel"
+                                             aria-labelledby="custom-content-below-messages-tab">
+                                            <div class="col-sm-">
+                                                <div class="form-group">
+                                                    <label class="control-label">Start Date</label>
                                                     <div class="input-daterange input-group">
 
-                                                        <input id="startDate_start_X" name="fromStartDate_X" value="" type="text" class="bsDP form-control input-sm" data-date-start-date="" data-date-end-date="" placeholder="dd/MM/yyyy">
+                                                        <input id="startDate_start_X" name="fromStartDate_X" value=""
+                                                               type="text" class="bsDP form-control input-sm"
+                                                               data-date-start-date="" data-date-end-date=""
+                                                               placeholder="dd/MM/yyyy">
                                                         <span class="input-group-addon bg-primary b-0 text-white">to</span>
-                                                        <input id="startDate_end_X" name="toStartDate_X" value="" type="text" class="bsDP form-control input-sm" data-date-start-date="" data-date-end-date="" placeholder="dd/MM/yyyy">
+                                                        <input id="startDate_end_X" name="toStartDate_X" value=""
+                                                               type="text" class="bsDP form-control input-sm"
+                                                               data-date-start-date="" data-date-end-date=""
+                                                               placeholder="dd/MM/yyyy">
 
-                                                        <input id="startDate_start" name="fromStartDate" value="" type="hidden">
-                                                        <input id="startDate_end" name="toStartDate" value="" type="hidden">
+                                                        <input id="startDate_start" name="fromStartDate" value=""
+                                                               type="hidden">
+                                                        <input id="startDate_end" name="toStartDate" value=""
+                                                               type="hidden">
 
                                                         <div class="input-group-btn">
-                                                            <button type="button" class="btn waves-effect waves-light btn-primary dropdown-toggle input-sm" data-toggle="dropdown" style="overflow: hidden; position: relative;" aria-expanded="false">Options <span class="caret"></span></button>
+                                                            <button type="button"
+                                                                    class="btn waves-effect waves-light btn-primary dropdown-toggle input-sm"
+                                                                    data-toggle="dropdown"
+                                                                    style="overflow: hidden; position: relative;"
+                                                                    aria-expanded="false">Options <span
+                                                                    class="caret"></span></button>
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dr-today" id="startDate_todayRange" href="#">Today</a></li>
-                                                                <li><a class="dr-yesterday" id="startDate_yesterdayRange" href="#">Yesterday</a></li>
+                                                                <li><a class="dr-today" id="startDate_todayRange"
+                                                                       href="#">Today</a></li>
+                                                                <li><a class="dr-yesterday"
+                                                                       id="startDate_yesterdayRange"
+                                                                       href="#">Yesterday</a></li>
                                                                 <li class="divider"></li>
-                                                                <li><a class="dr-last7" id="startDate_7daysRange" href="#">Last 7 Days</a></li>
-                                                                <li><a class="dr-last30" id="startDate_30daysRange" href="#">Last 30 Days</a></li>
+                                                                <li><a class="dr-last7" id="startDate_7daysRange"
+                                                                       href="#">Last 7 Days</a></li>
+                                                                <li><a class="dr-last30" id="startDate_30daysRange"
+                                                                       href="#">Last 30 Days</a></li>
                                                                 <li class="divider"></li>
-                                                                <li><a class="dr-thisweek" id="startDate_thisWeekRange" href="#">This Week</a></li>
-                                                                <li><a class="dr-lastweek" id="startDate_lastWeekRange" href="#">Last Week</a></li>
+                                                                <li><a class="dr-thisweek" id="startDate_thisWeekRange"
+                                                                       href="#">This Week</a></li>
+                                                                <li><a class="dr-lastweek" id="startDate_lastWeekRange"
+                                                                       href="#">Last Week</a></li>
                                                                 <li class="divider"></li>
-                                                                <li><a class="dr-thismonth" id="startDate_thisMonthRange" href="#">This Month</a></li>
-                                                                <li><a class="dr-lastmonth" id="startDate_lastMonthRange" href="#">Last Month</a></li>
+                                                                <li><a class="dr-thismonth"
+                                                                       id="startDate_thisMonthRange"
+                                                                       href="#">This Month</a></li>
+                                                                <li><a class="dr-lastmonth"
+                                                                       id="startDate_lastMonthRange"
+                                                                       href="#">Last Month</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-sm-">
-                                            <div class="form-group">
-                                                <label class="control-label">End Date</label>
+                                            <div class="col-sm-">
+                                                <div class="form-group">
+                                                    <label class="control-label">End Date</label>
                                                     <div class="input-daterange input-group">
 
-                                                        <input id="endDate_start_X" name="fromEndDate_X" value="" type="text" class="bsDP form-control input-sm" data-date-start-date="" data-date-end-date="" placeholder="dd/MM/yyyy">
+                                                        <input id="endDate_start_X" name="fromEndDate_X" value=""
+                                                               type="text" class="bsDP form-control input-sm"
+                                                               data-date-start-date="" data-date-end-date=""
+                                                               placeholder="dd/MM/yyyy">
                                                         <span class="input-group-addon bg-primary b-0 text-white">to</span>
-                                                        <input id="endDate_end_X" name="toEndDate_X" value="" type="text" class="bsDP form-control input-sm" data-date-start-date="" data-date-end-date="" placeholder="dd/MM/yyyy">
+                                                        <input id="endDate_end_X" name="toEndDate_X" value=""
+                                                               type="text" class="bsDP form-control input-sm"
+                                                               data-date-start-date="" data-date-end-date=""
+                                                               placeholder="dd/MM/yyyy">
 
-                                                        <input id="endDate_start" name="fromEndDate" value="" type="hidden">
+                                                        <input id="endDate_start" name="fromEndDate" value=""
+                                                               type="hidden">
                                                         <input id="endDate_end" name="toEndDate" value="" type="hidden">
 
                                                         <div class="input-group-btn">
-                                                            <button type="button" class="btn waves-effect waves-light btn-primary dropdown-toggle input-sm" data-toggle="dropdown" style="overflow: hidden; position: relative;" aria-expanded="false">Options <span class="caret"></span></button>
+                                                            <button type="button"
+                                                                    class="btn waves-effect waves-light btn-primary dropdown-toggle input-sm"
+                                                                    data-toggle="dropdown"
+                                                                    style="overflow: hidden; position: relative;"
+                                                                    aria-expanded="false">Options <span
+                                                                    class="caret"></span></button>
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dr-today" id="endDate_todayRange" href="#">Today</a></li>
-                                                                <li><a class="dr-yesterday" id="endDate_yesterdayRange" href="#">Yesterday</a></li>
+                                                                <li><a class="dr-today" id="endDate_todayRange"
+                                                                       href="#">Today</a></li>
+                                                                <li><a class="dr-yesterday" id="endDate_yesterdayRange"
+                                                                       href="#">Yesterday</a></li>
                                                                 <li class="divider"></li>
-                                                                <li><a class="dr-last7" id="endDate_7daysRange" href="#">Last 7 Days</a></li>
-                                                                <li><a class="dr-last30" id="endDate_30daysRange" href="#">Last 30 Days</a></li>
+                                                                <li><a class="dr-last7" id="endDate_7daysRange"
+                                                                       href="#">Last 7 Days</a></li>
+                                                                <li><a class="dr-last30" id="endDate_30daysRange"
+                                                                       href="#">Last 30 Days</a></li>
                                                                 <li class="divider"></li>
-                                                                <li><a class="dr-thisweek" id="endDate_thisWeekRange" href="#">This Week</a></li>
-                                                                <li><a class="dr-lastweek" id="endDate_lastWeekRange" href="#">Last Week</a></li>
+                                                                <li><a class="dr-thisweek" id="endDate_thisWeekRange"
+                                                                       href="#">This Week</a></li>
+                                                                <li><a class="dr-lastweek" id="endDate_lastWeekRange"
+                                                                       href="#">Last Week</a></li>
                                                                 <li class="divider"></li>
-                                                                <li><a class="dr-thismonth" id="endDate_thisMonthRange" href="#">This Month</a></li>
-                                                                <li><a class="dr-lastmonth" id="endDate_lastMonthRange" href="#">Last Month</a></li>
+                                                                <li><a class="dr-thismonth" id="endDate_thisMonthRange"
+                                                                       href="#">This Month</a></li>
+                                                                <li><a class="dr-lastmonth" id="endDate_lastMonthRange"
+                                                                       href="#">Last Month</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -408,182 +496,674 @@
                                             <div class="col-sm-">
                                                 <div class="form-group">
                                                     <label class="control-label">Created Date</label>
-                                                        <div class="input-daterange input-group">
+                                                    <div class="input-daterange input-group">
 
-                                                            <input id="createdDate_start_X" name="fromCreatedDate_X" value="" type="text" class="bsDP form-control input-sm" data-date-start-date="" data-date-end-date="" placeholder="dd/MM/yyyy">
-                                                            <span class="input-group-addon bg-primary b-0 text-white">to</span>
-                                                            <input id="createdDate_end_X" name="toCreatedDate_X" value="" type="text" class="bsDP form-control input-sm" data-date-start-date="" data-date-end-date="" placeholder="dd/MM/yyyy">
+                                                        <input id="createdDate_start_X" name="fromCreatedDate_X"
+                                                               value="" type="text" class="bsDP form-control input-sm"
+                                                               data-date-start-date="" data-date-end-date=""
+                                                               placeholder="dd/MM/yyyy">
+                                                        <span class="input-group-addon bg-primary b-0 text-white">to</span>
+                                                        <input id="createdDate_end_X" name="toCreatedDate_X" value=""
+                                                               type="text" class="bsDP form-control input-sm"
+                                                               data-date-start-date="" data-date-end-date=""
+                                                               placeholder="dd/MM/yyyy">
 
-                                                            <input id="createdDate_start" name="fromCreatedDate" value="" type="hidden">
-                                                            <input id="createdDate_end" name="toCreatedDate" value="" type="hidden">
+                                                        <input id="createdDate_start" name="fromCreatedDate" value=""
+                                                               type="hidden">
+                                                        <input id="createdDate_end" name="toCreatedDate" value=""
+                                                               type="hidden">
 
-                                                            <div class="input-group-btn">
-                                                                <button type="button" class="btn waves-effect waves-light btn-primary dropdown-toggle input-sm" data-toggle="dropdown" style="overflow: hidden; position: relative;">Options <span class="caret"></span></button>
-                                                                <ul class="dropdown-menu">
-                                                                    <li><a class="dr-today" id="createdDate_todayRange" href="#">Today</a></li>
-                                                                    <li><a class="dr-yesterday" id="createdDate_yesterdayRange" href="#">Yesterday</a></li>
-                                                                    <li class="divider"></li>
-                                                                    <li><a class="dr-last7" id="createdDate_7daysRange" href="#">Last 7 Days</a></li>
-                                                                    <li><a class="dr-last30" id="createdDate_30daysRange" href="#">Last 30 Days</a></li>
-                                                                    <li class="divider"></li>
-                                                                    <li><a class="dr-thisweek" id="createdDate_thisWeekRange" href="#">This Week</a></li>
-                                                                    <li><a class="dr-lastweek" id="createdDate_lastWeekRange" href="#">Last Week</a></li>
-                                                                    <li class="divider"></li>
-                                                                    <li><a class="dr-thismonth" id="createdDate_thisMonthRange" href="#">This Month</a></li>
-                                                                    <li><a class="dr-lastmonth" id="createdDate_lastMonthRange" href="#">Last Month</a></li>
-                                                                </ul>
-                                                            </div>
+                                                        <div class="input-group-btn">
+                                                            <button type="button"
+                                                                    class="btn waves-effect waves-light btn-primary dropdown-toggle input-sm"
+                                                                    data-toggle="dropdown"
+                                                                    style="overflow: hidden; position: relative;">
+                                                                Options <span class="caret"></span></button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dr-today" id="createdDate_todayRange"
+                                                                       href="#">Today</a></li>
+                                                                <li><a class="dr-yesterday"
+                                                                       id="createdDate_yesterdayRange" href="#">Yesterday</a>
+                                                                </li>
+                                                                <li class="divider"></li>
+                                                                <li><a class="dr-last7" id="createdDate_7daysRange"
+                                                                       href="#">Last 7 Days</a></li>
+                                                                <li><a class="dr-last30" id="createdDate_30daysRange"
+                                                                       href="#">Last 30 Days</a></li>
+                                                                <li class="divider"></li>
+                                                                <li><a class="dr-thisweek"
+                                                                       id="createdDate_thisWeekRange"
+                                                                       href="#">This Week</a></li>
+                                                                <li><a class="dr-lastweek"
+                                                                       id="createdDate_lastWeekRange"
+                                                                       href="#">Last Week</a></li>
+                                                                <li class="divider"></li>
+                                                                <li><a class="dr-thismonth"
+                                                                       id="createdDate_thisMonthRange" href="#">This Month</a>
+                                                                </li>
+                                                                <li><a class="dr-lastmonth"
+                                                                       id="createdDate_lastMonthRange" href="#">Last Month</a>
+                                                                </li>
+                                                            </ul>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-">
-                                                    <div class="form-group">
-                                                        <label class="control-label">Modified Date</label>
-                                                            <div class="input-daterange input-group">
+                                            </div>
+                                            <div class="col-sm-">
+                                                <div class="form-group">
+                                                    <label class="control-label">Modified Date</label>
+                                                    <div class="input-daterange input-group">
 
-                                                                <input id="modifiedDate_start_X" name="fromModifiedDate_X" value="" type="text" class="bsDP form-control input-sm" data-date-start-date="" data-date-end-date="" placeholder="dd/MM/yyyy">
-                                                                <span class="input-group-addon bg-primary b-0 text-white">to</span>
-                                                                <input id="modifiedDate_end_X" name="toModifiedDate_X" value="" type="text" class="bsDP form-control input-sm" data-date-start-date="" data-date-end-date="" placeholder="dd/MM/yyyy">
+                                                        <input id="modifiedDate_start_X" name="fromModifiedDate_X"
+                                                               value="" type="text" class="bsDP form-control input-sm"
+                                                               data-date-start-date="" data-date-end-date=""
+                                                               placeholder="dd/MM/yyyy">
+                                                        <span class="input-group-addon bg-primary b-0 text-white">to</span>
+                                                        <input id="modifiedDate_end_X" name="toModifiedDate_X" value=""
+                                                               type="text" class="bsDP form-control input-sm"
+                                                               data-date-start-date="" data-date-end-date=""
+                                                               placeholder="dd/MM/yyyy">
 
-                                                                <input id="modifiedDate_start" name="fromModifiedDate" value="" type="hidden">
-                                                                <input id="modifiedDate_end" name="toModifiedDate" value="" type="hidden">
+                                                        <input id="modifiedDate_start" name="fromModifiedDate" value=""
+                                                               type="hidden">
+                                                        <input id="modifiedDate_end" name="toModifiedDate" value=""
+                                                               type="hidden">
 
-                                                                <div class="input-group-btn">
-                                                                    <button type="button" class="btn waves-effect waves-light btn-primary dropdown-toggle input-sm" data-toggle="dropdown" style="overflow: hidden; position: relative;" aria-expanded="false">Options <span class="caret"></span></button>
-                                                                    <ul class="dropdown-menu">
-                                                                        <li><a class="dr-today" id="modifiedDate_todayRange" href="#">Today</a></li>
-                                                                        <li><a class="dr-yesterday" id="modifiedDate_yesterdayRange" href="#">Yesterday</a></li>
-                                                                        <li class="divider"></li>
-                                                                        <li><a class="dr-last7" id="modifiedDate_7daysRange" href="#">Last 7 Days</a></li>
-                                                                        <li><a class="dr-last30" id="modifiedDate_30daysRange" href="#">Last 30 Days</a></li>
-                                                                        <li class="divider"></li>
-                                                                        <li><a class="dr-thisweek" id="modifiedDate_thisWeekRange" href="#">This Week</a></li>
-                                                                        <li><a class="dr-lastweek" id="modifiedDate_lastWeekRange" href="#">Last Week</a></li>
-                                                                        <li class="divider"></li>
-                                                                        <li><a class="dr-thismonth" id="modifiedDate_thisMonthRange" href="#">This Month</a></li>
-                                                                        <li><a class="dr-lastmonth" id="modifiedDate_lastMonthRange" href="#">Last Month</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
+                                                        <div class="input-group-btn">
+                                                            <button type="button"
+                                                                    class="btn waves-effect waves-light btn-primary dropdown-toggle input-sm"
+                                                                    data-toggle="dropdown"
+                                                                    style="overflow: hidden; position: relative;"
+                                                                    aria-expanded="false">Options <span
+                                                                    class="caret"></span></button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dr-today" id="modifiedDate_todayRange"
+                                                                       href="#">Today</a></li>
+                                                                <li><a class="dr-yesterday"
+                                                                       id="modifiedDate_yesterdayRange" href="#">Yesterday</a>
+                                                                </li>
+                                                                <li class="divider"></li>
+                                                                <li><a class="dr-last7" id="modifiedDate_7daysRange"
+                                                                       href="#">Last 7 Days</a></li>
+                                                                <li><a class="dr-last30" id="modifiedDate_30daysRange"
+                                                                       href="#">Last 30 Days</a></li>
+                                                                <li class="divider"></li>
+                                                                <li><a class="dr-thisweek"
+                                                                       id="modifiedDate_thisWeekRange" href="#">This Week</a>
+                                                                </li>
+                                                                <li><a class="dr-lastweek"
+                                                                       id="modifiedDate_lastWeekRange" href="#">Last Week</a>
+                                                                </li>
+                                                                <li class="divider"></li>
+                                                                <li><a class="dr-thismonth"
+                                                                       id="modifiedDate_thisMonthRange" href="#">This Month</a>
+                                                                </li>
+                                                                <li><a class="dr-lastmonth"
+                                                                       id="modifiedDate_lastMonthRange" href="#">Last Month</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <br>
-                                        <div class="col-sm-12">
-                                            <button type="submit" class="btn btn-primary">Search</button>
-                                            <a class="btn btn-default  waves-light" role="button" >Clear</a>
+                                            </div>
+                                            <br>
+                                            <div class="col-sm-12">
+                                                <button type="submit" class="btn btn-primary">Search</button>
+                                                <a class="btn btn-default  waves-light" role="button">Clear</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+
                         </div>
-
-
-
-
                     </div>
                 </div>
             </div>
-	    </div>
-    </div>
+        </div>
 
-     <div class="row">
+        <div class="row">
 
-          <div class="col-12">
+            <div class="col-12">
 
-            <div class="card">
-              <div class="card-header" style="background-color:white;">
-                    <button type="submit" class="btn btn-light">Choose Column</button>
-                <div class="card-tools">
+                <div class="card">
+                    <div class="card-header" style="background-color:white;">
+                        <button type="submit" class="btn btn-light">Choose Column</button>
+                        <div class="card-tools">
 
-                  <!-- <button type="button" class="btn btn-sm btn-primary" @click="newModal">
+                            <!-- <button type="button" class="btn btn-sm btn-primary" @click="newModal">
                       <i class="fa fa-plus-square"></i>
                       Add New
                   </button> -->
+                        </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body table-responsive p-0">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>Action </th>
+                                <th>Ref</th>
+                                <th>Start</th>
+                                <th>End </th>
+                                <th>Job title </th>
+                                <th>Contractor</th>
+                                <th>Provider</th>
+                                <th>Payroll</th>
+                                <th>Consultant</th>
+                                <th>Client name</th>
+                                <th>Client reference ID</th>
+                                <th>Manager </th>
+                                <th>Created at</th>
+                                <th>Modified at</th>
+                                <th>Default rate</th>
+                                <th>Default rate pay</th>
+                                <th>Default rate charge </th>
+                                <th>Default rate type </th>
+                                <th>Predicted margin </th>
+
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr role="row" class="odd">
+                                <td>
+                                    <div class="input-group-append">
+                                    <div class="dropdown">
+                                        <button
+                                        class="btn btn-primary btn-size dropdown-toggle"
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >
+                                        Edit
+                                        </button>
+                                        <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuButton"
+                                        >
+                                        <a class="dropdown-item" href="#">View Summary </a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </td>
+                                <td class=" dt-left">Pmt1</td>
+                                <td class=" dt-left">21/05/2018</td>
+                                <td class=" dt-left">Unknown</td>
+                                <td class=" dt-left">Welder</td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/worker/edit?refCode=ef380a15-2445-4d76-849b-b5770b3cb01b">Alex Ockendon (Wkr2)</a>
+                                </td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve Slater (Con1)</a>
+                                </td>
+                                <td class=" dt-left"><a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight Shipyard Company Limited</a>
+                                </td>
+                                <td class=" dt-left">Cli2</td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/user/show/8fa68956-5941-48da-920b-86bedb7677bc?returnTo=/summary/agencySum">Robert Myram (Mgr2)</a>
+                                </td>
+                                <td class="dt-left sorting_1"></td>
+                                <td class=" dt-left">25/05/2018 15:05</td>
+                                <td class=" dt-left">02/11/2021 11:09</td>
+                                <td class=" dt-left">No</td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left">5230 - (Day) - Fabrication &amp; Welding Re-Works Labour</td>
+                                <td class=" dt-right">19.00</td>
+                                <td class=" dt-right">20.50</td>
+                                <td class=" dt-left">hourly</td>
+                            </tr>
+                            <tr role="row" class="even">
+                                       <td>
+                                    <div class="input-group-append">
+                                    <div class="dropdown">
+                                        <button
+                                        class="btn btn-primary btn-size dropdown-toggle"
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >
+                                        Edit
+                                        </button>
+                                        <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuButton"
+                                        >
+                                        <a class="dropdown-item" href="#">View Summary </a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </td>
+                                <td class=" dt-left">Pmt2</td>
+                                <td class=" dt-left">21/05/2018</td>
+                                <td class=" dt-left">Unknown</td>
+                                <td class=" dt-left">Welder</td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/worker/edit?refCode=9e1d25f9-f29c-46b1-ad1f-db9dcd6f118d">Darren Nash (Wkr1)</a>
+                                </td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve Slater (Con1)</a>
+                                </td>
+                                <td class=" dt-left"><a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight Shipyard Company Limited</a>
+                                </td>
+                                <td class=" dt-left">Cli2</td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/user/show/8fa68956-5941-48da-920b-86bedb7677bc?returnTo=/summary/agencySum">Robert Myram (Mgr2)</a>
+                                </td>
+                                <td class="dt-left sorting_1"></td>
+                                <td class=" dt-left">25/05/2018 15:08</td>
+                                <td class=" dt-left">28/09/2020 09:12</td>
+                                <td class=" dt-left">No</td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left">5405 (DAY) - Engineering Fuel System -  Labour</td>
+                                <td class=" dt-right">19.00</td>
+                                <td class=" dt-right">21.50</td>
+                                <td class=" dt-left">hourly</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                       <td>
+                                    <div class="input-group-append">
+                                    <div class="dropdown">
+                                        <button
+                                        class="btn btn-primary btn-size dropdown-toggle"
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >
+                                        Edit
+                                        </button>
+                                        <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuButton"
+                                        >
+                                        <a class="dropdown-item" href="#">View Summary </a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </td>
+                                <td class=" dt-left">Pmt4</td>
+                                <td class=" dt-left">21/05/2018</td>
+                                <td class=" dt-left">Unknown</td>
+                                <td class=" dt-left">Welder</td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/worker/edit?refCode=0356d7a5-3360-4237-a310-36d2cfbc8a25">Andrew  Kent (Wkr3)</a>
+                                </td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve Slater (Con1)</a>
+                                </td>
+                                <td class=" dt-left"><a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight Shipyard Company Limited</a>
+                                </td>
+                                <td class=" dt-left">Cli2</td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/user/show/8fa68956-5941-48da-920b-86bedb7677bc?returnTo=/summary/agencySum">Robert Myram (Mgr2)</a>
+                                </td>
+                                <td class="dt-left sorting_1"></td>
+                                <td class=" dt-left">25/05/2018 15:09</td>
+                                <td class=" dt-left">04/10/2021 16:24</td>
+                                <td class=" dt-left">No</td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left">02.0100 - FABRICATION - SUPERVISION</td>
+                                <td class=" dt-right">19.00</td>
+                                <td class=" dt-right">21.50</td>
+                                <td class=" dt-left">hourly</td>
+                            </tr>
+                            <tr role="row" class="even">
+                                        <td>
+                                    <div class="input-group-append">
+                                    <div class="dropdown">
+                                        <button
+                                        class="btn btn-primary btn-size dropdown-toggle"
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >
+                                        Edit
+                                        </button>
+                                        <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuButton"
+                                        >
+                                        <a class="dropdown-item" href="#">View Summary </a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </td>
+                                <td class=" dt-left">Pmt5</td>
+                                <td class=" dt-left">04/06/2018</td>
+                                <td class=" dt-left">Unknown</td>
+                                <td class=" dt-left">Welder</td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/worker/edit?refCode=5645f34e-32bc-4061-92c6-80b1a2558a70">Darren Warnes (Wkr8)</a>
+                                </td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve Slater (Con1)</a>
+                                </td>
+                                <td class=" dt-left"><a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight Shipyard Company Limited</a>
+                                </td>
+                                <td class=" dt-left">Cli2</td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/user/show/8fa68956-5941-48da-920b-86bedb7677bc?returnTo=/summary/agencySum">Robert Myram (Mgr2)</a>
+                                </td>
+                                <td class="dt-left sorting_1"></td>
+                                <td class=" dt-left">06/06/2018 21:27</td>
+                                <td class=" dt-left">02/10/2020 16:32</td>
+                                <td class=" dt-left">No</td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left">5405 (DAY) - Engineering Fuel System -  Labour</td>
+                                <td class=" dt-right">19.00</td>
+                                <td class=" dt-right">21.50</td>
+                                <td class=" dt-left">hourly</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                       <td>
+                                    <div class="input-group-append">
+                                    <div class="dropdown">
+                                        <button
+                                        class="btn btn-primary btn-size dropdown-toggle"
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >
+                                        Edit
+                                        </button>
+                                        <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuButton"
+                                        >
+                                        <a class="dropdown-item" href="#">View Summary </a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </td>
+                                <td class=" dt-left">Pmt10</td>
+                                <td class=" dt-left">04/06/2018</td>
+                                <td class=" dt-left">Unknown</td>
+                                <td class=" dt-left">Labourer</td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/worker/edit?refCode=0fa07892-8e20-477f-bed8-4a8833f86a25">Dean  Gasper (Wkr5)</a>
+                                </td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve Slater (Con1)</a>
+                                </td>
+                                <td class=" dt-left"><a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight Shipyard Company Limited</a>
+                                </td>
+                                <td class=" dt-left">Cli2</td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/user/show/4472c2fb-c2b1-4608-9be0-82f0cefa31e9?returnTo=/summary/agencySum">Jack Rushton (Mgr9)</a>
+                                </td>
+                                <td class="dt-left sorting_1"></td>
+                                <td class=" dt-left">06/06/2018 21:32</td>
+                                <td class=" dt-left">12/10/2021 08:31</td>
+                                <td class=" dt-left">No</td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left">11.0100 - WARRANTY - PROVISION</td>
+                                <td class=" dt-right">13.00</td>
+                                <td class=" dt-right">15.00</td>
+                                <td class=" dt-left">hourly</td>
+                            </tr>
+                            <tr role="row" class="even">
+                                         <td>
+                                    <div class="input-group-append">
+                                    <div class="dropdown">
+                                        <button
+                                        class="btn btn-primary btn-size dropdown-toggle"
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >
+                                        Edit
+                                        </button>
+                                        <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuButton"
+                                        >
+                                        <a class="dropdown-item" href="#">View Summary </a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </td>
+                                <td class=" dt-left">Pmt15</td>
+                                <td class=" dt-left">11/06/2018</td>
+                                <td class=" dt-left">Unknown</td>
+                                <td class=" dt-left">Welder</td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/worker/edit?refCode=8e9ec34a-a537-49ce-a07a-ad31cc9d9cab">Jack Kelsey (Wkr15)</a>
+                                </td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve Slater (Con1)</a>
+                                </td>
+                                <td class=" dt-left"><a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight Shipyard Company Limited</a>
+                                </td>
+                                <td class=" dt-left">Cli2</td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/user/show/8fa68956-5941-48da-920b-86bedb7677bc?returnTo=/summary/agencySum">Robert Myram (Mgr2)</a>
+                                </td>
+                                <td class="dt-left sorting_1"></td>
+                                <td class=" dt-left">11/06/2018 20:20</td>
+                                <td class=" dt-left">14/05/2020 10:14</td>
+                                <td class=" dt-left">No</td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left">5230 - (Day) - Fabrication &amp; Welding Re-Works Labour</td>
+                                <td class=" dt-right">19.00</td>
+                                <td class=" dt-right">21.50</td>
+                                <td class=" dt-left">hourly</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                         <td>
+                                    <div class="input-group-append">
+                                    <div class="dropdown">
+                                        <button
+                                        class="btn btn-primary btn-size dropdown-toggle"
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >
+                                        Edit
+                                        </button>
+                                        <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuButton"
+                                        >
+                                        <a class="dropdown-item" href="#">View Summary </a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </td>
+                                <td class=" dt-left">Pmt20</td>
+                                <td class=" dt-left">25/06/2018</td>
+                                <td class=" dt-left">Unknown</td>
+                                <td class=" dt-left">Heavy Gang</td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/worker/edit?refCode=0861755e-9871-4500-91a4-c63e4e2e43fb">Daniel  Fishburn (Wkr20)</a>
+                                </td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve Slater (Con1)</a>
+                                </td>
+                                <td class=" dt-left"><a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight Shipyard Company Limited</a>
+                                </td>
+                                <td class=" dt-left">Cli2</td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/user/show/4472c2fb-c2b1-4608-9be0-82f0cefa31e9?returnTo=/summary/agencySum">Jack Rushton (Mgr9)</a>
+                                </td>
+                                <td class="dt-left sorting_1"></td>
+                                <td class=" dt-left">02/07/2018 21:20</td>
+                                <td class=" dt-left">05/08/2020 16:09</td>
+                                <td class=" dt-left">No</td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left">7110 (DAY) - Site Maintenance</td>
+                                <td class=" dt-right">12.00</td>
+                                <td class=" dt-right">13.50</td>
+                                <td class=" dt-left">hourly</td>
+                            </tr>
+                            <tr role="row" class="even">
+                                          <td>
+                                    <div class="input-group-append">
+                                    <div class="dropdown">
+                                        <button
+                                        class="btn btn-primary btn-size dropdown-toggle"
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >
+                                        Edit
+                                        </button>
+                                        <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuButton"
+                                        >
+                                        <a class="dropdown-item" href="#">View Summary </a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </td>
+                                <td class=" dt-left">Pmt23</td>
+                                <td class=" dt-left">09/07/2018</td>
+                                <td class=" dt-left">Unknown</td>
+                                <td class=" dt-left">Fabricator</td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/worker/edit?refCode=5d892dad-ef77-4f7a-a606-368405523689">Neil McCulloch (Wkr22)</a>
+                                </td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve Slater (Con1)</a>
+                                </td>
+                                <td class=" dt-left"><a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight Shipyard Company Limited</a>
+                                </td>
+                                <td class=" dt-left">Cli2</td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/user/show/8fa68956-5941-48da-920b-86bedb7677bc?returnTo=/summary/agencySum">Robert Myram (Mgr2)</a>
+                                </td>
+                                <td class="dt-left sorting_1"></td>
+                                <td class=" dt-left">09/07/2018 23:29</td>
+                                <td class=" dt-left">16/03/2020 10:09</td>
+                                <td class=" dt-left">No</td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left">5312 (DAY) - Windows Installation</td>
+                                <td class=" dt-right">19.00</td>
+                                <td class=" dt-right">21.50</td>
+                                <td class=" dt-left">hourly</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                         <td>
+                                    <div class="input-group-append">
+                                    <div class="dropdown">
+                                        <button
+                                        class="btn btn-primary btn-size dropdown-toggle"
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >
+                                        Edit
+                                        </button>
+                                        <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuButton"
+                                        >
+                                        <a class="dropdown-item" href="#">View Summary </a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </td>
+                                <td class=" dt-left">Pmt24</td>
+                                <td class=" dt-left">17/07/2018</td>
+                                <td class=" dt-left">Unknown</td>
+                                <td class=" dt-left">Fabricator</td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/worker/edit?refCode=b29c690e-8f3f-460d-b8ab-5156b89a12d6">Gregory Wilson (Wkr24)</a>
+                                </td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve Slater (Con1)</a>
+                                </td>
+                                <td class=" dt-left"><a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight Shipyard Company Limited</a>
+                                </td>
+                                <td class=" dt-left">Cli2</td>
+                                <td class=" dt-left"><a target="_blank"
+                                                        href="/user/show/8fa68956-5941-48da-920b-86bedb7677bc?returnTo=/summary/agencySum">Robert Myram (Mgr2)</a>
+                                </td>
+                                <td class="dt-left sorting_1"></td>
+                                <td class=" dt-left">18/07/2018 10:26</td>
+                                <td class=" dt-left">10/10/2021 23:55</td>
+                                <td class=" dt-left">No</td>
+                                <td class=" dt-left"></td>
+                                <td class=" dt-left">02.0100 - FABRICATION - SUPERVISION</td>
+                                <td class=" dt-right">19.00</td>
+                                <td class=" dt-right">21.50</td>
+                                <td class=" dt-left">hourly</td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                    <div class="card-footer">
+                        <pagination :data="products" @pagination-change-page="getResults"></pagination>
+                        <button type="submit" class="btn btn-info">Download Report</button>
+                        <button type="submit" class="btn btn-info">Download Details Report</button>
+                        <button type="submit" class="btn btn-info">CSV</button>
+
+                    </div>
+
                 </div>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body table-responsive p-0">
-                <table class="table table-hover">
-                  <thead>
-                    <tr>
-                      <th>Ref</th>
-                      <th>Start</th>
-                      <th>End</th>
-                      <th>Job Title</th>
-                      <th>Contractor</th>
-                      <th>Provider</th>
-                      <th>Payroll</th>
-                      <th>Consultant</th>
-                      <th>Client Name</th>
-                      <th>Client Ref</th>
-                      <th>Manager</th>
-                      <th>Created</th>
-                      <th>Modified</th>
-                      <th>Default Rate</th>
-                      <th>Default Rate Pay</th>
-                      <th>Default Rate Charge</th>
-                      <th>Default Rate Type</th>
-                      <th>Predicted Margin</th>
-                      <th>Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                     <tr v-for="product in products.data" :key="product.id">
-
-                      <td>{{product.id}}</td>
-                      <td><div class="icheck-primary d-inline">
-                        <input type="checkbox" id="checkboxPrimary1" checked>
-                        <label for="checkboxPrimary1">
-                        </label>
-                      </div></td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.card-body -->
-              <div class="card-footer">
-                  <pagination :data="products" @pagination-change-page="getResults"></pagination>
-                    <button type="submit" class="btn btn-info">Download Report</button>
-                    <button type="submit" class="btn btn-info">Download Details Report</button>
-                    <button type="submit" class="btn btn-info">CSV</button>
-
-              </div>
-
+                <!-- /.card -->
             </div>
-            <!-- /.card -->
-          </div>
         </div>
 
-</section>
+    </section>
 </template>
 
 <script>
     import VueTagsInput from '@johmun/vue-tags-input';
 
     export default {
-      components: {
-          VueTagsInput,
+        components: {
+            VueTagsInput,
         },
         data () {
             return {
                 editmode: false,
-                products : {},
+                products: {},
                 form: new Form({
-                    id : '',
-                    category : '',
+                    id: '',
+                    category: '',
                     name: '',
                     description: '',
-                    tags:  [],
+                    tags: [],
                     photo: '',
                     category_id: '',
                     price: '',
@@ -591,125 +1171,125 @@
                 }),
                 categories: [],
 
-                tag:  '',
+                tag: '',
                 autocompleteItems: [],
             }
         },
         methods: {
 
-          getResults(page = 1) {
+            getResults(page = 1) {
 
-              this.$Progress.start();
+                this.$Progress.start();
 
-              axios.get('/api/draft?page=' + page).then(({ data }) => (this.products = data.data));
+                axios.get('/api/draft?page=' + page).then(({data}) => (this.products = data.data));
 
-              this.$Progress.finish();
-          },
-          loadProducts(){
+                this.$Progress.finish();
+            },
+            loadProducts(){
 
-            // if(this.$gate.isAdmin()){
-              axios.get("/api/draft").then(({ data }) => (this.products = data.data));
-            // }
-          },
-          loadCategories(){
-              axios.get("/api/category/list").then(({ data }) => (this.categories = data.data));
-          },
-          loadTags(){
-              axios.get("/api/tag/list").then(response => {
-                  this.autocompleteItems = response.data.data.map(a => {
-                      return { text: a.name, id: a.id };
-                  });
-              }).catch(() => console.warn('Oh. Something went wrong'));
-          },
-          editModal(product){
-              this.editmode = true;
-              this.form.reset();
-              $('#addNew').modal('show');
-              this.form.fill(product);
-          },
-          newModal(){
-              this.editmode = false;
-              this.form.reset();
-              $('#addNew').modal('show');
-          },
-          createProduct(){
-              this.$Progress.start();
-
-              this.form.post('api/product')
-              .then((data)=>{
-                if(data.data.success){
-                  $('#addNew').modal('hide');
-
-                  Toast.fire({
-                        icon: 'success',
-                        title: data.data.message
+                // if(this.$gate.isAdmin()){
+                axios.get("/api/draft").then(({data}) => (this.products = data.data));
+                // }
+            },
+            loadCategories(){
+                axios.get("/api/category/list").then(({data}) => (this.categories = data.data));
+            },
+            loadTags(){
+                axios.get("/api/tag/list").then(response => {
+                    this.autocompleteItems = response.data.data.map(a => {
+                        return {text: a.name, id: a.id};
                     });
-                  this.$Progress.finish();
-                  this.loadProducts();
+                }).catch(() => console.warn('Oh. Something went wrong'));
+            },
+            editModal(product){
+                this.editmode = true;
+                this.form.reset();
+                $('#addNew').modal('show');
+                this.form.fill(product);
+            },
+            newModal(){
+                this.editmode = false;
+                this.form.reset();
+                $('#addNew').modal('show');
+            },
+            createProduct(){
+                this.$Progress.start();
 
-                } else {
-                  Toast.fire({
-                      icon: 'error',
-                      title: 'Some error occured! Please try again'
-                  });
+                this.form.post('api/product')
+                    .then((data) => {
+                        if (data.data.success) {
+                            $('#addNew').modal('hide');
 
-                  this.$Progress.failed();
-                }
-              })
-              .catch(()=>{
+                            Toast.fire({
+                                icon: 'success',
+                                title: data.data.message
+                            });
+                            this.$Progress.finish();
+                            this.loadProducts();
 
-                  Toast.fire({
-                      icon: 'error',
-                      title: 'Some error occured! Please try again'
-                  });
-              })
-          },
-          updateProduct(){
-              this.$Progress.start();
-              this.form.put('api/product/'+this.form.id)
-              .then((response) => {
-                  // success
-                  $('#addNew').modal('hide');
-                  Toast.fire({
-                    icon: 'success',
-                    title: response.data.message
-                  });
-                  this.$Progress.finish();
-                      //  Fire.$emit('AfterCreate');
+                        } else {
+                            Toast.fire({
+                                icon: 'error',
+                                title: 'Some error occured! Please try again'
+                            });
 
-                  this.loadProducts();
-              })
-              .catch(() => {
-                  this.$Progress.fail();
-              });
-
-          },
-          deleteProduct(id){
-              Swal.fire({
-                  title: 'Are you sure?',
-                  text: "You won't be able to revert this!",
-                  showCancelButton: true,
-                  confirmButtonColor: '#d33',
-                  cancelButtonColor: '#3085d6',
-                  confirmButtonText: 'Yes, delete it!'
-                  }).then((result) => {
-
-                      // Send request to the server
-                        if (result.value) {
-                              this.form.delete('api/product/'+id).then(()=>{
-                                      Swal.fire(
-                                      'Deleted!',
-                                      'Your file has been deleted.',
-                                      'success'
-                                      );
-                                  // Fire.$emit('AfterCreate');
-                                  this.loadProducts();
-                              }).catch((data)=> {
-                                  Swal.fire("Failed!", data.message, "warning");
-                              });
+                            this.$Progress.failed();
                         }
-                  })
-          },
+                    })
+                    .catch(() => {
+
+                        Toast.fire({
+                            icon: 'error',
+                            title: 'Some error occured! Please try again'
+                        });
+                    })
+            },
+            updateProduct(){
+                this.$Progress.start();
+                this.form.put('api/product/' + this.form.id)
+                    .then((response) => {
+                        // success
+                        $('#addNew').modal('hide');
+                        Toast.fire({
+                            icon: 'success',
+                            title: response.data.message
+                        });
+                        this.$Progress.finish();
+                        //  Fire.$emit('AfterCreate');
+
+                        this.loadProducts();
+                    })
+                    .catch(() => {
+                        this.$Progress.fail();
+                    });
+
+            },
+            deleteProduct(id){
+                Swal.fire({
+                    title: 'Are you sure?',
+                    text: "You won't be able to revert this!",
+                    showCancelButton: true,
+                    confirmButtonColor: '#d33',
+                    cancelButtonColor: '#3085d6',
+                    confirmButtonText: 'Yes, delete it!'
+                }).then((result) => {
+
+                    // Send request to the server
+                    if (result.value) {
+                        this.form.delete('api/product/' + id).then(() => {
+                            Swal.fire(
+                                'Deleted!',
+                                'Your file has been deleted.',
+                                'success'
+                            );
+                            // Fire.$emit('AfterCreate');
+                            this.loadProducts();
+                        }).catch((data) => {
+                            Swal.fire("Failed!", data.message, "warning");
+                        });
+                    }
+                })
+            },
 
         },
         mounted() {
@@ -730,11 +1310,11 @@
             },
         },
         computed: {
-          filteredItems() {
-            return this.autocompleteItems.filter(i => {
-              return i.text.toLowerCase().indexOf(this.tag.toLowerCase()) !== -1;
-            });
-          },
+            filteredItems() {
+                return this.autocompleteItems.filter(i => {
+                    return i.text.toLowerCase().indexOf(this.tag.toLowerCase()) !== -1;
+                });
+            },
         },
     }
 </script>

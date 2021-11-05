@@ -1,7 +1,7 @@
 <template>
     <section class="content">
         <div class="container-fluid">
-            <div class="row">
+            <!--<div class="row">
                 <div class="col-lg-12">
                     <div class="alert alert-info" role="alert">
                         <i class="mdi mdi-alert-circle-outline mr-2"></i>
@@ -20,11 +20,11 @@
                                 <small></small>
                             </span>
                         </div>
-                        <!-- /.info-box-content -->
+                        &lt;!&ndash; /.info-box-content &ndash;&gt;
                     </div>
-                    <!-- /.info-box -->
+                    &lt;!&ndash; /.info-box &ndash;&gt;
                 </div>
-                <!-- /.col -->
+                &lt;!&ndash; /.col &ndash;&gt;
 
                 <div class="col-12 col-sm-6 col-md-3">
                     <div class="info-box mb-3">
@@ -33,13 +33,13 @@
                             <span class="info-box-text">23 And Over</span>
                             <span class="info-box-number">£8.91</span>
                         </div>
-                        <!-- /.info-box-content -->
+                        &lt;!&ndash; /.info-box-content &ndash;&gt;
                     </div>
-                    <!-- /.info-box -->
+                    &lt;!&ndash; /.info-box &ndash;&gt;
                 </div>
-                <!-- /.col -->
+                &lt;!&ndash; /.col &ndash;&gt;
 
-                <!-- fix for small devices only -->
+                &lt;!&ndash; fix for small devices only &ndash;&gt;
                 <div class="clearfix hidden-md-up"></div>
 
                 <div class="col-12 col-sm-6 col-md-3">
@@ -50,11 +50,11 @@
                             <span class="info-box-text">21 to 22</span>
                             <span class="info-box-number">£8.36</span>
                         </div>
-                        <!-- /.info-box-content -->
+                        &lt;!&ndash; /.info-box-content &ndash;&gt;
                     </div>
-                    <!-- /.info-box -->
+                    &lt;!&ndash; /.info-box &ndash;&gt;
                 </div>
-                <!-- /.col -->
+                &lt;!&ndash; /.col &ndash;&gt;
                 <div class="col-12 col-sm-6 col-md-3">
                     <div class="info-box mb-3">
                         <span class="info-box-icon bg-warning text-white elevation-1"><i class="fas fa-users"></i></span>
@@ -63,13 +63,13 @@
                             <span class="info-box-text">18 to 20</span>
                             <span class="info-box-number">£6.56</span>
                         </div>
-                        <!-- /.info-box-content -->
+                        &lt;!&ndash; /.info-box-content &ndash;&gt;
                     </div>
-                    <!-- /.info-box -->
+                    &lt;!&ndash; /.info-box &ndash;&gt;
                 </div>
-                <!-- /.col -->
+                &lt;!&ndash; /.col &ndash;&gt;
 
-                <!-- fix for small devices only -->
+                &lt;!&ndash; fix for small devices only &ndash;&gt;
                 <div class="clearfix hidden-md-up"></div>
 
                 <div class="col-12 col-sm-6 col-md-3">
@@ -80,11 +80,11 @@
                             <span class="info-box-text">Under 18</span>
                             <span class="info-box-number">£4.62</span>
                         </div>
-                        <!-- /.info-box-content -->
+                        &lt;!&ndash; /.info-box-content &ndash;&gt;
                     </div>
-                    <!-- /.info-box -->
+                    &lt;!&ndash; /.info-box &ndash;&gt;
                 </div>
-                <!-- /.col -->
+                &lt;!&ndash; /.col &ndash;&gt;
                 <div class="col-12 col-sm-6 col-md-3">
                     <div class="info-box mb-3">
                         <span class="info-box-icon bg-indigo text-white elevation-1"><i class="fas fa-chalkboard-teacher"></i></span>
@@ -93,13 +93,13 @@
                             <span class="info-box-text">Apprentice</span>
                             <span class="info-box-number">£4.30</span>
                         </div>
-                        <!-- /.info-box-content -->
+                        &lt;!&ndash; /.info-box-content &ndash;&gt;
                     </div>
-                    <!-- /.info-box -->
+                    &lt;!&ndash; /.info-box &ndash;&gt;
                 </div>
-                <!-- /.col -->
+                &lt;!&ndash; /.col &ndash;&gt;
             </div>
-            <!-- /.row -->
+            &lt;!&ndash; /.row &ndash;&gt;
             <div class="row">
                 <div class="col-lg-12">
                     <div class="card card-primary">
@@ -144,7 +144,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
             <div class="row">
                 <div class="col-lg-12">
                     <div class="card card-primary">
@@ -189,17 +189,6 @@
                                         <td>
                                             <span class="badge bg-primary"
                                                 >1</span
-                                            >
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            To Self Bill Invoice
-                                        </td>
-                                        <td class="text-right">&#163;0.00</td>
-                                        <td>
-                                            <span class="badge bg-primary"
-                                                >0</span
                                             >
                                         </td>
                                     </tr>
@@ -311,26 +300,19 @@
                     <div class="card card-warning h-100 mb-3">
                         <div class="card-header">
                             <h3 class="card-title text-white">
-                                Timesheet Deadline
+                                Margins
                             </h3>
                         </div>
                         <div class="card-body  table-responsive ">
                             <table class="table table-hover text-nowrap">
                                 <tbody>
                                     <tr>
-                                        <td>Changes To Approve</td>
-                                        <td>
-                                            <span
-                                                class="badge bg-warning text-white"
-                                                >8</span
-                                            >
-                                        </td>
+                                        <td>Last Week</td>
+                                        <td class="text-right">£ 300.55 </td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            Email Account Access
-                                        </td>
-                                        <td class="text-right">&nbsp;</td>
+                                        <td>Last Month</td>
+                                        <td class="text-right">&#163;1200.00</td>
                                     </tr>
                                 </tbody>
                             </table>

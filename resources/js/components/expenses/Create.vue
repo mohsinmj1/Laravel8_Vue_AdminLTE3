@@ -1,523 +1,285 @@
 <template>
-    <section class="content">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Timesheet</h2>
-                </div>
-                <div class="col-lg-12">
-                    <div class="card card-primary card-outline card-tabs">
-                        <div class="p-2 pb-4">
-                            <div class="timesheet_create_tit">
-                                <h2>SELECT PLACEMENT</h2>
-                            </div>
-                            <div class="row mt-2">
-                                <div class="col-lg-6">
-                                    <label for="placement" class="d-block mb-1"
-                                        >Placement</label
-                                    >
-                                    <input
-                                        type="text"
-                                        placeholder="Pmt1 (Wight Shipyard Company Limited) - Alex Ockendon - Welder"
-                                        class="w-100"
-                                    />
-                                </div>
-                                <div class="col-lg-6">
-                                    <label for="placement" class="d-block mb-1"
-                                        >Timesheet Period</label
-                                    >
-                                    <input type="text" class="w-100" disabled />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-white pb-4">
-                <div class="row">
-                    <div class="col-lg-12 mb-2">
-                        <ul
-                            class="nav nav-tabs"
-                            id="custom-tabs-three-tab"
-                            role="tablist"
-                        >
-                            <li class="nav-item">
-                                <a class="nav-link timesheet_color"
-                                    >Placement</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-12 px-4 mt-2 mb-2">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div
-                                    class="card card-primary card-outline card-tabs"
-                                >
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="p-2 pl-4">
-                                                <div
-                                                    class="timesheet_create_tit"
-                                                >
-                                                    <h2 class="pb-2">
-                                                        PLACEMENT INFORMATION
-                                                    </h2>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-5">
-                                                        <h6>Ref Code:</h6>
-                                                        <h6>Job Title:</h6>
-                                                        <h6>Date Placed:</h6>
-                                                        <h6>Start Date:</h6>
-                                                        <h6>End Date:</h6>
-                                                    </div>
-                                                    <div class="col-lg-7">
-                                                        <h6
-                                                            class="timesheet_color"
-                                                        >
-                                                            Pmt1
-                                                        </h6>
-                                                        <h6>Welder</h6>
-                                                        <h6>
-                                                            Aluminium Welder
-                                                        </h6>
-                                                        <h6>25/05/2018</h6>
-                                                        <h6>21/05/2018</h6>
-                                                        <h6>Unknown</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div
-                                    class="card card-primary card-outline card-tabs"
-                                >
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="p-2 pl-4">
-                                                <div
-                                                    class="timesheet_create_tit"
-                                                >
-                                                    <h2 class="pb-2">
-                                                        PARTICIPANTS
-                                                    </h2>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-5">
-                                                        <h6>Agency:</h6>
-                                                        <h6>Worker:</h6>
-                                                        <h6>Payroll:</h6>
-                                                        <h6>Client:</h6>
-                                                        <h6>Manager:</h6>
-                                                        <h6>Consultant:</h6>
-                                                        <h6>
-                                                            Alternative
-                                                            Managers:
-                                                        </h6>
-                                                    </div>
-                                                    <div class="col-lg-7">
-                                                        <h6>
-                                                            Ateca Marine Ltd
-                                                        </h6>
-                                                        <h6
-                                                            class="timesheet_color"
-                                                        >
-                                                            Alex Ockendon
-                                                        </h6>
-                                                        <h6>
-                                                            Weekly (Limited)
-                                                        </h6>
-                                                        <h6
-                                                            class="timesheet_color"
-                                                        >
-                                                            Wight Shipyard
-                                                            Company Limited
-                                                        </h6>
-                                                        <h6
-                                                            class="timesheet_color"
-                                                        >
-                                                            Robert Myram
-                                                        </h6>
-                                                        <h6
-                                                            class="timesheet_color"
-                                                        >
-                                                            Steve Slater
-                                                        </h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- toggle -->
-                    <div class="col-lg-12 px-4">
-                        <button
-                            class="btn btn-primary w-100 pt-1 pb-1"
-                            type="button"
-                            data-toggle="collapse"
-                            data-target="#collapseExample"
-                            aria-expanded="false"
-                            aria-controls="collapseExample"
-                        >
-                            <span><i class="fas fa-chevron-down"></i></span>
-                            Additional Details
-                        </button>
-                        <div class="collapse" id="collapseExample">
-                            <div class="col-lg-12 mt-1">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div
-                                            class="card card-primary card-tabs"
-                                        >
-                                            <div class="row">
-                                                <div class="col-lg-12">
-                                                    <div class="p-2 pl-4">
-                                                        <div class="row">
-                                                            <div
-                                                                class="col-lg-6"
-                                                            >
-                                                                <h6>
-                                                                    Sales
-                                                                    Project:
-                                                                </h6>
-                                                                <h6>
-                                                                    Project
-                                                                    Code:
-                                                                </h6>
-                                                                <h6>
-                                                                    Client Site:
-                                                                </h6>
-                                                                <h6>
-                                                                    Timesheet
-                                                                    Approval:
-                                                                </h6>
-                                                                <h6>
-                                                                    Chargeable
-                                                                    Expense
-                                                                    Approval..
-                                                                </h6>
-                                                                <h6>
-                                                                    Non-Chargeable
-                                                                    Expense A..
-                                                                </h6>
-                                                            </div>
-                                                            <div
-                                                                class="col-lg-6 mt-auto"
-                                                            >
-                                                                <h6>
-                                                                    Wights
-                                                                    Approval
-                                                                    (Katie)
-                                                                </h6>
-                                                                <h6>
-                                                                    Wights
-                                                                    Approval
-                                                                    (Katie)
-                                                                </h6>
-                                                                <h6>
-                                                                    Agency
-                                                                    Consultant
-                                                                    Approval
-                                                                </h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div
-                                            class="card card-primary card-tabs"
-                                        >
-                                            <div class="row">
-                                                <div class="col-lg-12">
-                                                    <div class="p-2 pl-4">
-                                                        <div class="row">
-                                                            <div
-                                                                class="col-lg-5"
-                                                            >
-                                                                <h6>
-                                                                    Timesheet
-                                                                    Duration:
-                                                                </h6>
-                                                                <h6>
-                                                                    TA Terminal
-                                                                    Ref:
-                                                                </h6>
-                                                                <h6>
-                                                                    Timesheet
-                                                                    Layout:
-                                                                </h6>
-                                                                <h6>
-                                                                    Charge
-                                                                    Currency:
-                                                                </h6>
-                                                                <h6>
-                                                                    Timesheet
-                                                                    Pay
-                                                                    Currency:
-                                                                </h6>
-                                                                <h6>
-                                                                    Expense Pay
-                                                                    Currency:
-                                                                </h6>
-                                                            </div>
-                                                            <div
-                                                                class="col-lg-7"
-                                                            >
-                                                                <h6>
-                                                                    weekly
-                                                                </h6>
-                                                                <h6>&nbsp;</h6>
-                                                                <h6>
-                                                                    Standard
-                                                                </h6>
-                                                                <h6>
-                                                                    GBP
-                                                                </h6>
-                                                                <h6>
-                                                                    GBP
-                                                                </h6>
-                                                                <h6>
-                                                                    GBP GBP
-                                                                </h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End toggle -->
-                </div>
-            </div>
-            <div class="col-lg-12 px-0 mt-3">
-                <div class="card card-primary">
-                    <div class="card-header">
-                        <h3 class="card-title">
-                            IMPORTANT TIMESHEET INFORMATION
-                        </h3>
-                    </div>
-                    <div class="card-body">
-                        <p class="mb-0">
-                            Please ensure that your timesheet is submitted by
-                            Monday 9:00am the following week. The following
-                            details must be checked and confirmed before
-                            submitting:
-                        </p>
-                        <ul class="mt-0">
-                            <li>Your <strong>rates</strong> are correct</li>
-                            <li>
-                                Your <strong>project codes </strong> are correct
-                            </li>
-                            <li>Your <strong> hours </strong>are correct</li>
-                            <li>
-                                The <strong> date range </strong> is correct
-                            </li>
-                            <li>
-                                The summary at the bottom of the page shows the
-                                <strong> correct total for your wages </strong>
-                            </li>
-                        </ul>
-                        <p>
-                            If something is not accurate or you are having any
-                            difficulties then please speak with your line
-                            manager for assistance.
-                        </p>
-                        <strong
-                            >Changes which need to be made after the cut-off
-                            time of 9:00am on Monday will result in delays in
-                            receiving your correct wages, please double check
-                            all details very carefully before
-                            submitting.</strong
-                        >
-                        <p>Thank you</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-12 px-0 mt-0">
-                <div class="card card-primary card-outline card-tabs">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="p-2 pl-4">
-                                <div class="timesheet_create_tit">
-                                    <h2 class="pb-2">
-                                        PAPER SHEETS
-                                    </h2>
-                                    <div class="upload-btn-wrapper">
-                                        <button class="btn">
-                                            Upload Paper
-                                        </button>
-                                        <input type="file" name="myfile" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-12 px-0 mt-0">
-                <div class="card card-primary card-outline card-tabs">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="p-2 pl-4">
-                                <div class="timesheet_create_tit">
-                                    <h2 class="pb-2">
-                                        RATE INFORMATION
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <table
-                                class="table table-responsive table text-nowrap  rate_information"
-                            >
-                                <thead>
-                                    <tr>
-                                        <th></th>
-                                        <th>Rate</th>
-
-                                        <th>Period</th>
-
-                                        <th style="text-align:center">Pay</th>
-
-                                        <th style="text-align:center">
-                                            Charge
-                                        </th>
-
-                                        <th style="text-align:center">
-                                            Total Units
-                                        </th>
-
-                                        <th style="text-align:center">
-                                            Total Pay
-                                        </th>
-
-                                        <th style="text-align:center">
-                                            Total Charge
-                                        </th>
-
-                                        <th style="text-align:center">
-                                            Margin
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <!-- ngRepeat: rate in rates | filter:{isViewable: true} -->
-                                    <tr class="ng-scope">
-                                        <td style="height:26px;"></td>
-                                        <td>
-                                            02.0100 - FABRICATION - SUPERVISION
-                                        </td>
-
-                                        <td>Hourly</td>
-
-                                        <td style="text-align:center">
-                                            GBP19.00
-                                        </td>
-
-                                        <td style="text-align:center">
-                                            GBP21.50
-                                        </td>
-
-                                        <!-- ngIf: rate.fields.indexOf('finish') > -1 || rate.fields.indexOf('hours') > -1 -->
-                                        <td style="text-align:center">
-                                            00:00
-                                        </td>
-                                        <td style="text-align:center">
-                                            GBP0.00
-                                        </td>
-
-                                        <td style="text-align:center">
-                                            GBP0.00
-                                        </td>
-
-                                        <td style="text-align:center">
-                                            GBP0.00 (0%)
-                                        </td>
-                                    </tr>
-                                    <!-- end ngRepeat: rate in rates | filter:{isViewable: true} -->
-                                    <tr class="ng-scope">
-                                        <td style="height:26px;"></td>
-                                        <td>
-                                            02.0105 - FABRICATION - UNPACKING
-                                            CUT PARTS
-                                        </td>
-
-                                        <td>Hourly</td>
-
-                                        <td style="text-align:center">
-                                            GBP19.00
-                                        </td>
-
-                                        <td style="text-align:center">
-                                            GBP21.50
-                                        </td>
-
-                                        <!-- ngIf: rate.fields.indexOf('finish') > -1 || rate.fields.indexOf('hours') > -1 -->
-                                        <td style="text-align:center">
-                                            00:00
-                                        </td>
-                                        <!-- end ngIf: rate.fields.indexOf('finish') > -1 || rate.fields.indexOf('hours') > -1 -->
-                                        <!-- ngIf: rate.fields.indexOf('finish') == -1 && rate.fields.indexOf('hours') == -1 -->
-
-                                        <td style="text-align:center">
-                                            GBP0.00
-                                        </td>
-
-                                        <td style="text-align:center">
-                                            GBP0.00
-                                        </td>
-
-                                        <td style="text-align:center">
-                                            GBP0.00 (0%)
-                                        </td>
-                                    </tr>
-                                    <!-- end ngRepeat: rate in rates | filter:{isViewable: true} -->
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-
-                                        <td></td>
-
-                                        <td></td>
-
-                                        <td></td>
-
-                                        <td></td>
-
-                                        <td style="text-align:center">
-                                            <strong>GBP0.00</strong>
-                                        </td>
-
-                                        <td style="text-align:center">
-                                            <strong>GBP0.00</strong>
-                                        </td>
-
-                                        <td style="text-align:center">
-                                            <strong>GBP0.00 (0%)</strong>
-                                        </td>
-                                    </tr>
-                                </tfoot>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <section class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Create Expenses</h2>
         </div>
-    </section>
+        <div class="col-lg-12">
+          <div class="card card-primary card-outline">
+            <div class="panel-heading">
+              <h3 class="panel-title">entering expense instructions</h3>
+            </div>
+
+            <div class="panel-body">
+              <strong>VAT Registered Contractors</strong> - Please enter the
+              <strong>NET</strong> value on your receipts.&nbsp; VAT will be
+              added to your claim when your payment is generated.<br />
+              <br />
+              <strong>Non VAT Registered Contractors</strong> - Please enter the
+              <strong>GROSS</strong> value on your receipts in to the
+              <strong>NET</strong> field.
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="card card-primary card-outline">
+            <div class="panel-heading">
+              <h3 class="panel-title">Select Placement</h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-sm-6">
+                  <label for="placementRef" class="control-label"
+                    >Placement</label
+                  >
+                  <select class="form-control form-control-sm">
+                    <option>Select a placement</option>
+                    <option>
+                      Pmt257 - Test Role (Client: Wight Shipyard Company
+                      Limited) (Manager: Test Account Manager)
+                    </option>
+                  </select>
+                </div>
+                <div class="col-sm-6 d-flex">
+                  <div class="ml-auto">
+                    <label class="control-label">Period:</label>
+                    <select class="form-control form-control-sm">
+                      <option>Select a Period</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="card card-primary card-outline">
+            <div class="panel-heading">
+              <h3 class="panel-title">Expense Claim</h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-sm-8 mb-3">
+                  <label class="control-label">Description</label>
+                  <input class="form-control form-control-sm" />
+                </div>
+              </div>
+              <div class="row m-0">
+                <form action="" method="post">
+                  <table class="table table-responsive table-hover">
+                    <thead>
+                      <tr>
+                        <th>Category</th>
+                        <th>Receipt Date</th>
+                        <th>Description</th>
+                        <th>Units</th>
+                        <th>Unit Net Rate</th>
+                        <th>Net</th>
+                        <th>Sales Tax Rate</th>
+                        <th>Sales Tax</th>
+                        <th>Gross</th>
+                        <th>Currency</th>
+                        <th>Receipt</th>
+                        <th></th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <select class="form-control form-control-sm">
+                            <option>Select a Category</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input
+                            class="form-control form-control-sm"
+                            type="text"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            class="form-control form-control-sm"
+                            type="text"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            class="form-control form-control-sm"
+                            type="text"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            class="form-control form-control-sm"
+                            type="text"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            class="form-control form-control-sm"
+                            type="text"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            class="form-control form-control-sm"
+                            type="text"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            class="form-control form-control-sm"
+                            type="text"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            class="form-control form-control-sm"
+                            type="text"
+                          />
+                        </td>
+                        <td>
+                          <select class="form-control form-control-sm">
+                            <option>Currency</option>
+                          </select>
+                        </td>
+                        <td>
+                          <div class="fileupload btn btn-sm btn-purple">
+                            <span class="d-flex align-items-center text-light">
+                              <i class="fa fa-file-upload"></i>Upload</span
+                            >
+                            <input type="file" class="upload" />
+                          </div>
+                        </td>
+                        <td><i class="fa fa-copy fa-lg text-primary"></i></td>
+                        <td><i class="fa fa-trash fa-lg text-danger"></i></td>
+                      </tr>
+                    </tbody>
+                    <div class="mt-2">
+                      <input
+                        type="submit"
+                        value="Add Row"
+                        class="btn btn-primary btn-sm mx-2"
+                      />
+                    </div>
+                  </table>
+                  <div class="d-flex">
+                    <input
+                      type="submit"
+                      value="Cancel"
+                      class="btn btn-danger btn-sm mx-2"
+                    />
+
+                    <input
+                      type="submit"
+                      value="Save"
+                      class="btn btn-primary btn-sm mx-2"
+                    />
+
+                    <div class="ml-auto">
+                      <button class="btn btn-sm btn-dark">
+                        Copy a previous expense claim
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card card-primary card-outline">
+            <div class="panel-heading">
+              <h3 class="panel-title">Paper Upload</h3>
+            </div>
+            <div class="panel-body">
+              <div class="section group">
+                <div class="col span_1_of_2 exp_paper_receiptFilename">
+                  <div class="form-group">
+                    <label class="control-label">Upload</label>
+                    <div class="input-group mb-3">
+                      <div class="fileupload btn btn-purple btn-sm">
+                        <span class="text-light">
+                          <i class="fa fa-file-upload"></i>Upload</span
+                        >
+                        <input class="upload" type="file" />
+                      </div>
+                      <div class="fileupload btn btn-danger btn-sm mx-2">
+                        <span class="text-ligt">
+                          <i class="fa fa-trash"></i>Delete</span
+                        >
+                        <input class="upload" type="" />
+                      </div>
+                    </div>
+                    <!-- The global progress bar -->
+                    <div id="paper_progress" class="progress progress-md">
+                      <div class="progress-bar progress-bar-purple"></div>
+                    </div>
+                    <!-- The container for the uploaded files -->
+                    <div class="files"><p></p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div
+            id="mileage"
+            class="panel panel-border panel-primary"
+            style="display: none"
+          >
+            <div class="panel-heading">
+              <h3 class="panel-title">Mileage</h3>
+            </div>
+            <div class="panel-body">
+              <table class="table table-condensed">
+                <tbody>
+                  <tr>
+                    <td>Standard Rate Mileage Limit:</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>Standard Rate Miles Claimed:</td>
+                    <td id="milesClaimed"></td>
+                  </tr>
+                  <tr>
+                    <td>Standard Rate Miles Remaining:</td>
+                    <td id="milesRemaining"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
+
+
+<style>
+.fileupload {
+  overflow: hidden;
+  position: relative;
+}
+.fileupload input.upload {
+  cursor: pointer;
+  filter: alpha(opacity=0);
+  font-size: 20px;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.btn-purple {
+  background-color: #7266ba !important;
+  border: 1px solid #7266ba !important;
+}
+</style>

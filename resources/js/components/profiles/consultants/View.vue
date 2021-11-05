@@ -477,8 +477,8 @@
 
             <div class="card">
               <div class="card-header" style="background-color:white;">
-
-                                        <button type="submit" class="btn btn-light">
+                  <input name="" placeholder="Search"/>
+                    <button type="submit" class="btn btn-light">
                     Select Page
                     </button>
                     <button type="submit" class="btn btn-light">
@@ -529,19 +529,41 @@
                   </thead>
                   <tbody>
                      <tr v-for="product in products.data" :key="product.id">
-                        <td>{{product.id}}</td>
-                        <td>{{ product.name }}</td>
-                        <td>{{product.name}}</td>
-                        <td>{{product.name}}</td>
-                        <td>{{product.name}}</td>
-                        <td>{{product.name}}</td>
-                        <td>{{product.name}}</td>
-                        <td>{{product.name}}</td>
-                        <td>{{product.name}}</td>
-                        <td>{{product.name}}</td>
-                        <td>{{product.name}}</td>
-                        <td>{{product.name}}</td>
-                        <td>{{product.name}}</td>
+                          
+                        <td><div class="icheck-primary d-inline">
+                        <input type="checkbox" id="checkboxPrimary1" checked>
+                        <label for="checkboxPrimary1">
+                        </label>
+                      </div></td>
+                        <td class=" dt-left">
+                                    <div class="btn-group btn-xs dropdown dropdown-actions-table"><a
+                                            href="/placement/edit?placement=217943"
+                                            class="btn btn-primary btn-xs waves-effect waves-light">Edit</a>
+                                        <button onmouseup="scrollToBottom(this);" type="button"
+                                                class="btn btn-primary btn-xs dropdown-toggle waves-effect waves-light"
+                                                data-toggle="dropdown" aria-expanded="false"><i class="caret"></i>
+                                        </button>
+                                        <ul id="undefined" class="dropdown-menu" role="menu">
+                                              <li><a href="#">Change Role </a></li>
+                                              <li><a href="#">Switch to </a></li>
+                                              <li><a href="#">Messages</a></li>
+                                              <li><a href="#">Workers </a></li>
+                                              <li><a href="#">Manager </a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                        <td>Con9</td>
+                        <td>Callum</td>
+                        <td>Fairweather</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Active	</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
                   </tbody>
                 </table>
