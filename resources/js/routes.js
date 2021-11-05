@@ -52,12 +52,20 @@ export default [
         component: require("./components/expenses/Draft.vue").default
     },
     {
+        path: "/expenses/authorise",
+        component: require("./components/expenses/Authorise.vue").default
+    },
+    {
         path: "/expenses/unauthorised",
         component: require("./components/expenses/Unauthorised.vue").default
     },
     {
         path: "/expenses/approved",
         component: require("./components/expenses/Approved.vue").default
+    },
+    {
+        path: "/expenses/reject",
+        component: require("./components/expenses/Reject.vue").default
     },
     {
         path: "/expenses/search",

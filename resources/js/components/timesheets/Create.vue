@@ -359,8 +359,8 @@
                             <div class="col-lg-6">
                                 <label for="placement" class="d-block mb-1"
                                     >Project Code</label>
-                                     <button class="btn btn-info"@click="showModal">show modal</button>
-    <example-modal ref="modal"></example-modal>
+                                     <!-- <button class="btn btn-info"@click="showModal">show modal</button> -->
+
                                 <input
                                     type="text"
                                     placeholder=""
@@ -416,15 +416,17 @@
                                     <option value="3">02.0105 (DAY) - FABRICATION - UNPACKING CUT PARTS</option>
                                 </select>
                             </div>     
-                            <div class="col-lg-1">
-                                <button class="btn btn-success py-0 px-4" style="line-height:26px;" data-toggle="modal" data-target="#modal-start-time">Start</button>
-                                <!-- <input type="text" style="width:79px" placeholder="hh:mm"> -->
+                            <div class="col-lg-1"> <!--//data-toggle="modal" data-target="#modal-start-time"-->
+                                <button id="startbtn" class="btn btn-success py-0 px-4" style="line-height:26px;" v-on:click="startfn(1)" >Start</button>
+                                <input id="startTime" type="text" style="width:79px;display:none" placeholder="hh:mm">
                             </div>      
                             <div class="col-lg-1">
-                                <input type="text" style="width:79px" placeholder="hh:mm">
+                                <button id="breakbtn"  class="btn btn-success py-0 px-4" style="display:none;line-height:26px;" v-on:click="startfn(2)" >Break</button>
+                                <input id="breakTime" type="text" style="width:79px" placeholder="hh:mm">
                             </div>
                             <div class="col-lg-1">
-                               <input type="text" style="width:79px" placeholder="hh:mm">
+                                <button id="finishbtn" class="btn btn-success py-0 px-4" style="display:none;line-height:26px;" v-on:click="startfn(3)" >Finish</button>
+                               <input id="finishTime" type="text" style="width:79px" placeholder="hh:mm">
                             </div>    
                             <div class="col-lg-1">
                                 00:00
@@ -792,14 +794,53 @@
 <script src="../../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
 <script src="../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
 <script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
 <script>
-
+ 
     export default {
-
+     
         mounted() {
+     
+           
             //Initialize Select2 Elements
             $('.select2').select2()   
             console.log('Creat Timesheet mounted.');
-        }
+        },
+           methods: {
+   startfn: function(event) {
+     var dt = new Date();
+            var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+            if(event==1){
+            $('#startbtn').hide();
+            $('#startTime').show();
+            $('#finishTime').hide();
+            $('#finishbtn').show();
+            $('#breakbtn').show();
+            $('#breakTime').hide();
+            $('#startTime').val(time);
+            }else if(event==2){
+            $('#startbtn').show();
+            $('#startTime').hide();
+            $('#finishTime').hide();
+            $('#finishbtn').show();
+            $('#breakbtn').hide();
+            $('#breakTime').show();
+            $('#breakTime').val(time);
+            }else if(event==3){
+            $('#startbtn').hide();
+            $('#startTime').show();
+            $('#finishTime').show();
+            $('#finishbtn').hide();
+            $('#breakbtn').hide();
+            $('#breakTime').show();
+            $('#finishTime').val(time);
+            }
+          
+            
+          
+            alert(event);
+    }
+      },
+  
     }
 </script>
