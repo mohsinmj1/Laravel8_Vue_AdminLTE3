@@ -83,7 +83,7 @@
                 role="tab"
                 aria-controls="custom-content-below-advance"
                 aria-selected="false"
-                >Advance</a
+                >Advanced</a
               >
             </li>
           </ul>
@@ -918,7 +918,7 @@
                   <label for="client" class="d-block mb-1"
                     >Timesheet Frequency</label
                   >
-                  <select class="form-control select2" style="width: 100%">                                     
+                  <select class="form-control select2" style="width: 100%">
                     <option value="ALL">All</option>
                     <option value="WEEKLY">weekly</option>
                     <option value="WEEKLY_TUE_MON">weekly_tue-mon</option>
@@ -962,7 +962,7 @@
                 </div>
                 <div class="col-lg-6">
                   <label for="client" class="d-block mb-1">Worker Type</label>
-                  <select class="form-control select2" style="width: 100%">                    
+                  <select class="form-control select2" style="width: 100%">
                     <option value="ALL">All</option>
                     <option value="PAYE">PAYE</option>
                     <option value="PAID_AS_PAYE">All Paid PAYE</option>

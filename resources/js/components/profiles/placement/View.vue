@@ -43,11 +43,6 @@
                                                aria-controls="custom-content-below-home" aria-selected="true">Main</a>
                                         </li>
                                         <li class="nav-item" style="width:33.33%">
-                                            <a class="nav-link" id="custom-content-below-profile-tab" data-toggle="pill"
-                                               href="#custom-content-below-profile" role="tab"
-                                               aria-controls="custom-content-below-profile" aria-selected="false">Financial</a>
-                                        </li>
-                                        <li class="nav-item" style="width:33.33%">
                                             <a class="nav-link" id="custom-content-below-messages-tab"
                                                data-toggle="pill" href="#custom-content-below-messages" role="tab"
                                                aria-controls="custom-content-below-messages" aria-selected="false">Data

@@ -24,7 +24,7 @@
                         <th>Worker</th>
                         <th>Worker Type</th>
                         <th>Worker Ref</th>
-                        <th>Worker Wxt Ref</th>
+                        <th>Worker Ext Ref</th>
                         <th>Ltd Company Name</th>
                         <th>Worker Invoice Period </th>
                         <th>Timesheet Start</th>
@@ -38,8 +38,6 @@
                         <th>Project Code</th>
                         <th>Placement Start</th>
                         <th>Placement End</th>
-                        <th>Freehand Ref</th>
-                        <th>Payroll Ref</th>
                         <th>Worker First Name</th>
                         <th>Worker Last Name</th>
                         <th>Agency Name</th>
@@ -58,17 +56,18 @@
                         <th>Pay Currency</th>
                         <th>Client Acc Ref</th>
                         <th>Exported Date</th>
+                        <th>Invoiced Pay NET</th>
+                        <th>Invoiced Pay Gross</th>
+                        <th>Invoiced Pay VAT</th>
                         <th>Total Cost</th>
-                        <th>Purchase Nominal</th>
-                        <th>Sales Nominal</th>
-                        <th>Supplier Accounts Ref</th>
                         <th>Workers Accounts Ref</th>
-                        <th>Supplier Gender</th>
+                        <th>Worker Gender</th>
+                        <th>Invoiced Pay NET (GBP)</th>
+                        <th>Invoiced Charge NET (GBP)</th>
                         <th>Exchange rate Pay</th>
                         <th>Exchange rate Charge</th>
                         <th>Charge</th>
                         <th>Charge Currency</th>
-                        <th>Funds Received</th>
                         <th>Charge GBP</th>
                         <th>Type</th>
                         <th>Approved By</th>
@@ -82,8 +81,6 @@
                         <th>Client Invoice Country</th>
                         <th>Client Ref</th>
                         <th>Client Site</th>
-                        <th>Paper</th>
-                        <th>Sales Project</th>
                         <th>Hours Worked</th>
                         <th>Paid Date</th>
                     </tr>
@@ -92,9 +89,9 @@
                      <tr v-for="product in products.data" :key="product.id">
                       <td>{{product.id}}</td>
                       <td>{{product.name}}</td>
+                      <td>{{product.name}}</td>
+                      <td>{{product.name}}</td>
                       <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
                       <td>{{product.category.name}}</td>
                       <td>{{product.name}}</td>
                       <td>{{product.description | truncate(30, '...')}}</td>
@@ -116,9 +113,6 @@
                       <td>{{product.name}}</td>
                       <td>{{product.description | truncate(30, '...')}}</td>
                       <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.name}}</td>
                       <td>{{product.description | truncate(30, '...')}}</td>
                       <td>{{product.category.name}}</td>
                       <td>{{product.price}}</td>
@@ -163,7 +157,6 @@
               <!-- /.card-body -->
               <div class="card-footer">
                   <pagination :data="products" @pagination-change-page="getResults"></pagination>
-                    <button type="submit" class="btn btn-primary">Submit</button>
                     <button type="submit" class="btn btn-info">Print Report</button>
                     <button type="submit" class="btn btn-info">Print Details Report</button>
                     <button type="submit" class="btn btn-info">CSV</button>
@@ -201,7 +194,7 @@
                     photoUrl: '',
                 }),
                 categories: [],
-              
+
                 tag:  '',
                 autocompleteItems: [],
             }
@@ -211,7 +204,7 @@
           getResults(page = 1) {
 
               this.$Progress.start();
-              
+
               axios.get('/api/draft?page=' + page).then(({ data }) => (this.products = data.data));
 
               this.$Progress.finish();
@@ -324,7 +317,7 @@
 
         },
         mounted() {
-            
+
         },
         created() {
             this.$Progress.start();

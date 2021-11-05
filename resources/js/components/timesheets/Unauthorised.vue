@@ -4,13 +4,13 @@
         <div class="row">
 
           <div class="col-12">
-        
+
             <div class="card">
               <div class="card-header" style="background-color:white;">
                 <h3 class="card-title" style="padding-top:10px;">Unauthorised List</h3>
                     <button style="margin-left:20px;" type="submit" class="btn btn-light">Choose Column</button>
                     <div class="card-tools">
-                  
+
                   <!-- <button type="button" class="btn btn-sm btn-primary" @click="newModal">
                       <i class="fa fa-plus-square"></i>
                       Add New
@@ -84,8 +84,6 @@
                         <th>Client Invoice Country</th>
                         <th>Client Ref</th>
                         <th>Client Site</th>
-                        <th>Paper</th>
-                        <th>Sales Project</th>
                         <th>Hours Worked</th>
                         <th>Paid Date</th>
 
@@ -94,7 +92,6 @@
                   <tbody>
                      <tr>
 
-                      <td></td>
                       <td></td>
                       <td></td>
                       <td></td>
@@ -216,7 +213,7 @@
 
                             <label>Category</label>
                             <select class="form-control" v-model="form.category_id">
-                              <option 
+                              <option
                                   v-for="(cat,index) in categories" :key="index"
                                   :value="index"
                                   :selected="index == form.category_id">{{ cat }}</option>
@@ -270,7 +267,7 @@
                     photoUrl: '',
                 }),
                 categories: [],
-              
+
                 tag:  '',
                 autocompleteItems: [],
             }
@@ -280,7 +277,7 @@
           getResults(page = 1) {
 
               this.$Progress.start();
-              
+
               axios.get('/api/draft?page=' + page).then(({ data }) => (this.products = data.data));
 
               this.$Progress.finish();
@@ -393,7 +390,7 @@
 
         },
         mounted() {
-            
+
         },
         created() {
             this.$Progress.start();
