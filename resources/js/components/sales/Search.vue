@@ -1237,7 +1237,7 @@
                   </button>
                 </div>
               </div>
-              <div class="row">
+              <!-- <div class="row">
                 <div class="col-lg-12">
                   <p>Manual Override:</p>
                 </div>
@@ -1263,7 +1263,7 @@
                     >
                   </p>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
           <!-- /.card -->
