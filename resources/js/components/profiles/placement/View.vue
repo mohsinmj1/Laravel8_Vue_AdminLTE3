@@ -44,7 +44,7 @@
                                     <li class="nav-item" style="width:33.33%">
                                         <a class="nav-link" id="custom-content-below-messages-tab" data-toggle="pill" href="#custom-content-below-messages" role="tab" aria-controls="custom-content-below-messages" aria-selected="false">Data Ranges</a>
                                     </li>
-                                
+
                                 </ul><br>
                                 <div class="tab-content" id="custom-content-below-tabContent">
                                     <div class="tab-pane fade active show" id="custom-content-below-home" role="tabpanel" aria-labelledby="custom-content-below-home-tab">
@@ -56,7 +56,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
-                                                <div class="form-group"> 
+                                                <div class="form-group">
                                                     <label class="control-label" for="jobTitle">Job Title</label>
                                                     <input type="text" format="2" label="Job Title" name="jobTitle" size="20" id="jobTitle" class="form-control form-control-sm" value="">
                                                 </div>
@@ -130,7 +130,7 @@
                                                             <option value="Active">Active</option>
                                                             <option value="Inactive">Inactive</option>
                                                             <option value="All">All</option>
-                                                        </select>                                        
+                                                        </select>
                                                     </div>
                                             </div>
                                         </div>
@@ -153,7 +153,7 @@
                                                             <option value="Active">Weekly paid</option>
                                                             <option value="Inactive">Weekly</option>
                                                             <option value="All">Weekly</option>
-                                                        </select>                                        
+                                                        </select>
                                                     </div>
                                             </div>
                                         </div>
@@ -173,7 +173,7 @@
                                                 <label for="client" class="d-block mb-1">Project Code</label>
                                                     <div class="input-group">
                                                         <input type="text" class="form-control form-control-sm" placeholder="Search">
-                                                    
+
                                                     </div>
                                             </div>
                                         </div>
@@ -196,7 +196,7 @@
                                                             <option value="Active">Weekly paid</option>
                                                             <option value="Inactive">Weekly</option>
                                                             <option value="All">Weekly</option>
-                                                        </select>                                        
+                                                        </select>
                                                     </div>
                                             </div>
                                         </div>
@@ -214,15 +214,15 @@
                                                     <label class="control-label" for="placementItrisId">Sales Sector</label>
                                                         <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
                                                             <option value="Active">Choose</option>
-                                                        </select>                                    
+                                                        </select>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
-                                                <div class="form-group"> 
+                                                <div class="form-group">
                                                     <label class="control-label" for="jobTitle">Purchase Sector</label>
                                                         <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
                                                             <option value="Active">Choose</option>
-                                                        </select>                                  
+                                                        </select>
                                                 </div>
                                             </div>
                                         </div>
@@ -232,8 +232,8 @@
                                                     <div class="input-group">
                                                         <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
                                                             <option value="Active">Choose</option>
-                                                        </select>  
-                                                
+                                                        </select>
+
                                                     </div>
                                             </div>
                                             <div class="col-sm-6">
@@ -241,7 +241,7 @@
                                                     <div class="input-group">
                                                         <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
                                                             <option value="Active">Choose</option>
-                                                        </select>  
+                                                        </select>
                                                     </div>
                                             </div>
                                         </div>
@@ -252,7 +252,7 @@
                                                     <div class="input-group">
                                                         <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
                                                             <option value="Active">Choose</option>
-                                                        </select>  
+                                                        </select>
                                                     </div>
                                             </div>
                                             <div class="col-sm-6">
@@ -260,7 +260,7 @@
                                                     <div class="input-group">
                                                         <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
                                                             <option value="Active">Choose</option>
-                                                        </select>  
+                                                        </select>
                                                     </div>
                                             </div>
                                         </div>
@@ -270,7 +270,7 @@
                                                     <div class="input-group">
                                                         <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
                                                             <option value="Active">Choose</option>
-                                                        </select>  
+                                                        </select>
                                                     </div>
                                             </div>
                                             <div class="col-sm-6">
@@ -278,7 +278,7 @@
                                                     <div class="input-group">
                                                     <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
                                                             <option value="Active">Choose</option>
-                                                        </select>                                       
+                                                        </select>
                                                     </div>
                                             </div>
                                         </div>
@@ -288,7 +288,7 @@
                                                     <div class="input-group">
                                                         <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
                                                             <option value="Active">Choose</option>
-                                                        </select>  
+                                                        </select>
                                                     </div>
                                             </div>
                                             <div class="col-sm-6">
@@ -296,7 +296,7 @@
                                                     <div class="input-group">
                                                         <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
                                                             <option value="Active">Choose</option>
-                                                        </select>                                          
+                                                        </select>
                                                     </div>
                                             </div>
                                         </div>
@@ -306,14 +306,14 @@
                                                     <div class="input-group">
                                                         <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
                                                             <option value="Active">Choose</option>
-                                                        </select>  
+                                                        </select>
                                                     </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <label for="client" class="d-block mb-1">Purchase Project</label>
                                                     <div class="input-group">
                                                         <input type="text" class="form-control form-control-sm" placeholder="Search">
-                                                    
+
                                                     </div>
                                             </div>
                                         </div>
@@ -323,7 +323,7 @@
                                                     <div class="input-group">
                                                         <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
                                                             <option value="Active">Choose</option>
-                                                        </select>  
+                                                        </select>
                                                     </div>
                                             </div>
                                             <div class="col-sm-6">
@@ -331,7 +331,7 @@
                                                     <div class="input-group">
                                                         <select name="placementStatus" id="placementStatus" class="form-control input-sm null" onchange="">
                                                             <option value="Active">Choose</option>
-                                                        </select>                                        
+                                                        </select>
                                                     </div>
                                             </div>
                                         </div>
@@ -347,7 +347,7 @@
                                             <div class="form-group">
                                                 <label class="control-label">Start Date</label>
                                                     <div class="input-daterange input-group">
-                                                        
+
                                                         <input id="startDate_start_X" name="fromStartDate_X" value="" type="text" class="bsDP form-control input-sm" data-date-start-date="" data-date-end-date="" placeholder="dd/MM/yyyy">
                                                         <span class="input-group-addon bg-primary b-0 text-white">to</span>
                                                         <input id="startDate_end_X" name="toStartDate_X" value="" type="text" class="bsDP form-control input-sm" data-date-start-date="" data-date-end-date="" placeholder="dd/MM/yyyy">
@@ -378,7 +378,7 @@
                                             <div class="form-group">
                                                 <label class="control-label">End Date</label>
                                                     <div class="input-daterange input-group">
-                                                        
+
                                                         <input id="endDate_start_X" name="fromEndDate_X" value="" type="text" class="bsDP form-control input-sm" data-date-start-date="" data-date-end-date="" placeholder="dd/MM/yyyy">
                                                         <span class="input-group-addon bg-primary b-0 text-white">to</span>
                                                         <input id="endDate_end_X" name="toEndDate_X" value="" type="text" class="bsDP form-control input-sm" data-date-start-date="" data-date-end-date="" placeholder="dd/MM/yyyy">
@@ -409,7 +409,7 @@
                                                 <div class="form-group">
                                                     <label class="control-label">Created Date</label>
                                                         <div class="input-daterange input-group">
-                                                            
+
                                                             <input id="createdDate_start_X" name="fromCreatedDate_X" value="" type="text" class="bsDP form-control input-sm" data-date-start-date="" data-date-end-date="" placeholder="dd/MM/yyyy">
                                                             <span class="input-group-addon bg-primary b-0 text-white">to</span>
                                                             <input id="createdDate_end_X" name="toCreatedDate_X" value="" type="text" class="bsDP form-control input-sm" data-date-start-date="" data-date-end-date="" placeholder="dd/MM/yyyy">
@@ -440,7 +440,7 @@
                                                     <div class="form-group">
                                                         <label class="control-label">Modified Date</label>
                                                             <div class="input-daterange input-group">
-                                                                
+
                                                                 <input id="modifiedDate_start_X" name="fromModifiedDate_X" value="" type="text" class="bsDP form-control input-sm" data-date-start-date="" data-date-end-date="" placeholder="dd/MM/yyyy">
                                                                 <span class="input-group-addon bg-primary b-0 text-white">to</span>
                                                                 <input id="modifiedDate_end_X" name="toModifiedDate_X" value="" type="text" class="bsDP form-control input-sm" data-date-start-date="" data-date-end-date="" placeholder="dd/MM/yyyy">
@@ -473,28 +473,28 @@
                                             <a class="btn btn-default  waves-light" role="button" >Clear</a>
                                         </div>
                                     </div>
-                                </div>  
+                                </div>
                             </div>
                         </div>
 
-  
 
 
-                    </div>  
+
+                    </div>
                 </div>
-            </div>  
+            </div>
 	    </div>
     </div>
 
      <div class="row">
 
           <div class="col-12">
-        
+
             <div class="card">
               <div class="card-header" style="background-color:white;">
                     <button type="submit" class="btn btn-light">Choose Column</button>
                 <div class="card-tools">
-                  
+
                   <!-- <button type="button" class="btn btn-sm btn-primary" @click="newModal">
                       <i class="fa fa-plus-square"></i>
                       Add New
@@ -506,18 +506,25 @@
                 <table class="table table-hover">
                   <thead>
                     <tr>
-                      <th>ID</th>
-                      <th>Submit</th>
-                      <th>Worker</th>
-                      <th>Worker Type</th>
-                      <th>Worker Ref</th>
-                      <th>Worker Wxt Ref</th>
-                      <th>Ltd Company Name</th>
-                      <th>Worker Invoice Period </th>
-                      <th>Timesheet Start</th>
-                      <th>Paroll/Frequency</th>
+                      <th>Ref</th>
+                      <th>Start</th>
+                      <th>End</th>
+                      <th>Job Title</th>
+                      <th>Contractor</th>
                       <th>Provider</th>
+                      <th>Payroll</th>
                       <th>Consultant</th>
+                      <th>Client Name</th>
+                      <th>Client Ref</th>
+                      <th>Manager</th>
+                      <th>Created</th>
+                      <th>Modified</th>
+                      <th>Default Rate</th>
+                      <th>Default Rate Pay</th>
+                      <th>Default Rate Charge</th>
+                      <th>Default Rate Type</th>
+                      <th>Predicted Margin</th>
+                      <th>Action</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -583,7 +590,7 @@
                     photoUrl: '',
                 }),
                 categories: [],
-              
+
                 tag:  '',
                 autocompleteItems: [],
             }
@@ -593,7 +600,7 @@
           getResults(page = 1) {
 
               this.$Progress.start();
-              
+
               axios.get('/api/draft?page=' + page).then(({ data }) => (this.products = data.data));
 
               this.$Progress.finish();
@@ -706,7 +713,7 @@
 
         },
         mounted() {
-            
+
         },
         created() {
             this.$Progress.start();

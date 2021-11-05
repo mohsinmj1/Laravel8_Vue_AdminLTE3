@@ -38,7 +38,7 @@
     margin-bottom: 20px;
 }
 .panel-body {
-     padding: 15px; 
+     padding: 15px;
 }
 </style>
 
@@ -76,34 +76,6 @@
                     <div class="tab-content" id="custom-content-below-tabContent">
                         <div class="tab-pane fade active show" id="custom-content-below-general" role="tabpanel" aria-labelledby="custom-content-below-general-tab">
                      <div class ="row">
-                            <div class="col-lg-2">
-                                <label for="client" class="d-block mb-1">References</label>
-                                <div class="input-group">
-                                    <input type="text" class="form-control" readonly placeholder="Auto Generated">
-                                </div>
-                            </div>
-                            <div class="custom-control custom-checkbox col-lg-1" style="padding-top: 30px;">
-                                <div class="input-group">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                    <label class="custom-control-label" for="customCheck1">Perm</label>
-                                    <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Classify this placement as perm."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a>
-                                </div>
-                            </div>
-                              <div class="custom-control custom-checkbox col-lg-1" style="padding-top: 30px;">
-                                <div class="input-group">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                    <label class="custom-control-label" for="customCheck1">Bulk</label>
-                                    <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="if tiked then timesheet can be enter using the bulk entry timesheet option.No reminder email will be send.."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a>
-                                </div>
-                            </div>
-                              <div class="custom-control custom-checkbox col-lg-2" style="padding-top: 30px;">
-                                <div class="input-group">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                    <label class="custom-control-label" for="customCheck1">Agency</label>
-                                    <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Only Administrators and Consultants can enter timesheets for this placement if ticked."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a>
-                                </div>
-                            </div>
-
                             <div class="col-lg-3">
                                 <label for="client" class="d-block mb-1">Start Date*</label>
                                 <div class="input-group">
@@ -198,14 +170,14 @@
                                                 </div>
                                             </div>
                                         </div>
-                            
+
                                     <div class="col-lg-7" style="padding-left:0px">
                                         <div class="col-lg-12 row">
                                             <div class="col-lg-5">
-                                                <label for="client" class="d-block mb-1">Job Description</label>
+                                                <label for="client" class="d-block mb-1">Alternative Managers</label>
                                                     <div class="input-group">
                                                         <select name="altManager_from[]" id="altManager" class="form-control input-sm" size="8" multiple="multiple">
-                                                        </select>                                           
+                                                        </select>
                                                     </div>
                                             </div>
                                             <div class="col-lg-2" style="padding-top:35px" >
@@ -216,10 +188,10 @@
                                             </div>
                                             <div class="col-lg-5">
                                                 <div class="row" >
-                                                    <label for="client" class="d-block mb-1">Job Description</label>
+                                                    <label for="client" class="d-block mb-1">Alternative Managers</label>
                                                     <div class="input-group">
                                                         <select name="altManager_from[]" id="altManager" class="form-control input-sm" size="8" multiple="multiple"> </select>
-                                                        
+
                                                     </div>
                                                 </div>
                                                 <div class="row">
@@ -258,13 +230,11 @@
                                                 <th style="white-space:nowrap;">Name</th>
                                                 <th class="number" style="">Pay<br>(<span id="ratePayCurr">GBP</span>)</th>
                                                 <th class="number" style="">Charge<br>(<span id="rateChargeCurr">GBP</span>)</th>
-                                                <th style="white-space:nowrap;">Pay Element</th>
                                                 <th style="display:none;">Period</th>
                                                 <th class="number" style="white-space:nowrap;">Duration<br>(mins)</th>
                                                 <th style="white-space:nowrap;">Fields</th>
                                                 <th style="text-align:center">Show Comment Box</th>
                                                 <th style="text-align:center">Worker Can Select</th>
-                                                <th style="white-space:nowrap;">Time Pattern</th>
                                                 <th style="white-space:nowrap;">Frontend Ref</th>
                                                 <th style="white-space:nowrap;">Backend Ref</th>
                                             </tr>
@@ -282,17 +252,6 @@
                                                     </td>
                                                     <td><input style="min-width:65px;" class="form-control input-xs" id="ratePay0" type="text" name="pay" value=""></td>
                                                     <td><input style="min-width:65px;" class="form-control input-xs" id="rateCharge0" type="text" name="charge" value=""></td>
-                                                    <td>
-                                                        <select name="payElement" style="min-width:200px;" id="ratePayElement0" class="form-control input-xs">
-                                                            <option value="" selected="selected"></option>
-                                                            <option value="1140292">Default - (Pay And Charge | TAX: true | NI: true | HOL: true)</option>
-                                                            <option value="1140293">Overtime - (Pay And Charge | TAX: true | NI: true | HOL: false)</option>
-                                                            <option value="1140323">Overtime - (Pay And Charge | TAX: true | NI: true | HOL: true)</option>
-                                                            <option value="1140299">Placement - (Charge Only | TAX: true | NI: true | HOL: false)</option>
-                                                            <option value="1140324">Standard Rate - (Pay And Charge | TAX: true | NI: true | HOL: true)</option>
-                                                            <option value="1205153">Standard Rate - Night - (Pay And Charge | TAX: true | NI: true | HOL: true)</option>
-                                                        </select>
-                                                    </td>
                                                     <td style="display:none;"><input type="hidden" style="min-width:150px;" name="timePeriod" id="timePeriod0" class="form-control input-xs" onchange="changedPeriod(0);" value="60"></td>
                                                     <td><input class="form-control input-xs" type="text" name="periodDuration" id="periodDuration0" value="60" disabled=""></td>
                                                     <td>
@@ -305,11 +264,6 @@
                                                     </td>
                                                     <td style="text-align:center"><input type="checkbox" id="commentSelect0" class="" name="commentSelect0" checked="checked"></td>
                                                     <td style="text-align:center"><input type="checkbox" id="workerSelect0" class="" name="workerSelect0" checked="checked"></td>
-                                                    <td>
-                                                        <select name="timePattern" style="min-width:150px;" id="rateTimePattern0" class="form-control input-xs">
-                                                            <option value="Default">Default</option>
-                                                        </select>
-                                                    </td>
                                                     <td><input style="min-width:40px;" class="form-control input-xs" id="ratefRef0" type="text" name="fRef" value=""></td>
                                                     <td><input style="min-width:40px;" class="form-control input-xs" id="ratebRef0" type="text" name="bRef" value=""></td>
                                                 </tr>
@@ -339,12 +293,12 @@
                                                     </div>
                                                 </div>
                                                     <div class="col-sm-12">
-                                                        <div class="form-group"> 
+                                                        <div class="form-group">
                                                             <label class="control-label" for="contractedHours">Contracted Hours Per Week <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="This is used in forecasting. The calculations are based on the default rate and the number of hours entered here. If you have the AWR module, this will also be used in the calculations."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
                                                             <input type="text" format="1" label="Contracted Hours Per Week" name="contractedHours" tooltip="This is used in forecasting. The calculations are based on the default rate and the number of hours entered here. If you have the AWR module, this will also be used in the calculations." value="" id="contractedHours" class="form-control input-sm">
                                                         </div>
                                                     </div>
-                        
+
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
@@ -359,11 +313,10 @@
                                                 </div>
 
                                                     <div class="col-sm-12"><div class="form-group">
-                                                        <label class="control-label" for="roundTimeMins">Round time to nearest (minutes) <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="On the timesheet entry screens, when entering time and hours, values will be rounded to the time entered here. e.g. If you enter 15 here, then times will be rounded to the nearest quarter of an hour."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
-                                                        <input type="text" format="1" label="Round time to nearest (minutes)" name="roundTimeMins" tooltip="On the timesheet entry screens, when entering time and hours, values will be rounded to the time entered here. e.g. If you enter 15 here, then times will be rounded to the nearest quarter of an hour." value="1" id="roundTimeMins" class="form-control input-sm">
+
                                                     </div>
                                                 </div>
-                        
+
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
@@ -383,39 +336,10 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6">
-                                                <div class="row">
-                                                    <div class="col-sm-6"><div class="form-group">
-                                                        <label class="control-label" for="holidayCalendarCode">Holiday Calendar</label>
-                                                            <select name="holidayCalendarCode" id="holidayCalendarCode" class="form-control input-sm null" onchange="">
-                                                                <option value="null">No Public Holidays</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-sm-6">
-                                                        <div class="form-group">
-                                                            <label class="control-label" for="timeZone">Time Zone <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="The selected time zone is used to calculate the duration of overnight shifts during daylight savings changes."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
-                                                            <select name="timeZone" id="timeZone" class="form-control input-sm null" onchange="">
-                                                                <option value="null">Default</option>
-                                                                <option value="Africa/Abidjan">Africa/Abidjan</option>
-                                                                <option value="Africa/Accra">Africa/Accra</option>
-                                                                <option value="Africa/Addis_Ababa">Africa/Addis_Ababa</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                
-                                            </div>
-                                            <div class="col-sm-6">
-                                            
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                    
+
                         <div class="card card-primary card-outline card-tabs">
                             <div class="row">
                                 <div class="col-lg-12">
@@ -428,7 +352,7 @@
                                         <div class="row">
                                             <div class="col-lg-6">
                                                 <label for="client" class="d-block mb-1">Timesheet</label>
-                                                <select class="form-control select2" style="width:100%">                                    
+                                                <select class="form-control select2" style="width:100%">
                                                     <option value="1">Agency Consultant Approval</option>
                                                     <option value="2">Auto Approval Route</option>
                                                     <option value="3">Client Manager Approval</option>
@@ -439,17 +363,17 @@
                                             </div>
                                             <div class="col-lg-2">
                                                 <label for="client" class="d-block mb-1">Email Approval <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="The approver can reply to authorisation emails to authorise timesheets without the need to sign in to InTime."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
-                                                <select class="form-control select2" style="width:100%" disabled>                                    
-                                                    <option value="1">No</option>                                                           
+                                                <select class="form-control select2" style="width:100%" disabled>
+                                                    <option value="1">No</option>
                                                 </select>
-                                            </div>   
+                                            </div>
                                             <div class="col-lg-2">
                                                 <div class="custom-control custom-checkbox" style="margin-top:28px">
                                                     <input type="checkbox" checked class="custom-control-input" id="customCheck1">
                                                     <label class="custom-control-label"  for="customCheck1">Use Default</label>
                                                 </div>
-                                            </div>                                           
-                                        </div>                                       
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -467,27 +391,19 @@
                                             </h2>
                                         </div>
                                         <div class="row">
-                                            <div class="col-lg-6">
-                                                <label for="client" class="d-block mb-1">Expense Timesheet Group <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Alternative managers for expense approval. If you leave this blank, the altenative managers on the general tab will be used."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
-                                                <select class="form-control select2" style="width:100%">                                    
-                                                    <option value="1">Default</option>
-                                                    <option value="2">Adjustment Invoice</option>
-                                                    <option value="3">No Expense Paid</option>                                                   
-                                                </select>
-                                            </div>
                                             <div class="col-lg-2">
                                                 <label for="client" class="d-block mb-1">Expense Pay Currency </label>
-                                                <select class="form-control select2" style="width:100%" disabled>                                    
-                                                    <option value="1">GBP</option>                                                           
+                                                <select class="form-control select2" style="width:100%" disabled>
+                                                    <option value="1">GBP</option>
                                                 </select>
-                                            </div>   
+                                            </div>
                                             <div class="col-lg-2">
                                                 <div class="custom-control custom-checkbox" style="margin-top:28px">
                                                     <input type="checkbox" checked class="custom-control-input" id="customCheck1">
                                                     <label class="custom-control-label"  for="customCheck1">Use Default</label>
                                                 </div>
-                                            </div>                                           
-                                        </div>                                       
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -504,39 +420,39 @@
                                         <div class="row">
                                             <div class="col-lg-3">
                                                 <label for="client" class="d-block mb-1">Chargeable Expense</label>
-                                                <select class="form-control select2" style="width:100%">                                    
+                                                <select class="form-control select2" style="width:100%">
                                                     <option value="1">Agency Consultant Approval</option>
                                                     <option value="2">Auto Approval Route</option>
                                                     <option value="3">Client Manager Approval</option>
                                                     <option value="4">SMS Ltd</option>
                                                     <option value="5">Select Manager</option>
-                                                    <option value="6">Weights Approval (Katie)</option>                                                 
+                                                    <option value="6">Weights Approval (Katie)</option>
                                                 </select>
                                             </div>
                                             <div class="col-lg-3">
                                                 <label for="client" class="d-block mb-1">Non-Chargeable Expense</label>
-                                                <select class="form-control select2" style="width:100%">                                    
+                                                <select class="form-control select2" style="width:100%">
                                                     <option value="1">Agency Consultant Approval</option>
                                                     <option value="2">Auto Approval Route</option>
                                                     <option value="3">Client Manager Approval</option>
                                                     <option value="4">SMS Ltd</option>
                                                     <option value="5">Select Manager</option>
-                                                    <option value="6">Weights Approval (Katie)</option>                                                 
+                                                    <option value="6">Weights Approval (Katie)</option>
                                                 </select>
                                             </div>
                                             <div class="col-lg-3">
                                                 <label for="client" class="d-block mb-1">Expense Email Approval </label>
-                                                <select class="form-control select2" style="width:100%" disabled>                                    
-                                                    <option value="1">Yes</option>                                                           
+                                                <select class="form-control select2" style="width:100%" disabled>
+                                                    <option value="1">Yes</option>
                                                 </select>
-                                            </div>   
+                                            </div>
                                             <div class="col-lg-3">
                                                 <div class="custom-control custom-checkbox" style="margin-top:28px">
                                                     <input type="checkbox" checked class="custom-control-input" id="customCheck1">
                                                     <label class="custom-control-label"  for="customCheck1">Use Default</label>
                                                 </div>
-                                            </div>                                           
-                                        </div>    
+                                            </div>
+                                        </div>
                                         <div class="row">
                                             <div class="col-lg-4">
                                                 <label for="client" class="d-block mb-1">Primary Expense Approver<a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Manager for approving expenses. If you leave this blank, the manager on the general tab  will be used."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
@@ -551,7 +467,7 @@
                                             </div>
                                             <div class="col-lg-3">
                                                 <label for="client" class="d-block mb-1">Alternative Managers</label>
-                                                <div class="form-group">                                                     
+                                                <div class="form-group">
                                                         <select class="duallistbox" style="width:100%;height:138px" multiple="multiple">
                                                             <option selected></option>
                                                             <option></option>
@@ -564,154 +480,17 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-2">
-                                               
+
                                             </div>
-                                        </div>                                   
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
- 
+
                         </div>
-                        <!------third expense tab end -->
+
                         <div class="tab-pane fade" id="custom-content-below-invoicing" role="tabpanel" aria-labelledby="custom-content-below-invoicing-tab">
-                            <!-----  first card start ------->
-                            <div class="panel panel-border panel-primary " style="border-top:3px solid #009ada">
-                                <div class="panel-heading">
-                                     <h3 class="panel-title">Charge Terms</h3>
-                                </div>
-                                    <div class="panel-body">
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                        If you wish to override the default invoicing terms for this placement only, you can do so here.<br>
-                                                    </div>
-
-                                                    <div class="col-sm-6">
-                                                        <div class="row">
-                                                            <div class="col-sm-6"><div class="form-group"><label class="control-label" for="chargeTerms">Terms</label>
-                                                                <select name="chargeTerms" id="chargeTerms" class="form-control form-control-sm " onchange="" disabled="">
-                                                                    <option value="462655" selected="selected">Default Charge Terms</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                             <div class="col-sm-4">
-                                                                <br>
-                                                                <div class="checkbox checkbox-primary m-t-0">
-                                                                    <input type="checkbox"  checked="checked" >
-                                                                    <label class="control-label" style="font-weight: 700 !important;">Use Default</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <div class="row">
-                                                            <div class="col-sm-3"><div class="form-group"><label class="control-label" for="chargeCurrency">Currency</label>
-                                                                <select name="chargeCurrency" id="chargeCurrency" class="form-control form-control-sm" onchange="updateChargeCurrency(this);" disabled="">
-                                                                    <option value="GBP" selected="selected">GBP</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                            <div class="col-sm-4">
-                                                                <br>
-                                                                <div class="checkbox checkbox-primary m-t-0">
-                                                                    <input type="checkbox" name="useDefaultChargeCurrency" id="useDefaultChargeCurrency" checked="checked" onclick="clickUseDefaultChargeCurrency(this);">
-                                                                    <label class="control-label" style="font-weight: 700 !important;">Use Default</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-3"><div class="form-group"> <label class="control-label" for="chargeTermsDays">Terms Days</label><input type="text" label="Terms Days" format="4" id="chargeTermsDays" name="chargeTermsDays" value="" class="form-control form-control-sm" disabled=""></div>
-                                                        </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="row">
-                                                    <div class="col-sm-6"><div class="form-group"><label class="control-label" for="chargeTermsType">Terms Type</label>
-                                                    <select name="chargeTermsType" id="chargeTermsType" class="form-control form-control-sm" onchange="" disabled="">
-                                                        <option value="">Choose</option>
-                                                        <option value="As Per Agreed Terms and Conditions">As Per Agreed Terms and Conditions</option>
-                                                        <option value="Days From Invoice Date">Days From Invoice Date</option>
-                                                        <option value="Days from Month End">Days from Month End</option>
-                                                        <option value="Days from End of Next Month">Days from End of Next Month</option>
-                                                        <option value="Days from End of Month After Next">Days from End of Month After Next</option>
-                                                        <option value="Working Days From Invoice Date">Working Days From Invoice Date</option>
-                                                        <option value="Days from Sheet End Date">Days from Sheet End Date</option>
-                                                    </select>
-                                                    </div>
-                                                </div>
-                                                    <div class="col-sm-6"><div class="form-group"><label class="control-label">Terms Extra Text</label> <textarea name="chargeTermsExtraText" id="chargeTermsExtraText" maxlength="255" class="form-control" rows="2" style="line-height: 1; font-size: 12px; margin: 0; padding: 0;" onkeyup="" disabled=""></textarea></div></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                   <!-----  first card end ------->
-                                   <!-----  2nd card end ------->
-                                <div class="panel panel-border panel-primary card" style="border-top:3px solid #009ada">
-                                    <div class="panel-heading"><h3 class="panel-title">Pay Terms</h3>
-                                    </div>
-
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="row">
-                                                        <div class="col-sm-12">
-                                                            If you wish to override the default invoicing terms for this placement only, you can do so here.<br>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <div class="row">
-                                                                <div class="col-sm-6"><div class="form-group"><label class="control-label" for="payTerms">Terms</label>
-                                                                    <select name="payTerms" id="payTerms" class="form-control form-control-sm" onchange="" disabled="">
-                                                                            <option value="462656" selected="selected">Default Pay Terms</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                                <div class="col-sm-4">
-                                                                    <br>
-                                                                    <div class="checkbox checkbox-primary m-t-0">
-                                                                        <input type="checkbox" name="useDefaultPayTerms" id="useDefaultPayTerms" checked="checked" >
-                                                                        <label class="control-label" style="font-weight: 700 !important;">Use Default</label></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <div class="row">
-                                                                <div class="col-sm-3"><div class="form-group"> <label class="control-label" for="payTermsDays">Terms Days</label>
-                                                                    <input type="text" label="Terms Days" format="4" id="payTermsDays" name="payTermsDays" value="" class="form-control form-control-sm" disabled=""></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="row">
-                                                        <div class="col-sm-6"><div class="form-group"><label class="control-label" for="payTermsType">Terms Type</label>
-                                                            <select name="payTermsType" id="payTermsType" class="form-control form-control-sm" onchange="" disabled="">
-                                                                <option value="">Choose</option>
-                                                                <option value="As Per Agreed Terms and Conditions">As Per Agreed Terms and Conditions</option>
-                                                                <option value="Days From Invoice Date">Days From Invoice Date</option>
-                                                                <option value="Days from Month End">Days from Month End</option>
-                                                                <option value="Days from End of Next Month">Days from End of Next Month</option>
-                                                                <option value="Days from End of Month After Next">Days from End of Month After Next</option>
-                                                                <option value="Working Days From Invoice Date">Working Days From Invoice Date</option>
-                                                                <option value="Days from Sheet End Date">Days from Sheet End Date</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                        <div class="col-sm-6"><div class="form-group"><label class="control-label">Terms Extra Text</label> <textarea  maxlength="255" class="form-control" rows="2" style="line-height: 1; font-size: 12px; margin: 0; padding: 0;" onkeyup="" disabled=""></textarea></div></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <!-----  2nd card end ------->
-                                <!-----third tab start --->
                                 <div class="panel panel-border panel-primary" style="border-top:3px solid #009ada">
                                     <div class="panel-heading">
                                         <h3 class="panel-title">Sales Invoice Contact</h3>
@@ -733,10 +512,6 @@
                                             <div class="col-sm-6">
                                                 <div class="row">
                                                     <div class="col-sm-12">
-                                                        <div class="form-group"> 
-                                                            <label class="control-label" for="salesInvContactFrontendRef">Contact Frontend Ref</label>
-                                                            <input type="text" format="1" name="salesInvContactFrontendRef" label="Contact Frontend Ref" id="salesInvContactFrontendRef" class="form-control form-control-sm" value="">
-                                                        </div>
                                                     </div>
                                             <div class="col-sm-12">
                                                 <div class="form-group">
@@ -752,25 +527,25 @@
                                                 </div>
                                             </div>
                                             <div class="col-sm-12">
-                                                <div class="form-group"> 
+                                                <div class="form-group">
                                                     <label class="control-label" for="salesInvMiddlename">Middle Name</label>
                                                     <input type="text" format="1" name="salesInvMiddlename" label="Middle Name" id="salesInvMiddlename" class="form-control form-control-sm" value="">
                                                 </div>
                                             </div>
                                             <div class="col-sm-12">
-                                                <div class="form-group"> 
+                                                <div class="form-group">
                                                     <label class="control-label" for="salesInvLastname">Last Name</label>
                                                     <input type="text" format="1" name="salesInvLastname" label="Last Name" id="salesInvLastname" class="form-control form-control-sm" value="">
                                                 </div>
                                             </div>
                                             <div class="col-sm-12">
-                                                <div class="form-group"> 
+                                                <div class="form-group">
                                                     <label class="control-label" for="salesInvEmail">Email</label>
                                                     <input type="text" format="1" name="salesInvEmail" label="Email" id="salesInvEmail" class="form-control form-control-sm" value="">
                                                 </div>
                                             </div>
                                             <div class="col-sm-12">
-                                                <div class="form-group"> 
+                                                <div class="form-group">
                                                     <label class="control-label" for="salesInvPhone">Phone</label
                                                     ><input type="text" format="1" name="salesInvPhone" label="Phone" id="salesInvPhone" class="form-control form-control-sm" value="">
                                                 </div>
@@ -780,32 +555,32 @@
                                         <div class="col-sm-6">
                                             <div class="row">
                                                 <div class="col-sm-12">
-                                                    <div class="form-group"> 
+                                                    <div class="form-group">
                                                         <label class="control-label" for="salesInvStreet1">Street 1</label>
                                                         <input type="text" format="1" name="salesInvStreet1" label="Street 1" id="salesInvStreet1" class="form-control form-control-sm" value="">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-12">
-                                                    <div class="form-group"> 
+                                                    <div class="form-group">
                                                         <label class="control-label" for="salesInvStreet2">Street 2</label>
                                                         <input type="text" format="1" name="salesInvStreet2" label="Street 2" id="salesInvStreet2" class="form-control form-control-sm" value="">
                                                     </div>
                                                 </div>
 
                                                 <div class="col-sm-12">
-                                                    <div class="form-group"> 
+                                                    <div class="form-group">
                                                         <label class="control-label" for="salesInvTown">Town</label>
                                                         <input type="text" format="1" name="salesInvTown" label="Town" id="salesInvTown" class="form-control form-control-sm" value="">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-12">
-                                                    <div class="form-group"> 
+                                                    <div class="form-group">
                                                         <label class="control-label" for="salesInvCounty">County</label>
                                                         <input type="text" format="1" name="salesInvCounty" label="County" id="salesInvCounty" class="form-control form-control-sm" value="">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-12">
-                                                    <div class="form-group"> 
+                                                    <div class="form-group">
                                                         <label class="control-label" for="salesInvCountry">Country</label>
                                                         <input type="text" format="1" name="salesInvCountry" label="Country" id="salesInvCountry" class="form-control form-control-sm" value="">
                                                     </div>
@@ -830,7 +605,7 @@
                                                     </div>
                                                 </div>
                                             <div class="col-sm-12">
-                                                <div class="form-group"> 
+                                                <div class="form-group">
                                                     <label class="control-label" for="salesInvPostcode">Postcode</label>
                                                     <input type="text" format="1" name="salesInvPostcode" label="Postcode" id="salesInvPostcode" class="form-control form-control-sm" value="">
                                                 </div>
@@ -864,7 +639,7 @@
                                                     <div class="col-lg-6">
                                                         <label for="client" class="d-block mb-1">Purchase Sector</label>
                                                         <input type="text" class="form-control">
-                                                    </div>  
+                                                    </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-lg-6">
@@ -874,8 +649,8 @@
                                                     <div class="col-lg-6">
                                                         <label for="client" class="d-block mb-1">Purchase Branch</label>
                                                         <input type="text" class="form-control">
-                                                    </div>  
-                                                </div>   
+                                                    </div>
+                                                </div>
                                                 <div class="row">
                                                     <div class="col-lg-6">
                                                         <label for="client" class="d-block mb-1">Sales Location </label>
@@ -884,8 +659,8 @@
                                                     <div class="col-lg-6">
                                                         <label for="client" class="d-block mb-1">Purchase Location</label>
                                                         <input type="text" class="form-control">
-                                                    </div>  
-                                                </div>   
+                                                    </div>
+                                                </div>
                                                 <div class="row">
                                                     <div class="col-lg-6">
                                                         <label for="client" class="d-block mb-1">Sales Division</label>
@@ -894,8 +669,8 @@
                                                     <div class="col-lg-6">
                                                         <label for="client" class="d-block mb-1">Purchase Division</label>
                                                         <input type="text" class="form-control">
-                                                    </div>  
-                                                </div>   
+                                                    </div>
+                                                </div>
                                                 <div class="row">
                                                     <div class="col-lg-6">
                                                         <label for="client" class="d-block mb-1">Sales Department </label>
@@ -904,8 +679,8 @@
                                                     <div class="col-lg-6">
                                                         <label for="client" class="d-block mb-1">Purchase Dept</label>
                                                         <input type="text" class="form-control">
-                                                    </div>  
-                                                </div>   
+                                                    </div>
+                                                </div>
                                                 <div class="row">
                                                     <div class="col-lg-6">
                                                         <label for="client" class="d-block mb-1">Sales Project</label>
@@ -914,8 +689,8 @@
                                                     <div class="col-lg-6">
                                                         <label for="client" class="d-block mb-1">Purchase Project</label>
                                                         <input type="text" class="form-control">
-                                                    </div>  
-                                                </div>   
+                                                    </div>
+                                                </div>
                                                 <div class="row">
                                                     <div class="col-lg-6">
                                                         <label for="client" class="d-block mb-1">Sales Cost Centre Sector </label>
@@ -924,7 +699,7 @@
                                                     <div class="col-lg-6">
                                                         <label for="client" class="d-block mb-1">Purchase Cost Centre</label>
                                                         <input type="text" class="form-control">
-                                                    </div>  
+                                                    </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-lg-6">
@@ -949,7 +724,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>                                                                                      
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -988,9 +763,9 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>      
+                                                </div>
                                                 <div class="row" style="padding-top:5px">
-                                                    <div class="col-lg-4">                                                        
+                                                    <div class="col-lg-4">
                                                         <div class="input-group">
                                                             <input type="text" class="form-control form-control-sm">
                                                             <div class="input-group-append">
@@ -1000,7 +775,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-8">                                                        
+                                                    <div class="col-lg-8">
                                                         <div class="input-group">
                                                             <input type="text" class="form-control form-control-sm" placeholder="Search">
                                                             <div class="input-group-append">
@@ -1010,9 +785,9 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>  
+                                                </div>
                                                 <div class="row" style="padding-top:5px">
-                                                    <div class="col-lg-4">                                                        
+                                                    <div class="col-lg-4">
                                                         <div class="input-group">
                                                             <input type="text" class="form-control form-control-sm">
                                                             <div class="input-group-append">
@@ -1022,7 +797,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-8">                                                        
+                                                    <div class="col-lg-8">
                                                         <div class="input-group">
                                                             <input type="text" class="form-control form-control-sm" placeholder="Search">
                                                             <div class="input-group-append">
@@ -1032,9 +807,9 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>   
+                                                </div>
                                                  <div class="row" style="padding-top:5px">
-                                                    <div class="col-lg-4">                                                        
+                                                    <div class="col-lg-4">
                                                         <div class="input-group">
                                                             <input type="text" class="form-control form-control-sm">
                                                             <div class="input-group-append">
@@ -1044,7 +819,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-8">                                                        
+                                                    <div class="col-lg-8">
                                                         <div class="input-group">
                                                             <input type="text" class="form-control form-control-sm" placeholder="Search">
                                                             <div class="input-group-append">
@@ -1054,9 +829,9 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>    
+                                                </div>
                                                 <div class="row" style="padding-top:5px">
-                                                    <div class="col-lg-4">                                                        
+                                                    <div class="col-lg-4">
                                                         <div class="input-group">
                                                             <input type="text" class="form-control form-control-sm">
                                                             <div class="input-group-append">
@@ -1066,7 +841,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-8">                                                        
+                                                    <div class="col-lg-8">
                                                         <div class="input-group">
                                                             <input type="text" class="form-control form-control-sm" placeholder="Search">
                                                             <div class="input-group-append">
@@ -1076,20 +851,20 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>    
+                                                </div>
                                                 <div class="row" style="padding-top:5px">
-                                                    <div class="col-lg-8"> 
+                                                    <div class="col-lg-8">
                                                         0% Total
                                                     </div>
-                                                </div>     
+                                                </div>
                                                 <div class="row" style="padding-top:10px">
-                                                    <div class="col-lg-12"> 
+                                                    <div class="col-lg-12">
                                                         <div class="custom-control custom-checkbox">
                                                             <input type="checkbox" class="custom-control-input" id="customCheck1">
                                                             <label class="custom-control-label" for="customCheck1">Allow non 100% Total</label>
                                                         </div>
                                                     </div>
-                                                </div>                                                                         
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1105,7 +880,7 @@
                                     <div class="panel-body">
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <p>The selected user will not receive emails related to this placement including the new placement email, 
+                                                <p>The selected user will not receive emails related to this placement including the new placement email,
                                                 changes to this placement and timesheet/expense approval/rejections. </p>
                                             </div>
                                         </div>
@@ -1123,8 +898,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>   
-                            <!----- 1st card end ----> 
+                            </div>
+                            <!----- 1st card end ---->
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="row">
@@ -1167,152 +942,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6">
-                                            <div class="panel panel-border panel-primary" style="border-top:3px solid #009ada">
-                                                <div class="panel-heading"><h3 class="panel-title">Holiday Accrual</h3></div>
-                                                <div class="panel-body">
-                                                    <div class="row">
-                                                        <div class="col-sm-6">
-                                                            <div class="form-group"> 
-                                                                <label class="control-label" for="holidayAccrueRate">Holiday Accrual Rate</label>
-                                                                  <div class="input-group">
-                                                                    <input type="text" class="form-control form-control-sm" placeholder="Holiday Accrual Rate">
-                                                                    <div class="input-group-append">
-                                                                        <button class="btn btn-primary fa-icon" type="button">
-                                                                            <i class="fa fa-percentage"></i>
-                                                                        </button>
-                                                                    </div>
-                                                                </div>
-           
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="panel panel-border panel-primary" style="border-top:3px solid #009ada">
-                                                <div class="panel-heading"><h3 class="panel-title">Notice Period</h3></div>
-                                                <div class="panel-body">
-                                                    <div class="row">
-                                                        <div class="col-sm-6">
-                                                            <div class="form-group"> 
-                                                                <label class="control-label" for="salesNoticePeriod">Sales Notice</label>
-                                                                <input type="text" label="Sales Notice" format="2" id="salesNoticePeriod" value="" name="noticePeriod" maxlength="250" title="" class="form-control input-sm">
-                                                            </div>
-                                                        </div>
-                    
-                                                        <div class="col-sm-6">
-                                                            <div class="form-group">
-                                                                <label class="control-label" for="purchaseNoticePeriod">Purchase Notice</label>
-                                                                <input type="text" label="Purchase Notice" format="2" id="purchaseNoticePeriod" value="" name="purchaseNoticePeriod" maxlength="250" title="" class="form-control input-sm">
-                                                            </div>
-                                                        </div>
-                    
 
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
                                     </div>
                                 </div>
                             </div>
-                            <div class="panel panel-border panel-primary" style="border-top:3px solid #009ada">
-                                <a data-toggle="collapse" href="#tagsPanel" aria-expanded="false" class="collapsed">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        TAGS
-                                    </h4>
-                                </div>
-                                </a>
-                                <div id="tagsPanel" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <div class="table-responsive">
-                                                    <table class="table table-condensed">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>Name</th>
-                                                                <th>Description</th>
-                                                                <th>Applicable When</th>
-                                                                <th>Properites</th>
-                                                                <th>Remove</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                        <tr id="filterRow_0" >
-                                                                <td style="text-align:left;vertical-align:top;width:15%;">
-                                                                    <input type="text" name="existingFilterId_0" value="" id="existingFilterId_0">
-                                                                </td>
-                                                                <td style="text-align:left;vertical-align:top;width:30%;"><span id="filterDesc_0"><p style="text-align: justify;"></p></span></td>
-
-                                                                <td style="text-align:left;vertical-align:top;width:5%;"><input type="text" name="filterExpression_0" id="filterExpression_0" class="form-control input-xs" value="" style="display:none;width:150px;"></td>
-
-                                                                <td style="width:2%">
-                                                                    <a href="" onclick="clearFilter(0);"><i class="fa fa-trash text-danger"></i></a>
-                                                                </td>
-                                                            </tr>
-
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                                <div class="row"><div class="col-sm-12"><button name="addFilter" class="btn btn-primary waves-effect waves-light" type="button" value="Add Filter" onclick="newFilter();">Add Filter</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-border panel-primary" style="border-top:3px solid #009ada">
-                                <a data-toggle="collapse" href="#filtersPanel" aria-expanded="false" class="collapsed">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                        
-                                                Filters
-                                        
-                                        </h4>
-                                    </div>
-                                </a>
-                                <div id="filtersPanel" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <div class="table-responsive">
-                                                    <table class="table table-condensed">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>Name</th>
-                                                                <th>Description</th>
-                                                                <th>Applicable When</th>
-                                                                <th>Properites</th>
-                                                                <th>Remove</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                
-                                                        <tr id="filterRow_0" >
-                                                                <td style="text-align:left;vertical-align:top;width:15%;">
-                                                                    <input type="text" name="existingFilterId_0" value="" id="existingFilterId_0">
-                                                                </td>
-                                                                <td style="text-align:left;vertical-align:top;width:30%;"><span id="filterDesc_0"><p style="text-align: justify;"></p></span></td>
-
-                                                                <td style="text-align:left;vertical-align:top;width:5%;"><input type="text" name="filterExpression_0" id="filterExpression_0" class="form-control input-xs" value="" style="display:none;width:150px;"></td>
-
-                                                                <td style="width:2%">
-                                                                    <a href="" onclick="clearFilter(0);"><i class="fa fa-trash text-danger"></i></a>
-                                                                </td>
-                                                            </tr>
-
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                                <div class="row"><div class="col-sm-12"><button name="addFilter" class="btn btn-primary waves-effect waves-light" type="button" value="Add Filter" onclick="newFilter();">Add Filter</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                        </div>
-
                         </div>
                         <!------fivth tab end -->
-                    </div>  
+                    </div>
                 </div>
             </div>
         </div>
@@ -1322,7 +958,7 @@
 <script>
 
     export default {
-        
+
         mounted() {
             //Initialize Select2 Elements
             $('.select2').select2()   ;
