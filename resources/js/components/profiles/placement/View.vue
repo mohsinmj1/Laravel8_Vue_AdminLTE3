@@ -662,7 +662,7 @@
                                 <th>Default rate charge </th>
                                 <th>Default rate type </th>
                                 <th>Predicted margin </th>
-                              
+
 
                             </tr>
                             </thead>
@@ -1126,7 +1126,7 @@
                                 <td class=" dt-right">21.50</td>
                                 <td class=" dt-left">hourly</td>
                             </tr>
-                            
+
                             </tbody>
                         </table>
                     </div>

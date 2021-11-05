@@ -760,7 +760,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                     
+
                                     </div>
                                                 <div class="col-lg-2">
 
@@ -1571,9 +1571,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                         <div class="col-sm-6">
-                                            
+
                                             <!--<div class="panel panel-border panel-primary"
                                                  style="border-top:3px solid #009ada">
                                                 <div class="panel-heading"><h3 class="panel-title">Holiday Accrual</h3>
@@ -1637,7 +1637,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <!-- <div class="panel panel-border panel-primary" style="border-top:3px solid #009ada">
                                 <a data-toggle="collapse" href="#tagsPanel" aria-expanded="false" class="collapsed">
                                     <div class="panel-heading">
