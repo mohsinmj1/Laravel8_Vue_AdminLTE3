@@ -205,17 +205,6 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            To Self Bill Invoice
-                                        </td>
-                                        <td class="text-right">&#163;0.00</td>
-                                        <td>
-                                            <span class="badge bg-primary"
-                                                >0</span
-                                            >
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
                                             To Advice Note
                                         </td>
                                         <td class="text-right">&#163;0.00</td>

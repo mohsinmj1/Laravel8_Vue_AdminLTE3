@@ -52,12 +52,20 @@ export default [
         component: require("./components/expenses/Draft.vue").default
     },
     {
+        path: "/expenses/authorise",
+        component: require("./components/expenses/Authorise.vue").default
+    },
+    {
         path: "/expenses/unauthorised",
         component: require("./components/expenses/Unauthorised.vue").default
     },
     {
         path: "/expenses/approved",
         component: require("./components/expenses/Approved.vue").default
+    },
+    {
+        path: "/expenses/reject",
+        component: require("./components/expenses/Reject.vue").default
     },
     {
         path: "/expenses/search",
@@ -92,17 +100,18 @@ export default [
         component: require("./components/rates/Create.vue").default
     },
     {
-        path: "/profiles/clients/view",
-        component: require("./components/profiles/placement/Client.vue").default
+        path: "/profiles/client/view",
+        component: require("./components/profiles/client/View.vue").default
     },
     {
-        path: "/profiles/placement/clientedit",
-        component: require("./components/profiles/placement/ClientEdit.vue")
+        path: "/profiles/client/create",
+        component: require("./components/profiles/client/Create.vue") 
             .default
     },
     {
         path: "/profiles/workers/starter-form",
-        component: require("./components/profiles/worker/StarterForm.vue").default
+        component: require("./components/profiles/worker/StarterForm.vue")
+            .default
     },
     {
         path: "/profiles/workers/create",
@@ -229,6 +238,10 @@ export default [
     {
         path: "/agency/create",
         component: require("./components/agency/Create.vue").default
+    },
+    {
+        path: "/agency/view",
+        component: require("./components/agency/view.vue").default
     },
 
     { path: "*", component: require("./components/NotFound.vue").default }

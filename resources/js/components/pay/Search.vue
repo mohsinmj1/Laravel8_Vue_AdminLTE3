@@ -258,7 +258,7 @@
                   </div>
                 </div>
               </div>
-              <div class="row">
+              <!-- <div class="row">
                 <div class="col-lg-2" style="padding-top: 32px">
                   <div class="custom-control custom-checkbox">
                     <input
@@ -296,7 +296,7 @@
                     >
                   </div>
                 </div>
-              </div>
+              </div> -->
               <br />
               <div class="row">
                 <div class="col-lg-3">

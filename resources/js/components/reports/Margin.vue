@@ -123,21 +123,19 @@
                 </div>
                 <div class="row">
                   <div class="col-sm-3">
-                    <div class="form-group">
+                    <div class="form-group input-group-sm">
                       <label class="control-label" for="outputType"
                         >Output By</label
                       >
                       <select
                         name="outputType"
                         id="outputType"
-                        class="form-control input-sm"
+                        class="form-control"
                       >
-                        <option value="BY_SHEET">Timesheet/Expense Item</option>
-                        <option value="BY_SHEET_CLAIM">
-                          Timesheet/Expense Claim
-                        </option>
-                        <option value="BY_SHIFT">Shift</option>
-                        <option value="BY_RATE">Rate</option>
+                        <option value="">Timesheet/Expense Item</option>
+                        <option value="">Timesheet/Expense Claim</option>
+                        <option value="">Shift</option>
+                        <option value="">Rate</option>
                       </select>
                     </div>
                   </div>
@@ -157,18 +155,13 @@
                     </div>
                   </div>
                   <div class="col-sm-4">
-                    <div class="form-group">
+                    <div class="form-group input-group-sm">
                       <label class="control-label" for=""
                         >Show Invoiced Pay From</label
                       >
-                      <select
-                        name="valuesFromAdvice"
-                        id="valuesFromAdvice"
-                        class="form-control input-sm null"
-                        onchange=""
-                      >
-                        <option value="false">Supplier Invoices</option>
-                        <option value="true">Advice Notes</option>
+                      <select class="form-control">
+                        <option value="">Supplier Invoices</option>
+                        <option value="">Advice Notes</option>
                       </select>
                     </div>
                   </div>
@@ -183,49 +176,40 @@
                   <h3 class="panel-title">Filters</h3>
                 </div>
                 <div class="row">
-                  <div class="col-sm-3">
-                    <div class="form-group">
+                  <div class="col-sm-4">
+                    <div class="form-group input-group-sm">
                       <label class="control-label" for="outputType"
                         >Status</label
                       >
-                      <select
-                        name="outputType"
-                        id="outputType"
-                        class="form-control input-sm"
-                      >
-                        <option value="ALL">All</option>
-                        <option value="WEEKLY">weekly</option>
-                        <option value="WEEKLY_TUE_MON">weekly_tue-mon</option>
+                      <select class="form-control">
+                        <option value="">All</option>
+                        <option value="">weekly</option>
+                        <option value="">weekly_tue-mon</option>
                       </select>
                     </div>
                   </div>
-                  <div class="col-sm-2">
-                    <div class="form-group">
+                  <div class="col-sm-4">
+                    <div class="form-group input-group-sm">
                       <label
                         style="font-size: 12px"
                         class="control-label"
                         for=""
                         >Timesheet Entry Method</label
                       >
-                      <select
-                        name=""
-                        id=""
-                        class="form-control input-sm"
-                        onchange=""
-                      >
-                        <option value="ALL">All</option>
-                        <option value="STANDARD">Standard</option>
-                        <option value="PAPER">Paper Entry</option>
-                        <option value="BULK">Bulk Entry</option>
+                      <select class="form-control">
+                        <option value="">All</option>
+                        <option value="">Standard</option>
+                        <option value="">Paper Entry</option>
+                        <option value="">Bulk Entry</option>
                       </select>
                     </div>
                   </div>
-                  <div class="col-sm-2">
-                    <div class="form-group">
+                  <div class="col-sm-4">
+                    <div class="form-group input-group-sm">
                       <label style="font-size: 12px" class="control-label"
                         >Timesheet ID Range</label
                       >
-                      <div class="input-daterange input-group">
+                      <div class="input-group input-group-sm">
                         <input
                           id="timesheetIdRanges_from"
                           name="fromTimesheetId"
@@ -234,10 +218,16 @@
                           class="form-control input-sm"
                           placeholder=""
                         />
-                        <span
-                          class="input-group-addon bg-primary b-0 text-white"
-                          >to</span
+                        <button
+                          class="
+                            input-group-addon
+                            btn btn-primary btn-sm
+                            text-white
+                            rounded-0
+                          "
                         >
+                          to
+                        </button>
                         <input
                           id="timesheetIdRanges_to"
                           name="toTimesheetId"
@@ -249,12 +239,12 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
-                    <div class="form-group">
+                  <div class="col-sm-4">
+                    <div class="form-group input-group-sm">
                       <label style="font-size: 12px" class="control-label"
                         >Expense ID Range</label
                       >
-                      <div class="input-daterange input-group">
+                      <div class="input-group input-group-sm">
                         <input
                           id="expenseItemId_from"
                           name="fromExpenseItemId"
@@ -263,10 +253,16 @@
                           class="form-control input-sm"
                           placeholder=""
                         />
-                        <span
-                          class="input-group-addon bg-primary b-0 text-white"
-                          >to</span
+                        <button
+                          class="
+                            input-group-addon
+                            btn btn-primary btn-sm
+                            text-white
+                            rounded-0
+                          "
                         >
+                          to
+                        </button>
                         <input
                           id="expenseItemId_to"
                           name="toExpenseItemId"
@@ -278,24 +274,30 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
-                    <div class="form-group">
+                  <div class="col-sm-4">
+                    <div class="form-group input-group-sm">
                       <label style="font-size: 12px" class="control-label"
                         >Expense Claim ID Range</label
                       >
-                      <div class="input-daterange input-group">
+                      <div class="input-group input-group-sm">
                         <input
                           id="expenseItemGroupId_from"
                           name="fromExpenseItemGroupId"
                           value=""
                           type="text"
-                          class="form-control input-sm"
+                          class="form-control"
                           placeholder=""
                         />
-                        <span
-                          class="input-group-addon bg-primary b-0 text-white"
-                          >to</span
+                        <button
+                          class="
+                            input-group-addon
+                            btn btn-primary btn-sm
+                            text-white
+                            rounded-0
+                          "
                         >
+                          to
+                        </button>
                         <input
                           id="expenseItemGroupId_to"
                           name="toExpenseItemGroupId"
@@ -373,11 +375,11 @@
                   </div>
                 </div>
                 <!------card start ---->
-                <div class="card" style="border-top: 3px solid #009ada">
+                <div class="card mt-3" style="border-top: 3px solid #009ada">
                   <h3 class="panel-title">Participants</h3>
-                  <div class="row">
-                    <div class="col-lg-3" style="padding-right: 0px">
-                      <div class="col-sm-12">
+                  <div class="row m-0">
+                    <div class="col-lg-2" style="padding-right: 0px">
+                      <div class="col-sm-12 px-0">
                         <label class="control-label" for="placementFrequency"
                           >Timesheet Frequency</label
                         >
@@ -408,8 +410,8 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-2" style="padding-left: 5px">
-                      <div class="row">
+                    <div class="col-lg-3 pr-0" style="padding-left: 5px">
+                      <div class="col-sm-12 px-0">
                         <label class="control-label" for="placementFrequency"
                           >Timesheet Entry Method</label
                         >
@@ -441,7 +443,7 @@
                       </div>
                     </div>
                     <div class="col-lg-7" style="padding-left: 0px">
-                      <div class="col-lg-12 row">
+                      <div class="row m-0">
                         <div class="col-lg-5">
                           <label for="client" class="d-block mb-1"
                             >Job Description</label

@@ -643,9 +643,10 @@
                         <table class="table table-hover">
                             <thead>
                             <tr>
-                                <th>Reference ID</th>
-                                <th>Start date</th>
-                                <th>End date</th>
+                                <th>Action </th>
+                                <th>Ref</th>
+                                <th>Start</th>
+                                <th>End </th>
                                 <th>Job title </th>
                                 <th>Contractor</th>
                                 <th>Provider</th>
@@ -661,23 +662,32 @@
                                 <th>Default rate charge </th>
                                 <th>Default rate type </th>
                                 <th>Predicted margin </th>
-                                <th>Action </th>
+
 
                             </tr>
                             </thead>
                             <tbody>
                             <tr role="row" class="odd">
-                                <td class=" dt-left">
-                                    <div class="btn-group btn-xs dropdown dropdown-actions-table"><a
-                                            href="/placement/edit?placement=217943"
-                                            class="btn btn-primary btn-xs waves-effect waves-light">Edit</a>
-                                        <button onmouseup="scrollToBottom(this);" type="button"
-                                                class="btn btn-primary btn-xs dropdown-toggle waves-effect waves-light"
-                                                data-toggle="dropdown" aria-expanded="false"><i class="caret"></i>
+                                <td>
+                                    <div class="input-group-append">
+                                    <div class="dropdown">
+                                        <button
+                                        class="btn btn-primary btn-size dropdown-toggle"
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >
+                                        Edit
                                         </button>
-                                        <ul id="undefined" class="dropdown-menu" role="menu">
-                                            <li><a href="/summary/placement?id=217943">View Summary</a></li>
-                                        </ul>
+                                        <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuButton"
+                                        >
+                                        <a class="dropdown-item" href="#">View Summary </a>
+                                        </div>
+                                    </div>
                                     </div>
                                 </td>
                                 <td class=" dt-left">Pmt1</td>
@@ -709,17 +719,26 @@
                                 <td class=" dt-left">hourly</td>
                             </tr>
                             <tr role="row" class="even">
-                                <td class=" dt-left">
-                                    <div class="btn-group btn-xs dropdown dropdown-actions-table"><a
-                                            href="/placement/edit?placement=217944"
-                                            class="btn btn-primary btn-xs waves-effect waves-light">Edit</a>
-                                        <button onmouseup="scrollToBottom(this);" type="button"
-                                                class="btn btn-primary btn-xs dropdown-toggle waves-effect waves-light"
-                                                data-toggle="dropdown" aria-expanded="false"><i class="caret"></i>
+                                       <td>
+                                    <div class="input-group-append">
+                                    <div class="dropdown">
+                                        <button
+                                        class="btn btn-primary btn-size dropdown-toggle"
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >
+                                        Edit
                                         </button>
-                                        <ul id="undefined" class="dropdown-menu" role="menu">
-                                            <li><a href="/summary/placement?id=217944">View Summary</a></li>
-                                        </ul>
+                                        <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuButton"
+                                        >
+                                        <a class="dropdown-item" href="#">View Summary </a>
+                                        </div>
+                                    </div>
                                     </div>
                                 </td>
                                 <td class=" dt-left">Pmt2</td>
@@ -751,17 +770,26 @@
                                 <td class=" dt-left">hourly</td>
                             </tr>
                             <tr role="row" class="odd">
-                                <td class=" dt-left">
-                                    <div class="btn-group btn-xs dropdown dropdown-actions-table"><a
-                                            href="/placement/edit?placement=217946"
-                                            class="btn btn-primary btn-xs waves-effect waves-light">Edit</a>
-                                        <button onmouseup="scrollToBottom(this);" type="button"
-                                                class="btn btn-primary btn-xs dropdown-toggle waves-effect waves-light"
-                                                data-toggle="dropdown" aria-expanded="false"><i class="caret"></i>
+                                       <td>
+                                    <div class="input-group-append">
+                                    <div class="dropdown">
+                                        <button
+                                        class="btn btn-primary btn-size dropdown-toggle"
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >
+                                        Edit
                                         </button>
-                                        <ul id="undefined" class="dropdown-menu" role="menu">
-                                            <li><a href="/summary/placement?id=217946">View Summary</a></li>
-                                        </ul>
+                                        <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuButton"
+                                        >
+                                        <a class="dropdown-item" href="#">View Summary </a>
+                                        </div>
+                                    </div>
                                     </div>
                                 </td>
                                 <td class=" dt-left">Pmt4</td>
@@ -793,17 +821,26 @@
                                 <td class=" dt-left">hourly</td>
                             </tr>
                             <tr role="row" class="even">
-                                <td class=" dt-left">
-                                    <div class="btn-group btn-xs dropdown dropdown-actions-table"><a
-                                            href="/placement/edit?placement=220740"
-                                            class="btn btn-primary btn-xs waves-effect waves-light">Edit</a>
-                                        <button onmouseup="scrollToBottom(this);" type="button"
-                                                class="btn btn-primary btn-xs dropdown-toggle waves-effect waves-light"
-                                                data-toggle="dropdown" aria-expanded="false"><i class="caret"></i>
+                                        <td>
+                                    <div class="input-group-append">
+                                    <div class="dropdown">
+                                        <button
+                                        class="btn btn-primary btn-size dropdown-toggle"
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >
+                                        Edit
                                         </button>
-                                        <ul id="undefined" class="dropdown-menu" role="menu">
-                                            <li><a href="/summary/placement?id=220740">View Summary</a></li>
-                                        </ul>
+                                        <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuButton"
+                                        >
+                                        <a class="dropdown-item" href="#">View Summary </a>
+                                        </div>
+                                    </div>
                                     </div>
                                 </td>
                                 <td class=" dt-left">Pmt5</td>
@@ -835,17 +872,26 @@
                                 <td class=" dt-left">hourly</td>
                             </tr>
                             <tr role="row" class="odd">
-                                <td class=" dt-left">
-                                    <div class="btn-group btn-xs dropdown dropdown-actions-table"><a
-                                            href="/placement/edit?placement=220745"
-                                            class="btn btn-primary btn-xs waves-effect waves-light">Edit</a>
-                                        <button onmouseup="scrollToBottom(this);" type="button"
-                                                class="btn btn-primary btn-xs dropdown-toggle waves-effect waves-light"
-                                                data-toggle="dropdown" aria-expanded="false"><i class="caret"></i>
+                                       <td>
+                                    <div class="input-group-append">
+                                    <div class="dropdown">
+                                        <button
+                                        class="btn btn-primary btn-size dropdown-toggle"
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >
+                                        Edit
                                         </button>
-                                        <ul id="undefined" class="dropdown-menu" role="menu">
-                                            <li><a href="/summary/placement?id=220745">View Summary</a></li>
-                                        </ul>
+                                        <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuButton"
+                                        >
+                                        <a class="dropdown-item" href="#">View Summary </a>
+                                        </div>
+                                    </div>
                                     </div>
                                 </td>
                                 <td class=" dt-left">Pmt10</td>
@@ -877,17 +923,26 @@
                                 <td class=" dt-left">hourly</td>
                             </tr>
                             <tr role="row" class="even">
-                                <td class=" dt-left">
-                                    <div class="btn-group btn-xs dropdown dropdown-actions-table"><a
-                                            href="/placement/edit?placement=221709"
-                                            class="btn btn-primary btn-xs waves-effect waves-light">Edit</a>
-                                        <button onmouseup="scrollToBottom(this);" type="button"
-                                                class="btn btn-primary btn-xs dropdown-toggle waves-effect waves-light"
-                                                data-toggle="dropdown" aria-expanded="false"><i class="caret"></i>
+                                         <td>
+                                    <div class="input-group-append">
+                                    <div class="dropdown">
+                                        <button
+                                        class="btn btn-primary btn-size dropdown-toggle"
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >
+                                        Edit
                                         </button>
-                                        <ul id="undefined" class="dropdown-menu" role="menu">
-                                            <li><a href="/summary/placement?id=221709">View Summary</a></li>
-                                        </ul>
+                                        <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuButton"
+                                        >
+                                        <a class="dropdown-item" href="#">View Summary </a>
+                                        </div>
+                                    </div>
                                     </div>
                                 </td>
                                 <td class=" dt-left">Pmt15</td>
@@ -919,17 +974,26 @@
                                 <td class=" dt-left">hourly</td>
                             </tr>
                             <tr role="row" class="odd">
-                                <td class=" dt-left">
-                                    <div class="btn-group btn-xs dropdown dropdown-actions-table"><a
-                                            href="/placement/edit?placement=226760"
-                                            class="btn btn-primary btn-xs waves-effect waves-light">Edit</a>
-                                        <button onmouseup="scrollToBottom(this);" type="button"
-                                                class="btn btn-primary btn-xs dropdown-toggle waves-effect waves-light"
-                                                data-toggle="dropdown" aria-expanded="false"><i class="caret"></i>
+                                         <td>
+                                    <div class="input-group-append">
+                                    <div class="dropdown">
+                                        <button
+                                        class="btn btn-primary btn-size dropdown-toggle"
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >
+                                        Edit
                                         </button>
-                                        <ul id="undefined" class="dropdown-menu" role="menu">
-                                            <li><a href="/summary/placement?id=226760">View Summary</a></li>
-                                        </ul>
+                                        <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuButton"
+                                        >
+                                        <a class="dropdown-item" href="#">View Summary </a>
+                                        </div>
+                                    </div>
                                     </div>
                                 </td>
                                 <td class=" dt-left">Pmt20</td>
@@ -961,17 +1025,26 @@
                                 <td class=" dt-left">hourly</td>
                             </tr>
                             <tr role="row" class="even">
-                                <td class=" dt-left">
-                                    <div class="btn-group btn-xs dropdown dropdown-actions-table"><a
-                                            href="/placement/edit?placement=228447"
-                                            class="btn btn-primary btn-xs waves-effect waves-light">Edit</a>
-                                        <button onmouseup="scrollToBottom(this);" type="button"
-                                                class="btn btn-primary btn-xs dropdown-toggle waves-effect waves-light"
-                                                data-toggle="dropdown" aria-expanded="false"><i class="caret"></i>
+                                          <td>
+                                    <div class="input-group-append">
+                                    <div class="dropdown">
+                                        <button
+                                        class="btn btn-primary btn-size dropdown-toggle"
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >
+                                        Edit
                                         </button>
-                                        <ul id="undefined" class="dropdown-menu" role="menu">
-                                            <li><a href="/summary/placement?id=228447">View Summary</a></li>
-                                        </ul>
+                                        <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuButton"
+                                        >
+                                        <a class="dropdown-item" href="#">View Summary </a>
+                                        </div>
+                                    </div>
                                     </div>
                                 </td>
                                 <td class=" dt-left">Pmt23</td>
@@ -1003,17 +1076,26 @@
                                 <td class=" dt-left">hourly</td>
                             </tr>
                             <tr role="row" class="odd">
-                                <td class=" dt-left">
-                                    <div class="btn-group btn-xs dropdown dropdown-actions-table"><a
-                                            href="/placement/edit?placement=230621"
-                                            class="btn btn-primary btn-xs waves-effect waves-light">Edit</a>
-                                        <button onmouseup="scrollToBottom(this);" type="button"
-                                                class="btn btn-primary btn-xs dropdown-toggle waves-effect waves-light"
-                                                data-toggle="dropdown" aria-expanded="false"><i class="caret"></i>
+                                         <td>
+                                    <div class="input-group-append">
+                                    <div class="dropdown">
+                                        <button
+                                        class="btn btn-primary btn-size dropdown-toggle"
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >
+                                        Edit
                                         </button>
-                                        <ul id="undefined" class="dropdown-menu" role="menu">
-                                            <li><a href="/summary/placement?id=230621">View Summary</a></li>
-                                        </ul>
+                                        <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuButton"
+                                        >
+                                        <a class="dropdown-item" href="#">View Summary </a>
+                                        </div>
+                                    </div>
                                     </div>
                                 </td>
                                 <td class=" dt-left">Pmt24</td>

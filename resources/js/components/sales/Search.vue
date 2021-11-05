@@ -258,7 +258,7 @@
                   </div>
                 </div>
               </div>
-              <div class="row">
+              <!-- <div class="row">
                 <div class="col-lg-2" style="padding-top: 32px">
                   <div class="custom-control custom-checkbox">
                     <input
@@ -296,7 +296,7 @@
                     >
                   </div>
                 </div>
-              </div>
+              </div> -->
               <br />
               <div class="row">
                 <div class="col-lg-3">
@@ -1023,8 +1023,7 @@
                   <label for="client" class="d-block mb-1"
                     >Timesheet Frequency</label
                   >
-                  <select class="form-control select2" style="width: 100%">
-                    <option value="1">All</option>
+                  <select class="form-control select2" style="width: 100%">                    
                     <option value="ALL">All</option>
                     <option value="WEEKLY">weekly</option>
                     <option value="WEEKLY_TUE_MON">weekly_tue-mon</option>
@@ -1068,8 +1067,7 @@
                 </div>
                 <div class="col-lg-6">
                   <label for="client" class="d-block mb-1">Worker Type</label>
-                  <select class="form-control select2" style="width: 100%">
-                    <option value="1">All</option>
+                  <select class="form-control select2" style="width: 100%">                    
                     <option value="ALL">All</option>
                     <option value="PAYE">PAYE</option>
                     <option value="PAID_AS_PAYE">All Paid PAYE</option>
