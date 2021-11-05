@@ -349,28 +349,9 @@
                                                 <!--<td><input style="min-width:65px;" class="form-control input-xs"
                                                            id="rateCharge0" type="text" name="charge" value=""></td>-->
                                                 <td>
-                                                    <select name="payElement" style="min-width:200px;"
-                                                            id="ratePayElement0" class="form-control input-xs">
-                                                        <option value="" selected="selected"></option>
-                                                        <option value="1140292">
-                                                            Default - (Pay And Charge | TAX: true | NI: true | HOL: true)
-                                                        </option>
-                                                        <option value="1140293">
-                                                            Overtime - (Pay And Charge | TAX: true | NI: true | HOL: false)
-                                                        </option>
-                                                        <option value="1140323">
-                                                            Overtime - (Pay And Charge | TAX: true | NI: true | HOL: true)
-                                                        </option>
-                                                        <option value="1140299">
-                                                            Placement - (Charge Only | TAX: true | NI: true | HOL: false)
-                                                        </option>
-                                                        <option value="1140324">
-                                                            Standard Rate - (Pay And Charge | TAX: true | NI: true | HOL: true)
-                                                        </option>
-                                                        <option value="1205153">
-                                                            Standard Rate - Night - (Pay And Charge | TAX: true | NI: true | HOL: true)
-                                                        </option>
-                                                    </select>
+                                                    <input class="form-control input-xs" type="text"
+                                                           name="periodDuration" id="periodDuration0"
+                                                           ></td>
                                                 </td>
                                                 <td style="display:none;"><input type="hidden" style="min-width:150px;"
                                                                                  name="timePeriod" id="timePeriod0"
@@ -378,8 +359,63 @@
                                                                                  onchange="changedPeriod(0);"
                                                                                  value="60"></td>
                                                 <td><input class="form-control input-xs" type="text"
-                                                           name="periodDuration" id="periodDuration0" value="60"
-                                                           disabled=""></td>
+                                                           name="periodDuration" id="periodDuration0"
+                                                           ></td>
+                                                <td>
+                                                    <select style="min-width:110px;" name="fields" id="fields0"
+                                                            class="form-control input-xs" onchange="changedFields(0);">
+                                                        <option value="hours" selected="">Time &amp; Hours</option>
+                                                        <option value="hoursOnly">Hours Only</option>
+                                                        <option value="decimal">Decimal</option>
+                                                        <option value="tickbox">TickBox</option>
+                                                    </select>
+                                                </td>
+                                                <td style="text-align:center"><input type="checkbox" id="commentSelect0"
+                                                                                     class="" name="commentSelect0"
+                                                                                     checked="checked"></td>
+                                                <td style="text-align:center"><input type="checkbox" id="workerSelect0"
+                                                                                     class="" name="workerSelect0"
+                                                                                     checked="checked"></td>
+                                                <!--<td>
+                                                    <select name="timePattern" style="min-width:150px;"
+                                                            id="rateTimePattern0" class="form-control input-xs">
+                                                        <option value="Default">Default</option>
+                                                    </select>
+                                                </td>-->
+                                                <!--<td><input style="min-width:40px;" class="form-control input-xs"
+                                                           id="ratefRef0" type="text" name="fRef" value=""></td>
+                                                <td><input style="min-width:40px;" class="form-control input-xs"
+                                                           id="ratebRef0" type="text" name="bRef" value=""></td>-->
+                                            </tr>
+                                            <tr id="rateRow_0" style="display:table-row;">
+                                                <td style="text-align:center;"><a href="#" onclick="removeRate(0);"><i
+                                                        class="fa fa-trash text-danger"></i></a></td>
+                                                <td></td>
+                                                <td>
+                                                    <a href="#" onclick="priDown(0);" class="d-flex"><i
+                                                            class="fa fa-arrow-down text-success px-1"></i> <i
+                                                            class="fa fa-arrow-up text-success"></i></a>
+                                                </td>
+                                                <td><input type="hidden" name="rateId" id="rateId0" value="">
+                                                    <input style="min-width:170px;" class="form-control input-xs"
+                                                           id="rateName0" type="text" name="rateName" value=""/>
+                                                </td>
+                                                <td><input style="min-width:65px;" class="form-control input-xs"
+                                                           id="ratePay0" type="text" name="pay" value=""></td>
+                                                <!--<td><input style="min-width:65px;" class="form-control input-xs"
+                                                           id="rateCharge0" type="text" name="charge" value=""></td>-->
+                                                <td>
+                                                    <input class="form-control input-xs" type="text"
+                                                           name="periodDuration" id="periodDuration0"></td>
+                                                </td>
+                                                <td style="display:none;"><input type="hidden" style="min-width:150px;"
+                                                                                 name="timePeriod" id="timePeriod0"
+                                                                                 class="form-control input-xs"
+                                                                                 onchange="changedPeriod(0);"
+                                                                                 value="60"></td>
+                                                <td><input class="form-control input-xs" type="text"
+                                                           name="periodDuration" id="periodDuration0"
+                                                           ></td>
                                                 <td>
                                                     <select style="min-width:110px;" name="fields" id="fields0"
                                                             class="form-control input-xs" onchange="changedFields(0);">

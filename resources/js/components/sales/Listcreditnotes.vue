@@ -83,7 +83,7 @@
                 role="tab"
                 aria-controls="custom-content-below-advance"
                 aria-selected="false"
-                >Advance</a
+                >Advanced</a
               >
             </li>
           </ul>
