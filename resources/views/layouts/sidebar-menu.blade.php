@@ -379,15 +379,15 @@
                     </p>
                 </a>
                 <ul class="nav nav-treeview">
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <router-link to="/rates/create" class="nav-link">
                             <i class="nav-icon fas fa-cash-register green"></i>
                             <p>Rate Template</p>
                         </router-link>
-                    </li>
+                    </li> --}}
                     <li class="nav-item">
                         <router-link to="/setting/configuration" class="nav-link">
-                            <i class="nav-icon fas fa-list orange"></i>
+                            <i class="nav-icon fas fa-cash-register green"></i>
                             <p>Configrations</p>
                         </router-link>
                     </li>
@@ -399,7 +399,7 @@
                             </p>
                         </router-link>
                     </li>
-                    {{--<li class="nav-item">
+                    {{-- <li class="nav-item">
                         <router-link to="/product/tag" class="nav-link">
                             <i class="nav-icon fas fa-tags green"></i>
                             <p>
