@@ -47,19 +47,19 @@
           <div class="btn-group dropdown">
             <a
               href="#"
-              class="btn btn-primary"
+              class="btn btn-primary btn-sm"
               data-content="Click the down arrow to view actions."
               title=""
               >Actions</a
             ><button
               type="button"
-              class="btn btn-primary dropdown-toggle"
+              class="btn btn-primary btn-sm dropdown-toggle"
               data-toggle="dropdown"
               aria-expanded="false"
             >
               <i class="caret"></i>
             </button>
-            <ul class="dropdown-menu" role="menu">
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
               <li><a href="#">View Workers</a></li>
               <li><a href="#">View Consultants</a></li>
             </ul>
@@ -104,12 +104,9 @@
               aria-labelledby="custom-content-below-timesheet-tab"
             >
               <div
-                class="panel panel-border panel-primary"
+                class="card card-primary card-outline"
                 style="border-top: 3px solid #009ada"
               >
-                <div class="panel-heading">
-                  <h3 class="panel-title">Entry</h3>
-                </div>
                 <div class="panel-body">
                   <div class="row">
                     <div class="col-md-3 form-group">
@@ -117,9 +114,9 @@
                       <select
                         name="title"
                         id="title"
-                        class="form-control input-sm null"
+                        class="form-control form-control-sm"
                       >
-                        <option value="" selected>Choose</option>
+                        <option value="" selected>Please Select</option>
                         <option value="">N/A</option>
                         <option value="">Mr</option>
                         <option value="">Mrs</option>
@@ -131,19 +128,22 @@
                     </div>
                     <div class="col-md-3 form-group">
                       <label class="control-label">Firstname *</label>
-                      <input type="text" class="form-control" />
+                      <input type="text" class="form-control form-control-sm" />
                     </div>
                     <div class="col-md-3 form-group">
                       <label class="control-label">Middlename</label>
-                      <input type="text" class="form-control" />
+                      <input type="text" class="form-control form-control-sm" />
                     </div>
                     <div class="col-md-3 form-group">
                       <label class="control-label">Lastname *</label>
-                      <input type="text" class="form-control" />
+                      <input type="text" class="form-control form-control-sm" />
                     </div>
                     <div class="col-md-3 form-group">
                       <label class="control-label">Email *</label>
-                      <input type="email" class="form-control" />
+                      <input
+                        type="email"
+                        class="form-control form-control-sm"
+                      />
                     </div>
                     <div
                       class="custom-control custom-checkbox col-md-2"
@@ -172,15 +172,24 @@
                     </div>
                     <div class="col-md-3 form-group">
                       <label class="control-label">Telephone *</label>
-                      <input type="email" class="form-control" />
+                      <input
+                        type="email"
+                        class="form-control form-control-sm"
+                      />
                     </div>
                     <div class="col-md-3 form-group">
                       <label class="control-label">Mobile *</label>
-                      <input type="email" class="form-control" />
+                      <input
+                        type="email"
+                        class="form-control form-control-sm"
+                      />
                     </div>
                     <div class="col-md-3 form-group">
                       <label class="control-label">Department</label>
-                      <input type="email" class="form-control" />
+                      <input
+                        type="email"
+                        class="form-control form-control-sm"
+                      />
                     </div>
                   </div>
                 </div>
@@ -195,27 +204,45 @@
                       <div class="row">
                         <div class="col-md-6 form-group">
                           <label class="control-label">Address Line 1</label>
-                          <input type="text" class="form-control" />
+                          <input
+                            type="text"
+                            class="form-control form-control-sm"
+                          />
                         </div>
                         <div class="col-md-6 form-group">
                           <label class="control-label">Address Line 2</label>
-                          <input type="text" class="form-control" />
+                          <input
+                            type="text"
+                            class="form-control form-control-sm"
+                          />
                         </div>
                         <div class="col-md-6 form-group">
                           <label class="control-label">Town/City</label>
-                          <input type="text" class="form-control" />
+                          <input
+                            type="text"
+                            class="form-control form-control-sm"
+                          />
                         </div>
                         <div class="col-md-6 form-group">
                           <label class="control-label">Country</label>
-                          <input type="text" class="form-control" />
+                          <input
+                            type="text"
+                            class="form-control form-control-sm"
+                          />
                         </div>
                         <div class="col-md-6 form-group">
                           <label class="control-label">Postcode</label>
-                          <input type="text" class="form-control" />
+                          <input
+                            type="text"
+                            class="form-control form-control-sm"
+                          />
                         </div>
                         <div class="col-md-6 form-group">
                           <label class="control-label">Country</label>
-                          <input type="text" class="form-control" />
+                          <input
+                            type="text"
+                            class="form-control form-control-sm"
+                          />
                         </div>
                       </div>
                     </div>
@@ -271,7 +298,7 @@
                                 name=""
                                 value=""
                                 id=""
-                                class="form-control"
+                                class="form-control form-control-sm"
                               />
                             </td>
                             <td
@@ -286,7 +313,7 @@
                                 name=""
                                 value=""
                                 id=""
-                                class="form-control"
+                                class="form-control form-control-sm"
                               />
                             </td>
                             <td
@@ -301,11 +328,11 @@
                                 name=""
                                 value=""
                                 id=""
-                                class="form-control"
+                                class="form-control form-control-sm"
                               />
                             </td>
                             <td style="width: 2%">
-                              <a href="" onclick="clearFilter(0);"
+                              <a href=""
                                 ><i class="fa fa-trash text-danger"></i
                               ></a>
                             </td>
@@ -315,13 +342,7 @@
                     </div>
                     <div class="row">
                       <div class="col-sm-12">
-                        <button
-                          name="addFilter"
-                          class="btn btn-primary waves-effect waves-light"
-                          type="button"
-                          value="Add Filter"
-                          onclick="newFilter();"
-                        >
+                        <button class="btn btn-primary btn-sm" type="button">
                           Add Tag
                         </button>
                       </div>
