@@ -384,10 +384,66 @@
                                 <label for="Project Code" class="d-block mb-1">Code</label>
                             </div>
                             <div class="col-lg-1">
-                                <label for="Comment" class="d-block mb-1">Coment</label>
+                                <label for="Comment" class="d-block mb-1">Comment</label>
                             </div>
                             <div class="col-lg-1">
-                                <!-- <label for="placement" class="d-block mb-1">Comment</label> -->
+                            </div>
+                        </div>
+                        <div class="row mt-2" style="border-bottom:1px solid #D3D3D3">
+                            <div class="col-lg-2" style="font-size:12px;">
+                                <div width="80px" style="padding-top:4px">
+                                    <div style="float:left;"><i class="fas fa-plus" style="color:green"></i>
+                                    </div>
+                                    <div style="float:left;;margin-left:30px">Mon 18/10/2021
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <select class="form-control select2" style="width:163px">
+                                    <option value="1">02.0100 (DAY) - FABRICATION - SUPERVISION</option>
+                                    <option value="2">02.0100 (NIGHT) - FABRICATION - SUPERVISION</option>
+                                    <option value="3">02.0105 (DAY) - FABRICATION - UNPACKING CUT PARTS</option>
+                                </select>
+                            </div>     
+                            
+                            <div class="col-lg-1">
+                                <button id="startbtn" class="btn btn-success py-0 px-3" style="line-height:26px;" v-on:click="startfn(1)" >Start</button>
+                                <input id="startTime" type="text" style="width:79px;display:none" placeholder="hh:mm">
+                            </div>
+                            <div class="col-lg-1">
+                                <button id="breakbtn"  class="btn btn-success py-0 px-3"  data-toggle="modal" data-target="#modal-start-time" style="display:none;line-height:26px;">Break</button>
+
+                                <input id="breakTime" type="text" style="width:79px" placeholder="hh:mm">
+                            </div>
+                            <div class="col-lg-1">
+                                <button id="finishbtn" class="btn btn-success py-0 px-3" style="display:none;line-height:26px;" v-on:click="startfn(3)" >Finish</button>
+                               <input id="finishTime" type="text" style="width:79px" placeholder="hh:mm">
+                            </div>
+                            <div class="col-lg-1">
+                                00:00
+                            </div>
+                            <div class="col-lg-1">
+
+                            </div>
+                            <div class="col-lg-2">
+                                <select class="form-control select2" style="width:120px">
+                                    <option value="IOW-006">IOW-006</option>
+                                    <option value="IOW-008">IOW-008</option>
+                                    <option value="IOW-010">IOW-010</option>
+                                    <option value="IOW-011">IOW-011</option>
+                                    <option value="IOW-012">IOW-012</option>
+                                    <option value="IOW-018">IOW-018</option>
+                                    <option value="IOW-022">IOW-022</option>
+                                    <option value="IOW-025">IOW-025</option>
+                                    <option value="IOW-055">IOW-055</option>
+
+                                </select>
+                            </div>
+                            <div class="col-lg-1">
+                                <input type="text" style="width:100px">
+                            </div>
+                            <div class="col-lg-1">
+
                             </div>
                         </div>
                         <div class="row mt-2" style="border-bottom:1px solid #D3D3D3">
@@ -406,12 +462,11 @@
                                     <option value="3">02.0105 (DAY) - FABRICATION - UNPACKING CUT PARTS</option>
                                 </select>
                             </div>
-                            <div class="col-lg-1"> <!--//data-toggle="modal" data-target="#modal-start-time"-->
+                            <div class="col-lg-1">
                                 <button id="startbtn" class="btn btn-success py-0 px-3" style="line-height:26px;" v-on:click="startfn(1)" >Start</button>
                                 <input id="startTime" type="text" style="width:79px;display:none" placeholder="hh:mm">
                             </div>
                             <div class="col-lg-1">
-<!--                                <button id="breakbtn"  class="btn btn-success py-0 px-4" style="display:none;line-height:26px;" v-on:click="startfn(2)" >Break</button>-->
                                 <button id="breakbtn"  class="btn btn-success py-0 px-3"  data-toggle="modal" data-target="#modal-start-time" style="display:none;line-height:26px;">Break</button>
 
                                 <input id="breakTime" type="text" style="width:79px" placeholder="hh:mm">
@@ -427,7 +482,7 @@
 
                             </div>
                             <div class="col-lg-2">
-                                <select class="form-control select2" style="width:163px">
+                                <select class="form-control select2" style="width:120px">
                                     <option value="IOW-006">IOW-006</option>
                                     <option value="IOW-008">IOW-008</option>
                                     <option value="IOW-010">IOW-010</option>
@@ -441,94 +496,14 @@
                                 </select>
                             </div>
                             <div class="col-lg-1">
-                                <input type="text" style="width:79px">
+                                <input type="text" style="width:100px">
                             </div>
                             <div class="col-lg-1">
 
                             </div>
                         </div>
-                        <div class="row mt-2" style="border-bottom:1px solid #D3D3D3">
-                             <div class="col-lg-2" style="font-size:12px;">
-                                <div width="80px" style="padding-top:4px">
-                                    <div style="float:left;"><i class="fas fa-plus" style="color:green"></i>
-                                    </div>
-                                    <div style="float:left;;margin-left:30px">Tue 19/10/2021
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-2">
-                                <select class="form-control select2" style="width:163px">
-                                    <option value="1">02.0100 (DAY) - FABRICATION - SUPERVISION</option>
-                                    <option value="2">02.0100 (NIGHT) - FABRICATION - SUPERVISION</option>
-                                    <option value="3">02.0105 (DAY) - FABRICATION - UNPACKING CUT PARTS</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-1">
-                                <input type="text" style="width:79px" placeholder="hh:mm">
-                            </div>
-                            <div class="col-lg-1">
-                                <input type="text" style="width:79px" placeholder="hh:mm">
-                            </div>
-                            <div class="col-lg-1">
-                               <input type="text" style="width:79px" placeholder="hh:mm">
-                            </div>
-                            <div class="col-lg-1">
-                                00:00
-                            </div>
-                            <div class="col-lg-1">
 
-                            </div>
-                            <div class="col-lg-1">
-                                <input type="text" style="width:79px">
-                            </div>
-                            <div class="col-lg-1">
-                                <input type="text" style="width:79px">
-                            </div>
-                            <div class="col-lg-1">
 
-                            </div>
-                        </div>
-                        <div class="row mt-2" style="border-bottom:1px solid #D3D3D3">
-                             <div class="col-lg-2" style="font-size:12px;">
-                                <div width="80px" style="padding-top:4px">
-                                    <div style="float:left;"><i class="fas fa-plus" style="color:green"></i>
-                                    </div>
-                                    <div style="float:left;;margin-left:30px">Wed 20/10/2021
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-2">
-                                <select class="form-control select2" style="width:163px">
-                                    <option value="1">02.0100 (DAY) - FABRICATION - SUPERVISION</option>
-                                    <option value="2">02.0100 (NIGHT) - FABRICATION - SUPERVISION</option>
-                                    <option value="3">02.0105 (DAY) - FABRICATION - UNPACKING CUT PARTS</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-1">
-                                <input type="text" style="width:79px" placeholder="hh:mm">
-                            </div>
-                            <div class="col-lg-1">
-                                <input type="text" style="width:79px" placeholder="hh:mm">
-                            </div>
-                            <div class="col-lg-1">
-                               <input type="text" style="width:79px" placeholder="hh:mm">
-                            </div>
-                            <div class="col-lg-1">
-                                00:00
-                            </div>
-                            <div class="col-lg-1">
-
-                            </div>
-                            <div class="col-lg-1">
-                                <input type="text" style="width:79px">
-                            </div>
-                            <div class="col-lg-1">
-                                <input type="text" style="width:79px">
-                            </div>
-                            <div class="col-lg-1">
-
-                            </div>
-                        </div>
                         <div class="row mt-2">
                             <div class="col-lg-6">
                                 <label for="placement" class="d-block mb-1"

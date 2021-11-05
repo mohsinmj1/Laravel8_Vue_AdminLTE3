@@ -4,7 +4,7 @@
         <div class="row">
 
           <div class="col-12">
-        
+
             <div class="card">
               <div class="card-header" style="background-color:white;">
                 <h3 class="card-title" style="padding-top:10px;">Draft List</h3>
@@ -12,7 +12,7 @@
                     <button type="submit" class="btn btn-light">Select None</button>
                     <button type="submit" class="btn btn-light">Choose Column</button>
                 <div class="card-tools">
-                  
+
                   <!-- <button type="button" class="btn btn-sm btn-primary" @click="newModal">
                       <i class="fa fa-plus-square"></i>
                       Add New
@@ -63,16 +63,12 @@
                         <th>Client Acc Ref</th>
                         <th>Exported Date</th>
                         <th>Total Cost</th>
-                        <th>Purchase Nominal</th>
-                        <th>Sales Nominal</th>
-                        <th>Supplier Accounts Ref</th>
                         <th>Workers Accounts Ref</th>
-                        <th>Supplier Gender</th>
+                        <th>Worker Gender</th>
                         <th>Exchange rate Pay</th>
                         <th>Exchange rate Charge</th>
                         <th>Charge</th>
                         <th>Charge Currency</th>
-                        <th>Funds Received</th>
                         <th>Charge GBP</th>
                         <th>Type</th>
                         <th>Approved By</th>
@@ -175,7 +171,6 @@
                   <pagination :data="products" @pagination-change-page="getResults"></pagination>
                     <button type="submit" class="btn btn-primary">Submit</button>
                     <button type="submit" class="btn btn-info">Print Report</button>
-                    <button type="submit" class="btn btn-info">Print Details Report</button>
                     <button type="submit" class="btn btn-info">CSV</button>
                     <button type="submit" class="btn btn-info">Default CSV</button>
                     <button type="submit" class="btn btn-info">Reset Column</button>
@@ -223,7 +218,7 @@
 
                             <label>Category</label>
                             <select class="form-control" v-model="form.category_id">
-                              <option 
+                              <option
                                   v-for="(cat,index) in categories" :key="index"
                                   :value="index"
                                   :selected="index == form.category_id">{{ cat }}</option>
@@ -277,7 +272,7 @@
                     photoUrl: '',
                 }),
                 categories: [],
-              
+
                 tag:  '',
                 autocompleteItems: [],
             }
@@ -287,7 +282,7 @@
           getResults(page = 1) {
 
               this.$Progress.start();
-              
+
               axios.get('/api/draft?page=' + page).then(({ data }) => (this.products = data.data));
 
               this.$Progress.finish();
@@ -400,7 +395,7 @@
 
         },
         mounted() {
-            
+
         },
         created() {
             this.$Progress.start();

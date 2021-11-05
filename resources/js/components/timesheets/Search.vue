@@ -45,7 +45,7 @@ background-color: #227DC7;
                     </li>
                     <li class="nav-item" style="width:33%">
                         <a class="nav-link" id="custom-content-below-reference-tab" data-toggle="pill" href="#custom-content-below-reference" role="tab" aria-controls="custom-content-below-reference" aria-selected="false">ID/Ref Ranges</a>
-                    </li>                   
+                    </li>
                 </ul><br>
                 <div class="tab-content" id="custom-content-below-tabContent">
                     <div class="tab-pane fade active show" id="custom-content-below-main" role="tabpanel" aria-labelledby="custom-content-below-main-tab">
@@ -64,8 +64,8 @@ background-color: #227DC7;
                                                     <input type="checkbox" class="custom-control-input" id="customCheck1">
                                                     <label class="custom-control-label" for="customCheck1">Include Reverted</label>
                                                 </div>
-                                            </div>                                                 
-                                        </div>                                                                            
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@ background-color: #227DC7;
                                         <div class="row">
                                             <div class="col-lg-3">
                                                 <label for="client" class="d-block mb-1">Status</label>
-                                                <select class="form-control select2" style="width:100%">                                    
+                                                <select class="form-control select2" style="width:100%">
                                                     <option value="ALL">All</option>
                                                     <option value="DRAFT">Draft</option>
                                                     <option value="REJECTED">Rejected</option>
@@ -92,7 +92,7 @@ background-color: #227DC7;
                                                     <option value="APPROVED_OR_EXPORTED">Approved/Exported</option>
                                                     <option value="MISSING">Missing</option>
                                                 </select>
-                                            </div>  
+                                            </div>
                                             <div class="col-lg-3">
                                                 <label for="client" class="d-block mb-1">Timesheet ID Range</label>
                                                 <div class="input-group">
@@ -100,13 +100,13 @@ background-color: #227DC7;
                                                     <div class="input-group-append">
                                                         <span  class="input-group-text to" id="validationTooltipUsernamePrepend">to</span>
                                                     </div>
-                                                    <input type="text" class="form-control form-control-sm">                                                    
-                                                </div>  
-                                            </div>                                         
-                                        </div>   
+                                                    <input type="text" class="form-control form-control-sm">
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="row">
                                             <div class="col-lg-6">
-                                                <label for="client" class="d-block mb-1">Client</label>                                
+                                                <label for="client" class="d-block mb-1">Client</label>
                                                 <div class="input-group">
                                                     <input type="text" class="form-control form-control-sm" placeholder="Search">
                                                     <div class="input-group-append">
@@ -117,7 +117,7 @@ background-color: #227DC7;
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
-                                                <label for="client" class="d-block mb-1">Manager</label>                                
+                                                <label for="client" class="d-block mb-1">Manager</label>
                                                 <div class="input-group">
                                                     <input type="text" class="form-control form-control-sm" placeholder="Search">
                                                     <div class="input-group-append">
@@ -127,10 +127,10 @@ background-color: #227DC7;
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>   
+                                        </div>
                                         <div class="row">
                                             <div class="col-lg-6">
-                                                <label for="client" class="d-block mb-1">Provider</label>                                
+                                                <label for="client" class="d-block mb-1">Provider</label>
                                                 <div class="input-group">
                                                     <input type="text" class="form-control form-control-sm" placeholder="Search">
                                                     <div class="input-group-append">
@@ -141,7 +141,7 @@ background-color: #227DC7;
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
-                                                <label for="client" class="d-block mb-1">Worker</label>                                
+                                                <label for="client" class="d-block mb-1">Worker</label>
                                                 <div class="input-group">
                                                     <input type="text" class="form-control form-control-sm" placeholder="Search">
                                                     <div class="input-group-append">
@@ -151,10 +151,10 @@ background-color: #227DC7;
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>    
+                                        </div>
                                         <div class="row">
                                             <div class="col-lg-6">
-                                                <label for="client" class="d-block mb-1">Consultant</label>                                
+                                                <label for="client" class="d-block mb-1">Consultant</label>
                                                 <div class="input-group">
                                                     <input type="text" class="form-control form-control-sm" placeholder="Search">
                                                     <div class="input-group-append">
@@ -166,7 +166,7 @@ background-color: #227DC7;
                                             </div>
                                             <div class="col-lg-3">
                                                 <label for="client" class="d-block mb-1">Worker Type</label>
-                                                <select class="form-control select2" style="width:100%">                                    
+                                                <select class="form-control select2" style="width:100%">
                                                     <option value="ALL">All</option>
                                                     <option value="PAYE">PAYE</option>
                                                     <option value="PAID_AS_PAYE">All Paid PAYE</option>
@@ -175,10 +175,10 @@ background-color: #227DC7;
                                                     <option value="EXTERNAL_CONTRACTOR">External Contractor</option>
                                                     <option value="NON_PAID_AS_PAYE">All Not Paid PAYE</option>
                                                 </select>
-                                            </div> 
+                                            </div>
                                             <div class="col-lg-3">
                                                 <label for="client" class="d-block mb-1">Payment Run Day</label>
-                                                <select class="form-control select2" style="width:100%">                                    
+                                                <select class="form-control select2" style="width:100%">
                                                     <option value="ANY">Any</option>
                                                     <option value="MONDAY">Monday</option>
                                                     <option value="TUESDAY">Tuesday</option>
@@ -195,12 +195,12 @@ background-color: #227DC7;
                                                     <option value="SATURDAY_OR_ANY">Saturday or Not Specified</option>
                                                     <option value="SUNDAY_OR_ANY">Sunday or Not Specified</option>
                                                 </select>
-                                            </div> 
-                                        </div>   
+                                            </div>
+                                        </div>
                                         <div class="row">
                                             <div class="col-lg-3">
                                                 <label for="client" class="d-block mb-1">Timesheet Frequency</label>
-                                                <select class="form-control select2" style="width:100%">                                    
+                                                <select class="form-control select2" style="width:100%">
                                                     <option value="ALL">All</option>
                                                     <option value="WEEKLY">weekly</option>
                                                     <option value="WEEKLY_TUE_MON">weekly_tue-mon</option>
@@ -241,22 +241,21 @@ background-color: #227DC7;
                                                     <option value="MONTHLY27TH">monthly27th</option>
                                                     <option value="MONTHLY28TH">monthly28th</option>
                                                 </select>
-                                            </div> 
+                                            </div>
                                             <div class="col-lg-3">
                                                 <label for="client" class="d-block mb-1">Timesheet Entry Method</label>
-                                                <select class="form-control select2" style="width:100%">                                    
+                                                <select class="form-control select2" style="width:100%">
                                                     <option value="ALL">All</option>
                                                     <option value="STANDARD">Standard</option>
-                                                    <option value="PAPER">Paper Entry</option>
                                                     <option value="BULK">Bulk Entry</option>
                                                 </select>
-                                            </div> 
+                                            </div>
                                             <div class="col-lg-6 row">
                                                 <div class="col-lg-5">
-                                                    <label for="client" class="d-block mb-1">Job Description</label>
+                                                    <label for="client" class="d-block mb-1">Payroll Payment Frequency</label>
                                                         <div class="input-group">
                                                             <select name="altManager_from[]" id="altManager" class="form-control input-sm" size="8" multiple="multiple">
-                                                            </select>                                           
+                                                            </select>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-2" style="padding-top:35px" >
@@ -267,10 +266,10 @@ background-color: #227DC7;
                                                 </div>
                                                 <div class="col-lg-5">
                                                     <div class="row" >
-                                                        <label for="client" class="d-block mb-1">Job Description</label>
+                                                        <label for="client" class="d-block mb-1">Payroll Payment Frequency</label>
                                                         <div class="input-group">
                                                             <select name="altManager_from[]" id="altManager" class="form-control input-sm" size="8" multiple="multiple"> </select>
-                                                            
+
                                                         </div>
                                                     </div>
                                                     <div class="row">
@@ -283,24 +282,24 @@ background-color: #227DC7;
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>     
+                                        </div>
                                         <div class="row" style="margin-top:20px">
                                                 <div style="margin-left:30px">
                                                     <button class="btn btn-success" type="submit">
                                                         Search
                                                     </button>
-                                                </div>     
+                                                </div>
                                                 <div style="margin-left:10px">
                                                     <button class="btn btn-primary" type="submit">
                                                     Reset All
                                                     </button>
-                                                </div>  
-                                        </div>                                                                                                      
+                                                </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>               
-                    </div>      
+                        </div>
+                    </div>
                     <div class="tab-pane fade" id="custom-content-below-date-ranges" role="tabpanel" aria-labelledby="custom-content-below-date-ranges-tab">
                         <div class="card card-primary card-outline card-tabs">
                             <div class="row">
@@ -337,8 +336,8 @@ background-color: #227DC7;
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>                                           
-                                            </div>   
+                                                </div>
+                                            </div>
                                             <div class="col-lg-6">
                                                 <label for="client" class="d-block mb-1">Submitted Date</label>
                                                 <div class="input-group">
@@ -364,9 +363,9 @@ background-color: #227DC7;
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>                                            
-                                            </div>                                         
-                                        </div>     
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="row">
                                             <div class="col-lg-6">
                                                 <label for="client" class="d-block mb-1">Approved Date</label>
@@ -393,8 +392,8 @@ background-color: #227DC7;
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>                                           
-                                            </div>   
+                                                </div>
+                                            </div>
                                             <div class="col-lg-6">
                                                 <label for="client" class="d-block mb-1">Exported Date</label>
                                                 <div class="input-group">
@@ -420,9 +419,9 @@ background-color: #227DC7;
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>                                            
-                                            </div>                                         
-                                        </div>   
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="row">
                                             <div class="col-lg-6">
                                                 <label for="client" class="d-block mb-1">Created Date</label>
@@ -449,8 +448,8 @@ background-color: #227DC7;
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>                                           
-                                            </div>   
+                                                </div>
+                                            </div>
                                             <div class="col-lg-6">
                                                 <label for="client" class="d-block mb-1">Placement Created Date</label>
                                                 <div class="input-group">
@@ -476,9 +475,9 @@ background-color: #227DC7;
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>                                            
-                                            </div>                                         
-                                        </div>   
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="row">
                                             <div class="col-lg-6">
                                                 <label for="client" class="d-block mb-1">Placement Modified Date</label>
@@ -505,103 +504,65 @@ background-color: #227DC7;
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>                                           
-                                            </div>                                                                                   
-                                        </div>                                                                            
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>                           
+                        </div>
                         <div class="card card-primary card-outline card-tabs">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="p-2 pl-4">
                                         <div class="timesheet_create_tit">
-                                            <h2 class="pb-2">                                             
+                                            <h2 class="pb-2">
                                                 Invoice Dates
                                             </h2>
                                         </div>
                                         <div class="row">
-                                            <div class="col-lg-2" style="padding-top:32px;"> 
+                                            <div class="col-lg-2" style="padding-top:32px;">
                                                 <div class="custom-control custom-checkbox">
                                                     <input type="checkbox" class="custom-control-input"  id="customCheck1">
                                                     <label class="custom-control-label" for="customCheck1">Client Invoices</label>
                                                 </div>
-                                            </div> 
-                                            <div class="col-lg-2" style="padding-top:32px;"> 
+                                            </div>
+                                            <div class="col-lg-2" style="padding-top:32px;">
                                                 <div class="custom-control custom-checkbox">
                                                     <input type="checkbox" class="custom-control-input"  id="customCheck1">
                                                     <label class="custom-control-label" for="customCheck1">Client Credit Notes</label>
                                                 </div>
-                                            </div> 
-                                            <div class="col-lg-2" style="padding-top:32px;"> 
+                                            </div>
+                                            <div class="col-lg-2" style="padding-top:32px;">
                                                 <div class="custom-control custom-checkbox">
                                                     <input type="checkbox" class="custom-control-input"  id="customCheck1">
                                                     <label class="custom-control-label" for="customCheck1">Self Bill Invoices</label>
                                                 </div>
-                                            </div> 
-                                            <div class="col-lg-2" style="padding-top:32px;"> 
+                                            </div>
+                                            <div class="col-lg-2" style="padding-top:32px;">
                                                 <div class="custom-control custom-checkbox">
                                                     <input type="checkbox" class="custom-control-input"  id="customCheck1">
                                                     <label class="custom-control-label" for="customCheck1">Self Bill Credit Notes</label>
                                                 </div>
-                                            </div> 
-                                            <div class="col-lg-2" style="padding-top:32px;"> 
+                                            </div>
+                                            <div class="col-lg-2" style="padding-top:32px;">
                                                 <div class="custom-control custom-checkbox">
                                                     <input type="checkbox" class="custom-control-input"  id="customCheck1">
                                                     <label class="custom-control-label" for="customCheck1">Non Self Bill Invoices</label>
                                                 </div>
-                                            </div> 
-                                            <div class="col-lg-2" style="padding-top:32px;"> 
+                                            </div>
+                                            <div class="col-lg-2" style="padding-top:32px;">
                                                 <div class="custom-control custom-checkbox">
                                                     <input type="checkbox" class="custom-control-input"  id="customCheck1">
                                                     <label class="custom-control-label" for="customCheck1">Non Self Bill Credit Notes</label>
                                                 </div>
-                                            </div> 
-                                        </div>  
+                                            </div>
+                                        </div>
                                         <div class="row">
-                                            <div class="col-lg-2" style="padding-top:32px;"> 
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input"  id="customCheck1">
-                                                    <label class="custom-control-label" for="customCheck1">Advice Notes</label>
-                                                </div>
-                                            </div> 
-                                            <div class="col-lg-2" style="padding-top:32px;"> 
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                                    <label class="custom-control-label" for="customCheck1">PAYE</label>
-                                                </div>
-                                            </div>                                             
-                                        </div>   
-                                        <br>   
+                                        </div>
+                                        <br>
                                         <div class="row">
-                                            <div class="col-lg-6">
-                                                <label for="client" class="d-block mb-1">Invoice Date Range / PAYE Export</label>
-                                                <div class="input-group">
-                                                    <input type="date" class="form-control form-control-sm ">
-                                                    <div class="input-group-append">
-                                                        <span  class="input-group-text to" id="validationTooltipUsernamePrepend">to</span>
-                                                    </div>
-                                                    <input type="date" class="form-control form-control-sm">
-                                                    <div class="input-group-append">
-                                                    <div class="dropdown">
-                                                            <button class="btn btn-primary btn-size dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                Others
-                                                            </button>
-                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                                <a class="dropdown-item" href="#">Today</a>
-                                                                <a class="dropdown-item" href="#">Yesterday</a>
-                                                                <hr>
-                                                                <a class="dropdown-item" href="#">Last 7 Days</a>
-                                                                <a class="dropdown-item" href="#">Last 30 Days</a>
-                                                                <hr>
-                                                                <a class="dropdown-item" href="#">This Week</a>
-                                                                <a class="dropdown-item" href="#">Last Week</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>                                           
-                                            </div>     
+
                                             <div class="col-lg-6">
                                                 <label for="client" class="d-block mb-1">Invoice Date Generated</label>
                                                 <div class="input-group">
@@ -627,9 +588,9 @@ background-color: #227DC7;
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>                                           
-                                            </div>                                                                               
-                                        </div>    
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="row">
                                             <div class="col-lg-6">
                                                 <label for="client" class="d-block mb-1">Invoice Date Sent</label>
@@ -656,73 +617,46 @@ background-color: #227DC7;
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>                                           
-                                            </div>     
-                                            <div class="col-lg-6">
-                                                <label for="client" class="d-block mb-1">Invoice Date Paid / PAYE Export</label>
-                                                <div class="input-group">
-                                                    <input type="date" class="form-control form-control-sm ">
-                                                    <div class="input-group-append">
-                                                        <span  class="input-group-text to" id="validationTooltipUsernamePrepend">to</span>
-                                                    </div>
-                                                    <input type="date" class="form-control form-control-sm">
-                                                    <div class="input-group-append">
-                                                    <div class="dropdown">
-                                                            <button class="btn btn-primary btn-size dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                Others
-                                                            </button>
-                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                                <a class="dropdown-item" href="#">Today</a>
-                                                                <a class="dropdown-item" href="#">Yesterday</a>
-                                                                <hr>
-                                                                <a class="dropdown-item" href="#">Last 7 Days</a>
-                                                                <a class="dropdown-item" href="#">Last 30 Days</a>
-                                                                <hr>
-                                                                <a class="dropdown-item" href="#">This Week</a>
-                                                                <a class="dropdown-item" href="#">Last Week</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>                                           
-                                            </div>                                                                               
-                                        </div>                                                              
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>   
+                        </div>
                         <div class="card card-primary card-outline card-tabs">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="p-2 pl-4">
                                         <div class="timesheet_create_tit">
-                                            <h2 class="pb-2">                                             
+                                            <h2 class="pb-2">
                                                 Invoice Status
                                             </h2>
-                                        </div>                                                              
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>      
+                        </div>
                         <div class="row" style="margin-top:20px">
                                 <div style="margin-left:30px">
                                     <button class="btn btn-success" type="submit">
                                         Search
                                     </button>
-                                </div>     
+                                </div>
                                 <div style="margin-left:10px">
                                     <button class="btn btn-primary" type="submit">
                                     Reset All
                                     </button>
-                                </div>  
-                        </div>                   
-                    </div>    
+                                </div>
+                        </div>
+                    </div>
                     <div class="tab-pane fade" id="custom-content-below-reference" role="tabpanel" aria-labelledby="custom-content-below-reference-tab">
                         <div class="card card-primary card-outline card-tabs">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="p-2 pl-4">
                                         <!-- <div class="timesheet_create_tit">
-                                            <h2 class="pb-2">                                             
+                                            <h2 class="pb-2">
                                                 Invoice Dates
                                             </h2>
                                         </div> -->
@@ -734,9 +668,9 @@ background-color: #227DC7;
                                                     <div class="input-group-append">
                                                         <span  class="input-group-text to" id="validationTooltipUsernamePrepend">to</span>
                                                     </div>
-                                                    <input type="text" class="form-control form-control-sm">                                                    
-                                                </div>  
-                                            </div>   
+                                                    <input type="text" class="form-control form-control-sm">
+                                                </div>
+                                            </div>
                                             <div class="col-lg-6">
                                                 <label for="client" class="d-block mb-1">Project Code Range</label>
                                                 <div class="input-group">
@@ -744,10 +678,10 @@ background-color: #227DC7;
                                                     <div class="input-group-append">
                                                         <span  class="input-group-text to" id="validationTooltipUsernamePrepend">to</span>
                                                     </div>
-                                                    <input type="text" class="form-control form-control-sm">                                                    
-                                                </div>  
-                                            </div> 
-                                        </div>   
+                                                    <input type="text" class="form-control form-control-sm">
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="row">
                                             <div class="col-lg-6">
                                                 <label for="client" class="d-block mb-1">Project Reference</label>
@@ -756,9 +690,9 @@ background-color: #227DC7;
                                                     <div class="input-group-append">
                                                         <span  class="input-group-text to" id="validationTooltipUsernamePrepend">to</span>
                                                     </div>
-                                                    <input type="text" class="form-control form-control-sm">                                                    
-                                                </div>  
-                                            </div>   
+                                                    <input type="text" class="form-control form-control-sm">
+                                                </div>
+                                            </div>
                                             <div class="col-lg-6">
                                                 <label for="client" class="d-block mb-1">Payroll Reference</label>
                                                 <div class="input-group">
@@ -766,10 +700,10 @@ background-color: #227DC7;
                                                     <div class="input-group-append">
                                                         <span  class="input-group-text to" id="validationTooltipUsernamePrepend">to</span>
                                                     </div>
-                                                    <input type="text" class="form-control form-control-sm">                                                    
-                                                </div>  
-                                            </div> 
-                                        </div>   
+                                                    <input type="text" class="form-control form-control-sm">
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="row">
                                             <div class="col-lg-6">
                                                 <label for="client" class="d-block mb-1">Invoice Number</label>
@@ -778,50 +712,50 @@ background-color: #227DC7;
                                                     <div class="input-group-append">
                                                         <span  class="input-group-text to" id="validationTooltipUsernamePrepend">to</span>
                                                     </div>
-                                                    <input type="text" class="form-control form-control-sm">                                                    
-                                                </div>  
-                                            </div>   
+                                                    <input type="text" class="form-control form-control-sm">
+                                                </div>
+                                            </div>
                                             <div class="col-lg-3">
-                                                <label for="client" class="d-block mb-1">Client Invoice Town</label>                                                
-                                                    <input type="text" class="form-control form-control-sm ">                                                 
-                                            </div> 
+                                                <label for="client" class="d-block mb-1">Client Invoice Town</label>
+                                                    <input type="text" class="form-control form-control-sm ">
+                                            </div>
                                             <div class="col-lg-3">
-                                                <label for="client" class="d-block mb-1">Client Invoice Country</label>                                                
-                                                    <input type="text" class="form-control form-control-sm ">                                                 
-                                            </div> 
+                                                <label for="client" class="d-block mb-1">Client Invoice Country</label>
+                                                    <input type="text" class="form-control form-control-sm ">
+                                            </div>
                                             <div class="row" style="margin-top:20px">
                                                 <div style="margin-left:30px">
                                                     <button class="btn btn-success" type="submit">
                                                         Search
                                                     </button>
-                                                </div>     
+                                                </div>
                                                 <div style="margin-left:10px">
                                                     <button class="btn btn-primary" type="submit">
                                                     Reset All
                                                     </button>
-                                                </div>  
+                                                </div>
                                             </div>
-                                        </div>                                                               
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>          
-                    </div>             
-                </div>  
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 </template>
 
-<script>   
+<script>
 
     export default {
-        
+
         mounted() {
             //Initialize Select2 Elements
             $('.select2').select2();
-             $('[data-toggle="tooltip"]').tooltip();     
+             $('[data-toggle="tooltip"]').tooltip();
             console.log('Creat Timesheet mounted.');
         }
     }
