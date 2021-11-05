@@ -390,7 +390,7 @@
                             <div class="col-lg-1">
                                 <label for="Unit" class="d-block mb-1">Units</label>
                             </div>    
-                            <div class="col-lg-1">
+                            <div class="col-lg-2">
                                 <label for="Project Code" class="d-block mb-1">Code</label>
                             </div>   
                             <div class="col-lg-1">
@@ -434,8 +434,19 @@
                             <div class="col-lg-1">
                                
                             </div>    
-                            <div class="col-lg-1">
-                                <input type="text" style="width:79px">
+                            <div class="col-lg-2">
+                                <select class="form-control select2" style="width:163px">
+                                    <option value="IOW-006">IOW-006</option>
+                                    <option value="IOW-008">IOW-008</option>
+                                    <option value="IOW-010">IOW-010</option>
+                                    <option value="IOW-011">IOW-011</option>
+                                    <option value="IOW-012">IOW-012</option>
+                                    <option value="IOW-018">IOW-018</option>
+                                    <option value="IOW-022">IOW-022</option>
+                                    <option value="IOW-025">IOW-025</option>
+                                    <option value="IOW-055">IOW-055</option>
+
+                                </select>
                             </div>   
                             <div class="col-lg-1">
                                 <input type="text" style="width:79px">
