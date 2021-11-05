@@ -24,8 +24,8 @@
                     <tr>
                       <th>ID</th>
                       <th>Name</th>
-                      <th>Description</th>
-                      <th>Created</th>
+                      <!--<th>Description</th>-->
+                      <!--<th>Created</th>-->
                       <th>Action</th>
                     </tr>
                   </thead>
@@ -34,8 +34,8 @@
 
                       <td>{{category.id}}</td>
                       <td class="text-capitalize">{{category.name}}</td>
-                      <td>{{category.description}}</td>
-                      <td>{{category.created_at}}</td>
+                      <!--<td>{{category.description}}</td>-->
+                      <!--<td>{{category.created_at}}</td>-->
                       <td>
 
                         <a href="#" @click="editModal(category)">

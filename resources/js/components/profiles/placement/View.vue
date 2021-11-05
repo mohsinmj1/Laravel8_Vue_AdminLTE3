@@ -1044,7 +1044,7 @@
                                 <td class=" dt-right">21.50</td>
                                 <td class=" dt-left">hourly</td>
                             </tr>
-                            
+
                             </tbody>
                         </table>
                     </div>

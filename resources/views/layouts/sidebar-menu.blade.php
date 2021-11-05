@@ -361,7 +361,7 @@
                             <p>Configrations</p>
                         </router-link>
                     </li>
-                    {{--<li class="nav-item">
+                    <li class="nav-item">
                         <router-link to="/product/category" class="nav-link">
                             <i class="nav-icon fas fa-list-ol green"></i>
                             <p>
@@ -369,7 +369,7 @@
                             </p>
                         </router-link>
                     </li>
-                    <li class="nav-item">
+                    {{--<li class="nav-item">
                         <router-link to="/product/tag" class="nav-link">
                             <i class="nav-icon fas fa-tags green"></i>
                             <p>
