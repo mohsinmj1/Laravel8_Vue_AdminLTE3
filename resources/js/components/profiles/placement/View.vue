@@ -1,17 +1,17 @@
 <style>
-    .dropdown-menu > li > a {
-        padding: 6px 20px;
-    }
+.dropdown-menu > li > a {
+    padding: 6px 20px;
+}
 
-    .dropdown-menu > li > a {
-        display: block;
-        padding: 3px 20px;
-        clear: both;
-        font-weight: 400;
-        line-height: 1.42857143;
-        color: #333;
-        white-space: nowrap;
-    }
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
 </style>
 <template>
 
@@ -43,14 +43,10 @@
                                                aria-controls="custom-content-below-home" aria-selected="true">Main</a>
                                         </li>
                                         <li class="nav-item" style="width:33.33%">
-                                            <a class="nav-link" id="custom-content-below-profile-tab" data-toggle="pill"
-                                               href="#custom-content-below-profile" role="tab"
-                                               aria-controls="custom-content-below-profile" aria-selected="false">Financial</a>
-                                        </li>
-                                        <li class="nav-item" style="width:33.33%">
                                             <a class="nav-link" id="custom-content-below-messages-tab"
                                                data-toggle="pill" href="#custom-content-below-messages" role="tab"
-                                               aria-controls="custom-content-below-messages" aria-selected="false">Data Ranges</a>
+                                               aria-controls="custom-content-below-messages" aria-selected="false">Data
+                                                Ranges</a>
                                         </li>
 
                                     </ul>
@@ -61,7 +57,8 @@
                                             <div class="row">
                                                 <div class="col-sm-6">
                                                     <div class="form-group">
-                                                        <label class="control-label" for="placementItrisId">Placement Ref</label>
+                                                        <label class="control-label" for="placementItrisId">Placement
+                                                            Ref</label>
                                                         <input type="text" format="2" label="Placement Ref"
                                                                class="form-control form-control-sm" value="">
                                                     </div>
@@ -142,7 +139,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
-                                                    <label for="client" class="d-block mb-1">Status (Date filters will overide this)</label>
+                                                    <label for="client" class="d-block mb-1">Status (Date filters will
+                                                        overide this)</label>
                                                     <div class="input-group">
                                                         <select name="placementStatus" id="placementStatus"
                                                                 class="form-control input-sm null" onchange="">
@@ -396,7 +394,8 @@
                                                                type="text" class="bsDP form-control input-sm"
                                                                data-date-start-date="" data-date-end-date=""
                                                                placeholder="dd/MM/yyyy">
-                                                        <span class="input-group-addon bg-primary b-0 text-white">to</span>
+                                                        <span
+                                                            class="input-group-addon bg-primary b-0 text-white">to</span>
                                                         <input id="startDate_end_X" name="toStartDate_X" value=""
                                                                type="text" class="bsDP form-control input-sm"
                                                                data-date-start-date="" data-date-end-date=""
@@ -413,7 +412,7 @@
                                                                     data-toggle="dropdown"
                                                                     style="overflow: hidden; position: relative;"
                                                                     aria-expanded="false">Options <span
-                                                                    class="caret"></span></button>
+                                                                class="caret"></span></button>
                                                             <ul class="dropdown-menu">
                                                                 <li><a class="dr-today" id="startDate_todayRange"
                                                                        href="#">Today</a></li>
@@ -451,7 +450,8 @@
                                                                type="text" class="bsDP form-control input-sm"
                                                                data-date-start-date="" data-date-end-date=""
                                                                placeholder="dd/MM/yyyy">
-                                                        <span class="input-group-addon bg-primary b-0 text-white">to</span>
+                                                        <span
+                                                            class="input-group-addon bg-primary b-0 text-white">to</span>
                                                         <input id="endDate_end_X" name="toEndDate_X" value=""
                                                                type="text" class="bsDP form-control input-sm"
                                                                data-date-start-date="" data-date-end-date=""
@@ -467,7 +467,7 @@
                                                                     data-toggle="dropdown"
                                                                     style="overflow: hidden; position: relative;"
                                                                     aria-expanded="false">Options <span
-                                                                    class="caret"></span></button>
+                                                                class="caret"></span></button>
                                                             <ul class="dropdown-menu">
                                                                 <li><a class="dr-today" id="endDate_todayRange"
                                                                        href="#">Today</a></li>
@@ -502,7 +502,8 @@
                                                                value="" type="text" class="bsDP form-control input-sm"
                                                                data-date-start-date="" data-date-end-date=""
                                                                placeholder="dd/MM/yyyy">
-                                                        <span class="input-group-addon bg-primary b-0 text-white">to</span>
+                                                        <span
+                                                            class="input-group-addon bg-primary b-0 text-white">to</span>
                                                         <input id="createdDate_end_X" name="toCreatedDate_X" value=""
                                                                type="text" class="bsDP form-control input-sm"
                                                                data-date-start-date="" data-date-end-date=""
@@ -539,10 +540,12 @@
                                                                        href="#">Last Week</a></li>
                                                                 <li class="divider"></li>
                                                                 <li><a class="dr-thismonth"
-                                                                       id="createdDate_thisMonthRange" href="#">This Month</a>
+                                                                       id="createdDate_thisMonthRange" href="#">This
+                                                                    Month</a>
                                                                 </li>
                                                                 <li><a class="dr-lastmonth"
-                                                                       id="createdDate_lastMonthRange" href="#">Last Month</a>
+                                                                       id="createdDate_lastMonthRange" href="#">Last
+                                                                    Month</a>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -558,7 +561,8 @@
                                                                value="" type="text" class="bsDP form-control input-sm"
                                                                data-date-start-date="" data-date-end-date=""
                                                                placeholder="dd/MM/yyyy">
-                                                        <span class="input-group-addon bg-primary b-0 text-white">to</span>
+                                                        <span
+                                                            class="input-group-addon bg-primary b-0 text-white">to</span>
                                                         <input id="modifiedDate_end_X" name="toModifiedDate_X" value=""
                                                                type="text" class="bsDP form-control input-sm"
                                                                data-date-start-date="" data-date-end-date=""
@@ -575,7 +579,7 @@
                                                                     data-toggle="dropdown"
                                                                     style="overflow: hidden; position: relative;"
                                                                     aria-expanded="false">Options <span
-                                                                    class="caret"></span></button>
+                                                                class="caret"></span></button>
                                                             <ul class="dropdown-menu">
                                                                 <li><a class="dr-today" id="modifiedDate_todayRange"
                                                                        href="#">Today</a></li>
@@ -589,17 +593,21 @@
                                                                        href="#">Last 30 Days</a></li>
                                                                 <li class="divider"></li>
                                                                 <li><a class="dr-thisweek"
-                                                                       id="modifiedDate_thisWeekRange" href="#">This Week</a>
+                                                                       id="modifiedDate_thisWeekRange" href="#">This
+                                                                    Week</a>
                                                                 </li>
                                                                 <li><a class="dr-lastweek"
-                                                                       id="modifiedDate_lastWeekRange" href="#">Last Week</a>
+                                                                       id="modifiedDate_lastWeekRange" href="#">Last
+                                                                    Week</a>
                                                                 </li>
                                                                 <li class="divider"></li>
                                                                 <li><a class="dr-thismonth"
-                                                                       id="modifiedDate_thisMonthRange" href="#">This Month</a>
+                                                                       id="modifiedDate_thisMonthRange" href="#">This
+                                                                    Month</a>
                                                                 </li>
                                                                 <li><a class="dr-lastmonth"
-                                                                       id="modifiedDate_lastMonthRange" href="#">Last Month</a>
+                                                                       id="modifiedDate_lastMonthRange" href="#">Last
+                                                                    Month</a>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -643,18 +651,18 @@
                         <table class="table table-hover">
                             <thead>
                             <tr>
-                                <th>Action </th>
+                                <th>Action</th>
                                 <th>Ref</th>
                                 <th>Start</th>
-                                <th>End </th>
-                                <th>Job title </th>
+                                <th>End</th>
+                                <th>Job title</th>
                                 <th>Contractor</th>
                                 <th>Provider</th>
                                 <th>Payroll</th>
                                 <th>Consultant</th>
                                 <th>Client name</th>
                                 <th>Client reference ID</th>
-                                <th>Manager </th>
+                                <th>Manager</th>
                                 <th>Created at</th>
                                 <th>Modified at</th>
                                 <th>Default rate</th>
@@ -670,463 +678,573 @@
                             <tr role="row" class="odd">
                                 <td>
                                     <div class="input-group-append">
-                                    <div class="dropdown">
-                                        <button
-                                        class="btn btn-primary btn-size dropdown-toggle"
-                                        type="button"
-                                        id="dropdownMenuButton"
-                                        data-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        >
-                                        Edit
-                                        </button>
-                                        <div
-                                        class="dropdown-menu"
-                                        aria-labelledby="dropdownMenuButton"
-                                        >
-                                        <a class="dropdown-item" href="#">View Summary </a>
+                                        <div class="dropdown">
+                                            <button
+                                                class="btn btn-primary btn-size dropdown-toggle"
+                                                type="button"
+                                                id="dropdownMenuButton"
+                                                data-toggle="dropdown"
+                                                aria-haspopup="true"
+                                                aria-expanded="false"
+                                            >
+                                                Edit
+                                            </button>
+                                            <div
+                                                class="dropdown-menu"
+                                                aria-labelledby="dropdownMenuButton"
+                                            >
+                                                <a class="dropdown-item" href="#">View Summary </a>
+                                            </div>
                                         </div>
-                                    </div>
                                     </div>
                                 </td>
                                 <td class=" dt-left">Pmt1</td>
                                 <td class=" dt-left">21/05/2018</td>
                                 <td class=" dt-left">Unknown</td>
                                 <td class=" dt-left">Welder</td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/worker/edit?refCode=ef380a15-2445-4d76-849b-b5770b3cb01b">Alex Ockendon (Wkr2)</a>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/worker/edit?refCode=ef380a15-2445-4d76-849b-b5770b3cb01b">Alex
+                                        Ockendon (Wkr2)</a>
                                 </td>
-                                <td class=" dt-left"></td>
-                                <td class=" dt-left"></td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve Slater (Con1)</a>
+                                <td class=" dt-left">-</td>
+                                <td class=" dt-left">-</td>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve
+                                        Slater (Con1)</a>
                                 </td>
-                                <td class=" dt-left"><a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight Shipyard Company Limited</a>
+                                <td class=" dt-left">
+                                    <a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight
+                                        Shipyard Company Limited</a>
                                 </td>
                                 <td class=" dt-left">Cli2</td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/user/show/8fa68956-5941-48da-920b-86bedb7677bc?returnTo=/summary/agencySum">Robert Myram (Mgr2)</a>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/user/show/8fa68956-5941-48da-920b-86bedb7677bc?returnTo=/summary/agencySum">Robert
+                                        Myram (Mgr2)</a>
                                 </td>
-                                <td class="dt-left sorting_1"></td>
                                 <td class=" dt-left">25/05/2018 15:05</td>
                                 <td class=" dt-left">02/11/2021 11:09</td>
-                                <td class=" dt-left">No</td>
-                                <td class=" dt-left"></td>
                                 <td class=" dt-left">5230 - (Day) - Fabrication &amp; Welding Re-Works Labour</td>
                                 <td class=" dt-right">19.00</td>
                                 <td class=" dt-right">20.50</td>
                                 <td class=" dt-left">hourly</td>
+                                <td class=" dt-left">Test</td>
                             </tr>
-                            <tr role="row" class="even">
-                                       <td>
+                            <tr role="row" class="odd">
+                                <td>
                                     <div class="input-group-append">
-                                    <div class="dropdown">
-                                        <button
-                                        class="btn btn-primary btn-size dropdown-toggle"
-                                        type="button"
-                                        id="dropdownMenuButton"
-                                        data-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        >
-                                        Edit
-                                        </button>
-                                        <div
-                                        class="dropdown-menu"
-                                        aria-labelledby="dropdownMenuButton"
-                                        >
-                                        <a class="dropdown-item" href="#">View Summary </a>
+                                        <div class="dropdown">
+                                            <button
+                                                class="btn btn-primary btn-size dropdown-toggle"
+                                                type="button"
+                                                id="dropdownMenuButton"
+                                                data-toggle="dropdown"
+                                                aria-haspopup="true"
+                                                aria-expanded="false"
+                                            >
+                                                Edit
+                                            </button>
+                                            <div
+                                                class="dropdown-menu"
+                                                aria-labelledby="dropdownMenuButton"
+                                            >
+                                                <a class="dropdown-item" href="#">View Summary </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    </div>
                                 </td>
-                                <td class=" dt-left">Pmt2</td>
+                                <td class=" dt-left">Pmt1</td>
                                 <td class=" dt-left">21/05/2018</td>
                                 <td class=" dt-left">Unknown</td>
                                 <td class=" dt-left">Welder</td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/worker/edit?refCode=9e1d25f9-f29c-46b1-ad1f-db9dcd6f118d">Darren Nash (Wkr1)</a>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/worker/edit?refCode=ef380a15-2445-4d76-849b-b5770b3cb01b">Alex
+                                        Ockendon (Wkr2)</a>
                                 </td>
-                                <td class=" dt-left"></td>
-                                <td class=" dt-left"></td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve Slater (Con1)</a>
+                                <td class=" dt-left">-</td>
+                                <td class=" dt-left">-</td>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve
+                                        Slater (Con1)</a>
                                 </td>
-                                <td class=" dt-left"><a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight Shipyard Company Limited</a>
-                                </td>
-                                <td class=" dt-left">Cli2</td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/user/show/8fa68956-5941-48da-920b-86bedb7677bc?returnTo=/summary/agencySum">Robert Myram (Mgr2)</a>
-                                </td>
-                                <td class="dt-left sorting_1"></td>
-                                <td class=" dt-left">25/05/2018 15:08</td>
-                                <td class=" dt-left">28/09/2020 09:12</td>
-                                <td class=" dt-left">No</td>
-                                <td class=" dt-left"></td>
-                                <td class=" dt-left">5405 (DAY) - Engineering Fuel System -  Labour</td>
-                                <td class=" dt-right">19.00</td>
-                                <td class=" dt-right">21.50</td>
-                                <td class=" dt-left">hourly</td>
-                            </tr>
-                            <tr role="row" class="odd">
-                                       <td>
-                                    <div class="input-group-append">
-                                    <div class="dropdown">
-                                        <button
-                                        class="btn btn-primary btn-size dropdown-toggle"
-                                        type="button"
-                                        id="dropdownMenuButton"
-                                        data-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        >
-                                        Edit
-                                        </button>
-                                        <div
-                                        class="dropdown-menu"
-                                        aria-labelledby="dropdownMenuButton"
-                                        >
-                                        <a class="dropdown-item" href="#">View Summary </a>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </td>
-                                <td class=" dt-left">Pmt4</td>
-                                <td class=" dt-left">21/05/2018</td>
-                                <td class=" dt-left">Unknown</td>
-                                <td class=" dt-left">Welder</td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/worker/edit?refCode=0356d7a5-3360-4237-a310-36d2cfbc8a25">Andrew  Kent (Wkr3)</a>
-                                </td>
-                                <td class=" dt-left"></td>
-                                <td class=" dt-left"></td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve Slater (Con1)</a>
-                                </td>
-                                <td class=" dt-left"><a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight Shipyard Company Limited</a>
+                                <td class=" dt-left">
+                                    <a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight
+                                        Shipyard Company Limited</a>
                                 </td>
                                 <td class=" dt-left">Cli2</td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/user/show/8fa68956-5941-48da-920b-86bedb7677bc?returnTo=/summary/agencySum">Robert Myram (Mgr2)</a>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/user/show/8fa68956-5941-48da-920b-86bedb7677bc?returnTo=/summary/agencySum">Robert
+                                        Myram (Mgr2)</a>
                                 </td>
-                                <td class="dt-left sorting_1"></td>
-                                <td class=" dt-left">25/05/2018 15:09</td>
-                                <td class=" dt-left">04/10/2021 16:24</td>
-                                <td class=" dt-left">No</td>
-                                <td class=" dt-left"></td>
-                                <td class=" dt-left">02.0100 - FABRICATION - SUPERVISION</td>
-                                <td class=" dt-right">19.00</td>
-                                <td class=" dt-right">21.50</td>
-                                <td class=" dt-left">hourly</td>
-                            </tr>
-                            <tr role="row" class="even">
-                                        <td>
-                                    <div class="input-group-append">
-                                    <div class="dropdown">
-                                        <button
-                                        class="btn btn-primary btn-size dropdown-toggle"
-                                        type="button"
-                                        id="dropdownMenuButton"
-                                        data-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        >
-                                        Edit
-                                        </button>
-                                        <div
-                                        class="dropdown-menu"
-                                        aria-labelledby="dropdownMenuButton"
-                                        >
-                                        <a class="dropdown-item" href="#">View Summary </a>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </td>
-                                <td class=" dt-left">Pmt5</td>
-                                <td class=" dt-left">04/06/2018</td>
-                                <td class=" dt-left">Unknown</td>
-                                <td class=" dt-left">Welder</td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/worker/edit?refCode=5645f34e-32bc-4061-92c6-80b1a2558a70">Darren Warnes (Wkr8)</a>
-                                </td>
-                                <td class=" dt-left"></td>
-                                <td class=" dt-left"></td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve Slater (Con1)</a>
-                                </td>
-                                <td class=" dt-left"><a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight Shipyard Company Limited</a>
-                                </td>
-                                <td class=" dt-left">Cli2</td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/user/show/8fa68956-5941-48da-920b-86bedb7677bc?returnTo=/summary/agencySum">Robert Myram (Mgr2)</a>
-                                </td>
-                                <td class="dt-left sorting_1"></td>
-                                <td class=" dt-left">06/06/2018 21:27</td>
-                                <td class=" dt-left">02/10/2020 16:32</td>
-                                <td class=" dt-left">No</td>
-                                <td class=" dt-left"></td>
-                                <td class=" dt-left">5405 (DAY) - Engineering Fuel System -  Labour</td>
-                                <td class=" dt-right">19.00</td>
-                                <td class=" dt-right">21.50</td>
-                                <td class=" dt-left">hourly</td>
-                            </tr>
-                            <tr role="row" class="odd">
-                                       <td>
-                                    <div class="input-group-append">
-                                    <div class="dropdown">
-                                        <button
-                                        class="btn btn-primary btn-size dropdown-toggle"
-                                        type="button"
-                                        id="dropdownMenuButton"
-                                        data-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        >
-                                        Edit
-                                        </button>
-                                        <div
-                                        class="dropdown-menu"
-                                        aria-labelledby="dropdownMenuButton"
-                                        >
-                                        <a class="dropdown-item" href="#">View Summary </a>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </td>
-                                <td class=" dt-left">Pmt10</td>
-                                <td class=" dt-left">04/06/2018</td>
-                                <td class=" dt-left">Unknown</td>
-                                <td class=" dt-left">Labourer</td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/worker/edit?refCode=0fa07892-8e20-477f-bed8-4a8833f86a25">Dean  Gasper (Wkr5)</a>
-                                </td>
-                                <td class=" dt-left"></td>
-                                <td class=" dt-left"></td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve Slater (Con1)</a>
-                                </td>
-                                <td class=" dt-left"><a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight Shipyard Company Limited</a>
-                                </td>
-                                <td class=" dt-left">Cli2</td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/user/show/4472c2fb-c2b1-4608-9be0-82f0cefa31e9?returnTo=/summary/agencySum">Jack Rushton (Mgr9)</a>
-                                </td>
-                                <td class="dt-left sorting_1"></td>
-                                <td class=" dt-left">06/06/2018 21:32</td>
-                                <td class=" dt-left">12/10/2021 08:31</td>
-                                <td class=" dt-left">No</td>
-                                <td class=" dt-left"></td>
-                                <td class=" dt-left">11.0100 - WARRANTY - PROVISION</td>
-                                <td class=" dt-right">13.00</td>
-                                <td class=" dt-right">15.00</td>
-                                <td class=" dt-left">hourly</td>
-                            </tr>
-                            <tr role="row" class="even">
-                                         <td>
-                                    <div class="input-group-append">
-                                    <div class="dropdown">
-                                        <button
-                                        class="btn btn-primary btn-size dropdown-toggle"
-                                        type="button"
-                                        id="dropdownMenuButton"
-                                        data-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        >
-                                        Edit
-                                        </button>
-                                        <div
-                                        class="dropdown-menu"
-                                        aria-labelledby="dropdownMenuButton"
-                                        >
-                                        <a class="dropdown-item" href="#">View Summary </a>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </td>
-                                <td class=" dt-left">Pmt15</td>
-                                <td class=" dt-left">11/06/2018</td>
-                                <td class=" dt-left">Unknown</td>
-                                <td class=" dt-left">Welder</td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/worker/edit?refCode=8e9ec34a-a537-49ce-a07a-ad31cc9d9cab">Jack Kelsey (Wkr15)</a>
-                                </td>
-                                <td class=" dt-left"></td>
-                                <td class=" dt-left"></td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve Slater (Con1)</a>
-                                </td>
-                                <td class=" dt-left"><a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight Shipyard Company Limited</a>
-                                </td>
-                                <td class=" dt-left">Cli2</td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/user/show/8fa68956-5941-48da-920b-86bedb7677bc?returnTo=/summary/agencySum">Robert Myram (Mgr2)</a>
-                                </td>
-                                <td class="dt-left sorting_1"></td>
-                                <td class=" dt-left">11/06/2018 20:20</td>
-                                <td class=" dt-left">14/05/2020 10:14</td>
-                                <td class=" dt-left">No</td>
-                                <td class=" dt-left"></td>
+                                <td class=" dt-left">25/05/2018 15:05</td>
+                                <td class=" dt-left">02/11/2021 11:09</td>
                                 <td class=" dt-left">5230 - (Day) - Fabrication &amp; Welding Re-Works Labour</td>
                                 <td class=" dt-right">19.00</td>
-                                <td class=" dt-right">21.50</td>
+                                <td class=" dt-right">20.50</td>
                                 <td class=" dt-left">hourly</td>
+                                <td class=" dt-left">Test</td>
                             </tr>
                             <tr role="row" class="odd">
-                                         <td>
+                                <td>
                                     <div class="input-group-append">
-                                    <div class="dropdown">
-                                        <button
-                                        class="btn btn-primary btn-size dropdown-toggle"
-                                        type="button"
-                                        id="dropdownMenuButton"
-                                        data-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        >
-                                        Edit
-                                        </button>
-                                        <div
-                                        class="dropdown-menu"
-                                        aria-labelledby="dropdownMenuButton"
-                                        >
-                                        <a class="dropdown-item" href="#">View Summary </a>
+                                        <div class="dropdown">
+                                            <button
+                                                class="btn btn-primary btn-size dropdown-toggle"
+                                                type="button"
+                                                id="dropdownMenuButton"
+                                                data-toggle="dropdown"
+                                                aria-haspopup="true"
+                                                aria-expanded="false"
+                                            >
+                                                Edit
+                                            </button>
+                                            <div
+                                                class="dropdown-menu"
+                                                aria-labelledby="dropdownMenuButton"
+                                            >
+                                                <a class="dropdown-item" href="#">View Summary </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    </div>
                                 </td>
-                                <td class=" dt-left">Pmt20</td>
-                                <td class=" dt-left">25/06/2018</td>
+                                <td class=" dt-left">Pmt1</td>
+                                <td class=" dt-left">21/05/2018</td>
                                 <td class=" dt-left">Unknown</td>
-                                <td class=" dt-left">Heavy Gang</td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/worker/edit?refCode=0861755e-9871-4500-91a4-c63e4e2e43fb">Daniel  Fishburn (Wkr20)</a>
+                                <td class=" dt-left">Welder</td>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/worker/edit?refCode=ef380a15-2445-4d76-849b-b5770b3cb01b">Alex
+                                        Ockendon (Wkr2)</a>
                                 </td>
-                                <td class=" dt-left"></td>
-                                <td class=" dt-left"></td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve Slater (Con1)</a>
+                                <td class=" dt-left">-</td>
+                                <td class=" dt-left">-</td>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve
+                                        Slater (Con1)</a>
                                 </td>
-                                <td class=" dt-left"><a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight Shipyard Company Limited</a>
+                                <td class=" dt-left">
+                                    <a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight
+                                        Shipyard Company Limited</a>
                                 </td>
                                 <td class=" dt-left">Cli2</td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/user/show/4472c2fb-c2b1-4608-9be0-82f0cefa31e9?returnTo=/summary/agencySum">Jack Rushton (Mgr9)</a>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/user/show/8fa68956-5941-48da-920b-86bedb7677bc?returnTo=/summary/agencySum">Robert
+                                        Myram (Mgr2)</a>
                                 </td>
-                                <td class="dt-left sorting_1"></td>
-                                <td class=" dt-left">02/07/2018 21:20</td>
-                                <td class=" dt-left">05/08/2020 16:09</td>
-                                <td class=" dt-left">No</td>
-                                <td class=" dt-left"></td>
-                                <td class=" dt-left">7110 (DAY) - Site Maintenance</td>
-                                <td class=" dt-right">12.00</td>
-                                <td class=" dt-right">13.50</td>
-                                <td class=" dt-left">hourly</td>
-                            </tr>
-                            <tr role="row" class="even">
-                                          <td>
-                                    <div class="input-group-append">
-                                    <div class="dropdown">
-                                        <button
-                                        class="btn btn-primary btn-size dropdown-toggle"
-                                        type="button"
-                                        id="dropdownMenuButton"
-                                        data-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        >
-                                        Edit
-                                        </button>
-                                        <div
-                                        class="dropdown-menu"
-                                        aria-labelledby="dropdownMenuButton"
-                                        >
-                                        <a class="dropdown-item" href="#">View Summary </a>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </td>
-                                <td class=" dt-left">Pmt23</td>
-                                <td class=" dt-left">09/07/2018</td>
-                                <td class=" dt-left">Unknown</td>
-                                <td class=" dt-left">Fabricator</td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/worker/edit?refCode=5d892dad-ef77-4f7a-a606-368405523689">Neil McCulloch (Wkr22)</a>
-                                </td>
-                                <td class=" dt-left"></td>
-                                <td class=" dt-left"></td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve Slater (Con1)</a>
-                                </td>
-                                <td class=" dt-left"><a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight Shipyard Company Limited</a>
-                                </td>
-                                <td class=" dt-left">Cli2</td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/user/show/8fa68956-5941-48da-920b-86bedb7677bc?returnTo=/summary/agencySum">Robert Myram (Mgr2)</a>
-                                </td>
-                                <td class="dt-left sorting_1"></td>
-                                <td class=" dt-left">09/07/2018 23:29</td>
-                                <td class=" dt-left">16/03/2020 10:09</td>
-                                <td class=" dt-left">No</td>
-                                <td class=" dt-left"></td>
-                                <td class=" dt-left">5312 (DAY) - Windows Installation</td>
+                                <td class=" dt-left">25/05/2018 15:05</td>
+                                <td class=" dt-left">02/11/2021 11:09</td>
+                                <td class=" dt-left">5230 - (Day) - Fabrication &amp; Welding Re-Works Labour</td>
                                 <td class=" dt-right">19.00</td>
-                                <td class=" dt-right">21.50</td>
+                                <td class=" dt-right">20.50</td>
                                 <td class=" dt-left">hourly</td>
+                                <td class=" dt-left">Test</td>
                             </tr>
                             <tr role="row" class="odd">
-                                         <td>
+                                <td>
                                     <div class="input-group-append">
-                                    <div class="dropdown">
-                                        <button
-                                        class="btn btn-primary btn-size dropdown-toggle"
-                                        type="button"
-                                        id="dropdownMenuButton"
-                                        data-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        >
-                                        Edit
-                                        </button>
-                                        <div
-                                        class="dropdown-menu"
-                                        aria-labelledby="dropdownMenuButton"
-                                        >
-                                        <a class="dropdown-item" href="#">View Summary </a>
+                                        <div class="dropdown">
+                                            <button
+                                                class="btn btn-primary btn-size dropdown-toggle"
+                                                type="button"
+                                                id="dropdownMenuButton"
+                                                data-toggle="dropdown"
+                                                aria-haspopup="true"
+                                                aria-expanded="false"
+                                            >
+                                                Edit
+                                            </button>
+                                            <div
+                                                class="dropdown-menu"
+                                                aria-labelledby="dropdownMenuButton"
+                                            >
+                                                <a class="dropdown-item" href="#">View Summary </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    </div>
                                 </td>
-                                <td class=" dt-left">Pmt24</td>
-                                <td class=" dt-left">17/07/2018</td>
+                                <td class=" dt-left">Pmt1</td>
+                                <td class=" dt-left">21/05/2018</td>
                                 <td class=" dt-left">Unknown</td>
-                                <td class=" dt-left">Fabricator</td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/worker/edit?refCode=b29c690e-8f3f-460d-b8ab-5156b89a12d6">Gregory Wilson (Wkr24)</a>
+                                <td class=" dt-left">Welder</td>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/worker/edit?refCode=ef380a15-2445-4d76-849b-b5770b3cb01b">Alex
+                                        Ockendon (Wkr2)</a>
                                 </td>
-                                <td class=" dt-left"></td>
-                                <td class=" dt-left"></td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve Slater (Con1)</a>
+                                <td class=" dt-left">-</td>
+                                <td class=" dt-left">-</td>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve
+                                        Slater (Con1)</a>
                                 </td>
-                                <td class=" dt-left"><a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight Shipyard Company Limited</a>
+                                <td class=" dt-left">
+                                    <a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight
+                                        Shipyard Company Limited</a>
                                 </td>
                                 <td class=" dt-left">Cli2</td>
-                                <td class=" dt-left"><a target="_blank"
-                                                        href="/user/show/8fa68956-5941-48da-920b-86bedb7677bc?returnTo=/summary/agencySum">Robert Myram (Mgr2)</a>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/user/show/8fa68956-5941-48da-920b-86bedb7677bc?returnTo=/summary/agencySum">Robert
+                                        Myram (Mgr2)</a>
                                 </td>
-                                <td class="dt-left sorting_1"></td>
-                                <td class=" dt-left">18/07/2018 10:26</td>
-                                <td class=" dt-left">10/10/2021 23:55</td>
-                                <td class=" dt-left">No</td>
-                                <td class=" dt-left"></td>
-                                <td class=" dt-left">02.0100 - FABRICATION - SUPERVISION</td>
+                                <td class=" dt-left">25/05/2018 15:05</td>
+                                <td class=" dt-left">02/11/2021 11:09</td>
+                                <td class=" dt-left">5230 - (Day) - Fabrication &amp; Welding Re-Works Labour</td>
                                 <td class=" dt-right">19.00</td>
-                                <td class=" dt-right">21.50</td>
+                                <td class=" dt-right">20.50</td>
                                 <td class=" dt-left">hourly</td>
+                                <td class=" dt-left">Test</td>
                             </tr>
-
+                            <tr role="row" class="odd">
+                                <td>
+                                    <div class="input-group-append">
+                                        <div class="dropdown">
+                                            <button
+                                                class="btn btn-primary btn-size dropdown-toggle"
+                                                type="button"
+                                                id="dropdownMenuButton"
+                                                data-toggle="dropdown"
+                                                aria-haspopup="true"
+                                                aria-expanded="false"
+                                            >
+                                                Edit
+                                            </button>
+                                            <div
+                                                class="dropdown-menu"
+                                                aria-labelledby="dropdownMenuButton"
+                                            >
+                                                <a class="dropdown-item" href="#">View Summary </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class=" dt-left">Pmt1</td>
+                                <td class=" dt-left">21/05/2018</td>
+                                <td class=" dt-left">Unknown</td>
+                                <td class=" dt-left">Welder</td>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/worker/edit?refCode=ef380a15-2445-4d76-849b-b5770b3cb01b">Alex
+                                        Ockendon (Wkr2)</a>
+                                </td>
+                                <td class=" dt-left">-</td>
+                                <td class=" dt-left">-</td>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve
+                                        Slater (Con1)</a>
+                                </td>
+                                <td class=" dt-left">
+                                    <a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight
+                                        Shipyard Company Limited</a>
+                                </td>
+                                <td class=" dt-left">Cli2</td>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/user/show/8fa68956-5941-48da-920b-86bedb7677bc?returnTo=/summary/agencySum">Robert
+                                        Myram (Mgr2)</a>
+                                </td>
+                                <td class=" dt-left">25/05/2018 15:05</td>
+                                <td class=" dt-left">02/11/2021 11:09</td>
+                                <td class=" dt-left">5230 - (Day) - Fabrication &amp; Welding Re-Works Labour</td>
+                                <td class=" dt-right">19.00</td>
+                                <td class=" dt-right">20.50</td>
+                                <td class=" dt-left">hourly</td>
+                                <td class=" dt-left">Test</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <td>
+                                    <div class="input-group-append">
+                                        <div class="dropdown">
+                                            <button
+                                                class="btn btn-primary btn-size dropdown-toggle"
+                                                type="button"
+                                                id="dropdownMenuButton"
+                                                data-toggle="dropdown"
+                                                aria-haspopup="true"
+                                                aria-expanded="false"
+                                            >
+                                                Edit
+                                            </button>
+                                            <div
+                                                class="dropdown-menu"
+                                                aria-labelledby="dropdownMenuButton"
+                                            >
+                                                <a class="dropdown-item" href="#">View Summary </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class=" dt-left">Pmt1</td>
+                                <td class=" dt-left">21/05/2018</td>
+                                <td class=" dt-left">Unknown</td>
+                                <td class=" dt-left">Welder</td>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/worker/edit?refCode=ef380a15-2445-4d76-849b-b5770b3cb01b">Alex
+                                        Ockendon (Wkr2)</a>
+                                </td>
+                                <td class=" dt-left">-</td>
+                                <td class=" dt-left">-</td>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve
+                                        Slater (Con1)</a>
+                                </td>
+                                <td class=" dt-left">
+                                    <a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight
+                                        Shipyard Company Limited</a>
+                                </td>
+                                <td class=" dt-left">Cli2</td>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/user/show/8fa68956-5941-48da-920b-86bedb7677bc?returnTo=/summary/agencySum">Robert
+                                        Myram (Mgr2)</a>
+                                </td>
+                                <td class=" dt-left">25/05/2018 15:05</td>
+                                <td class=" dt-left">02/11/2021 11:09</td>
+                                <td class=" dt-left">5230 - (Day) - Fabrication &amp; Welding Re-Works Labour</td>
+                                <td class=" dt-right">19.00</td>
+                                <td class=" dt-right">20.50</td>
+                                <td class=" dt-left">hourly</td>
+                                <td class=" dt-left">Test</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <td>
+                                    <div class="input-group-append">
+                                        <div class="dropdown">
+                                            <button
+                                                class="btn btn-primary btn-size dropdown-toggle"
+                                                type="button"
+                                                id="dropdownMenuButton"
+                                                data-toggle="dropdown"
+                                                aria-haspopup="true"
+                                                aria-expanded="false"
+                                            >
+                                                Edit
+                                            </button>
+                                            <div
+                                                class="dropdown-menu"
+                                                aria-labelledby="dropdownMenuButton"
+                                            >
+                                                <a class="dropdown-item" href="#">View Summary </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class=" dt-left">Pmt1</td>
+                                <td class=" dt-left">21/05/2018</td>
+                                <td class=" dt-left">Unknown</td>
+                                <td class=" dt-left">Welder</td>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/worker/edit?refCode=ef380a15-2445-4d76-849b-b5770b3cb01b">Alex
+                                        Ockendon (Wkr2)</a>
+                                </td>
+                                <td class=" dt-left">-</td>
+                                <td class=" dt-left">-</td>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve
+                                        Slater (Con1)</a>
+                                </td>
+                                <td class=" dt-left">
+                                    <a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight
+                                        Shipyard Company Limited</a>
+                                </td>
+                                <td class=" dt-left">Cli2</td>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/user/show/8fa68956-5941-48da-920b-86bedb7677bc?returnTo=/summary/agencySum">Robert
+                                        Myram (Mgr2)</a>
+                                </td>
+                                <td class=" dt-left">25/05/2018 15:05</td>
+                                <td class=" dt-left">02/11/2021 11:09</td>
+                                <td class=" dt-left">5230 - (Day) - Fabrication &amp; Welding Re-Works Labour</td>
+                                <td class=" dt-right">19.00</td>
+                                <td class=" dt-right">20.50</td>
+                                <td class=" dt-left">hourly</td>
+                                <td class=" dt-left">Test</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <td>
+                                    <div class="input-group-append">
+                                        <div class="dropdown">
+                                            <button
+                                                class="btn btn-primary btn-size dropdown-toggle"
+                                                type="button"
+                                                id="dropdownMenuButton"
+                                                data-toggle="dropdown"
+                                                aria-haspopup="true"
+                                                aria-expanded="false"
+                                            >
+                                                Edit
+                                            </button>
+                                            <div
+                                                class="dropdown-menu"
+                                                aria-labelledby="dropdownMenuButton"
+                                            >
+                                                <a class="dropdown-item" href="#">View Summary </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class=" dt-left">Pmt1</td>
+                                <td class=" dt-left">21/05/2018</td>
+                                <td class=" dt-left">Unknown</td>
+                                <td class=" dt-left">Welder</td>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/worker/edit?refCode=ef380a15-2445-4d76-849b-b5770b3cb01b">Alex
+                                        Ockendon (Wkr2)</a>
+                                </td>
+                                <td class=" dt-left">-</td>
+                                <td class=" dt-left">-</td>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve
+                                        Slater (Con1)</a>
+                                </td>
+                                <td class=" dt-left">
+                                    <a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight
+                                        Shipyard Company Limited</a>
+                                </td>
+                                <td class=" dt-left">Cli2</td>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/user/show/8fa68956-5941-48da-920b-86bedb7677bc?returnTo=/summary/agencySum">Robert
+                                        Myram (Mgr2)</a>
+                                </td>
+                                <td class=" dt-left">25/05/2018 15:05</td>
+                                <td class=" dt-left">02/11/2021 11:09</td>
+                                <td class=" dt-left">5230 - (Day) - Fabrication &amp; Welding Re-Works Labour</td>
+                                <td class=" dt-right">19.00</td>
+                                <td class=" dt-right">20.50</td>
+                                <td class=" dt-left">hourly</td>
+                                <td class=" dt-left">Test</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <td>
+                                    <div class="input-group-append">
+                                        <div class="dropdown">
+                                            <button
+                                                class="btn btn-primary btn-size dropdown-toggle"
+                                                type="button"
+                                                id="dropdownMenuButton"
+                                                data-toggle="dropdown"
+                                                aria-haspopup="true"
+                                                aria-expanded="false"
+                                            >
+                                                Edit
+                                            </button>
+                                            <div
+                                                class="dropdown-menu"
+                                                aria-labelledby="dropdownMenuButton"
+                                            >
+                                                <a class="dropdown-item" href="#">View Summary </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class=" dt-left">Pmt1</td>
+                                <td class=" dt-left">21/05/2018</td>
+                                <td class=" dt-left">Unknown</td>
+                                <td class=" dt-left">Welder</td>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/worker/edit?refCode=ef380a15-2445-4d76-849b-b5770b3cb01b">Alex
+                                        Ockendon (Wkr2)</a>
+                                </td>
+                                <td class=" dt-left">-</td>
+                                <td class=" dt-left">-</td>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve
+                                        Slater (Con1)</a>
+                                </td>
+                                <td class=" dt-left">
+                                    <a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight
+                                        Shipyard Company Limited</a>
+                                </td>
+                                <td class=" dt-left">Cli2</td>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/user/show/8fa68956-5941-48da-920b-86bedb7677bc?returnTo=/summary/agencySum">Robert
+                                        Myram (Mgr2)</a>
+                                </td>
+                                <td class=" dt-left">25/05/2018 15:05</td>
+                                <td class=" dt-left">02/11/2021 11:09</td>
+                                <td class=" dt-left">5230 - (Day) - Fabrication &amp; Welding Re-Works Labour</td>
+                                <td class=" dt-right">19.00</td>
+                                <td class=" dt-right">20.50</td>
+                                <td class=" dt-left">hourly</td>
+                                <td class=" dt-left">Test</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <td>
+                                    <div class="input-group-append">
+                                        <div class="dropdown">
+                                            <button
+                                                class="btn btn-primary btn-size dropdown-toggle"
+                                                type="button"
+                                                id="dropdownMenuButton"
+                                                data-toggle="dropdown"
+                                                aria-haspopup="true"
+                                                aria-expanded="false"
+                                            >
+                                                Edit
+                                            </button>
+                                            <div
+                                                class="dropdown-menu"
+                                                aria-labelledby="dropdownMenuButton"
+                                            >
+                                                <a class="dropdown-item" href="#">View Summary </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class=" dt-left">Pmt1</td>
+                                <td class=" dt-left">21/05/2018</td>
+                                <td class=" dt-left">Unknown</td>
+                                <td class=" dt-left">Welder</td>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/worker/edit?refCode=ef380a15-2445-4d76-849b-b5770b3cb01b">Alex
+                                        Ockendon (Wkr2)</a>
+                                </td>
+                                <td class=" dt-left">-</td>
+                                <td class=" dt-left">-</td>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/user/show/ad4683a3-5987-46a6-8440-3dd16bb85b57?returnTo=/summary/agencySum">Steve
+                                        Slater (Con1)</a>
+                                </td>
+                                <td class=" dt-left">
+                                    <a href="/summary/client?ref=12882a5b-4bf6-4fc2-a12d-3863f0454711">Wight
+                                        Shipyard Company Limited</a>
+                                </td>
+                                <td class=" dt-left">Cli2</td>
+                                <td class=" dt-left">
+                                    <a target="_blank"
+                                       href="/user/show/8fa68956-5941-48da-920b-86bedb7677bc?returnTo=/summary/agencySum">Robert
+                                        Myram (Mgr2)</a>
+                                </td>
+                                <td class=" dt-left">25/05/2018 15:05</td>
+                                <td class=" dt-left">02/11/2021 11:09</td>
+                                <td class=" dt-left">5230 - (Day) - Fabrication &amp; Welding Re-Works Labour</td>
+                                <td class=" dt-right">19.00</td>
+                                <td class=" dt-right">20.50</td>
+                                <td class=" dt-left">hourly</td>
+                                <td class=" dt-left">Test</td>
+                            </tr>
                             </tbody>
                         </table>
                     </div>
@@ -1148,173 +1266,173 @@
 </template>
 
 <script>
-    import VueTagsInput from '@johmun/vue-tags-input';
+import VueTagsInput from '@johmun/vue-tags-input';
 
-    export default {
-        components: {
-            VueTagsInput,
+export default {
+    components: {
+        VueTagsInput,
+    },
+    data() {
+        return {
+            editmode: false,
+            products: {},
+            form: new Form({
+                id: '',
+                category: '',
+                name: '',
+                description: '',
+                tags: [],
+                photo: '',
+                category_id: '',
+                price: '',
+                photoUrl: '',
+            }),
+            categories: [],
+
+            tag: '',
+            autocompleteItems: [],
+        }
+    },
+    methods: {
+
+        getResults(page = 1) {
+
+            this.$Progress.start();
+
+            axios.get('/api/draft?page=' + page).then(({data}) => (this.products = data.data));
+
+            this.$Progress.finish();
         },
-        data () {
-            return {
-                editmode: false,
-                products: {},
-                form: new Form({
-                    id: '',
-                    category: '',
-                    name: '',
-                    description: '',
-                    tags: [],
-                    photo: '',
-                    category_id: '',
-                    price: '',
-                    photoUrl: '',
-                }),
-                categories: [],
+        loadProducts() {
 
-                tag: '',
-                autocompleteItems: [],
-            }
+            // if(this.$gate.isAdmin()){
+            axios.get("/api/draft").then(({data}) => (this.products = data.data));
+            // }
         },
-        methods: {
+        loadCategories() {
+            axios.get("/api/category/list").then(({data}) => (this.categories = data.data));
+        },
+        loadTags() {
+            axios.get("/api/tag/list").then(response => {
+                this.autocompleteItems = response.data.data.map(a => {
+                    return {text: a.name, id: a.id};
+                });
+            }).catch(() => console.warn('Oh. Something went wrong'));
+        },
+        editModal(product) {
+            this.editmode = true;
+            this.form.reset();
+            $('#addNew').modal('show');
+            this.form.fill(product);
+        },
+        newModal() {
+            this.editmode = false;
+            this.form.reset();
+            $('#addNew').modal('show');
+        },
+        createProduct() {
+            this.$Progress.start();
 
-            getResults(page = 1) {
+            this.form.post('api/product')
+                .then((data) => {
+                    if (data.data.success) {
+                        $('#addNew').modal('hide');
 
-                this.$Progress.start();
+                        Toast.fire({
+                            icon: 'success',
+                            title: data.data.message
+                        });
+                        this.$Progress.finish();
+                        this.loadProducts();
 
-                axios.get('/api/draft?page=' + page).then(({data}) => (this.products = data.data));
-
-                this.$Progress.finish();
-            },
-            loadProducts(){
-
-                // if(this.$gate.isAdmin()){
-                axios.get("/api/draft").then(({data}) => (this.products = data.data));
-                // }
-            },
-            loadCategories(){
-                axios.get("/api/category/list").then(({data}) => (this.categories = data.data));
-            },
-            loadTags(){
-                axios.get("/api/tag/list").then(response => {
-                    this.autocompleteItems = response.data.data.map(a => {
-                        return {text: a.name, id: a.id};
-                    });
-                }).catch(() => console.warn('Oh. Something went wrong'));
-            },
-            editModal(product){
-                this.editmode = true;
-                this.form.reset();
-                $('#addNew').modal('show');
-                this.form.fill(product);
-            },
-            newModal(){
-                this.editmode = false;
-                this.form.reset();
-                $('#addNew').modal('show');
-            },
-            createProduct(){
-                this.$Progress.start();
-
-                this.form.post('api/product')
-                    .then((data) => {
-                        if (data.data.success) {
-                            $('#addNew').modal('hide');
-
-                            Toast.fire({
-                                icon: 'success',
-                                title: data.data.message
-                            });
-                            this.$Progress.finish();
-                            this.loadProducts();
-
-                        } else {
-                            Toast.fire({
-                                icon: 'error',
-                                title: 'Some error occured! Please try again'
-                            });
-
-                            this.$Progress.failed();
-                        }
-                    })
-                    .catch(() => {
-
+                    } else {
                         Toast.fire({
                             icon: 'error',
                             title: 'Some error occured! Please try again'
                         });
-                    })
-            },
-            updateProduct(){
-                this.$Progress.start();
-                this.form.put('api/product/' + this.form.id)
-                    .then((response) => {
-                        // success
-                        $('#addNew').modal('hide');
-                        Toast.fire({
-                            icon: 'success',
-                            title: response.data.message
-                        });
-                        this.$Progress.finish();
-                        //  Fire.$emit('AfterCreate');
 
-                        this.loadProducts();
-                    })
-                    .catch(() => {
-                        this.$Progress.fail();
-                    });
-
-            },
-            deleteProduct(id){
-                Swal.fire({
-                    title: 'Are you sure?',
-                    text: "You won't be able to revert this!",
-                    showCancelButton: true,
-                    confirmButtonColor: '#d33',
-                    cancelButtonColor: '#3085d6',
-                    confirmButtonText: 'Yes, delete it!'
-                }).then((result) => {
-
-                    // Send request to the server
-                    if (result.value) {
-                        this.form.delete('api/product/' + id).then(() => {
-                            Swal.fire(
-                                'Deleted!',
-                                'Your file has been deleted.',
-                                'success'
-                            );
-                            // Fire.$emit('AfterCreate');
-                            this.loadProducts();
-                        }).catch((data) => {
-                            Swal.fire("Failed!", data.message, "warning");
-                        });
+                        this.$Progress.failed();
                     }
                 })
-            },
+                .catch(() => {
 
+                    Toast.fire({
+                        icon: 'error',
+                        title: 'Some error occured! Please try again'
+                    });
+                })
         },
-        mounted() {
-
-        },
-        created() {
+        updateProduct() {
             this.$Progress.start();
+            this.form.put('api/product/' + this.form.id)
+                .then((response) => {
+                    // success
+                    $('#addNew').modal('hide');
+                    Toast.fire({
+                        icon: 'success',
+                        title: response.data.message
+                    });
+                    this.$Progress.finish();
+                    //  Fire.$emit('AfterCreate');
 
-            this.loadProducts();
-            this.loadCategories();
-            this.loadTags();
-
-            this.$Progress.finish();
-        },
-        filters: {
-            truncate: function (text, length, suffix) {
-                return text.substring(0, length) + suffix;
-            },
-        },
-        computed: {
-            filteredItems() {
-                return this.autocompleteItems.filter(i => {
-                    return i.text.toLowerCase().indexOf(this.tag.toLowerCase()) !== -1;
+                    this.loadProducts();
+                })
+                .catch(() => {
+                    this.$Progress.fail();
                 });
-            },
+
         },
-    }
+        deleteProduct(id) {
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                showCancelButton: true,
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#3085d6',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+
+                // Send request to the server
+                if (result.value) {
+                    this.form.delete('api/product/' + id).then(() => {
+                        Swal.fire(
+                            'Deleted!',
+                            'Your file has been deleted.',
+                            'success'
+                        );
+                        // Fire.$emit('AfterCreate');
+                        this.loadProducts();
+                    }).catch((data) => {
+                        Swal.fire("Failed!", data.message, "warning");
+                    });
+                }
+            })
+        },
+
+    },
+    mounted() {
+
+    },
+    created() {
+        this.$Progress.start();
+
+        this.loadProducts();
+        this.loadCategories();
+        this.loadTags();
+
+        this.$Progress.finish();
+    },
+    filters: {
+        truncate: function (text, length, suffix) {
+            return text.substring(0, length) + suffix;
+        },
+    },
+    computed: {
+        filteredItems() {
+            return this.autocompleteItems.filter(i => {
+                return i.text.toLowerCase().indexOf(this.tag.toLowerCase()) !== -1;
+            });
+        },
+    },
+}
 </script>

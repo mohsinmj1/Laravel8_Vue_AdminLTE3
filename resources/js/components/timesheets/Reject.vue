@@ -4,13 +4,13 @@
         <div class="row">
 
           <div class="col-12">
-        
+
             <div class="card">
               <div class="card-header" style="background-color:white;">
                 <h3 class="card-title" style="padding-top:10px;">Reject List</h3>
                     <button style="margin-left:20px;" type="submit" class="btn btn-light">Choose Column</button>
                     <div class="card-tools">
-                  
+
                   <!-- <button type="button" class="btn btn-sm btn-primary" @click="newModal">
                       <i class="fa fa-plus-square"></i>
                       Add New
@@ -59,16 +59,12 @@
                         <th>Client Acc Ref</th>
                         <th>Exported Date</th>
                         <th>Total Cost</th>
-                        <th>Purchase Nominal</th>
-                        <th>Sales Nominal</th>
-                        <th>Supplier Accounts Ref</th>
                         <th>Workers Accounts Ref</th>
-                        <th>Supplier Gender</th>
+                        <th>Worker Gender</th>
                         <th>Exchange rate Pay</th>
                         <th>Exchange rate Charge</th>
                         <th>Charge</th>
                         <th>Charge Currency</th>
-                        <th>Funds Received</th>
                         <th>Charge GBP</th>
                         <th>Type</th>
                         <th>Approved By</th>
@@ -141,7 +137,6 @@
                       <td></td>
                       <td></td>
                       <td></td>
-                      <td></td>
                        <td></td>
                       <td></td>
                       <td></td>
@@ -158,7 +153,6 @@
               <!-- /.card-body -->
               <div class="card-footer">
                   <pagination :data="products" @pagination-change-page="getResults"></pagination>
-                    <button type="submit" class="btn btn-primary">Submit</button>
                     <button type="submit" class="btn btn-info">Print Report</button>
                     <button type="submit" class="btn btn-info">Print Details Report</button>
                     <button type="submit" class="btn btn-info">CSV</button>
@@ -196,7 +190,7 @@
                     photoUrl: '',
                 }),
                 categories: [],
-              
+
                 tag:  '',
                 autocompleteItems: [],
             }
@@ -206,7 +200,7 @@
           getResults(page = 1) {
 
               this.$Progress.start();
-              
+
               axios.get('/api/draft?page=' + page).then(({ data }) => (this.products = data.data));
 
               this.$Progress.finish();
@@ -319,7 +313,7 @@
 
         },
         mounted() {
-            
+
         },
         created() {
             this.$Progress.start();

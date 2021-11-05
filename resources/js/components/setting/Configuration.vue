@@ -79,12 +79,15 @@
                                 class="list-group"
                                 style="margin-right: 13px"
                               >
-                                <a
+                                <!-- <a
                                   class="list-group-item"
                                   style="text-decoration: none"
                                   href="/configuration/apprenticeshipLevy"
                                   >Rate Templates</a
-                                >
+                                > -->
+                                <router-link to="/rates/create">
+                                  <p>Rate Template</p>
+                                </router-link>
                               </div>
                             </div>
                           </div>

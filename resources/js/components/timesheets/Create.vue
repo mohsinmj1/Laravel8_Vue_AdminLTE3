@@ -68,6 +68,7 @@
                                                     <div class="col-lg-5">
                                                         <h6>Ref Code:</h6>
                                                         <h6>Job Title:</h6>
+                                                        <h6>Job Description:</h6>
                                                         <h6>Date Placed:</h6>
                                                         <h6>Start Date:</h6>
                                                         <h6>End Date:</h6>
@@ -184,10 +185,6 @@
                                                                 class="col-lg-6"
                                                             >
                                                                 <h6>
-                                                                    Sales
-                                                                    Project:
-                                                                </h6>
-                                                                <h6>
                                                                     Project
                                                                     Code:
                                                                 </h6>
@@ -249,10 +246,6 @@
                                                                     Duration:
                                                                 </h6>
                                                                 <h6>
-                                                                    TA Terminal
-                                                                    Ref:
-                                                                </h6>
-                                                                <h6>
                                                                     Timesheet
                                                                     Layout:
                                                                 </h6>
@@ -276,10 +269,7 @@
                                                                 <h6>
                                                                     weekly
                                                                 </h6>
-                                                                <h6>&nbsp;</h6>
-                                                                <h6>
-                                                                    Standard
-                                                                </h6>
+                                                                <h6>Standard</h6>
                                                                 <h6>
                                                                     GBP
                                                                 </h6>
@@ -287,7 +277,7 @@
                                                                     GBP
                                                                 </h6>
                                                                 <h6>
-                                                                    GBP GBP
+                                                                    GBP
                                                                 </h6>
                                                             </div>
                                                         </div>
@@ -366,40 +356,39 @@
                                     placeholder=""
                                     class="w-100"
                                 />
-                            </div>                           
+                            </div>
                         </div>
-                        <div class="row mt-2">                            
+                        <div class="row mt-2">
                             <div class="col-lg-2">
                                 <label for="Date" class="d-block mb-1">Date</label>
-                            </div>      
+                            </div>
                             <div class="col-lg-2">
                                 <label for="Rate" class="d-block mb-1">Rate</label>
-                            </div>     
+                            </div>
                              <div class="col-lg-1">
                                 <label for="Start" class="d-block mb-1">Start</label>
-                            </div>      
+                            </div>
                             <div class="col-lg-1">
                                 <label for="Break" class="d-block mb-1">Break</label>
                             </div>
                             <div class="col-lg-1">
                                 <label for="Finish" class="d-block mb-1">Finish</label>
-                            </div>    
+                            </div>
                             <div class="col-lg-1">
                                 <label for="Hours" class="d-block mb-1">Hours</label>
-                            </div> 
+                            </div>
                             <div class="col-lg-1">
                                 <label for="Unit" class="d-block mb-1">Units</label>
-                            </div>    
+                            </div>
                             <div class="col-lg-2">
                                 <label for="Project Code" class="d-block mb-1">Code</label>
-                            </div>   
+                            </div>
                             <div class="col-lg-1">
-                                <label for="Comment" class="d-block mb-1">Coment</label>
-                            </div>    
+                                <label for="Comment" class="d-block mb-1">Comment</label>
+                            </div>
                             <div class="col-lg-1">
-                                <!-- <label for="placement" class="d-block mb-1">Comment</label> -->
-                            </div>                   
-                        </div>                        
+                            </div>
+                        </div>
                         <div class="row mt-2" style="border-bottom:1px solid #D3D3D3">
                             <div class="col-lg-2" style="font-size:12px;">
                                 <div width="80px" style="padding-top:4px">
@@ -407,42 +396,37 @@
                                     </div>
                                     <div style="float:left;;margin-left:30px">Mon 18/10/2021
                                     </div>
-                                </div>                                                     
-                            </div>       
+                                </div>
+                            </div>
                             <div class="col-lg-2">
-                                <select class="form-control select2" style="width:163px">                                    
+                                <select class="form-control select2" style="width:163px">
                                     <option value="1">02.0100 (DAY) - FABRICATION - SUPERVISION</option>
                                     <option value="2">02.0100 (NIGHT) - FABRICATION - SUPERVISION</option>
                                     <option value="3">02.0105 (DAY) - FABRICATION - UNPACKING CUT PARTS</option>
                                 </select>
                             </div>     
-                            <div class="col-lg-1"> <!--//data-toggle="modal" data-target="#modal-start-time"-->
-                                <button id="startbtn" class="btn btn-success py-0 px-4" style="line-height:26px;" v-on:click="startfn(1)" >Start</button>
-                                <button id="resumebtn" class="btn btn-success py-0 px-4" style="line-height:26px;display:none" v-on:click="startfn(4)" >Resume</button>
-
-                                <input id="startTime" type="text" style="width:79px;display:none" placeholder="hh:mm">
-                                <input id="startwork" type="text" style="width:79px;display:none" placeholder="hh:mm">
-
-                            </div>      
+                            
                             <div class="col-lg-1">
-                                <button id="breakbtn"  class="btn btn-success py-0 px-4" style="display:none;line-height:26px;" v-on:click="startfn(2)" >Break</button>
-                                <label id="minutes">00</label>:<label id="seconds">00</label>
-                                <!-- <input id="breakTime" type="text" style="width:79px" placeholder="hh:mm"> -->
-                                 <!-- <input id="brTime" type="text" style="width:79px;display:none1" placeholder="hh:mm"> -->
-
+                                <button id="startbtn" class="btn btn-success py-0 px-3" style="line-height:26px;" v-on:click="startfn(1)" >Start</button>
+                                <input id="startTime" type="text" style="width:79px;display:none" placeholder="hh:mm">
                             </div>
                             <div class="col-lg-1">
-                                <button id="finishbtn" class="btn btn-success py-0 px-4" style="display:none;line-height:26px;" v-on:click="startfn(3)" >Finish</button>
+                                <button id="breakbtn"  class="btn btn-success py-0 px-3"  data-toggle="modal" data-target="#modal-start-time" style="display:none;line-height:26px;">Break</button>
+
+                                <input id="breakTime" type="text" style="width:79px" placeholder="hh:mm">
+                            </div>
+                            <div class="col-lg-1">
+                                <button id="finishbtn" class="btn btn-success py-0 px-3" style="display:none;line-height:26px;" v-on:click="startfn(3)" >Finish</button>
                                <input id="finishTime" type="text" style="width:79px" placeholder="hh:mm">
-                            </div>    
+                            </div>
                             <div class="col-lg-1">
                                 00:00
-                            </div> 
+                            </div>
                             <div class="col-lg-1">
-                               
-                            </div>    
+
+                            </div>
                             <div class="col-lg-2">
-                                <select class="form-control select2" style="width:163px">
+                                <select class="form-control select2" style="width:120px">
                                     <option value="IOW-006">IOW-006</option>
                                     <option value="IOW-008">IOW-008</option>
                                     <option value="IOW-010">IOW-010</option>
@@ -454,96 +438,72 @@
                                     <option value="IOW-055">IOW-055</option>
 
                                 </select>
-                            </div>   
+                            </div>
                             <div class="col-lg-1">
-                                <input type="text" style="width:79px">
-                            </div>    
+                                <input type="text" style="width:100px">
+                            </div>
                             <div class="col-lg-1">
-                                
-                            </div>                   
+
+                            </div>
                         </div>
-                        <div class="row mt-2" style="border-bottom:1px solid #D3D3D3">                           
-                             <div class="col-lg-2" style="font-size:12px;">
+                        <div class="row mt-2" style="border-bottom:1px solid #D3D3D3">
+                            <div class="col-lg-2" style="font-size:12px;">
                                 <div width="80px" style="padding-top:4px">
                                     <div style="float:left;"><i class="fas fa-plus" style="color:green"></i>
                                     </div>
-                                    <div style="float:left;;margin-left:30px">Tue 19/10/2021
+                                    <div style="float:left;;margin-left:30px">Mon 18/10/2021
                                     </div>
-                                </div>                                                     
-                            </div>     
+                                </div>
+                            </div>
                             <div class="col-lg-2">
-                                <select class="form-control select2" style="width:163px">                                    
+                                <select class="form-control select2" style="width:163px">
                                     <option value="1">02.0100 (DAY) - FABRICATION - SUPERVISION</option>
                                     <option value="2">02.0100 (NIGHT) - FABRICATION - SUPERVISION</option>
                                     <option value="3">02.0105 (DAY) - FABRICATION - UNPACKING CUT PARTS</option>
                                 </select>
-                            </div>     
-                            <div class="col-lg-1">
-                                <input type="text" style="width:79px" placeholder="hh:mm">
-                            </div>      
-                            <div class="col-lg-1">
-                                <input type="text" style="width:79px" placeholder="hh:mm">
                             </div>
                             <div class="col-lg-1">
-                               <input type="text" style="width:79px" placeholder="hh:mm">
-                            </div>    
+                                <button id="startbtn" class="btn btn-success py-0 px-3" style="line-height:26px;" v-on:click="startfn(1)" >Start</button>
+                                <input id="startTime" type="text" style="width:79px;display:none" placeholder="hh:mm">
+                            </div>
+                            <div class="col-lg-1">
+                                <button id="breakbtn"  class="btn btn-success py-0 px-3"  data-toggle="modal" data-target="#modal-start-time" style="display:none;line-height:26px;">Break</button>
+
+                                <input id="breakTime" type="text" style="width:79px" placeholder="hh:mm">
+                            </div>
+                            <div class="col-lg-1">
+                                <button id="finishbtn" class="btn btn-success py-0 px-3" style="display:none;line-height:26px;" v-on:click="startfn(3)" >Finish</button>
+                               <input id="finishTime" type="text" style="width:79px" placeholder="hh:mm">
+                            </div>
                             <div class="col-lg-1">
                                 00:00
-                            </div> 
+                            </div>
                             <div class="col-lg-1">
-                               
-                            </div>    
-                            <div class="col-lg-1">
-                                <input type="text" style="width:79px">
-                            </div>   
-                            <div class="col-lg-1">
-                                <input type="text" style="width:79px">
-                            </div>    
-                            <div class="col-lg-1">
-                                
-                            </div>                   
-                        </div>
-                        <div class="row mt-2" style="border-bottom:1px solid #D3D3D3">                           
-                             <div class="col-lg-2" style="font-size:12px;">
-                                <div width="80px" style="padding-top:4px">
-                                    <div style="float:left;"><i class="fas fa-plus" style="color:green"></i>
-                                    </div>
-                                    <div style="float:left;;margin-left:30px">Wed 20/10/2021
-                                    </div>
-                                </div>                                                     
-                            </div>      
+
+                            </div>
                             <div class="col-lg-2">
-                                <select class="form-control select2" style="width:163px">                                    
-                                    <option value="1">02.0100 (DAY) - FABRICATION - SUPERVISION</option>
-                                    <option value="2">02.0100 (NIGHT) - FABRICATION - SUPERVISION</option>
-                                    <option value="3">02.0105 (DAY) - FABRICATION - UNPACKING CUT PARTS</option>
+                                <select class="form-control select2" style="width:120px">
+                                    <option value="IOW-006">IOW-006</option>
+                                    <option value="IOW-008">IOW-008</option>
+                                    <option value="IOW-010">IOW-010</option>
+                                    <option value="IOW-011">IOW-011</option>
+                                    <option value="IOW-012">IOW-012</option>
+                                    <option value="IOW-018">IOW-018</option>
+                                    <option value="IOW-022">IOW-022</option>
+                                    <option value="IOW-025">IOW-025</option>
+                                    <option value="IOW-055">IOW-055</option>
+
                                 </select>
-                            </div>     
-                            <div class="col-lg-1">
-                                <input type="text" style="width:79px" placeholder="hh:mm">
-                            </div>      
-                            <div class="col-lg-1">
-                                <input type="text" style="width:79px" placeholder="hh:mm">
                             </div>
                             <div class="col-lg-1">
-                               <input type="text" style="width:79px" placeholder="hh:mm">
-                            </div>    
+                                <input type="text" style="width:100px">
+                            </div>
                             <div class="col-lg-1">
-                                00:00
-                            </div> 
-                            <div class="col-lg-1">
-                               
-                            </div>    
-                            <div class="col-lg-1">
-                                <input type="text" style="width:79px">
-                            </div>   
-                            <div class="col-lg-1">
-                                <input type="text" style="width:79px">
-                            </div>    
-                            <div class="col-lg-1">
-                                
-                            </div>                   
-                        </div>                      
+
+                            </div>
+                        </div>
+
+
                         <div class="row mt-2">
                             <div class="col-lg-6">
                                 <label for="placement" class="d-block mb-1"
@@ -553,34 +513,34 @@
                                     placeholder=""
                                     class="w-100"
                                 />
-                            </div>                           
+                            </div>
                         </div>
                         <div class="row mt-2">
                             <div style="padding-right:10px">
                                 <button class="btn btn-danger" type="submit">
                                     Cancel
                                 </button>
-                            </div> 
+                            </div>
                             <div style="padding-right:10px">
                                 <button class="btn btn-success" type="submit">
                                     Save as Draft
                                 </button>
-                            </div>  
+                            </div>
                             <div style="padding-right:10px">
                                 <button class="btn btn-success" type="submit">
                                     Save and Submit
                                 </button>
-                            </div>     
+                            </div>
                             <div style="padding-right:10px">
                                 <button class="btn btn-primary" type="submit">
                                     Copy from Previous
                                 </button>
-                            </div>                          
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-lg-12 px-0 mt-0">
                 <div class="card card-primary card-outline card-tabs">
                     <div class="row">
@@ -771,11 +731,15 @@
 
                         <div class="row">
                             <div class="col-md-4">Start : </div>
-                            <div class="col-md-4">09:15</div>
+                            <div class="col-md-4">
+                                <input type="text" id="getStartTimeInBreakModal" val="">
+                            </div>
                         </div>
                         <div class="row">
                             <div class="col-md-4">Break : </div>
-                            <div class="col-md-4">00:30</div>
+                            <div class="col-md-4">
+                                <input type="text" id="getBreakTimeInBreakModal" val="">
+                            </div>
                         </div>
                         <div class="row">
                             <div class="col-md-4">End : </div>
@@ -786,8 +750,9 @@
                     <!-- justify-content-between -->
                     <div class="modal-footer ">
 
-                        <button type="button" class="btn btn-warning"> Pause </button>
-                        <button type="button" class="btn btn-success"> Finish </button>
+                        <button type="button" class="btn btn-warning" id="modalBreakBtn" v-on:click="modalBreakBtn()"> Break </button>
+                        <button type="button" class="btn btn-warning" id="modalContinueBtn"> Continue </button>
+                        <button type="button" class="btn btn-success" v-on:click="startfn(3)"> Finish </button>
                         <button type="button" class="btn btn-danger" data-dismiss="modal"> Close </button>
                         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                     </div>
@@ -798,7 +763,7 @@
         </div>
         <!-- /.modal -->
     </section>
-    
+
 </template>
 <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
 <script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
@@ -814,92 +779,52 @@
 <script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
 <script>
- 
+
     export default {
-     
         mounted() {
-     
-           
-            //Initialize Select2 Elements
-            $('.select2').select2()   
-            console.log('Creat Timesheet mounted.');
+            $('.select2').select2();
         },
-           methods: {
-   startfn: function(event) {
-     var dt = new Date();
-     var myTimer;
-            var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
-             var getTime='';
-            if(event==1){
-            $('#startbtn').hide();
-            $('#startTime').show();
-            $('#finishTime').hide();
-            $('#finishbtn').show();
-            $('#breakbtn').show();
-            $('#breakTime').hide();
-            $('#startTime').val(time);
-          
-            }else if(event==2){
-            $('#resumebtn').show();
-            $('#startTime').hide();
-            $('#finishTime').hide();
-            $('#finishbtn').show();
-            $('#breakbtn').hide();
-            $('#breakTime').show();
-            var minutesLabel = document.getElementById("minutes");
-            var secondsLabel = document.getElementById("seconds");
-            var totalSeconds = 0;
-            myTimer=setInterval(setTime, 1000);
+        methods: {
+            startfn: function(event) {
+                var dt = new Date();
+                    var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+                    if(event==1){
+                        $('#startbtn').hide();
+                        $('#startTime').show();
+                        $('#finishTime').hide();
+                        $('#finishbtn').show();
+                        $('#breakbtn').show();
+                        $('#breakTime').hide();
+                        $('#startTime').val(time);
+                        var startTime = $('#startTime').val();
+                        $('#getStartTimeInBreakModal').val(startTime)
+                    }else if(event==2){
+                        $('#startbtn').show();
+                        $('#startTime').hide();
+                        $('#finishTime').hide();
+                        $('#finishbtn').show();
+                        $('#breakbtn').hide();
+                        $('#breakTime').show();
+                        $('#breakTime').val(time);
+                    }else if(event==3){
+                        $('#startbtn').hide();
+                        $('#startTime').show();
+                        $('#finishTime').show();
+                        $('#finishbtn').hide();
+                        $('#breakbtn').hide();
+                        $('#breakTime').show();
+                        $('#finishTime').val(time);
+                    }
+            },
+            modalBreakBtn:function() {
+                var dt = new Date();
+                var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+                $('#getBreakTimeInBreakModal').val(time);
+                $('#modalBreakbtn').hide();
+                $('#modalContinuebtn').show();
 
-            function setTime() {
-            ++totalSeconds;
-            secondsLabel.innerHTML = pad(totalSeconds % 60);
-            minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
             }
+    },
 
-            function pad(val) {
-            var valString = val + "";
-            if (valString.length < 2) {
-                return "0" + valString;
-            } else {
-                return valString;
-            }
-            }
-            //var getTime=$('#startTime').val();
-            $('#startwork').val(getTime);
-            $('#breakTime').val(time);
-            }else if(event==3){
-            $('#resumebtn').hide();
-            $('#startbtn').hide();
-            $('#startTime').show();
-            $('#finishTime').show();
-            $('#finishbtn').hide();
-            $('#breakbtn').hide();
-            $('#breakTime').show();
-            $('#finishTime').val(time);
-             var getSTime=$('#startTime').val();
-             var finishTime =$('#finishTime').val();
-             var res =finishTime-getSTime;
-             //alert(res);
-
-            }else if(event==4){
-            // clearInterval(myTimer);
-             $('#startTime').val();
-            $('#startbtn').hide();
-            $('#resumebtn').hide();
-            $('#startTime').show();
-            $('#finishTime').hide();
-            $('#finishbtn').show();
-            $('#breakbtn').show();
-            $('#breakTime').hide();
-            $('#startTime').val(time);
-            }
-          
-            
-          
-            //alert(event);
-    }
-      },
-  
     }
 </script>
