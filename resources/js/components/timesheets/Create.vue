@@ -418,11 +418,18 @@
                             </div>     
                             <div class="col-lg-1"> <!--//data-toggle="modal" data-target="#modal-start-time"-->
                                 <button id="startbtn" class="btn btn-success py-0 px-4" style="line-height:26px;" v-on:click="startfn(1)" >Start</button>
+                                <button id="resumebtn" class="btn btn-success py-0 px-4" style="line-height:26px;display:none" v-on:click="startfn(4)" >Resume</button>
+
                                 <input id="startTime" type="text" style="width:79px;display:none" placeholder="hh:mm">
+                                <input id="startwork" type="text" style="width:79px;display:none" placeholder="hh:mm">
+
                             </div>      
                             <div class="col-lg-1">
                                 <button id="breakbtn"  class="btn btn-success py-0 px-4" style="display:none;line-height:26px;" v-on:click="startfn(2)" >Break</button>
-                                <input id="breakTime" type="text" style="width:79px" placeholder="hh:mm">
+                                <label id="minutes">00</label>:<label id="seconds">00</label>
+                                <!-- <input id="breakTime" type="text" style="width:79px" placeholder="hh:mm"> -->
+                                 <!-- <input id="brTime" type="text" style="width:79px;display:none1" placeholder="hh:mm"> -->
+
                             </div>
                             <div class="col-lg-1">
                                 <button id="finishbtn" class="btn btn-success py-0 px-4" style="display:none;line-height:26px;" v-on:click="startfn(3)" >Finish</button>
@@ -809,7 +816,9 @@
            methods: {
    startfn: function(event) {
      var dt = new Date();
+     var myTimer;
             var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+             var getTime='';
             if(event==1){
             $('#startbtn').hide();
             $('#startTime').show();
@@ -818,15 +827,38 @@
             $('#breakbtn').show();
             $('#breakTime').hide();
             $('#startTime').val(time);
+          
             }else if(event==2){
-            $('#startbtn').show();
+            $('#resumebtn').show();
             $('#startTime').hide();
             $('#finishTime').hide();
             $('#finishbtn').show();
             $('#breakbtn').hide();
             $('#breakTime').show();
+            var minutesLabel = document.getElementById("minutes");
+            var secondsLabel = document.getElementById("seconds");
+            var totalSeconds = 0;
+            myTimer=setInterval(setTime, 1000);
+
+            function setTime() {
+            ++totalSeconds;
+            secondsLabel.innerHTML = pad(totalSeconds % 60);
+            minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+            }
+
+            function pad(val) {
+            var valString = val + "";
+            if (valString.length < 2) {
+                return "0" + valString;
+            } else {
+                return valString;
+            }
+            }
+            //var getTime=$('#startTime').val();
+            $('#startwork').val(getTime);
             $('#breakTime').val(time);
             }else if(event==3){
+            $('#resumebtn').hide();
             $('#startbtn').hide();
             $('#startTime').show();
             $('#finishTime').show();
@@ -834,11 +866,27 @@
             $('#breakbtn').hide();
             $('#breakTime').show();
             $('#finishTime').val(time);
+             var getSTime=$('#startTime').val();
+             var finishTime =$('#finishTime').val();
+             var res =finishTime-getSTime;
+             //alert(res);
+
+            }else if(event==4){
+            // clearInterval(myTimer);
+             $('#startTime').val();
+            $('#startbtn').hide();
+            $('#resumebtn').hide();
+            $('#startTime').show();
+            $('#finishTime').hide();
+            $('#finishbtn').show();
+            $('#breakbtn').show();
+            $('#breakTime').hide();
+            $('#startTime').val(time);
             }
           
             
           
-            alert(event);
+            //alert(event);
     }
       },
   
