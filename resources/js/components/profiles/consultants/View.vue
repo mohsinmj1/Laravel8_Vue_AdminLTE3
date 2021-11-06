@@ -141,29 +141,19 @@
                         </div>
                         <div class="col-sm-6">
                           <div class="form-group">
-                            <label class="control-label">Client</label>
-                            <input
-                              type="text"
-                              class="form-control form-control-sm"
-                              value=""
-                            />
-                          </div>
-                        </div>
-                        <div class="col-sm-2">
-                          <div class="form-group">
                             <label class="control-label">Account Status</label>
-                            <select class="form-control input-sm">
+                            <select class="form-control form-control-sm">
                               <option value="Active">Active</option>
                               <option value="Inactive">Locked</option>
                             </select>
                           </div>
                         </div>
-                        <div class="col-sm-5">
+                        <div class="col-sm-6">
                           <div class="form-group input-group-sm">
                             <label class="control-label">Created Date</label>
                             <div class="input-group input-group-sm">
                               <input
-                                type="text"
+                                type="date"
                                 class="form-control"
                                 placeholder="dd/MM/yyyy"
                               />
@@ -173,7 +163,7 @@
                                 to
                               </button>
                               <input
-                                type="text"
+                                type="date"
                                 class="form-control"
                                 placeholder="dd/MM/yyyy"
                               />
@@ -188,13 +178,10 @@
                                 <ul class="dropdown-menu">
                                   <li><a href="#">Today</a></li>
                                   <li><a href="#">Yesterday</a></li>
-                                  <li class="divider"></li>
                                   <li><a href="#">Last 7 Days</a></li>
                                   <li><a href="#">Last 30 Days</a></li>
-                                  <li class="divider"></li>
                                   <li><a href="#">This Week</a></li>
                                   <li><a href="#">Last Week</a></li>
-                                  <li class="divider"></li>
                                   <li><a href="#">This Month</a></li>
                                   <li><a href="#">Last Month</a></li>
                                 </ul>
@@ -202,12 +189,12 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-sm-5">
+                        <div class="col-sm-6">
                           <div class="form-group">
                             <label class="control-label">Modified Date</label>
                             <div class="input-group input-group-sm">
                               <input
-                                type="text"
+                                type="date"
                                 class="form-control input-sm"
                                 placeholder="dd/MM/yyyy"
                               />
@@ -217,7 +204,7 @@
                                 to
                               </button>
                               <input
-                                type="text"
+                                type="date"
                                 class="form-control input-sm"
                                 placeholder="dd/MM/yyyy"
                               />
@@ -232,13 +219,10 @@
                                 <ul class="dropdown-menu">
                                   <li><a href="#">Today</a></li>
                                   <li><a href="#">Yesterday</a></li>
-                                  <li class="divider"></li>
                                   <li><a href="#">Last 7 Days</a></li>
                                   <li><a href="#">Last 30 Days</a></li>
-                                  <li class="divider"></li>
                                   <li><a href="#">This Week</a></li>
                                   <li><a href="#">Last Week</a></li>
-                                  <li class="divider"></li>
                                   <li><a href="#">This Month</a></li>
                                   <li><a href="#">Last Month</a></li>
                                 </ul>
@@ -248,12 +232,10 @@
                         </div>
                       </div>
                       <div class="col-sm-12">
-                        <button type="submit" class="btn btn-primary">
+                        <button type="submit" class="btn btn-primary btn-sm">
                           Search
                         </button>
-                        <a class="btn btn-default waves-light" role="button"
-                          >Clear</a
-                        >
+                        <a class="btn btn-default btn-sm">Clear</a>
                       </div>
                       <!---------1st tab end ----->
                     </div>
@@ -266,7 +248,7 @@
                       <div class="row">
                         <div class="col-sm-3">
                           <div class="form-group">
-                            <label class="control-label">Worker</label>
+                            <label class="control-label">Client</label>
                             <div class="input-group input-group-sm">
                               <input
                                 type="text"
@@ -312,7 +294,30 @@
                         </div>
                         <div class="col-sm-3">
                           <div class="form-group">
-                            <label class="control-label">Worker</label>
+                            <label class="control-label">Umbrella</label>
+                            <div class="input-group input-group-sm">
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Search"
+                              />
+
+                              <button
+                                class="
+                                  input-group-addon
+                                  btn btn-sm
+                                  bg-primary
+                                  rounded-0
+                                "
+                              >
+                                <i class="fa fa-search"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-group">
+                            <label class="control-label">Manager</label>
                             <div class="input-group input-group-sm">
                               <input
                                 type="text"
@@ -337,11 +342,9 @@
                           <div class="form-group">
                             <label class="control-label"
                               >Timesheet Entry Method</label
-                            >
-                            <select class="form-control">
+                            ><select class="form-control form-control-sm">
                               <option value="">All</option>
                               <option value="">Standard</option>
-                              <option value="">Paper Entry</option>
                               <option value="">Bulk Entry</option>
                             </select>
                           </div>
@@ -351,190 +354,10 @@
                             <label class="control-label"
                               >Status (Date filters will overide this)</label
                             >
-                            <select class="form-control">
+                            <select class="form-control form-control-sm">
                               <option value="">All</option>
                               <option value="">Active</option>
                               <option value="">Inactive</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label">Sales Sector</label>
-                            <select class="form-control">
-                              <option value="">All</option>
-                              <option value="">Standard</option>
-                              <option value="">Paper Entry</option>
-                              <option value="">Bulk Entry</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label">Purchase Sector</label>
-                            <select class="form-control">
-                              <option value="">All</option>
-                              <option value="">Standard</option>
-                              <option value="">Paper Entry</option>
-                              <option value="">Bulk Entry</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label">Sales Branch</label>
-                            <select class="form-control">
-                              <option value="">All</option>
-                              <option value="">Standard</option>
-                              <option value="">Paper Entry</option>
-                              <option value="">Bulk Entry</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label">Purchase Branch</label>
-                            <select class="form-control">
-                              <option value="">All</option>
-                              <option value="">Standard</option>
-                              <option value="">Paper Entry</option>
-                              <option value="">Bulk Entry</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label">Sales Location</label>
-                            <select class="form-control">
-                              <option value="">All</option>
-                              <option value="">Standard</option>
-                              <option value="">Paper Entry</option>
-                              <option value="">Bulk Entry</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label"
-                              >Purchase Location</label
-                            >
-                            <select class="form-control">
-                              <option value="">All</option>
-                              <option value="">Standard</option>
-                              <option value="">Paper Entry</option>
-                              <option value="">Bulk Entry</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label">Sales Division</label>
-                            <select class="form-control">
-                              <option value="">All</option>
-                              <option value="">Standard</option>
-                              <option value="">Paper Entry</option>
-                              <option value="">Bulk Entry</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label"
-                              >Purchase Division</label
-                            >
-                            <select class="form-control">
-                              <option value="">All</option>
-                              <option value="">Standard</option>
-                              <option value="">Paper Entry</option>
-                              <option value="">Bulk Entry</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label"
-                              >Sales Department</label
-                            >
-                            <select class="form-control">
-                              <option value="">Yes</option>
-                              <option value="">No</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Purchase Dept</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Yes</option>
-                              <option value="Inactive">No</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Sales Project</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Yes</option>
-                              <option value="Inactive">No</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Purchase Project</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Yes</option>
-                              <option value="Inactive">No</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="placementItrisId"
-                              >Sales Cost Centre</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Yes</option>
-                              <option value="Inactive">No</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label"
-                              >Purchase Cost Centre</label
-                            >
-                            <select class="form-control">
-                              <option value="Active">Yes</option>
-                              <option value="Inactive">No</option>
                             </select>
                           </div>
                         </div>
@@ -558,16 +381,13 @@
                             />
                           </div>
                         </div>
+                        <div class="col-sm-12">
+                          <button type="submit" class="btn btn-primary btn-sm">
+                            Search
+                          </button>
+                          <a class="btn btn-default btn-sm">Clear</a>
+                        </div>
                       </div>
-                      <div class="col-sm-12">
-                        <button type="submit" class="btn btn-primary">
-                          Search
-                        </button>
-                        <a class="btn btn-default waves-light" role="button"
-                          >Clear</a
-                        >
-                      </div>
-                      <!---------1st tab end ----->
                     </div>
                   </div>
                 </div>
