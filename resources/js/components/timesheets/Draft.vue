@@ -2,7 +2,9 @@
   <section class="content">
     <div class="container-fluid">
         <div class="row">
-
+          <div class="col-md-8">
+           <h2>Draft Timesheets</h2>
+           </div>
           <div class="col-12">
 
             <div class="card">
@@ -88,16 +90,12 @@
                         <th>Client Acc Ref</th>
                         <th>Exported Date</th>
                         <th>Total Cost(GBP)</th>
-                        <th>Purchase Nominal</th>
-                        <th>Sales Nominal</th>
-                        <th>Supplier Accounts Ref</th>
                         <th>Worker Accounts Ref</th>
                         <th>Worker Gender</th>
                         <th>Exchange Rate Pay</th>
                         <th>Exchange Rate Charge</th>
                         <th>Charge</th>
                         <th>Charge Currency</th>
-                        <th>Funds Received</th>
                         <th>Charge(GBP)</th>
                         <th>Type</th>
                         <th>Approved</th>
@@ -133,7 +131,6 @@
                       <td>Myram, Robert</td>
                       <td></td>
                       <td></td>
-                      <td></td>
                        <td>John</td>
                       <td>Clark</td>
                       <td></td>
@@ -143,9 +140,6 @@
                       <td></td>
                       <td></td>
                       <td></td>
-                      <td></td>
-                      <td></td>
-                       <td></td>
                       <td></td>
                       <td></td>
                       <td></td>
@@ -222,9 +216,7 @@
                 <button type="submit" class="btn btn-primary btn-sm">
                   CSV
                 </button>
-                <button type="submit" class="btn btn-primary btn-sm">
-                  Default CSV
-                </button>
+                
                 <button type="submit" class="btn btn-primary btn-sm">Reset Column</button>
               </div>
                   <!-- <pagination :data="products" @pagination-change-page="getResults"></pagination> -->
