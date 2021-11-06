@@ -2,17 +2,50 @@
   <section class="content">
     <div class="container-fluid">
         <div class="row">
-
+          <div class="col-md-8">
+           <h2>Approved Timesheets</h2>
+           </div>
           <div class="col-12">
             <div class="card">
-              <div class="card-header" style="background-color:white;">
-                <h3 class="card-title" style="padding-top:10px;">Approved List</h3>
-                    <button style="margin-left:20px;" type="submit" class="btn btn-light">Choose Column</button>
-                    <div class="card-tools">
-                  <!-- <button type="button" class="btn btn-sm btn-primary" @click="newModal">
-                      <i class="fa fa-plus-square"></i>
-                      Add New
-                  </button> -->
+                        <div class="card-header" style="background-color: white">
+                <div class="row">
+                  <div class="col-sm-10 mb-3">
+                    <div class="d-flex align-items-center">
+                      <label class="mb-0 mr-2 search-label">Search:</label>
+                      <form class="form-inline">
+                        <div class="input-group input-group-sm">
+                          <input
+                            type="search"
+                            placeholder="Search"
+                            aria-label="Search"
+                            class="form-control color-light"
+                          />
+                          <div class="input-group-append">
+                            <button type="submit" class="btn color-light">
+                              <i class="fa fa-search"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                      <button type="submit" class="btn btn-sm color-light mx-1">
+                        Choose Column
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 mb-3">
+                    <div class="d-flex align-items-center justify-content-end">
+                      <label class="mb-0">Show</label>
+                      <select class="form-control w-auto ml-2 mr-2 pt-0 pb-0 h-100">
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                        <option value="250">250</option>
+                        <option value="500">500</option>
+                      </select>
+                      <label class="mb-0">entries</label>
+                    </div>
+                  </div>
                 </div>
               </div>
               <!-- /.card-header -->
@@ -88,80 +121,109 @@
                   <tbody>
                      <tr v-for="product in products.data" :key="product.id">
                       <td>{{product.id}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
-                       <td>{{product.id}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
-                       <td>{{product.id}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
-                       <td>{{product.id}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
-                       <td>{{product.id}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.id}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.name}}</td>
-                      <td>{{product.description | truncate(30, '...')}}</td>
-                      <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
-                      <td>{{product.category.name}}</td>
+                      <td>	Wheeler, Daniel</td>
+                      <td>LTD</td>
+                      <td>Wkr146</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>	Cooke, Jordan</td>
+                       <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                       <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                         <td></td>
+                      <td></td>
                     </tr>
                   </tbody>
                 </table>
               </div>
               <!-- /.card-body -->
-              <div class="card-footer">
-                  <pagination :data="products" @pagination-change-page="getResults"></pagination>
-                    <button type="submit" class="btn btn-info">Print Report</button>
-                    <button type="submit" class="btn btn-info">Print Details Report</button>
-                    <button type="submit" class="btn btn-info">CSV</button>
-                    <button type="submit" class="btn btn-info">Default CSV</button>
-                    <button type="submit" class="btn btn-info">Reset Column</button>
+                  <div class="card-footer">
+                <div class="row mb-3">
+                  <div class="col-md-5 align-self-center">
+                    <div>Showing 1 to 10 of 12 entries - 0 rows selected</div>
+                  </div>
+                  <div class="col-md-7 d-flex justify-content-end">
+                    <nav aria-label="...">
+                      <ul class="pagination mb-0">
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#" tabindex="-1">Previous</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item active">
+                          <a class="page-link" href="#"
+                            >2 <span class="sr-only">(current)</span></a
+                          >
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">Next</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <!-- <button type="submit" class="btn btn-primary btn-sm">
+                Submit
+                </button> -->
+                <button type="submit" class="btn btn-primary btn-sm">
+                  Default CSV
+                </button>
+                <button type="submit" class="btn btn-primary btn-sm">Reset Column</button>
               </div>
             </div>
             <!-- /.card -->

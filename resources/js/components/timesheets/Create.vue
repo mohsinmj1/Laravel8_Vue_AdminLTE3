@@ -748,7 +748,7 @@
                     <div class="modal-footer ">
                         <button type="button" class="btn btn-warning" id="modalstartBtn" v-on:click="startfn(1)"> Start </button>
                         <button type="button" class="btn btn-warning" style="display:none" id="modalBreakBtn" v-on:click="startfn(2)"> Break </button>
-                        <button type="button" class="btn btn-warning" style="display:none" id="modalContinueBtn" v-on:click="startfn(1)"> Continue </button>
+                        <button type="button" class="btn btn-warning" style="display:none" id="modalContinueBtn" v-on:click="startfn(1)"> Resume </button>
                         <button type="button" class="btn btn-success" id="modalfinishBtn" v-on:click="startfn(3)"> Finish </button>
                         <button type="button" class="btn btn-danger" data-dismiss="modal"> Close </button>
                         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
