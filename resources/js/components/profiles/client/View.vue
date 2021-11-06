@@ -124,32 +124,40 @@
               <tbody>
                 <tr v-for="product in products.data" :key="product.id">
                   <td>
-                    <div class="input-group-append">
-                      <div class="dropdown">
-                        <button
-                          class="btn btn-primary btn-size dropdown-toggle"
-                          type="button"
-                          id="dropdownMenuButton"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          Edit
-                        </button>
-                        <div
-                          class="dropdown-menu"
-                          aria-labelledby="dropdownMenuButton"
-                        >
-                          <a class="dropdown-item" href="#">Today</a>
-                          <a class="dropdown-item" href="#">Yesterday</a>
-                          <hr />
-                          <a class="dropdown-item" href="#">Last 7 Days</a>
-                          <a class="dropdown-item" href="#">Last 30 Days</a>
-                          <hr />
-                          <a class="dropdown-item" href="#">This Week</a>
-                          <a class="dropdown-item" href="#">Last Week</a>
-                        </div>
-                      </div>
+                    <div
+                      class="
+                        btn-group btn-sm
+                        dropdown dropdown-actions-table
+                        open
+                      "
+                    >
+                      <a href="" class="btn btn-primary btn-sm">Edit</a
+                      ><button
+                        onmouseup="scrollToBottom(this);"
+                        type="button"
+                        class="btn btn-primary btn-sm dropdown-toggle"
+                        data-toggle="dropdown"
+                        aria-expanded="true"
+                      >
+                        <i class="caret"></i>
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li>
+                          <a href="">View Summary</a>
+                        </li>
+                        <li>
+                          <a href="">Managers</a>
+                        </li>
+                        <li>
+                          <a href="">Workers</a>
+                        </li>
+                        <li>
+                          <a href="">Consultants</a>
+                        </li>
+                        <li>
+                          <a href="=">Adjustment Invoice</a>
+                        </li>
+                      </ul>
                     </div>
                   </td>
                   <td>{{ product.name }}</td>
