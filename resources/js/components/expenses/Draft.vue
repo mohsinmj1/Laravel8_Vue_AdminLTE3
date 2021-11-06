@@ -4,21 +4,58 @@
         <div class="row">
 
           <div class="col-12">
-        
+         <div class="col-md-8">
+           <h2>Draft List</h2>
+           </div>
             <div class="card">
-              <div class="card-header" style="background-color:white;">
-                <h3 class="card-title" style="padding-top:10px;">Draft List</h3>
-                    <button style="margin-left:20px;" type="submit" class="btn btn-light">Select all</button>
-                    <button type="submit" class="btn btn-light">Select None</button>
-                    <button type="submit" class="btn btn-light">Choose Column</button>
-                <div class="card-tools">
-                  
-                  <!-- <button type="button" class="btn btn-sm btn-primary" @click="newModal">
-                      <i class="fa fa-plus-square"></i>
-                      Add New
-                  </button> -->
+              <div class="card-header" style="background-color: white">
+                <div class="row">
+                  <div class="col-sm-10 mb-3">
+                    <div class="d-flex align-items-center">
+                      <label class="mb-0 mr-2 search-label">Search:</label>
+                      <form class="form-inline">
+                        <div class="input-group input-group-sm">
+                          <input
+                            type="search"
+                            placeholder="Search"
+                            aria-label="Search"
+                            class="form-control color-light"
+                          />
+                          <div class="input-group-append">
+                            <button type="submit" class="btn color-light">
+                              <i class="fa fa-search"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                      <button type="submit" class="btn btn-sm color-light mx-1">
+                        Select all
+                      </button>
+                      <button type="submit" class="btn btn-sm color-light mx-1">
+                       Select None
+                      </button>
+                      <button type="submit" class="btn btn-sm color-light mx-1">
+                        Choose Column
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 mb-3">
+                    <div class="d-flex align-items-center justify-content-end">
+                      <label class="mb-0">Show</label>
+                      <select class="form-control w-auto ml-2 mr-2 pt-0 pb-0 h-100">
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                        <option value="250">250</option>
+                        <option value="500">500</option>
+                      </select>
+                      <label class="mb-0">entries</label>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <!-- /.card-header -->
               <!-- /.card-header -->
               <div class="card-body table-responsive p-0">
                 <table class="table table-hover">
