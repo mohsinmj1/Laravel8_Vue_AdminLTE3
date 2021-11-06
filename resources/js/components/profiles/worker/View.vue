@@ -18,7 +18,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-8">
-          <h2>Workers Search</h2>
+          <h2>Workers</h2>
         </div>
         <div class="col-md-4 d-flex justify-content-end">
           <div class="card-tools">
@@ -97,13 +97,13 @@
                     <li class="nav-item" style="width: 25%">
                       <a
                         class="nav-link"
-                        id="custom-content-below-messages-tab"
+                        id="worker-search-date-range-tab"
                         data-toggle="pill"
-                        href="#custom-content-below-messages"
+                        href="#worker-search-date-range"
                         role="tab"
-                        aria-controls="custom-content-below-messages"
+                        aria-controls="worker-search-date-range"
                         aria-selected="false"
-                        >Data Ranges</a
+                        >Date Ranges</a
                       >
                     </li>
                     <li class="nav-item" style="width: 25%">
@@ -119,7 +119,6 @@
                       >
                     </li>
                   </ul>
-                  <br />
                   <div class="tab-content" id="custom-content-below-tabContent">
                     <div
                       class="tab-pane fade active show"
@@ -130,9 +129,7 @@
                       <div class="row">
                         <div class="col-sm-3">
                           <div class="form-group">
-                            <label class="control-label" for="placementItrisId"
-                              >Firstname</label
-                            >
+                            <label class="control-label">Firstname</label>
                             <input
                               type="text"
                               format="2"
@@ -144,9 +141,7 @@
                         </div>
                         <div class="col-sm-3">
                           <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Lastname</label
-                            >
+                            <label class="control-label">Lastname</label>
                             <input
                               type="text"
                               format="2"
@@ -161,7 +156,7 @@
                         </div>
                         <div class="col-sm-3">
                           <div class="form-group">
-                            <label class="control-label" for="jobTitle"
+                            <label class="control-label"
                               >Primary Reference</label
                             >
                             <input
@@ -178,9 +173,7 @@
                         </div>
                         <div class="col-sm-3">
                           <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >NI Number</label
-                            >
+                            <label class="control-label">NI Number</label>
                             <input
                               type="text"
                               format="2"
@@ -193,13 +186,9 @@
                             />
                           </div>
                         </div>
-                      </div>
-                      <div class="row">
                         <div class="col-sm-3">
                           <div class="form-group">
-                            <label class="control-label" for="placementItrisId"
-                              >Worker Type</label
-                            >
+                            <label class="control-label">Worker Type</label>
                             <select class="form-control form-control-sm">
                               <option value="">
                                 Please Select Worker Type
@@ -223,15 +212,6 @@
                         </div>
                         <div class="col-sm-3">
                           <div class="form-group">
-                            <label class="control-label">Leaver Status</label>
-                            <select class="form-control form-control-sm">
-                              <option value="Active">Yes</option>
-                              <option value="Inactive">No</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
                             <label class="control-label" for="jobTitle"
                               >Currency</label
                             >
@@ -241,105 +221,117 @@
                             </select>
                           </div>
                         </div>
-                      </div>
-                      <div class="row">
                         <div class="col-sm-3">
                           <div class="form-group">
-                            <label class="control-label" for="placementItrisId"
-                              >Account Status</label
-                            >
-                            <input
-                              type="text"
-                              format="2"
-                              label="Placement Ref"
-                              class="form-control form-control-sm"
-                              value=""
-                            />
+                            <label class="control-label">Account Status</label>
+                            <select class="form-control form-control-sm">
+                              <option value="">Please Slect</option>
+                              <option value="0">Active</option>
+                              <option value="1">Locked</option>
+                            </select>
                           </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-2">
                           <div class="form-group">
-                            <label class="control-label" for="jobTitle"
+                            <label class="control-label"
                               >Missing Bank Details</label
                             >
-                            <input
-                              type="text"
-                              format="2"
-                              label="Job Title"
-                              name="jobTitle"
-                              size="20"
-                              id="jobTitle"
-                              class="form-control form-control-sm"
-                              value=""
-                            />
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Created Date</label
-                            >
-                            <input
-                              type="date"
-                              format="2"
-                              label="Job Title"
-                              name="jobTitle"
-                              size="20"
-                              id="jobTitle"
-                              class="form-control form-control-sm"
-                              value=""
-                            />
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Modified Date</label
-                            >
-                            <input
-                              type="date"
-                              format="2"
-                              label="Job Title"
-                              name="jobTitle"
-                              size="20"
-                              id="jobTitle"
-                              class="form-control form-control-sm"
-                              value=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="placementItrisId"
-                              >Inpay Linked</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control form-control-sm"
-                              onchange=""
-                            >
-                              <option value="Active">Yes</option>
-                              <option value="Inactive">No</option>
+                            <select class="form-control form-control-sm">
+                              <option value="0">All</option>
+                              <option value="1">Yes</option>
+                              <option value="2">No</option>
                             </select>
                           </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-5">
                           <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Validated</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control form-control-sm"
-                              onchange=""
-                            >
-                              <option value="Active">Yes</option>
-                              <option value="Inactive">No</option>
-                            </select>
+                            <label class="control-label">Created Date</label>
+                            <div class="input-group-sm input-group">
+                              <input
+                                type="date"
+                                class="form-control form-control-sm"
+                              />
+                              <button
+                                class="input-group-addon btn btn-primary btn-sm"
+                              >
+                                to
+                              </button>
+                              <input
+                                type="date"
+                                class="form-control form-control-sm"
+                              />
+                              <div class="input-group-btn">
+                                <button
+                                  type="button"
+                                  class="
+                                    btn btn-sm btn-primary
+                                    dropdown-toggle
+                                    form-control-sm
+                                  "
+                                  data-toggle="dropdown"
+                                >
+                                  Options
+                                  <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#">Today</a></li>
+                                  <li><a href="#">Yesterday</a></li>
+                                  <li><a href="#">Last 7 Days</a></li>
+                                  <li><a href="#">Last 30 Days</a></li>
+                                  <li><a href="#">This Week</a></li>
+                                  <li><a href="#">Last Week</a></li>
+                                  <li><a href="#">This Month</a></li>
+                                  <li><a href="#">Last Month</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-5">
+                          <div class="form-group">
+                            <label class="control-label">Modified Date</label>
+                            <div class="input-group-sm input-group">
+                              <input
+                                type="date"
+                                class="form-control form-control-sm"
+                                data-date-start-date=""
+                                data-date-end-date=""
+                                placeholder="dd/MM/yyyy"
+                              />
+                              <button
+                                class="input-group-addon btn btn-primary btn-sm"
+                              >
+                                to
+                              </button>
+                              <input
+                                type="date"
+                                class="form-control form-control-sm"
+                                data-date-start-date=""
+                                data-date-end-date=""
+                                placeholder="dd/MM/yyyy"
+                              />
+
+                              <div class="input-group-btn">
+                                <button
+                                  type="button"
+                                  class="btn btn-primary btn-sm dropdown-toggle"
+                                  data-toggle="dropdown"
+                                >
+                                  Options
+                                  <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#">Today</a></li>
+                                  <li><a href="#">Yesterday</a></li>
+                                  <li><a href="#">Last 7 Days</a></li>
+                                  <li><a href="#">Last 30 Days</a></li>
+                                  <li><a href="#">This Week</a></li>
+                                  <li><a href="#">Last Week</a></li>
+                                  <li><a href="#">This Month</a></li>
+                                  <li><a href="#">Last Month</a></li>
+                                </ul>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -357,13 +349,184 @@
                           Clear
                         </button>
                       </div>
-                      <!---------1st tab end ----->
                     </div>
                     <div
                       class="tab-pane fade"
                       id="custom-content-below-profile"
                       role="tabpanel"
                       aria-labelledby="custom-content-below-profile-tab"
+                    >
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <div class="form-group">
+                            <label class="control-label">Umbrella</label>
+                            <div class="input-group input-group-sm">
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Search"
+                              />
+
+                              <button
+                                class="
+                                  input-group-addon
+                                  btn btn-sm btn-primary
+                                  rounded-0
+                                "
+                              >
+                                <i class="fa fa-search"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-group">
+                            <label class="control-label">Company Name</label>
+                            <input
+                              type="text"
+                              class="form-control form-control-sm"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-group">
+                            <label class="control-label">Company Email</label>
+                            <input
+                              type="text"
+                              class="form-control form-control-sm"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-group">
+                            <label class="control-label">Nominal Code</label>
+                            <input
+                              type="text"
+                              class="form-control form-control-sm"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <div class="form-group">
+                            <label class="control-label">Self Billing</label>
+                            <select class="form-control form-control-sm">
+                              <option value="">please select</option>
+                              <option value="">Yes</option>
+                              <option value="">No</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-group">
+                            <label class="control-label">VAT Code</label>
+                            <select class="form-control form-control-sm">
+                              <option value="Active">please select</option>
+                              <option value="Active">None (T0)</option>
+                              <option value="Active">Standard (T1)</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-group">
+                            <label class="control-label">Invoice Period</label>
+                            <select class="form-control form-control-sm">
+                              <option value="">please select</option>
+                              <option value="0">Weekly</option>
+                              <option value="1">Two Weekly</option>
+                              <option value="2">Four Weekly</option>
+                              <option value="3">Calendar Monthly</option>
+                              <option value="4">4-4-5</option>
+                              <option value="5">Other</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-group">
+                            <label class="control-label"
+                              >Invoice Delivery</label
+                            >
+                            <select class="form-control form-control-sm">
+                              <option value="">please select</option>
+                              <option value="0">Post</option>
+                              <option value="1">Email</option>
+                              <option value="3">Delivery Not Required</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <button
+                          type="submit"
+                          class="btn btn-primary btn-sm ml-3 mr-2"
+                        >
+                          Search
+                        </button>
+                        <button type="submit" class="btn btn-default btn-sm">
+                          Clear
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="worker-search-date-range"
+                      role="tabpanel"
+                      aria-labelledby="worker-search-date-range-tab"
+                    >
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <label>Joined After</label>
+                          <div class="input-group">
+                            <input
+                              type="date"
+                              class="form-control form-control-sm"
+                            />
+                            <div class="input-group-append">
+                              <button
+                                class="btn btn-primary fa-icon"
+                                type="button"
+                              >
+                                <i class="fa fa-calendar"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                          <label>Hasn't Worked Since</label>
+                          <div class="input-group">
+                            <input
+                              type="date"
+                              class="form-control form-control-sm"
+                            />
+                            <div class="input-group-append">
+                              <button
+                                class="btn btn-primary fa-icon"
+                                type="button"
+                              >
+                                <i class="fa fa-calendar"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <button type="submit" class="btn btn-primary btn-sm">
+                            Search
+                          </button>
+                          <button type="submit" class="btn btn-default btn-sm">
+                            Clear
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="custom-content-below-placement"
+                      role="tabpanel"
+                      aria-labelledby="custom-content-below-placement-tab"
                     >
                       <div class="row">
                         <div class="col-sm-3">
@@ -391,530 +554,105 @@
                         </div>
                         <div class="col-sm-3">
                           <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Company Name</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Choose</option>
+                            <label class="control-label">Manager</label>
+                            <div class="input-group input-group-sm">
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Search"
+                              />
+
+                              <button
+                                class="
+                                  input-group-addon
+                                  btn btn-sm
+                                  bg-primary
+                                  rounded-0
+                                "
+                              >
+                                <i class="fa fa-search"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-group">
+                            <label class="control-label">Consultant</label>
+                            <div class="input-group input-group-sm">
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Search"
+                              />
+
+                              <button
+                                class="
+                                  input-group-addon
+                                  btn btn-sm
+                                  bg-primary
+                                  rounded-0
+                                "
+                              >
+                                <i class="fa fa-search"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-group">
+                            <label class="control-label"
+                              >Timesheet Entry Method</label
+                            ><select class="form-control form-control-sm">
+                              <option value="">All</option>
+                              <option value="">Standard</option>
+                              <option value="">Bulk Entry</option>
                             </select>
                           </div>
                         </div>
                         <div class="col-sm-3">
                           <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Company Email</label
+                            <label class="control-label"
+                              >Status (Date filters will overide this)</label
                             >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Choose</option>
+                            <select class="form-control form-control-sm">
+                              <option value="">All</option>
+                              <option value="">Active</option>
+                              <option value="">Inactive</option>
                             </select>
                           </div>
                         </div>
                         <div class="col-sm-3">
                           <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Nominal Code</label
-                            >
+                            <label class="control-label">Project Code</label>
                             <input
                               type="text"
-                              format="2"
-                              label="Job Title"
-                              name="jobTitle"
-                              size="20"
-                              id="jobTitle"
                               class="form-control form-control-sm"
                               value=""
                             />
                           </div>
                         </div>
-                      </div>
-                      <div class="row">
                         <div class="col-sm-3">
                           <div class="form-group">
-                            <label class="control-label" for="placementItrisId"
-                              >Umbrella</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Choose</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Company Name</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Choose</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Company Email</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Choose</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Nominal Code</label
-                            >
+                            <label class="control-label">Client Site</label>
                             <input
                               type="text"
-                              format="2"
-                              label="Job Title"
-                              name="jobTitle"
-                              size="20"
-                              id="jobTitle"
                               class="form-control form-control-sm"
                               value=""
                             />
                           </div>
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="placementItrisId"
-                              >Self Billing</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Choose</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >VAT Code</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Choose</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Invoice Period</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Choose</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Invoice Delivery</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Choose</option>
-                            </select>
-                          </div>
+                        <div class="col-sm-12">
+                          <button type="submit" class="btn btn-primary btn-sm">
+                            Search
+                          </button>
+                          <button
+                            type="submit"
+                            class="btn btn-default btn-sm mx-2"
+                          >
+                            Clear
+                          </button>
                         </div>
                       </div>
-
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Second Tier Umbrellas</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Choose</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-
-                      <br />
-                      <div class="col-sm-12">
-                        <button type="submit" class="btn btn-primary">
-                          Search
-                        </button>
-                        <a class="btn btn-default waves-light" role="button"
-                          >Clear</a
-                        >
-                      </div>
-                      <!-------- 2nd tab end ----->
-                    </div>
-                    <div
-                      class="tab-pane fade"
-                      id="custom-content-below-messages"
-                      role="tabpanel"
-                      aria-labelledby="custom-content-below-messages-tab"
-                    >
-                      <div class="col-lg-3">
-                        <label for="client" class="d-block mb-1"
-                          >Start Date*</label
-                        >
-                        <div class="input-group">
-                          <input
-                            type="text"
-                            class="form-control form-control-sm"
-                            placeholder="dd/MM/yyyy"
-                          />
-                          <div class="input-group-append">
-                            <button
-                              class="btn btn-primary fa-icon"
-                              type="button"
-                            >
-                              <i class="fa fa-calendar"></i>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-3">
-                        <label for="client" class="d-block mb-1"
-                          >End Date*</label
-                        >
-                        <div class="input-group">
-                          <input
-                            type="text"
-                            class="form-control form-control-sm"
-                            placeholder="dd/MM/yyyy"
-                          />
-                          <div class="input-group-append">
-                            <button
-                              class="btn btn-primary fa-icon"
-                              type="button"
-                            >
-                              <i class="fa fa-calendar"></i>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <br />
-                      <div class="col-sm-12">
-                        <button type="submit" class="btn btn-primary">
-                          Search
-                        </button>
-                        <a class="btn btn-default waves-light" role="button"
-                          >Clear</a
-                        >
-                      </div>
-                    </div>
-                    <div
-                      class="tab-pane fade"
-                      id="custom-content-below-placement"
-                      role="tabpanel"
-                      aria-labelledby="custom-content-below-placement-tab"
-                    >
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="placementItrisId"
-                              >Sales Sector</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Yes</option>
-                              <option value="Inactive">No</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Purchase Sector</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Yes</option>
-                              <option value="Inactive">No</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Sales Branch</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Yes</option>
-                              <option value="Inactive">No</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Purchase Branch</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Yes</option>
-                              <option value="Inactive">No</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="placementItrisId"
-                              >Sales Location</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Yes</option>
-                              <option value="Inactive">No</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Purchase Location</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Yes</option>
-                              <option value="Inactive">No</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Sales Division</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Yes</option>
-                              <option value="Inactive">No</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Purchase Division</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Yes</option>
-                              <option value="Inactive">No</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="placementItrisId"
-                              >Sales Department</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Yes</option>
-                              <option value="Inactive">No</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Purchase Dept</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Yes</option>
-                              <option value="Inactive">No</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Sales Project</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Yes</option>
-                              <option value="Inactive">No</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Purchase Project</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Yes</option>
-                              <option value="Inactive">No</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="placementItrisId"
-                              >Sales Cost Centre</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Yes</option>
-                              <option value="Inactive">No</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Purchase Cost Centre</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Yes</option>
-                              <option value="Inactive">No</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label class="control-label" for="jobTitle"
-                              >Project Code</label
-                            >
-                            <select
-                              name="placementStatus"
-                              id="placementStatus"
-                              class="form-control input-sm null"
-                              onchange=""
-                            >
-                              <option value="Active">Yes</option>
-                              <option value="Inactive">No</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-
-                      <br />
-                      <div class="col-sm-12">
-                        <button type="submit" class="btn btn-primary">
-                          Search
-                        </button>
-                        <a class="btn btn-default waves-light" role="button"
-                          >Clear</a
-                        >
-                      </div>
-                      <!---------1st tab end ----->
                     </div>
                   </div>
                 </div>
@@ -1007,7 +745,9 @@
               </thead>
               <tbody>
                 <tr>
-                  <td><input type="checkbox" name="" id="" /></td>
+                  <td>
+                    <input type="checkbox" name="" id="" />
+                  </td>
                   <td>
                     <div class="btn btn-group btn-sm dropdown">
                       <a href="#" class="btn btn-primary btn-sm">Edit</a>
@@ -1020,14 +760,30 @@
                         <i class="caret"></i>
                       </button>
                       <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">View Summary</a></li>
-                        <li><a href="#">Messages</a></li>
-                        <li><a href="#">Create Expense</a></li>
-                        <li><a href="#">Notifications</a></li>
-                        <li><a href="#">Change Roles</a></li>
-                        <li><a href="#">Switch To</a></li>
-                        <li><a href="#">Managers</a></li>
-                        <li><a href="#">Consultants</a></li>
+                        <li>
+                          <a href="#">View Summary</a>
+                        </li>
+                        <li>
+                          <a href="#">Messages</a>
+                        </li>
+                        <li>
+                          <a href="#">Create Expense</a>
+                        </li>
+                        <li>
+                          <a href="#">Notifications</a>
+                        </li>
+                        <li>
+                          <a href="#">Change Roles</a>
+                        </li>
+                        <li>
+                          <a href="#">Switch To</a>
+                        </li>
+                        <li>
+                          <a href="#">Managers</a>
+                        </li>
+                        <li>
+                          <a href="#">Consultants</a>
+                        </li>
                       </ul>
                     </div>
                   </td>
@@ -1048,7 +804,9 @@
                   <td>No</td>
                 </tr>
                 <tr>
-                  <td><input type="checkbox" name="" id="" /></td>
+                  <td>
+                    <input type="checkbox" name="" id="" />
+                  </td>
                   <td>
                     <div class="btn btn-group btn-sm dropdown">
                       <a href="#" class="btn btn-primary btn-sm">Edit</a>
@@ -1061,14 +819,30 @@
                         <i class="caret"></i>
                       </button>
                       <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">View Summary</a></li>
-                        <li><a href="#">Messages</a></li>
-                        <li><a href="#">Create Expense</a></li>
-                        <li><a href="#">Notifications</a></li>
-                        <li><a href="#">Change Roles</a></li>
-                        <li><a href="#">Switch To</a></li>
-                        <li><a href="#">Managers</a></li>
-                        <li><a href="#">Consultants</a></li>
+                        <li>
+                          <a href="#">View Summary</a>
+                        </li>
+                        <li>
+                          <a href="#">Messages</a>
+                        </li>
+                        <li>
+                          <a href="#">Create Expense</a>
+                        </li>
+                        <li>
+                          <a href="#">Notifications</a>
+                        </li>
+                        <li>
+                          <a href="#">Change Roles</a>
+                        </li>
+                        <li>
+                          <a href="#">Switch To</a>
+                        </li>
+                        <li>
+                          <a href="#">Managers</a>
+                        </li>
+                        <li>
+                          <a href="#">Consultants</a>
+                        </li>
                       </ul>
                     </div>
                   </td>
@@ -1089,7 +863,9 @@
                   <td>No</td>
                 </tr>
                 <tr>
-                  <td><input type="checkbox" name="" id="" /></td>
+                  <td>
+                    <input type="checkbox" name="" id="" />
+                  </td>
                   <td>
                     <div class="btn btn-group btn-sm dropdown">
                       <a href="#" class="btn btn-primary btn-sm">Edit</a>
@@ -1102,14 +878,30 @@
                         <i class="caret"></i>
                       </button>
                       <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">View Summary</a></li>
-                        <li><a href="#">Messages</a></li>
-                        <li><a href="#">Create Expense</a></li>
-                        <li><a href="#">Notifications</a></li>
-                        <li><a href="#">Change Roles</a></li>
-                        <li><a href="#">Switch To</a></li>
-                        <li><a href="#">Managers</a></li>
-                        <li><a href="#">Consultants</a></li>
+                        <li>
+                          <a href="#">View Summary</a>
+                        </li>
+                        <li>
+                          <a href="#">Messages</a>
+                        </li>
+                        <li>
+                          <a href="#">Create Expense</a>
+                        </li>
+                        <li>
+                          <a href="#">Notifications</a>
+                        </li>
+                        <li>
+                          <a href="#">Change Roles</a>
+                        </li>
+                        <li>
+                          <a href="#">Switch To</a>
+                        </li>
+                        <li>
+                          <a href="#">Managers</a>
+                        </li>
+                        <li>
+                          <a href="#">Consultants</a>
+                        </li>
                       </ul>
                     </div>
                   </td>
@@ -1130,7 +922,9 @@
                   <td>No</td>
                 </tr>
                 <tr>
-                  <td><input type="checkbox" name="" id="" /></td>
+                  <td>
+                    <input type="checkbox" name="" id="" />
+                  </td>
                   <td>
                     <div class="btn btn-group btn-sm dropdown">
                       <a href="#" class="btn btn-primary btn-sm">Edit</a>
@@ -1143,14 +937,30 @@
                         <i class="caret"></i>
                       </button>
                       <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">View Summary</a></li>
-                        <li><a href="#">Messages</a></li>
-                        <li><a href="#">Create Expense</a></li>
-                        <li><a href="#">Notifications</a></li>
-                        <li><a href="#">Change Roles</a></li>
-                        <li><a href="#">Switch To</a></li>
-                        <li><a href="#">Managers</a></li>
-                        <li><a href="#">Consultants</a></li>
+                        <li>
+                          <a href="#">View Summary</a>
+                        </li>
+                        <li>
+                          <a href="#">Messages</a>
+                        </li>
+                        <li>
+                          <a href="#">Create Expense</a>
+                        </li>
+                        <li>
+                          <a href="#">Notifications</a>
+                        </li>
+                        <li>
+                          <a href="#">Change Roles</a>
+                        </li>
+                        <li>
+                          <a href="#">Switch To</a>
+                        </li>
+                        <li>
+                          <a href="#">Managers</a>
+                        </li>
+                        <li>
+                          <a href="#">Consultants</a>
+                        </li>
                       </ul>
                     </div>
                   </td>
