@@ -115,6 +115,36 @@ label {
                                         </div>
                                     </div>
                                 </div> 
+                                 <div class="card card-primary card-outline card-tabs">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="p-2 pl-4">
+                                                <div class="timesheet_create_tit">
+                                                    <h2 class="pb-2">
+                                                        References
+                                                    </h2>
+                                                    <p>A reference will be allocated for this Client</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Client Accounts Ref</label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
+                                                        </div>
+                                                    </div>                                       
+                                                </div> 
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label for="client" class="d-block mb-1">Debtor Number </label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
+                                                        </div>
+                                                    </div>                                       
+                                                </div>                                                                                                                                                                                                                  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
                             </div>
                             <div class="col-lg-4">
                                 <div class="card card-primary card-outline card-tabs">
@@ -347,40 +377,7 @@ label {
                                 </div> 
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="card card-primary card-outline card-tabs">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="p-2 pl-4">
-                                                <div class="timesheet_create_tit">
-                                                    <h2 class="pb-2">
-                                                        References
-                                                    </h2>
-                                                    <p>A reference will be allocated for this Client</p>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-12">
-                                                        <label for="client" class="d-block mb-1">Client Accounts Ref</label>
-                                                        <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">                                                           
-                                                        </div>
-                                                    </div>                                       
-                                                </div> 
-                                                <div class="row">
-                                                    <div class="col-lg-12">
-                                                        <label for="client" class="d-block mb-1">Debtor Number </label>
-                                                        <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">                                                           
-                                                        </div>
-                                                    </div>                                       
-                                                </div>                                                                                                                                                                                                                  
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
+                       
                     </div>
                     <div class="tab-pane fade" id="custom-content-below-date-ranges" role="tabpanel" aria-labelledby="custom-content-below-date-ranges-tab">
                         <div class="row">                            
@@ -871,1064 +868,1836 @@ label {
                     </div>
                     <div class="tab-pane fade" id="custom-content-below-reference" role="tabpanel" aria-labelledby="custom-content-below-reference-tab">
                         <div class="row">
-                <div class="col-lg-6">
-                  <div class="card card-primary card-outline card-tabs">
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <div class="p-2 pl-4">
-                          <div class="timesheet_create_tit">
-                            <h2 class="pb-2">
-                              Allocation of items to innoices (consolidation)
-                            </h2>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg-12">
-                              <div class="form-group">
-                                <label class="control-label" for="goeson"
-                                  >What goes on each invoice?</label
-                                >
-                                <select
-                                  class="form-control select2"
-                                  style="width: 100%"
-                                >
-                                  <option value="everything">
-                                    Everything Goes On One Invoice
-                                  </option>
-                                  <option value="separate">
-                                    Expenses Go On One Invoice And Timesheets Go
-                                    On Another
-                                  </option>
-                                  <option value="placement">
-                                    Each Placement Is Invoiced Separately
-                                  </option>
-                                  <option value="sheet">
-                                    Each Timesheet Or Expense Item Is Invoiced
-                                    Separately
-                                  </option>
-                                  <option value="worker">
-                                    Each Worker Is Invoiced
-                                  </option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
+                          <div class="col-lg-6">
+                            <div class="card card-primary card-outline card-tabs">
+                              <div class="panel panel-border panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Allocation of Items To Invoices (Consolidation)</h3>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card card-primary card-outline card-tabs">
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <div class="p-2 pl-4">
-                          <div class="timesheet_create_tit">
-                            <h2 class="pb-2">Monthly Invoicing</h2>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg-12">
-                              <p align="justify" style="line-height: 1.429">
-                                Use the list below to determine which items go
-                                on separate invoices. For example, if you tick
-                                Placement this means that you get one invoice
-                                for every different placement. The options are
-                                added together so if you were to tick Manager
-                                and Rate Name then items would be allocated to
-                                invoices based on both the Manager and the Rate
-                                Name. For example, if you have two timesheets
-                                for different managers and each timesheet
-                                contained Standard and Overtime rates, then you
-                                would get 4 invoices.
-                              </p>
-                              <div class="custom-control custom-checkbox">
-                                <input
-                                  type="checkbox"
-                                  class="custom-control-input"
-                                  id="customCheck1"
-                                />
-                                <label
-                                  class="custom-control-label"
-                                  for="customCheck1"
-                                  >Invoice on a Monthly Basis?</label
-                                >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card card-primary card-outline card-tabs">
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <div class="p-2 pl-4">
-                          <div class="timesheet_create_tit">
-                            <h2 class="pb-2">
-                              Negative value timesheets and expenses (advanced)
-                            </h2>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg-12">
-                              <p align="justify" style="line-height: 1.429">
-                                In some situations you may have a negative value
-                                timesheet or expense item along with normal
-                                timesheets and expenses. The default behaviour
-                                is to include the negative item on the same
-                                invoice as the normal items but you can choose
-                                to always create a separate credit note for
-                                negative items.
-                              </p>
-                              <div class="custom-control custom-checkbox">
-                                <input
-                                  type="checkbox"
-                                  class="custom-control-input"
-                                  id="customCheck1"
-                                />
-                                <label
-                                  class="custom-control-label"
-                                  for="customCheck1"
-                                  >Always raise negative items as credit
-                                  notes</label
-                                >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card card-primary card-outline card-tabs">
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <div class="p-2 pl-4">
-                          <div class="timesheet_create_tit">
-                            <h2 class="pb-2">TAGS</h2>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg-12">
-                              <table class="table table-borderless">
-                                <thead>
-                                  <tr>
-                                    <th scope="col">Category</th>
-                                    <th scope="col">Value</th>
-                                    <th scope="col">Remove</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <button type="button" class="btn btn-primary">
-                      Add Tag
-                    </button>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="card card-primary card-outline card-tabs">
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <div class="p-2 pl-4">
-                          <div class="timesheet_create_tit">
-                            <h2 class="pb-2">Layout of items on invoice</h2>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg-12">
-                              <p align="justify" style="line-height: 1.429">
-                                In some situations you may have a negative value
-                                timesheet or expense item along with normal
-                                timesheets and expenses. The default behaviour
-                                is to include the negative item on the same
-                                invoice as the normal items but you can choose
-                                to always create a separate credit note for
-                                negative items.
-                              </p>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg-12">
+                        <div class="panel-body">
+                          <div class="row">  
+                            <div class="col-sm-12">
                               <div class="form-group">
-                                <label class="control-label" for="goeson"
-                                  >What goes on each invoice?</label
-                                >
-                                <select
-                                  class="form-control mb-3"
-                                  style="width: 100%"
-                                >
-                                  <optgroup label="common">
-                                    <option value="">Client Manager</option>
-                                    <option value="">Worker</option>
-                                    <option value="">Client</option>
-                                    <option value="">Placement</option>
-                                    <option value="">
-                                      Timesheet / Expense Item
-                                    </option>
-                                    <option value="">
-                                      Timesheet / Expense Claim
-                                    </option>
-                                    <option value="">Purchase Order</option>
-                                  </optgroup>
-                                  <optgroup label="More">
-                                    <option value="">Sales Department</option>
-                                    <option value="">Sales Branch</option>
-                                    <option value="">Sales Location</option>
-                                    <option value="">Sales Sector</option>
-                                    <option value="">Sales Division</option>
-                                    <option value="">Sales Cost Centre</option>
-                                    <option value="">Sales Project</option>
-                                    <option value="">
-                                      Purchase Department
-                                    </option>
-                                    <option value="">Purchase Branch</option>
-                                    <option value="">Purchase Location</option>
-                                    <option value="">Purchase Sector</option>
-                                    <option value="">Purchase Division</option>
-                                    <option value="">
-                                      Purchase Cost Centre
-                                    </option>
-                                    <option value="">Purchase Project</option>
-                                  </optgroup>
-                                  <optgroup label="Even more">
-                                    <option value="">
-                                      Shift / Expense Item
-                                    </option>
-                                    <option value="">Sheet Type</option>
-                                    <option value="">Calendar Monthly</option>
-                                    <option value="">Rate Name</option>
-                                    <option value="">Sheet Rate</option>
-                                    <option value="">Pay Element</option>
-                                    <option value="">Client Site</option>
-                                  </optgroup>
-                                </select>
-                                <select
-                                  name="grouping"
-                                  class="form-control mb-3"
-                                  style="width: 93%; margin-left: 30px"
-                                >
-                                  <option value="">Level 2 (Not Used)</option>
-                                  <optgroup label="Common">
-                                    <option value="client-manager">
-                                      Client Manager
-                                    </option>
-                                    <option value="worker">Worker</option>
-                                    <option value="client">Client</option>
-                                    <option value="placement">Placement</option>
-                                    <option value="sheet">
-                                      Timesheet / Expense Item
-                                    </option>
-                                    <option value="sheet-claim">
-                                      Timesheet / Expense Claim
-                                    </option>
-                                    <option value="purchase-order">
-                                      Purchase Order
-                                    </option>
-                                  </optgroup>
-                                  <optgroup label="More">
-                                    <option value="sales-department">
-                                      Sales Department
-                                    </option>
-                                    <option value="sales-branch">
-                                      Sales Branch
-                                    </option>
-                                    <option value="sales-location">
-                                      Sales Location
-                                    </option>
-                                    <option value="sales-sector">
-                                      Sales Sector
-                                    </option>
-                                    <option value="sales-division">
-                                      Sales Division
-                                    </option>
-                                    <option value="sales-cost-centre">
-                                      Sales Cost Centre
-                                    </option>
-                                    <option value="sales-project">
-                                      Sales Project
-                                    </option>
-                                    <option value="purchase-department">
-                                      Purchase Department
-                                    </option>
-                                    <option value="purchase-branch">
-                                      Purchase Branch
-                                    </option>
-                                    <option value="purchase-location">
-                                      Purchase Location
-                                    </option>
-                                    <option value="purchase-sector">
-                                      Purchase Sector
-                                    </option>
-                                    <option value="purchase-division">
-                                      Purchase Division
-                                    </option>
-                                    <option value="purchase-cost-centre">
-                                      Purchase Cost Centre
-                                    </option>
-                                    <option value="purchase-project">
-                                      Purchase Project
-                                    </option>
-                                  </optgroup>
-                                  <optgroup label="Even More">
-                                    <option value="sheet-line">
-                                      Shift / Expense Item
-                                    </option>
-                                    <option value="sheet-type">
-                                      Sheet Type
-                                    </option>
-                                    <option value="calendar-monthly">
-                                      Calendar Monthly
-                                    </option>
-                                    <option value="rate-name">Rate Name</option>
-                                    <option
-                                      value="sheet-rate"
-                                      selected="selected"
-                                    >
-                                      Sheet Rate
-                                    </option>
-                                    <option value="pay-element">
-                                      Pay Element
-                                    </option>
-                                    <option value="client-site">
-                                      Client Site
-                                    </option>
-                                    <option value="charge-rate">
-                                      Charge Rate
-                                    </option>
-                                    <option value="placement-tag">Tag</option>
-                                    <option value="job-title">Job Title</option>
-                                    <option value="job-description">
-                                      Job Description
-                                    </option>
-                                    <option value="sheet-end-date">
-                                      Sheet End Date
-                                    </option>
-                                    <option value="perm">
-                                      Perm Placements
-                                    </option>
-                                    <option value="milestone">Milestone</option>
-                                  </optgroup>
-                                </select>
-                                <select
-                                  name="grouping"
-                                  class="form-control mb-3"
-                                  style="width: 86%; margin-left: 62px"
-                                >
-                                  <option value="">Level 3 (Not Used)</option>
-                                  <optgroup label="Common">
-                                    <option value="client-manager">
-                                      Client Manager
-                                    </option>
-                                    <option value="worker">Worker</option>
-                                    <option value="client">Client</option>
-                                    <option value="placement">Placement</option>
-                                    <option value="sheet">
-                                      Timesheet / Expense Item
-                                    </option>
-                                    <option value="sheet-claim">
-                                      Timesheet / Expense Claim
-                                    </option>
-                                    <option value="purchase-order">
-                                      Purchase Order
-                                    </option>
-                                  </optgroup>
-                                  <optgroup label="More">
-                                    <option value="sales-department">
-                                      Sales Department
-                                    </option>
-                                    <option value="sales-branch">
-                                      Sales Branch
-                                    </option>
-                                    <option value="sales-location">
-                                      Sales Location
-                                    </option>
-                                    <option value="sales-sector">
-                                      Sales Sector
-                                    </option>
-                                    <option value="sales-division">
-                                      Sales Division
-                                    </option>
-                                    <option value="sales-cost-centre">
-                                      Sales Cost Centre
-                                    </option>
-                                    <option value="sales-project">
-                                      Sales Project
-                                    </option>
-                                    <option value="purchase-department">
-                                      Purchase Department
-                                    </option>
-                                    <option value="purchase-branch">
-                                      Purchase Branch
-                                    </option>
-                                    <option value="purchase-location">
-                                      Purchase Location
-                                    </option>
-                                    <option value="purchase-sector">
-                                      Purchase Sector
-                                    </option>
-                                    <option value="purchase-division">
-                                      Purchase Division
-                                    </option>
-                                    <option value="purchase-cost-centre">
-                                      Purchase Cost Centre
-                                    </option>
-                                    <option value="purchase-project">
-                                      Purchase Project
-                                    </option>
-                                  </optgroup>
-                                  <optgroup label="Even More">
-                                    <option value="sheet-line">
-                                      Shift / Expense Item
-                                    </option>
-                                    <option value="sheet-type">
-                                      Sheet Type
-                                    </option>
-                                    <option value="calendar-monthly">
-                                      Calendar Monthly
-                                    </option>
-                                    <option value="rate-name">Rate Name</option>
-                                    <option value="sheet-rate">
-                                      Sheet Rate
-                                    </option>
-                                    <option value="pay-element">
-                                      Pay Element
-                                    </option>
-                                    <option value="client-site">
-                                      Client Site
-                                    </option>
-                                    <option value="charge-rate">
-                                      Charge Rate
-                                    </option>
-                                    <option value="placement-tag">Tag</option>
-                                    <option value="job-title">Job Title</option>
-                                    <option value="job-description">
-                                      Job Description
-                                    </option>
-                                    <option value="sheet-end-date">
-                                      Sheet End Date
-                                    </option>
-                                    <option value="perm">
-                                      Perm Placements
-                                    </option>
-                                    <option value="milestone">Milestone</option>
-                                  </optgroup>
-                                </select>
-                                <select
-                                  name="grouping"
-                                  class="form-control mb-3"
-                                  style="width: 79%; margin-left: 94px"
-                                >
-                                  <option value="">Level 4 (Not Used)</option>
-                                  <optgroup label="Common">
-                                    <option value="client-manager">
-                                      Client Manager
-                                    </option>
-                                    <option value="worker">Worker</option>
-                                    <option value="client">Client</option>
-                                    <option value="placement">Placement</option>
-                                    <option value="sheet">
-                                      Timesheet / Expense Item
-                                    </option>
-                                    <option value="sheet-claim">
-                                      Timesheet / Expense Claim
-                                    </option>
-                                    <option value="purchase-order">
-                                      Purchase Order
-                                    </option>
-                                  </optgroup>
-                                  <optgroup label="More">
-                                    <option value="sales-department">
-                                      Sales Department
-                                    </option>
-                                    <option value="sales-branch">
-                                      Sales Branch
-                                    </option>
-                                    <option value="sales-location">
-                                      Sales Location
-                                    </option>
-                                    <option value="sales-sector">
-                                      Sales Sector
-                                    </option>
-                                    <option value="sales-division">
-                                      Sales Division
-                                    </option>
-                                    <option value="sales-cost-centre">
-                                      Sales Cost Centre
-                                    </option>
-                                    <option value="sales-project">
-                                      Sales Project
-                                    </option>
-                                    <option value="purchase-department">
-                                      Purchase Department
-                                    </option>
-                                    <option value="purchase-branch">
-                                      Purchase Branch
-                                    </option>
-                                    <option value="purchase-location">
-                                      Purchase Location
-                                    </option>
-                                    <option value="purchase-sector">
-                                      Purchase Sector
-                                    </option>
-                                    <option value="purchase-division">
-                                      Purchase Division
-                                    </option>
-                                    <option value="purchase-cost-centre">
-                                      Purchase Cost Centre
-                                    </option>
-                                    <option value="purchase-project">
-                                      Purchase Project
-                                    </option>
-                                  </optgroup>
-                                  <optgroup label="Even More">
-                                    <option value="sheet-line">
-                                      Shift / Expense Item
-                                    </option>
-                                    <option value="sheet-type">
-                                      Sheet Type
-                                    </option>
-                                    <option value="calendar-monthly">
-                                      Calendar Monthly
-                                    </option>
-                                    <option value="rate-name">Rate Name</option>
-                                    <option value="sheet-rate">
-                                      Sheet Rate
-                                    </option>
-                                    <option value="pay-element">
-                                      Pay Element
-                                    </option>
-                                    <option value="client-site">
-                                      Client Site
-                                    </option>
-                                    <option value="charge-rate">
-                                      Charge Rate
-                                    </option>
-                                    <option value="placement-tag">Tag</option>
-                                    <option value="job-title">Job Title</option>
-                                    <option value="job-description">
-                                      Job Description
-                                    </option>
-                                    <option value="sheet-end-date">
-                                      Sheet End Date
-                                    </option>
-                                    <option value="perm">
-                                      Perm Placements
-                                    </option>
-                                    <option value="milestone">Milestone</option>
-                                  </optgroup>
-                                </select>
-                                <select
-                                  name="grouping"
-                                  class="form-control mb-3"
-                                  style="width: 72%; margin-left: 126px"
-                                >
-                                  <option value="">Level 5 (Not Used)</option>
-                                  <optgroup label="Common">
-                                    <option value="client-manager">
-                                      Client Manager
-                                    </option>
-                                    <option value="worker">Worker</option>
-                                    <option value="client">Client</option>
-                                    <option value="placement">Placement</option>
-                                    <option value="sheet">
-                                      Timesheet / Expense Item
-                                    </option>
-                                    <option value="sheet-claim">
-                                      Timesheet / Expense Claim
-                                    </option>
-                                    <option value="purchase-order">
-                                      Purchase Order
-                                    </option>
-                                  </optgroup>
-                                  <optgroup label="More">
-                                    <option value="sales-department">
-                                      Sales Department
-                                    </option>
-                                    <option value="sales-branch">
-                                      Sales Branch
-                                    </option>
-                                    <option value="sales-location">
-                                      Sales Location
-                                    </option>
-                                    <option value="sales-sector">
-                                      Sales Sector
-                                    </option>
-                                    <option value="sales-division">
-                                      Sales Division
-                                    </option>
-                                    <option value="sales-cost-centre">
-                                      Sales Cost Centre
-                                    </option>
-                                    <option value="sales-project">
-                                      Sales Project
-                                    </option>
-                                    <option value="purchase-department">
-                                      Purchase Department
-                                    </option>
-                                    <option value="purchase-branch">
-                                      Purchase Branch
-                                    </option>
-                                    <option value="purchase-location">
-                                      Purchase Location
-                                    </option>
-                                    <option value="purchase-sector">
-                                      Purchase Sector
-                                    </option>
-                                    <option value="purchase-division">
-                                      Purchase Division
-                                    </option>
-                                    <option value="purchase-cost-centre">
-                                      Purchase Cost Centre
-                                    </option>
-                                    <option value="purchase-project">
-                                      Purchase Project
-                                    </option>
-                                  </optgroup>
-                                  <optgroup label="Even More">
-                                    <option value="sheet-line">
-                                      Shift / Expense Item
-                                    </option>
-                                    <option value="sheet-type">
-                                      Sheet Type
-                                    </option>
-                                    <option value="calendar-monthly">
-                                      Calendar Monthly
-                                    </option>
-                                    <option value="rate-name">Rate Name</option>
-                                    <option value="sheet-rate">
-                                      Sheet Rate
-                                    </option>
-                                    <option value="pay-element">
-                                      Pay Element
-                                    </option>
-                                    <option value="client-site">
-                                      Client Site
-                                    </option>
-                                    <option value="charge-rate">
-                                      Charge Rate
-                                    </option>
-                                    <option value="placement-tag">Tag</option>
-                                    <option value="job-title">Job Title</option>
-                                    <option value="job-description">
-                                      Job Description
-                                    </option>
-                                    <option value="sheet-end-date">
-                                      Sheet End Date
-                                    </option>
-                                    <option value="perm">
-                                      Perm Placements
-                                    </option>
-                                    <option value="milestone">Milestone</option>
-                                  </optgroup>
-                                </select>
-                                <select
-                                  name="grouping"
-                                  class="form-control mb-3"
-                                  style="width: 65%; margin-left: 158px"
-                                >
-                                  <option value="">Level 6 (Not Used)</option>
-                                  <optgroup label="Common">
-                                    <option value="client-manager">
-                                      Client Manager
-                                    </option>
-                                    <option value="worker">Worker</option>
-                                    <option value="client">Client</option>
-                                    <option value="placement">Placement</option>
-                                    <option value="sheet">
-                                      Timesheet / Expense Item
-                                    </option>
-                                    <option value="sheet-claim">
-                                      Timesheet / Expense Claim
-                                    </option>
-                                    <option value="purchase-order">
-                                      Purchase Order
-                                    </option>
-                                  </optgroup>
-                                  <optgroup label="More">
-                                    <option value="sales-department">
-                                      Sales Department
-                                    </option>
-                                    <option value="sales-branch">
-                                      Sales Branch
-                                    </option>
-                                    <option value="sales-location">
-                                      Sales Location
-                                    </option>
-                                    <option value="sales-sector">
-                                      Sales Sector
-                                    </option>
-                                    <option value="sales-division">
-                                      Sales Division
-                                    </option>
-                                    <option value="sales-cost-centre">
-                                      Sales Cost Centre
-                                    </option>
-                                    <option value="sales-project">
-                                      Sales Project
-                                    </option>
-                                    <option value="purchase-department">
-                                      Purchase Department
-                                    </option>
-                                    <option value="purchase-branch">
-                                      Purchase Branch
-                                    </option>
-                                    <option value="purchase-location">
-                                      Purchase Location
-                                    </option>
-                                    <option value="purchase-sector">
-                                      Purchase Sector
-                                    </option>
-                                    <option value="purchase-division">
-                                      Purchase Division
-                                    </option>
-                                    <option value="purchase-cost-centre">
-                                      Purchase Cost Centre
-                                    </option>
-                                    <option value="purchase-project">
-                                      Purchase Project
-                                    </option>
-                                  </optgroup>
-                                  <optgroup label="Even More">
-                                    <option value="sheet-line">
-                                      Shift / Expense Item
-                                    </option>
-                                    <option value="sheet-type">
-                                      Sheet Type
-                                    </option>
-                                    <option value="calendar-monthly">
-                                      Calendar Monthly
-                                    </option>
-                                    <option value="rate-name">Rate Name</option>
-                                    <option value="sheet-rate">
-                                      Sheet Rate
-                                    </option>
-                                    <option value="pay-element">
-                                      Pay Element
-                                    </option>
-                                    <option value="client-site">
-                                      Client Site
-                                    </option>
-                                    <option value="charge-rate">
-                                      Charge Rate
-                                    </option>
-                                    <option value="placement-tag">Tag</option>
-                                    <option value="job-title">Job Title</option>
-                                    <option value="job-description">
-                                      Job Description
-                                    </option>
-                                    <option value="sheet-end-date">
-                                      Sheet End Date
-                                    </option>
-                                    <option value="perm">
-                                      Perm Placements
-                                    </option>
-                                    <option value="milestone">Milestone</option>
-                                  </optgroup>
-                                </select>
+                                <label class="control-label" for="goeson">What goes on each invoice?</label>
+                                  <select name="goeson" id="goeson" class="form-control input-sm null" onchange="">
+                                  <option value="everything">Everything Goes On One Invoice</option>
+                                  <option value="separate">Expenses Go On One Invoice And Timesheets Go On Another</option>
+                                  <option value="placement">Each Placement Is Invoiced Separately</option>
+                                  <option value="sheet">Each Timesheet Or Expense Item Is Invoiced Separately</option>
+                                  <option value="worker">Each Worker Is Invoiced Separately</option>
+                                  <option value="custom" selected="selected">Custom</option>
+                                  </select>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card card-primary card-outline card-tabs">
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <div class="p-2 pl-4">
-                          <div class="timesheet_create_tit">
-                            <h2 class="pb-2">Attachments</h2>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg-12">
-                              <p align="justify" style="line-height: 1.429">
-                                Choose what is attached to invoices. You can
-                                attach an electronic representation of the
-                                timesheet or expense. Then you also choose
-                                whether you want to attach any uploaded copies
-                                of timesheet images or expense receipts
-                              </p>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg-6">
-                              <div class="form-group">
-                                <label class="control-label" for="goeson"
-                                  >Attach Timesheets/Expenses On Invoices</label
-                                >
-                                <select
-                                  class="form-control select2"
-                                  style="width: 100%"
-                                >
-                                  <option value="">Yes</option>
-                                  <option value="">No</option>
-                                </select>
+                            <div id="invoicingConsolidation" style="">
+                                <div class="row">
+                                  <div class="col-sm-12">
+                                    <p align="justify">Use the list below to determine which
+                                    items go on separate invoices. For example, if you tick
+                                    Placement this means that you get one invoice for every
+                                    different placement. The options are added together so if you
+                                    were to tick Manager and Rate Name then items would be
+                                    allocated to invoices based on both the Manager and the Rate
+                                    Name. For example, if you have two timesheets for different
+                                    managers and each timesheet contained Standard and Overtime
+                                    rates, then you would get 4 invoices.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <b>Common</b>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="sheet-type" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Separate Expenses and Timesheets</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="sheet" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Each Timesheet or Expense Item is invoiced separately</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="placement" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Placement</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="client-manager" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Manager</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="purchase-order" name="consolidation" checked="" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Purchase Order</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="worker" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Worker</label></div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <b>Purchase</b>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="purchase-branch" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Purchase Branch</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="purchase-cost-centre" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Purchase Cost Centre</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="purchase-department" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Purchase Dept</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="purchase-division" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Purchase Division</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="purchase-location" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Purchase Location</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="purchase-sector" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Purchase Sector</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="purchase-project" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Purchase Project</label></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <b>Sales</b>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="sales-branch" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Sales Branch</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="sales-cost-centre" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Sales Cost Centre</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="sales-department" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Sales Department</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="sales-division" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Sales Division</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="sales-location" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Sales Location</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="sales-sector" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Sales Sector</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="sales-project" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Sales Project</label></div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <b>Advanced</b>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="client-site" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Client Site</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="job-title" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Job Title</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="job-description" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Job Description</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="sheet-end-date" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Items with Different Dates</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="rate-name" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Rate Name</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="pay-element" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Pay Element</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="sheet-rate" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Rate</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="payroll-ref" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Payroll Reference</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="freehand-ref" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Freehand Reference</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="perm" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Perm</label></div>
+                                        <div class="checkbox checkbox-primary"><input type="checkbox" value="milestone" name="consolidation" data-parsley-multiple="consolidation">	<label style="font-weight: normal;" for="checkbox2">Milestone</label></div>
+                                    </div>
+                                </div>
+
+                                    </div>
+                                </div>
                               </div>
                             </div>
-                            <div class="col-lg-6">
-                              <div class="custom-control custom-checkbox">
-                                <input
-                                  type="checkbox"
-                                  class="custom-control-input"
-                                  id="customCheck1"
-                                />
-                                <label
-                                  class="custom-control-label"
-                                  for="customCheck1"
-                                  >Accept agency default for paper on
-                                  invoices</label
-                                >
+                            <div class="card card-primary card-outline card-tabs">
+                              <div class="row">
+                                <div class="col-lg-12">
+                                  <div class="p-2 pl-4">
+                                    <div class="timesheet_create_tit">
+                                      <h2 class="pb-2">Monthly Invoicing</h2>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-lg-12">
+                                        <p align="justify" style="line-height: 1.429">
+                                          Use the list below to determine which items go
+                                          on separate invoices. For example, if you tick
+                                          Placement this means that you get one invoice
+                                          for every different placement. The options are
+                                          added together so if you were to tick Manager
+                                          and Rate Name then items would be allocated to
+                                          invoices based on both the Manager and the Rate
+                                          Name. For example, if you have two timesheets
+                                          for different managers and each timesheet
+                                          contained Standard and Overtime rates, then you
+                                          would get 4 invoices.
+                                        </p>
+                                        <div class="custom-control custom-checkbox">
+                                          <input
+                                            type="checkbox"
+                                            class="custom-control-input"
+                                            id="customCheck1"
+                                          />
+                                          <label
+                                            class="custom-control-label"
+                                            for="customCheck1"
+                                            >Invoice on a Monthly Basis?</label
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                            <div class="col-lg-12">
-                              <div class="custom-control custom-checkbox">
-                                <input
-                                  type="checkbox"
-                                  class="custom-control-input"
-                                  id="customCheck1"
-                                />
-                                <label
-                                  class="custom-control-label"
-                                  for="customCheck1"
-                                  >Include paper timesheets on invoices</label
-                                >
+                            <div class="card card-primary card-outline card-tabs">
+                              <div class="row">
+                                <div class="col-lg-12">
+                                  <div class="p-2 pl-4">
+                                    <div class="timesheet_create_tit">
+                                      <h2 class="pb-2">
+                                        Negative value timesheets and expenses (advanced)
+                                      </h2>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-lg-12">
+                                        <p align="justify" style="line-height: 1.429">
+                                          In some situations you may have a negative value
+                                          timesheet or expense item along with normal
+                                          timesheets and expenses. The default behaviour
+                                          is to include the negative item on the same
+                                          invoice as the normal items but you can choose
+                                          to always create a separate credit note for
+                                          negative items.
+                                        </p>
+                                        <div class="custom-control custom-checkbox">
+                                          <input
+                                            type="checkbox"
+                                            class="custom-control-input"
+                                            id="customCheck1"
+                                          />
+                                          <label
+                                            class="custom-control-label"
+                                            for="customCheck1"
+                                            >Always raise negative items as credit
+                                            notes</label
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                            <div class="col-lg-12">
-                              <div class="custom-control custom-checkbox">
-                                <input
-                                  type="checkbox"
-                                  class="custom-control-input"
-                                  id="customCheck1"
-                                />
-                                <label
-                                  class="custom-control-label"
-                                  for="customCheck1"
-                                  >Include paper expenses on invoices</label
-                                >
-                              </div>
-                            </div>
-                            <div class="col-lg-12">
-                              <div class="custom-control custom-checkbox">
-                                <input
-                                  type="checkbox"
-                                  class="custom-control-input"
-                                  id="customCheck1"
-                                />
-                                <label
-                                  class="custom-control-label"
-                                  for="customCheck1"
-                                  >Include paper expense receipts on
-                                  invoices</label
-                                >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card card-primary card-outline card-tabs">
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <div class="p-2 pl-4">
-                          <div class="timesheet_create_tit">
-                            <h2 class="pb-2">Attachments</h2>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg-12">
-                              <p align="justify" style="line-height: 1.429">
-                                Choose what is attached to invoices. You can
-                                attach an electronic representation of the
-                                timesheet or expense. Then you also choose
-                                whether you want to attach any uploaded copies
-                                of timesheet images or expense receipts
-                              </p>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg-6">
-                              <div class="form-group">
-                                <label class="control-label" for="goeson"
-                                  >Adjust By ?</label
-                                >
-                                <select
-                                  class="form-control select2"
-                                  style="width: 100%"
-                                >
-                                  <option value="">Fixed Amount</option>
-                                  <option value="">Percentage</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-lg-6">
-                              <div class="form-group">
-                                <label class="control-label" for="goeson"
-                                  >Adjust Per</label
-                                >
-                                <select
-                                  class="form-control select2"
-                                  style="width: 100%"
-                                >
-                                  <option value="">Per Worker</option>
-                                  <option value="">Per Timesheet</option>
-                                  <option value="">Per Invoice</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-lg-12">
-                              <div class="form-group">
-                                <label class="control-label" for="goeson"
-                                  >Addition / Deduction</label
-                                >
-                                <select
-                                  class="form-control select2"
-                                  style="width: 100%"
-                                >
-                                  <option value="">Addition</option>
-                                  <option value="">Deduction</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-6">
-                              <div class="form-group">
-                                <label class="control-label" for="goeson"
-                                  >Amount</label
-                                >
-                                <div class="input-group">
-                                  <input
-                                    type="text"
-                                    class="form-control form-control-sm"
-                                  />
+                            <div class="card card-primary card-outline card-tabs">
+                              <div class="row">
+                                <div class="col-lg-12">
+                                  <div class="p-2 pl-4">
+                                    <div class="timesheet_create_tit">
+                                      <h2 class="pb-2">TAGS</h2>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-lg-12">
+                                        <table class="table table-borderless">
+                                          <thead>
+                                            <tr>
+                                              <th scope="col">Category</th>
+                                              <th scope="col">Value</th>
+                                              <th scope="col">Remove</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td>Mark</td>
+                                              <td>Otto</td>
+                                              <td>@mdo</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                             <div class="col-lg-12">
-                              <div class="form-group">
-                                <label class="control-label" for="goeson"
-                                  >Tax Code Override
-                                </label>
-                                <select
-                                  class="form-control select2"
-                                  style="width: 100%"
-                                >
-                                  <option value="">Choose</option>
-                                  <option value="">None (T0)</option>
-                                  <option value="">Standard (T1)</option>
-                                </select>
-                              </div>
+                              <button type="button" class="btn btn-primary">
+                                Add Tag
+                              </button>
                             </div>
-                            <div class="col-6">
-                              <div class="form-group">
-                                <label class="control-label" for="goeson"
-                                  >Minimum</label
-                                >
-                                <div class="input-group">
-                                  <input
-                                    type="text"
-                                    class="form-control form-control-sm"
-                                  />
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="card card-primary card-outline card-tabs">
+                              <div class="row">
+                                <div class="col-lg-12">
+                                  <div class="p-2 pl-4">
+                                    <div class="timesheet_create_tit">
+                                      <h2 class="pb-2">Layout of items on invoice</h2>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-lg-12">
+                                        <p align="justify" style="line-height: 1.429">
+                                          In some situations you may have a negative value
+                                          timesheet or expense item along with normal
+                                          timesheets and expenses. The default behaviour
+                                          is to include the negative item on the same
+                                          invoice as the normal items but you can choose
+                                          to always create a separate credit note for
+                                          negative items.
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-lg-12">
+                                        <div class="form-group">
+                                          <label class="control-label" for="goeson"
+                                            >What goes on each invoice?</label
+                                          >
+                                          <select
+                                            class="form-control mb-3"
+                                            style="width: 100%"
+                                          >
+                                            <optgroup label="common">
+                                              <option value="">Client Manager</option>
+                                              <option value="">Worker</option>
+                                              <option value="">Client</option>
+                                              <option value="">Placement</option>
+                                              <option value="">
+                                                Timesheet / Expense Item
+                                              </option>
+                                              <option value="">
+                                                Timesheet / Expense Claim
+                                              </option>
+                                              <option value="">Purchase Order</option>
+                                            </optgroup>
+                                            <optgroup label="More">
+                                              <option value="">Sales Department</option>
+                                              <option value="">Sales Branch</option>
+                                              <option value="">Sales Location</option>
+                                              <option value="">Sales Sector</option>
+                                              <option value="">Sales Division</option>
+                                              <option value="">Sales Cost Centre</option>
+                                              <option value="">Sales Project</option>
+                                              <option value="">
+                                                Purchase Department
+                                              </option>
+                                              <option value="">Purchase Branch</option>
+                                              <option value="">Purchase Location</option>
+                                              <option value="">Purchase Sector</option>
+                                              <option value="">Purchase Division</option>
+                                              <option value="">
+                                                Purchase Cost Centre
+                                              </option>
+                                              <option value="">Purchase Project</option>
+                                            </optgroup>
+                                            <optgroup label="Even more">
+                                              <option value="">
+                                                Shift / Expense Item
+                                              </option>
+                                              <option value="">Sheet Type</option>
+                                              <option value="">Calendar Monthly</option>
+                                              <option value="">Rate Name</option>
+                                              <option value="">Sheet Rate</option>
+                                              <option value="">Pay Element</option>
+                                              <option value="">Client Site</option>
+                                            </optgroup>
+                                          </select>
+                                          <select
+                                            name="grouping"
+                                            class="form-control mb-3"
+                                            style="width: 93%; margin-left: 30px"
+                                          >
+                                            <option value="">Level 2 (Not Used)</option>
+                                            <optgroup label="Common">
+                                              <option value="client-manager">
+                                                Client Manager
+                                              </option>
+                                              <option value="worker">Worker</option>
+                                              <option value="client">Client</option>
+                                              <option value="placement">Placement</option>
+                                              <option value="sheet">
+                                                Timesheet / Expense Item
+                                              </option>
+                                              <option value="sheet-claim">
+                                                Timesheet / Expense Claim
+                                              </option>
+                                              <option value="purchase-order">
+                                                Purchase Order
+                                              </option>
+                                            </optgroup>
+                                            <optgroup label="More">
+                                              <option value="sales-department">
+                                                Sales Department
+                                              </option>
+                                              <option value="sales-branch">
+                                                Sales Branch
+                                              </option>
+                                              <option value="sales-location">
+                                                Sales Location
+                                              </option>
+                                              <option value="sales-sector">
+                                                Sales Sector
+                                              </option>
+                                              <option value="sales-division">
+                                                Sales Division
+                                              </option>
+                                              <option value="sales-cost-centre">
+                                                Sales Cost Centre
+                                              </option>
+                                              <option value="sales-project">
+                                                Sales Project
+                                              </option>
+                                              <option value="purchase-department">
+                                                Purchase Department
+                                              </option>
+                                              <option value="purchase-branch">
+                                                Purchase Branch
+                                              </option>
+                                              <option value="purchase-location">
+                                                Purchase Location
+                                              </option>
+                                              <option value="purchase-sector">
+                                                Purchase Sector
+                                              </option>
+                                              <option value="purchase-division">
+                                                Purchase Division
+                                              </option>
+                                              <option value="purchase-cost-centre">
+                                                Purchase Cost Centre
+                                              </option>
+                                              <option value="purchase-project">
+                                                Purchase Project
+                                              </option>
+                                            </optgroup>
+                                            <optgroup label="Even More">
+                                              <option value="sheet-line">
+                                                Shift / Expense Item
+                                              </option>
+                                              <option value="sheet-type">
+                                                Sheet Type
+                                              </option>
+                                              <option value="calendar-monthly">
+                                                Calendar Monthly
+                                              </option>
+                                              <option value="rate-name">Rate Name</option>
+                                              <option
+                                                value="sheet-rate"
+                                                selected="selected"
+                                              >
+                                                Sheet Rate
+                                              </option>
+                                              <option value="pay-element">
+                                                Pay Element
+                                              </option>
+                                              <option value="client-site">
+                                                Client Site
+                                              </option>
+                                              <option value="charge-rate">
+                                                Charge Rate
+                                              </option>
+                                              <option value="placement-tag">Tag</option>
+                                              <option value="job-title">Job Title</option>
+                                              <option value="job-description">
+                                                Job Description
+                                              </option>
+                                              <option value="sheet-end-date">
+                                                Sheet End Date
+                                              </option>
+                                              <option value="perm">
+                                                Perm Placements
+                                              </option>
+                                              <option value="milestone">Milestone</option>
+                                            </optgroup>
+                                          </select>
+                                          <select
+                                            name="grouping"
+                                            class="form-control mb-3"
+                                            style="width: 86%; margin-left: 62px"
+                                          >
+                                            <option value="">Level 3 (Not Used)</option>
+                                            <optgroup label="Common">
+                                              <option value="client-manager">
+                                                Client Manager
+                                              </option>
+                                              <option value="worker">Worker</option>
+                                              <option value="client">Client</option>
+                                              <option value="placement">Placement</option>
+                                              <option value="sheet">
+                                                Timesheet / Expense Item
+                                              </option>
+                                              <option value="sheet-claim">
+                                                Timesheet / Expense Claim
+                                              </option>
+                                              <option value="purchase-order">
+                                                Purchase Order
+                                              </option>
+                                            </optgroup>
+                                            <optgroup label="More">
+                                              <option value="sales-department">
+                                                Sales Department
+                                              </option>
+                                              <option value="sales-branch">
+                                                Sales Branch
+                                              </option>
+                                              <option value="sales-location">
+                                                Sales Location
+                                              </option>
+                                              <option value="sales-sector">
+                                                Sales Sector
+                                              </option>
+                                              <option value="sales-division">
+                                                Sales Division
+                                              </option>
+                                              <option value="sales-cost-centre">
+                                                Sales Cost Centre
+                                              </option>
+                                              <option value="sales-project">
+                                                Sales Project
+                                              </option>
+                                              <option value="purchase-department">
+                                                Purchase Department
+                                              </option>
+                                              <option value="purchase-branch">
+                                                Purchase Branch
+                                              </option>
+                                              <option value="purchase-location">
+                                                Purchase Location
+                                              </option>
+                                              <option value="purchase-sector">
+                                                Purchase Sector
+                                              </option>
+                                              <option value="purchase-division">
+                                                Purchase Division
+                                              </option>
+                                              <option value="purchase-cost-centre">
+                                                Purchase Cost Centre
+                                              </option>
+                                              <option value="purchase-project">
+                                                Purchase Project
+                                              </option>
+                                            </optgroup>
+                                            <optgroup label="Even More">
+                                              <option value="sheet-line">
+                                                Shift / Expense Item
+                                              </option>
+                                              <option value="sheet-type">
+                                                Sheet Type
+                                              </option>
+                                              <option value="calendar-monthly">
+                                                Calendar Monthly
+                                              </option>
+                                              <option value="rate-name">Rate Name</option>
+                                              <option value="sheet-rate">
+                                                Sheet Rate
+                                              </option>
+                                              <option value="pay-element">
+                                                Pay Element
+                                              </option>
+                                              <option value="client-site">
+                                                Client Site
+                                              </option>
+                                              <option value="charge-rate">
+                                                Charge Rate
+                                              </option>
+                                              <option value="placement-tag">Tag</option>
+                                              <option value="job-title">Job Title</option>
+                                              <option value="job-description">
+                                                Job Description
+                                              </option>
+                                              <option value="sheet-end-date">
+                                                Sheet End Date
+                                              </option>
+                                              <option value="perm">
+                                                Perm Placements
+                                              </option>
+                                              <option value="milestone">Milestone</option>
+                                            </optgroup>
+                                          </select>
+                                          <select
+                                            name="grouping"
+                                            class="form-control mb-3"
+                                            style="width: 79%; margin-left: 94px"
+                                          >
+                                            <option value="">Level 4 (Not Used)</option>
+                                            <optgroup label="Common">
+                                              <option value="client-manager">
+                                                Client Manager
+                                              </option>
+                                              <option value="worker">Worker</option>
+                                              <option value="client">Client</option>
+                                              <option value="placement">Placement</option>
+                                              <option value="sheet">
+                                                Timesheet / Expense Item
+                                              </option>
+                                              <option value="sheet-claim">
+                                                Timesheet / Expense Claim
+                                              </option>
+                                              <option value="purchase-order">
+                                                Purchase Order
+                                              </option>
+                                            </optgroup>
+                                            <optgroup label="More">
+                                              <option value="sales-department">
+                                                Sales Department
+                                              </option>
+                                              <option value="sales-branch">
+                                                Sales Branch
+                                              </option>
+                                              <option value="sales-location">
+                                                Sales Location
+                                              </option>
+                                              <option value="sales-sector">
+                                                Sales Sector
+                                              </option>
+                                              <option value="sales-division">
+                                                Sales Division
+                                              </option>
+                                              <option value="sales-cost-centre">
+                                                Sales Cost Centre
+                                              </option>
+                                              <option value="sales-project">
+                                                Sales Project
+                                              </option>
+                                              <option value="purchase-department">
+                                                Purchase Department
+                                              </option>
+                                              <option value="purchase-branch">
+                                                Purchase Branch
+                                              </option>
+                                              <option value="purchase-location">
+                                                Purchase Location
+                                              </option>
+                                              <option value="purchase-sector">
+                                                Purchase Sector
+                                              </option>
+                                              <option value="purchase-division">
+                                                Purchase Division
+                                              </option>
+                                              <option value="purchase-cost-centre">
+                                                Purchase Cost Centre
+                                              </option>
+                                              <option value="purchase-project">
+                                                Purchase Project
+                                              </option>
+                                            </optgroup>
+                                            <optgroup label="Even More">
+                                              <option value="sheet-line">
+                                                Shift / Expense Item
+                                              </option>
+                                              <option value="sheet-type">
+                                                Sheet Type
+                                              </option>
+                                              <option value="calendar-monthly">
+                                                Calendar Monthly
+                                              </option>
+                                              <option value="rate-name">Rate Name</option>
+                                              <option value="sheet-rate">
+                                                Sheet Rate
+                                              </option>
+                                              <option value="pay-element">
+                                                Pay Element
+                                              </option>
+                                              <option value="client-site">
+                                                Client Site
+                                              </option>
+                                              <option value="charge-rate">
+                                                Charge Rate
+                                              </option>
+                                              <option value="placement-tag">Tag</option>
+                                              <option value="job-title">Job Title</option>
+                                              <option value="job-description">
+                                                Job Description
+                                              </option>
+                                              <option value="sheet-end-date">
+                                                Sheet End Date
+                                              </option>
+                                              <option value="perm">
+                                                Perm Placements
+                                              </option>
+                                              <option value="milestone">Milestone</option>
+                                            </optgroup>
+                                          </select>
+                                          <select
+                                            name="grouping"
+                                            class="form-control mb-3"
+                                            style="width: 72%; margin-left: 126px"
+                                          >
+                                            <option value="">Level 5 (Not Used)</option>
+                                            <optgroup label="Common">
+                                              <option value="client-manager">
+                                                Client Manager
+                                              </option>
+                                              <option value="worker">Worker</option>
+                                              <option value="client">Client</option>
+                                              <option value="placement">Placement</option>
+                                              <option value="sheet">
+                                                Timesheet / Expense Item
+                                              </option>
+                                              <option value="sheet-claim">
+                                                Timesheet / Expense Claim
+                                              </option>
+                                              <option value="purchase-order">
+                                                Purchase Order
+                                              </option>
+                                            </optgroup>
+                                            <optgroup label="More">
+                                              <option value="sales-department">
+                                                Sales Department
+                                              </option>
+                                              <option value="sales-branch">
+                                                Sales Branch
+                                              </option>
+                                              <option value="sales-location">
+                                                Sales Location
+                                              </option>
+                                              <option value="sales-sector">
+                                                Sales Sector
+                                              </option>
+                                              <option value="sales-division">
+                                                Sales Division
+                                              </option>
+                                              <option value="sales-cost-centre">
+                                                Sales Cost Centre
+                                              </option>
+                                              <option value="sales-project">
+                                                Sales Project
+                                              </option>
+                                              <option value="purchase-department">
+                                                Purchase Department
+                                              </option>
+                                              <option value="purchase-branch">
+                                                Purchase Branch
+                                              </option>
+                                              <option value="purchase-location">
+                                                Purchase Location
+                                              </option>
+                                              <option value="purchase-sector">
+                                                Purchase Sector
+                                              </option>
+                                              <option value="purchase-division">
+                                                Purchase Division
+                                              </option>
+                                              <option value="purchase-cost-centre">
+                                                Purchase Cost Centre
+                                              </option>
+                                              <option value="purchase-project">
+                                                Purchase Project
+                                              </option>
+                                            </optgroup>
+                                            <optgroup label="Even More">
+                                              <option value="sheet-line">
+                                                Shift / Expense Item
+                                              </option>
+                                              <option value="sheet-type">
+                                                Sheet Type
+                                              </option>
+                                              <option value="calendar-monthly">
+                                                Calendar Monthly
+                                              </option>
+                                              <option value="rate-name">Rate Name</option>
+                                              <option value="sheet-rate">
+                                                Sheet Rate
+                                              </option>
+                                              <option value="pay-element">
+                                                Pay Element
+                                              </option>
+                                              <option value="client-site">
+                                                Client Site
+                                              </option>
+                                              <option value="charge-rate">
+                                                Charge Rate
+                                              </option>
+                                              <option value="placement-tag">Tag</option>
+                                              <option value="job-title">Job Title</option>
+                                              <option value="job-description">
+                                                Job Description
+                                              </option>
+                                              <option value="sheet-end-date">
+                                                Sheet End Date
+                                              </option>
+                                              <option value="perm">
+                                                Perm Placements
+                                              </option>
+                                              <option value="milestone">Milestone</option>
+                                            </optgroup>
+                                          </select>
+                                          <select
+                                            name="grouping"
+                                            class="form-control mb-3"
+                                            style="width: 65%; margin-left: 158px"
+                                          >
+                                            <option value="">Level 6 (Not Used)</option>
+                                            <optgroup label="Common">
+                                              <option value="client-manager">
+                                                Client Manager
+                                              </option>
+                                              <option value="worker">Worker</option>
+                                              <option value="client">Client</option>
+                                              <option value="placement">Placement</option>
+                                              <option value="sheet">
+                                                Timesheet / Expense Item
+                                              </option>
+                                              <option value="sheet-claim">
+                                                Timesheet / Expense Claim
+                                              </option>
+                                              <option value="purchase-order">
+                                                Purchase Order
+                                              </option>
+                                            </optgroup>
+                                            <optgroup label="More">
+                                              <option value="sales-department">
+                                                Sales Department
+                                              </option>
+                                              <option value="sales-branch">
+                                                Sales Branch
+                                              </option>
+                                              <option value="sales-location">
+                                                Sales Location
+                                              </option>
+                                              <option value="sales-sector">
+                                                Sales Sector
+                                              </option>
+                                              <option value="sales-division">
+                                                Sales Division
+                                              </option>
+                                              <option value="sales-cost-centre">
+                                                Sales Cost Centre
+                                              </option>
+                                              <option value="sales-project">
+                                                Sales Project
+                                              </option>
+                                              <option value="purchase-department">
+                                                Purchase Department
+                                              </option>
+                                              <option value="purchase-branch">
+                                                Purchase Branch
+                                              </option>
+                                              <option value="purchase-location">
+                                                Purchase Location
+                                              </option>
+                                              <option value="purchase-sector">
+                                                Purchase Sector
+                                              </option>
+                                              <option value="purchase-division">
+                                                Purchase Division
+                                              </option>
+                                              <option value="purchase-cost-centre">
+                                                Purchase Cost Centre
+                                              </option>
+                                              <option value="purchase-project">
+                                                Purchase Project
+                                              </option>
+                                            </optgroup>
+                                            <optgroup label="Even More">
+                                              <option value="sheet-line">
+                                                Shift / Expense Item
+                                              </option>
+                                              <option value="sheet-type">
+                                                Sheet Type
+                                              </option>
+                                              <option value="calendar-monthly">
+                                                Calendar Monthly
+                                              </option>
+                                              <option value="rate-name">Rate Name</option>
+                                              <option value="sheet-rate">
+                                                Sheet Rate
+                                              </option>
+                                              <option value="pay-element">
+                                                Pay Element
+                                              </option>
+                                              <option value="client-site">
+                                                Client Site
+                                              </option>
+                                              <option value="charge-rate">
+                                                Charge Rate
+                                              </option>
+                                              <option value="placement-tag">Tag</option>
+                                              <option value="job-title">Job Title</option>
+                                              <option value="job-description">
+                                                Job Description
+                                              </option>
+                                              <option value="sheet-end-date">
+                                                Sheet End Date
+                                              </option>
+                                              <option value="perm">
+                                                Perm Placements
+                                              </option>
+                                              <option value="milestone">Milestone</option>
+                                            </optgroup>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                            <div class="col-6">
-                              <div class="form-group">
-                                <label class="control-label" for="goeson"
-                                  >Maximum</label
-                                >
-                                <div class="input-group">
-                                  <input
-                                    type="text"
-                                    class="form-control form-control-sm"
-                                  />
+                            <div class="card card-primary card-outline card-tabs">
+                              <div class="row">
+                                <div class="col-lg-12">
+                                  <div class="p-2 pl-4">
+                                    <div class="timesheet_create_tit">
+                                      <h2 class="pb-2">Attachments</h2>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-lg-12">
+                                        <p align="justify" style="line-height: 1.429">
+                                          Choose what is attached to invoices. You can
+                                          attach an electronic representation of the
+                                          timesheet or expense. Then you also choose
+                                          whether you want to attach any uploaded copies
+                                          of timesheet images or expense receipts
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-lg-6">
+                                        <div class="form-group">
+                                          <label class="control-label" for="goeson"
+                                            >Attach Timesheets/Expenses On Invoices</label
+                                          >
+                                          <select
+                                            class="form-control select2"
+                                            style="width: 100%"
+                                          >
+                                            <option value="">Yes</option>
+                                            <option value="">No</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="custom-control custom-checkbox">
+                                          <input
+                                            type="checkbox"
+                                            class="custom-control-input"
+                                            id="customCheck1"
+                                          />
+                                          <label
+                                            class="custom-control-label"
+                                            for="customCheck1"
+                                            >Accept agency default for paper on
+                                            invoices</label
+                                          >
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-12">
+                                        <div class="custom-control custom-checkbox">
+                                          <input
+                                            type="checkbox"
+                                            class="custom-control-input"
+                                            id="customCheck1"
+                                          />
+                                          <label
+                                            class="custom-control-label"
+                                            for="customCheck1"
+                                            >Include paper timesheets on invoices</label
+                                          >
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-12">
+                                        <div class="custom-control custom-checkbox">
+                                          <input
+                                            type="checkbox"
+                                            class="custom-control-input"
+                                            id="customCheck1"
+                                          />
+                                          <label
+                                            class="custom-control-label"
+                                            for="customCheck1"
+                                            >Include paper expenses on invoices</label
+                                          >
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-12">
+                                        <div class="custom-control custom-checkbox">
+                                          <input
+                                            type="checkbox"
+                                            class="custom-control-input"
+                                            id="customCheck1"
+                                          />
+                                          <label
+                                            class="custom-control-label"
+                                            for="customCheck1"
+                                            >Include paper expense receipts on
+                                            invoices</label
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                            <div class="col-lg-6">
-                              <div class="form-group">
-                                <label for="" class="control-label"
-                                  >Applicable From</label
-                                >
-                                <div class="input-group">
-                                  <input
-                                    type="text"
-                                    value=""
-                                    class="form-control"
-                                    placeholder="dd/MM/yyyy"
-                                  />
+                            <div class="card card-primary card-outline card-tabs">
+                              <div class="row">
+                                <div class="col-lg-12">
+                                  <div class="p-2 pl-4">
+                                    <div class="timesheet_create_tit">
+                                      <h2 class="pb-2">Automatic Adjustments</h2>
+                                    </div>
+                                    <div class="row">
+                                      <div class="panel-body">
+                                        <p>
+                                            You can automatically apply adjustments to this
+                                            Client's invoices.
+                                            Adjustments can be a fixed amount or a percentage
+                                            of the invoice value. The adjustment can apply per timesheet,
+                                            per invoice or per worker.
+                                        </p>
+                                        <div class="row">
+                                          <div class="col-sm-6">
+                                            <div class="form-group">
+                                              <label class="control-label" for="null">Adjust By <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Choose whether to adjust the invoice by a fixed amount or a percentage."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
+                                                <select name="invoiceAdjustmentSettings.adjustBy" id="invoiceAdjustmentSettings.adjustBy" class="form-control input-sm null" onchange="">
+                                                <option value="0">Fixed Amount</option>
+                                                <option value="1">Percentage</option>
+                                                </select>
+                                            </div>
+                                          </div>
+
+                                          <div class="col-sm-6">
+                                            <div class="form-group">
+                                              <label class="control-label" for="null">Adjust Per <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Choose whether to adjust the invoice per invoice or per timesheet."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
+                                              <select name="invoiceAdjustmentSettings.adjustPer" id="invoiceAdjustmentSettings.adjustPer" class="form-control input-sm null" onchange="">
+                                                <option value="2">Per Invoice</option>
+                                                <option value="1">Per Timesheet</option>
+                                                <option value="0">Per Worker</option>
+                                              </select>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-sm-12">
+                                            <div class="form-group"><label class="control-label" for="null">Addition / Deduction <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Choose whether to add or deduct the calculated amount."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
+                                              <select name="invoiceAdjustmentSettings.adjustType" id="invoiceAdjustmentSettings.adjustType" class="form-control input-sm null" onchange="">
+                                              <option value="0">Addition</option>
+                                              <option value="1">Deduction</option>
+                                              </select>
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-6">
+                                            <div class="form-group"> 
+                                              <label class="control-label" for="invoiceAdjustmentSettings.amount">Amount <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Enter an amount to adjust invoices by."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
+                                              <input type="text" label="Amount" format="2" name="invoiceAdjustmentSettings.amount" value="" tooltip="Enter an amount to adjust invoices by." id="invoiceAdjustmentSettings.amount" class="form-control input-sm">
+                                            </div>
+                                          </div>                                              
+                                          <div class="col-sm-12">
+                                            <div class="form-group"><label class="control-label" for="null">Tax Code Override <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="If not set, the taxcode on the invoice will be used."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
+                                              <select name="invoiceAdjustmentSettings.vatCodeId" id="invoiceAdjustmentSettings.vatCodeId" class="form-control input-sm null" onchange="">
+                                              <option value="">Choose</option>
+                                              <option value="768">None (T0)</option>
+                                              <option value="767">Standard (T1)</option>
+                                              </select>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="row">
+                                          <div class="col-sm-6">
+                                            <div class="form-group"> 
+                                              <label class="control-label" for="invoiceAdjustmentSettings.minimum">Minimum <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Enter a minimum amount to adjust invoices by."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
+                                                <input type="text" label="Minimum" grid="6" name="invoiceAdjustmentSettings.minimum" value="" tooltip="Enter a minimum amount to adjust invoices by." id="invoiceAdjustmentSettings.minimum" class="form-control input-sm">
+                                            </div>
+                                          </div>
+                                            
+
+                                          <div class="col-sm-6">
+                                            <div class="form-group"> 
+                                              <label class="control-label" for="invoiceAdjustmentSettings.maximum">Maximum <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Enter a maximum amount to adjust invoices by."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
+                                                <input type="text" label="Maximum" grid="6" name="invoiceAdjustmentSettings.maximum" value="" tooltip="Enter a maximum amount to adjust invoices by." id="invoiceAdjustmentSettings.maximum" class="form-control input-sm">
+                                            </div>
+                                          </div>                                            
+                                        </div>
+
+                                        <div class="row">
+                                          <div class="col-sm-12">
+                                            <div class="form-group"> 
+                                              <label class="control-label" for="invoiceAdjustmentSettings.description">Invoice Line Description <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="The description to show on the the invoice line. If not set, the agency default is used."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
+                                                <input type="text" label="Invoice Line Description" format="1" name="invoiceAdjustmentSettings.description" value="" tooltip="The description to show on the the invoice line. If not set, the agency default is used." id="invoiceAdjustmentSettings.description" class="form-control input-sm">
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                              <div class="form-group" style="margin-bottom:0 !important;">                                            
+                                                  <label for="" class="control-label" id="_label">Applicable From</label>                                            
+                                                    <div class="input-group">
+                                                      <input style="min-width:80px;" type="text" value="" class="bsDP form-control input-sm " placeholder="dd/MM/yyyy" id="null_X" name="invoiceAdjustmentSettings.applicableFrom_X" data-date-start-date="" data-date-end-date="">
+                                                      <input id="" name="invoiceAdjustmentSettings.applicableFrom" value="" type="hidden">
+                                                      <span id="null_icon" class="bsDP-icon input-group-addon bg-primary b-0 text-white"><i class="ion-calendar"></i></span>                                                
+                                                    </div><!-- input-group -->
+                                              </div>
+                                            </div>
+
+
+
+                                            <div class="col-sm-6">
+                                              <div class="form-group" style="margin-bottom:0 !important;">                                            
+                                                <label for="" class="control-label" id="_label">Applicable To</label>                                            
+                                                  <div class="input-group">
+                                                    <input style="min-width:80px;" type="text" value="" class="bsDP form-control input-sm " placeholder="dd/MM/yyyy" id="null_X" name="invoiceAdjustmentSettings.applicableTo_X" data-date-start-date="" data-date-end-date="">
+                                                    <input id="" name="invoiceAdjustmentSettings.applicableTo" value="" type="hidden">
+                                                    <span id="null_icon" class="bsDP-icon input-group-addon bg-primary b-0 text-white"><i class="ion-calendar"></i></span>
+                                                  </div><!-- input-group -->
+                                              </div>
+                                            </div> 
+                                        </div>
+                                      </div>
+                                    </div>                                   
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                            <div class="col-lg-6">
-                              <div class="form-group">
-                                <label for="" class="control-label"
-                                  >Applicable To</label
-                                >
-                                <div class="input-group">
-                                  <input
-                                    type="text"
-                                    value=""
-                                    class="form-control"
-                                    placeholder="dd/MM/yyyy"
-                                  />
+                            <div class="card card-primary card-outline card-tabs">
+                              <div class="panel panel-border panel-primary">
+                                <div class="panel-heading">
+                                 <h3 class="panel-title">Purchase Order Options</h3>
+                                </div>
+                                <div class="panel-body">
+                                  <div class="row">
+                                    <div class="col-sm-6"><br><div class="checkbox checkbox-primary m-t-0"><input type="hidden" name="_purchaseOrderRequiredOnAuthorisation"><input type="checkbox" name="purchaseOrderRequiredOnAuthorisation" id="purchaseOrderRequiredOnAuthorisation" data-parsley-multiple="purchaseOrderRequiredOnAuthorisation"><label for="null" class="control-label" style="font-weight: 700 !important;">PO Mandatory on Approval <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="You can use this option to make sure that a PO number must be entered before a timesheet can be authorised. Please note this option can not be used with email approval"><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label></div></div>
+                                    <div class="col-sm-6"><br><div class="checkbox checkbox-primary m-t-0"><input type="hidden" name="_purchaseOrderNumAtShiftLevel"><input type="checkbox" name="purchaseOrderNumAtShiftLevel" id="purchaseOrderNumAtShiftLevel" data-parsley-multiple="purchaseOrderNumAtShiftLevel"><label for="null" class="control-label" style="font-weight: 700 !important;">PO Required at Shift Level <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Only applicable when Purchase Order Mandatory on Timesheet Approval is enabled"><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label></div></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card card-primary card-outline card-tabs">
+                              <div class="panel panel-border panel-primary">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Withholding Tax</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                      <div class="col-sm-3">
+                                        <div class="form-group"> 
+                                          <label class="control-label" for="withholdTaxRate">Tax Rate</label>
+                                            <div class="input-group">
+                                              <input type="text" grid="3" label="Tax Rate" name="withholdTaxRate" value="" icon="%" topercent="true" maxlength="255" id="withholdTaxRate" class="form-control input-sm"> <span class="input-group-addon bg-primary b-0 text-white">%</span>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-4">
+                                        <div class="form-group">
+                                          <label class="control-label" for="null">VAT Code <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Select a VAT Code for witholding tax. This would normally be a non-vatable code except for international clients where the code may indicate that it is outside the scope of UK VAT."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
+                                            <select name="withholdTaxVatCode" id="withholdTaxVatCode" class="form-control input-sm null" onchange="">
+                                            <option value=""></option>
+                                            <option value="T0">None (T0)</option>
+                                            <option value="T1">Standard (T1)</option>
+                                            </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6"><br><div class="checkbox checkbox-primary m-t-0"><input type="hidden" name="_withholdTaxGrossUp"><input type="checkbox" name="withholdTaxGrossUp" id="withholdTaxGrossUp" data-parsley-multiple="withholdTaxGrossUp"><label for="null" class="control-label" style="font-weight: 700 !important;">Gross Up <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tick if the WHT adjustment should be added to the existing invoice lines, untick to use a separate adjustment line"><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label></div></div>
+                                        <div class="col-sm-6"><br><div class="checkbox checkbox-primary m-t-0"><input type="hidden" name="_withholdTaxHideOnInvoice"><input type="checkbox" name="withholdTaxHideOnInvoice" id="withholdTaxHideOnInvoice" data-parsley-multiple="withholdTaxHideOnInvoice"><label for="null" class="control-label" style="font-weight: 700 !important;">Hide on Invoice <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Use this option if you don't want do show WHT on invoices. This is not compatible with the gross-up option"><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label></div></div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-sm-12">
+                                        <div class="form-group"> 
+                                          <label class="control-label" for="withholdTaxDescription">Invoice Line Description</label>
+                                          <input type="text" grid="12" label="Invoice Line Description" name="withholdTaxDescription" value="" maxlength="255" id="withholdTaxDescription" class="form-control input-sm">
+                                        </div>
+                                      </div>        
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card card-primary card-outline card-tabs">
+                              <div class="panel panel-border panel-primary">
+                                <div class="panel-heading">
+                                  <h3 class="panel-title">Other</h3>
+                                </div>
+                                <div class="panel-body">
+                                <div class="row">
+                                <div class="col-sm-6"><br><div class="checkbox checkbox-primary m-t-0"><input type="hidden" name="_onHold"><input type="checkbox" name="onHold" id="onHold" data-parsley-multiple="onHold"><label for="null" class="control-label" style="font-weight: 700 !important;">PAYE Processing On Hold <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Timesheets for this client will not be included in the timesheet export screen"><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label></div></div>
+                                <div class="col-sm-6"><div class="form-group"><label class="control-label" for="null">Pay Run Day</label><select name="payRunDay" id="payRunDay" class="form-control input-sm null" onchange="">
+                                <option value="0">Any</option>
+                                <option value="2">Monday</option>
+                                <option value="3">Tuesday</option>
+                                <option value="4">Wednesday</option>
+                                <option value="5">Thursday</option>
+                                <option value="6">Friday</option>
+                                <option value="7">Saturday</option>
+                                <option value="1">Sunday</option>
+                                </select></div></div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-6"><br>
+                                    <div class="checkbox checkbox-primary m-t-0">
+                                      <input type="hidden" name="_intermediary">
+                                      <input type="checkbox" name="intermediary" id="intermediary" data-parsley-multiple="intermediary">
+                                      <label for="null" class="control-label" style="font-weight: 700 !important;">Intermediary <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="This client will be treated as an Intermediary for the HMRC Intermediary report"><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
+                                    </div>
+                                  </div>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                          
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="bg-white mb-4">
+                          <div class="card-body">
+                            <div class="tab-content" id="custom-content-below-tabContent">
+                              <div
+                                class="tab-pane fade active show"
+                                id="custom-content-below-main"
+                                role="tabpanel"
+                                aria-labelledby="custom-content-below-main-tab"
+                              >
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <div class="card card-primary card-outline card-tabs">
+                                      <div class="p-2 pl-4">
+                                        <a
+                                          data-toggle="collapse"
+                                          style="text-decoration: none !important"
+                                          data-parent="#accordion"
+                                          href="#collapseOne"
+                                        >
+                                          <div class="timesheet_create_tit">
+                                            <h2 class="pb-2">
+                                              <i class="fa fa-search"></i> Perm Consolidation
+                                            </h2>
+                                          </div>
+                                        </a>
+                                      </div>
+                                      <div class="card-body">
+                                        <div id="accordion">
+                                          <div id="collapseOne"  class="panel-collapse collapse in collapse hides">
+                                            <div class="card-body">
+                                              <div class="row">
+                                                <div class="col-md-6">
+                                                  <div class="card card-primary card-outline card-tabs">
+                                                      <div class="row">
+                                                        <div class="col-lg-12">
+                                                          <div class="p-2 pl-4">
+                                                            <div class="timesheet_create_tit">
+                                                              <h2 class="pb-2">Allocation of Perms Items To Invoices (Consolidation)</h2>
+                                                            </div>
+                                                            <div class="row">     		
+                                                              <div class="col-sm-12">
+                                                                <div class="form-group">
+                                                                  <label class="control-label" for="goesonPerm">What goes on each invoice?</label>
+                                                                    <select name="goesonPerm" id="goesonPerm" class="form-control input-sm null" onchange="">
+                                                                    <option value="">Not Overridden</option>
+                                                                    <option value="everything">Everything Goes On One Invoice</option>
+                                                                    <option value="separate">Expenses Go On One Invoice And Timesheets Go On Another</option>
+                                                                    <option value="placement">Each Placement Is Invoiced Separately</option>
+                                                                    <option value="sheet">Each Timesheet Or Expense Item Is Invoiced Separately</option>
+                                                                    <option value="worker">Each Worker Is Invoiced Separately</option>
+                                                                    <option value="custom">Custom</option>
+                                                                    </select>
+                                                                  </div>
+                                                                </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                  <div class="card card-primary card-outline card-tabs">
+                                                      <div class="panel panel-border panel-primary">
+                                                      <div class="panel-heading">
+                                                          <h3 class="panel-title">Layout of Items On Invoice</h3>
+                                                      </div>
+                                                      <div class="panel-body">
+                                                          <p align="justify">Choose how items are grouped on the
+                                                            invoice. Each grouping will have a header and a total row on the
+                                                            invoice. The bottom level grouping determines which columns are
+                                                            displayed on the invoice.</p>
+
+                                                           <div class="row">
+                                      <div class="col-lg-12">
+                                        <div class="form-group">
+                                          <label class="control-label" for="goeson"
+                                            >What goes on each invoice?</label
+                                          >
+                                          <select
+                                            class="form-control mb-3"
+                                            style="width: 100%"
+                                          >
+                                            <optgroup label="common">
+                                              <option value="">Client Manager</option>
+                                              <option value="">Worker</option>
+                                              <option value="">Client</option>
+                                              <option value="">Placement</option>
+                                              <option value="">
+                                                Timesheet / Expense Item
+                                              </option>
+                                              <option value="">
+                                                Timesheet / Expense Claim
+                                              </option>
+                                              <option value="">Purchase Order</option>
+                                            </optgroup>
+                                            <optgroup label="More">
+                                              <option value="">Sales Department</option>
+                                              <option value="">Sales Branch</option>
+                                              <option value="">Sales Location</option>
+                                              <option value="">Sales Sector</option>
+                                              <option value="">Sales Division</option>
+                                              <option value="">Sales Cost Centre</option>
+                                              <option value="">Sales Project</option>
+                                              <option value="">
+                                                Purchase Department
+                                              </option>
+                                              <option value="">Purchase Branch</option>
+                                              <option value="">Purchase Location</option>
+                                              <option value="">Purchase Sector</option>
+                                              <option value="">Purchase Division</option>
+                                              <option value="">
+                                                Purchase Cost Centre
+                                              </option>
+                                              <option value="">Purchase Project</option>
+                                            </optgroup>
+                                            <optgroup label="Even more">
+                                              <option value="">
+                                                Shift / Expense Item
+                                              </option>
+                                              <option value="">Sheet Type</option>
+                                              <option value="">Calendar Monthly</option>
+                                              <option value="">Rate Name</option>
+                                              <option value="">Sheet Rate</option>
+                                              <option value="">Pay Element</option>
+                                              <option value="">Client Site</option>
+                                            </optgroup>
+                                          </select>
+                                          <select
+                                            name="grouping"
+                                            class="form-control mb-3"
+                                            style="width: 93%; margin-left: 30px"
+                                          >
+                                            <option value="">Level 2 (Not Used)</option>
+                                            <optgroup label="Common">
+                                              <option value="client-manager">
+                                                Client Manager
+                                              </option>
+                                              <option value="worker">Worker</option>
+                                              <option value="client">Client</option>
+                                              <option value="placement">Placement</option>
+                                              <option value="sheet">
+                                                Timesheet / Expense Item
+                                              </option>
+                                              <option value="sheet-claim">
+                                                Timesheet / Expense Claim
+                                              </option>
+                                              <option value="purchase-order">
+                                                Purchase Order
+                                              </option>
+                                            </optgroup>
+                                            <optgroup label="More">
+                                              <option value="sales-department">
+                                                Sales Department
+                                              </option>
+                                              <option value="sales-branch">
+                                                Sales Branch
+                                              </option>
+                                              <option value="sales-location">
+                                                Sales Location
+                                              </option>
+                                              <option value="sales-sector">
+                                                Sales Sector
+                                              </option>
+                                              <option value="sales-division">
+                                                Sales Division
+                                              </option>
+                                              <option value="sales-cost-centre">
+                                                Sales Cost Centre
+                                              </option>
+                                              <option value="sales-project">
+                                                Sales Project
+                                              </option>
+                                              <option value="purchase-department">
+                                                Purchase Department
+                                              </option>
+                                              <option value="purchase-branch">
+                                                Purchase Branch
+                                              </option>
+                                              <option value="purchase-location">
+                                                Purchase Location
+                                              </option>
+                                              <option value="purchase-sector">
+                                                Purchase Sector
+                                              </option>
+                                              <option value="purchase-division">
+                                                Purchase Division
+                                              </option>
+                                              <option value="purchase-cost-centre">
+                                                Purchase Cost Centre
+                                              </option>
+                                              <option value="purchase-project">
+                                                Purchase Project
+                                              </option>
+                                            </optgroup>
+                                            <optgroup label="Even More">
+                                              <option value="sheet-line">
+                                                Shift / Expense Item
+                                              </option>
+                                              <option value="sheet-type">
+                                                Sheet Type
+                                              </option>
+                                              <option value="calendar-monthly">
+                                                Calendar Monthly
+                                              </option>
+                                              <option value="rate-name">Rate Name</option>
+                                              <option
+                                                value="sheet-rate"
+                                                selected="selected"
+                                              >
+                                                Sheet Rate
+                                              </option>
+                                              <option value="pay-element">
+                                                Pay Element
+                                              </option>
+                                              <option value="client-site">
+                                                Client Site
+                                              </option>
+                                              <option value="charge-rate">
+                                                Charge Rate
+                                              </option>
+                                              <option value="placement-tag">Tag</option>
+                                              <option value="job-title">Job Title</option>
+                                              <option value="job-description">
+                                                Job Description
+                                              </option>
+                                              <option value="sheet-end-date">
+                                                Sheet End Date
+                                              </option>
+                                              <option value="perm">
+                                                Perm Placements
+                                              </option>
+                                              <option value="milestone">Milestone</option>
+                                            </optgroup>
+                                          </select>
+                                          <select
+                                            name="grouping"
+                                            class="form-control mb-3"
+                                            style="width: 86%; margin-left: 62px"
+                                          >
+                                            <option value="">Level 3 (Not Used)</option>
+                                            <optgroup label="Common">
+                                              <option value="client-manager">
+                                                Client Manager
+                                              </option>
+                                              <option value="worker">Worker</option>
+                                              <option value="client">Client</option>
+                                              <option value="placement">Placement</option>
+                                              <option value="sheet">
+                                                Timesheet / Expense Item
+                                              </option>
+                                              <option value="sheet-claim">
+                                                Timesheet / Expense Claim
+                                              </option>
+                                              <option value="purchase-order">
+                                                Purchase Order
+                                              </option>
+                                            </optgroup>
+                                            <optgroup label="More">
+                                              <option value="sales-department">
+                                                Sales Department
+                                              </option>
+                                              <option value="sales-branch">
+                                                Sales Branch
+                                              </option>
+                                              <option value="sales-location">
+                                                Sales Location
+                                              </option>
+                                              <option value="sales-sector">
+                                                Sales Sector
+                                              </option>
+                                              <option value="sales-division">
+                                                Sales Division
+                                              </option>
+                                              <option value="sales-cost-centre">
+                                                Sales Cost Centre
+                                              </option>
+                                              <option value="sales-project">
+                                                Sales Project
+                                              </option>
+                                              <option value="purchase-department">
+                                                Purchase Department
+                                              </option>
+                                              <option value="purchase-branch">
+                                                Purchase Branch
+                                              </option>
+                                              <option value="purchase-location">
+                                                Purchase Location
+                                              </option>
+                                              <option value="purchase-sector">
+                                                Purchase Sector
+                                              </option>
+                                              <option value="purchase-division">
+                                                Purchase Division
+                                              </option>
+                                              <option value="purchase-cost-centre">
+                                                Purchase Cost Centre
+                                              </option>
+                                              <option value="purchase-project">
+                                                Purchase Project
+                                              </option>
+                                            </optgroup>
+                                            <optgroup label="Even More">
+                                              <option value="sheet-line">
+                                                Shift / Expense Item
+                                              </option>
+                                              <option value="sheet-type">
+                                                Sheet Type
+                                              </option>
+                                              <option value="calendar-monthly">
+                                                Calendar Monthly
+                                              </option>
+                                              <option value="rate-name">Rate Name</option>
+                                              <option value="sheet-rate">
+                                                Sheet Rate
+                                              </option>
+                                              <option value="pay-element">
+                                                Pay Element
+                                              </option>
+                                              <option value="client-site">
+                                                Client Site
+                                              </option>
+                                              <option value="charge-rate">
+                                                Charge Rate
+                                              </option>
+                                              <option value="placement-tag">Tag</option>
+                                              <option value="job-title">Job Title</option>
+                                              <option value="job-description">
+                                                Job Description
+                                              </option>
+                                              <option value="sheet-end-date">
+                                                Sheet End Date
+                                              </option>
+                                              <option value="perm">
+                                                Perm Placements
+                                              </option>
+                                              <option value="milestone">Milestone</option>
+                                            </optgroup>
+                                          </select>
+                                          <select
+                                            name="grouping"
+                                            class="form-control mb-3"
+                                            style="width: 79%; margin-left: 94px"
+                                          >
+                                            <option value="">Level 4 (Not Used)</option>
+                                            <optgroup label="Common">
+                                              <option value="client-manager">
+                                                Client Manager
+                                              </option>
+                                              <option value="worker">Worker</option>
+                                              <option value="client">Client</option>
+                                              <option value="placement">Placement</option>
+                                              <option value="sheet">
+                                                Timesheet / Expense Item
+                                              </option>
+                                              <option value="sheet-claim">
+                                                Timesheet / Expense Claim
+                                              </option>
+                                              <option value="purchase-order">
+                                                Purchase Order
+                                              </option>
+                                            </optgroup>
+                                            <optgroup label="More">
+                                              <option value="sales-department">
+                                                Sales Department
+                                              </option>
+                                              <option value="sales-branch">
+                                                Sales Branch
+                                              </option>
+                                              <option value="sales-location">
+                                                Sales Location
+                                              </option>
+                                              <option value="sales-sector">
+                                                Sales Sector
+                                              </option>
+                                              <option value="sales-division">
+                                                Sales Division
+                                              </option>
+                                              <option value="sales-cost-centre">
+                                                Sales Cost Centre
+                                              </option>
+                                              <option value="sales-project">
+                                                Sales Project
+                                              </option>
+                                              <option value="purchase-department">
+                                                Purchase Department
+                                              </option>
+                                              <option value="purchase-branch">
+                                                Purchase Branch
+                                              </option>
+                                              <option value="purchase-location">
+                                                Purchase Location
+                                              </option>
+                                              <option value="purchase-sector">
+                                                Purchase Sector
+                                              </option>
+                                              <option value="purchase-division">
+                                                Purchase Division
+                                              </option>
+                                              <option value="purchase-cost-centre">
+                                                Purchase Cost Centre
+                                              </option>
+                                              <option value="purchase-project">
+                                                Purchase Project
+                                              </option>
+                                            </optgroup>
+                                            <optgroup label="Even More">
+                                              <option value="sheet-line">
+                                                Shift / Expense Item
+                                              </option>
+                                              <option value="sheet-type">
+                                                Sheet Type
+                                              </option>
+                                              <option value="calendar-monthly">
+                                                Calendar Monthly
+                                              </option>
+                                              <option value="rate-name">Rate Name</option>
+                                              <option value="sheet-rate">
+                                                Sheet Rate
+                                              </option>
+                                              <option value="pay-element">
+                                                Pay Element
+                                              </option>
+                                              <option value="client-site">
+                                                Client Site
+                                              </option>
+                                              <option value="charge-rate">
+                                                Charge Rate
+                                              </option>
+                                              <option value="placement-tag">Tag</option>
+                                              <option value="job-title">Job Title</option>
+                                              <option value="job-description">
+                                                Job Description
+                                              </option>
+                                              <option value="sheet-end-date">
+                                                Sheet End Date
+                                              </option>
+                                              <option value="perm">
+                                                Perm Placements
+                                              </option>
+                                              <option value="milestone">Milestone</option>
+                                            </optgroup>
+                                          </select>
+                                          <select
+                                            name="grouping"
+                                            class="form-control mb-3"
+                                            style="width: 72%; margin-left: 126px"
+                                          >
+                                            <option value="">Level 5 (Not Used)</option>
+                                            <optgroup label="Common">
+                                              <option value="client-manager">
+                                                Client Manager
+                                              </option>
+                                              <option value="worker">Worker</option>
+                                              <option value="client">Client</option>
+                                              <option value="placement">Placement</option>
+                                              <option value="sheet">
+                                                Timesheet / Expense Item
+                                              </option>
+                                              <option value="sheet-claim">
+                                                Timesheet / Expense Claim
+                                              </option>
+                                              <option value="purchase-order">
+                                                Purchase Order
+                                              </option>
+                                            </optgroup>
+                                            <optgroup label="More">
+                                              <option value="sales-department">
+                                                Sales Department
+                                              </option>
+                                              <option value="sales-branch">
+                                                Sales Branch
+                                              </option>
+                                              <option value="sales-location">
+                                                Sales Location
+                                              </option>
+                                              <option value="sales-sector">
+                                                Sales Sector
+                                              </option>
+                                              <option value="sales-division">
+                                                Sales Division
+                                              </option>
+                                              <option value="sales-cost-centre">
+                                                Sales Cost Centre
+                                              </option>
+                                              <option value="sales-project">
+                                                Sales Project
+                                              </option>
+                                              <option value="purchase-department">
+                                                Purchase Department
+                                              </option>
+                                              <option value="purchase-branch">
+                                                Purchase Branch
+                                              </option>
+                                              <option value="purchase-location">
+                                                Purchase Location
+                                              </option>
+                                              <option value="purchase-sector">
+                                                Purchase Sector
+                                              </option>
+                                              <option value="purchase-division">
+                                                Purchase Division
+                                              </option>
+                                              <option value="purchase-cost-centre">
+                                                Purchase Cost Centre
+                                              </option>
+                                              <option value="purchase-project">
+                                                Purchase Project
+                                              </option>
+                                            </optgroup>
+                                            <optgroup label="Even More">
+                                              <option value="sheet-line">
+                                                Shift / Expense Item
+                                              </option>
+                                              <option value="sheet-type">
+                                                Sheet Type
+                                              </option>
+                                              <option value="calendar-monthly">
+                                                Calendar Monthly
+                                              </option>
+                                              <option value="rate-name">Rate Name</option>
+                                              <option value="sheet-rate">
+                                                Sheet Rate
+                                              </option>
+                                              <option value="pay-element">
+                                                Pay Element
+                                              </option>
+                                              <option value="client-site">
+                                                Client Site
+                                              </option>
+                                              <option value="charge-rate">
+                                                Charge Rate
+                                              </option>
+                                              <option value="placement-tag">Tag</option>
+                                              <option value="job-title">Job Title</option>
+                                              <option value="job-description">
+                                                Job Description
+                                              </option>
+                                              <option value="sheet-end-date">
+                                                Sheet End Date
+                                              </option>
+                                              <option value="perm">
+                                                Perm Placements
+                                              </option>
+                                              <option value="milestone">Milestone</option>
+                                            </optgroup>
+                                          </select>
+                                          <select
+                                            name="grouping"
+                                            class="form-control mb-3"
+                                            style="width: 65%; margin-left: 158px"
+                                          >
+                                            <option value="">Level 6 (Not Used)</option>
+                                            <optgroup label="Common">
+                                              <option value="client-manager">
+                                                Client Manager
+                                              </option>
+                                              <option value="worker">Worker</option>
+                                              <option value="client">Client</option>
+                                              <option value="placement">Placement</option>
+                                              <option value="sheet">
+                                                Timesheet / Expense Item
+                                              </option>
+                                              <option value="sheet-claim">
+                                                Timesheet / Expense Claim
+                                              </option>
+                                              <option value="purchase-order">
+                                                Purchase Order
+                                              </option>
+                                            </optgroup>
+                                            <optgroup label="More">
+                                              <option value="sales-department">
+                                                Sales Department
+                                              </option>
+                                              <option value="sales-branch">
+                                                Sales Branch
+                                              </option>
+                                              <option value="sales-location">
+                                                Sales Location
+                                              </option>
+                                              <option value="sales-sector">
+                                                Sales Sector
+                                              </option>
+                                              <option value="sales-division">
+                                                Sales Division
+                                              </option>
+                                              <option value="sales-cost-centre">
+                                                Sales Cost Centre
+                                              </option>
+                                              <option value="sales-project">
+                                                Sales Project
+                                              </option>
+                                              <option value="purchase-department">
+                                                Purchase Department
+                                              </option>
+                                              <option value="purchase-branch">
+                                                Purchase Branch
+                                              </option>
+                                              <option value="purchase-location">
+                                                Purchase Location
+                                              </option>
+                                              <option value="purchase-sector">
+                                                Purchase Sector
+                                              </option>
+                                              <option value="purchase-division">
+                                                Purchase Division
+                                              </option>
+                                              <option value="purchase-cost-centre">
+                                                Purchase Cost Centre
+                                              </option>
+                                              <option value="purchase-project">
+                                                Purchase Project
+                                              </option>
+                                            </optgroup>
+                                            <optgroup label="Even More">
+                                              <option value="sheet-line">
+                                                Shift / Expense Item
+                                              </option>
+                                              <option value="sheet-type">
+                                                Sheet Type
+                                              </option>
+                                              <option value="calendar-monthly">
+                                                Calendar Monthly
+                                              </option>
+                                              <option value="rate-name">Rate Name</option>
+                                              <option value="sheet-rate">
+                                                Sheet Rate
+                                              </option>
+                                              <option value="pay-element">
+                                                Pay Element
+                                              </option>
+                                              <option value="client-site">
+                                                Client Site
+                                              </option>
+                                              <option value="charge-rate">
+                                                Charge Rate
+                                              </option>
+                                              <option value="placement-tag">Tag</option>
+                                              <option value="job-title">Job Title</option>
+                                              <option value="job-description">
+                                                Job Description
+                                              </option>
+                                              <option value="sheet-end-date">
+                                                Sheet End Date
+                                              </option>
+                                              <option value="perm">
+                                                Perm Placements
+                                              </option>
+                                              <option value="milestone">Milestone</option>
+                                            </optgroup>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                                      </div>
+                                                  </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- </div>-->
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                          </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="custom-content-below-financials" role="tabpanel" aria-labelledby="custom-content-below-financials-tab">
-                        <div class="row">
-                <div class="col-lg-12">
-                  <div class="card card-primary card-outline card-tabs">
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <div class="p-2 pl-4">
-                          <div class="timesheet_create_tit">
-                            <h2 class="pb-2">CREATED:</h2>
-                            <p>Last Modified:</p>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg-12">
-                              <table class="table table-striped">
-                                <thead>
-                                  <tr>
-                                    <th>Date</th>
-                                    <th>Time</th>
-                                    <th>User</th>
-                                    <th>Event</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                  </tr>
-                                </tbody>
-                              </table>
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="card card-primary card-outline card-tabs">
+                            <div class="row">
+                              <div class="col-lg-12">
+                                <div class="p-2 pl-4">
+                                  <div class="timesheet_create_tit">
+                                    <h2 class="pb-2">CREATED:</h2>
+                                    <p>Last Modified:</p>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <table class="table table-striped">
+                                        <thead>
+                                          <tr>
+                                            <th>Date</th>
+                                            <th>Time</th>
+                                            <th>User</th>
+                                            <th>Event</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-                    </div>
-                    
+                    </div>   
+
                 </div>  
             </div>
         </div>
