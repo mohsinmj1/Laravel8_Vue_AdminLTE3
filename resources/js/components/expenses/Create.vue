@@ -95,7 +95,7 @@
                         <td>
                           <input
                             class="form-control form-control-sm"
-                            type="text"
+                            type="date"
                           />
                         </td>
                         <td>
@@ -142,11 +142,11 @@
                         </td>
                         <td>
                           <select class="form-control form-control-sm">
-                            <option>Currency</option>
+                            <option>GBP</option>
                           </select>
                         </td>
                         <td>
-                          <div class="fileupload btn btn-sm btn-purple">
+                          <div class="fileupload btn btn-sm btn-primary">
                             <span class="d-flex align-items-center text-light">
                               <i class="fa fa-file-upload"></i>Upload</span
                             >
@@ -198,11 +198,11 @@
             </div>
             <div class="panel-body">
               <div class="section group">
-                <div class="col span_1_of_2 exp_paper_receiptFilename">
+                <div class="col">
                   <div class="form-group">
                     <label class="control-label">Upload</label>
                     <div class="input-group mb-3">
-                      <div class="fileupload btn btn-purple btn-sm">
+                      <div class="fileupload btn btn-primary btn-sm">
                         <span class="text-light">
                           <i class="fa fa-file-upload"></i>Upload</span
                         >

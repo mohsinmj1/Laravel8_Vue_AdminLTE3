@@ -96,6 +96,15 @@ export default [
         component: require("./components/profiles/manager/View.vue").default
     },
     {
+        path: "/rates/view",
+        component: require("./components/rates/view.vue").default
+    },
+    {
+        path: "/setting/deliveryforinvoices",
+        component: require("./components/setting/DeliveryForInvoices.vue")
+            .default
+    },
+    {
         path: "/rates/create",
         component: require("./components/rates/Create.vue").default
     },
@@ -105,8 +114,7 @@ export default [
     },
     {
         path: "/profiles/client/create",
-        component: require("./components/profiles/client/Create.vue") 
-            .default
+        component: require("./components/profiles/client/Create.vue").default
     },
     {
         path: "/profiles/workers/starter-form",

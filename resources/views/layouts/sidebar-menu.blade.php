@@ -45,7 +45,7 @@
                 <li class="nav-item">
                     <router-link to="/timesheets/reject" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
-                        <p>Reject </p>
+                        <p>Rejected </p>
                     </router-link>
                 </li>
                 <li class="nav-item">
@@ -113,7 +113,7 @@
                 <li class="nav-item">
                     <router-link to="/expenses/reject" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
-                        <p>Reject </p>
+                        <p>Rejected </p>
                     </router-link>
                 </li>
                 <li class="nav-item">
@@ -203,7 +203,7 @@
                 <li class="nav-item pl-2">
                     <router-link to="/agency/view" class="nav-link ">
                         <i class="far fa-circle nav-icon"></i>
-                        <p>Create Agency</p>
+                        <p>Agency</p>
                     </router-link>
                 </li>
                 <li class="nav-item pl-2">
@@ -399,7 +399,7 @@
                             </p>
                         </router-link>
                     </li>
-                   
+
                     {{-- <li class="nav-item">
                         <router-link to="/product/tag" class="nav-link">
                             <i class="nav-icon fas fa-tags green"></i>
