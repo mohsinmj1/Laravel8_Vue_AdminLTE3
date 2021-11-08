@@ -45,17 +45,74 @@
                                         <div class="row">
                                             <div class="col-lg-6">
                                                 <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                                    <label class="custom-control-label" for="customCheck1">A worker submits a timesheet</label>
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <label class="custom-control-label">A worker submits a timesheet</label>
                                                 </div>
-                                            </div>       
+                                            </div>
                                             <div class="col-lg-6">
                                                 <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" checked id="customCheck1">
-                                                    <label class="custom-control-label" for="customCheck1">A supplier invoice is uploaded</label>
+                                                    <input type="checkbox" class="custom-control-input" checked>
+                                                    <label class="custom-control-label">A supplier invoice is uploaded</label>
                                                 </div>
-                                            </div>                                                
-                                        </div>   
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <label class="custom-control-label">Contractor/Worker registers in TMS</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" checked>
+                                                    <label class="custom-control-label">Worker submits a timesheet</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <label class="custom-control-label">Worker submits a expense sheet</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" checked>
+                                                    <label class="custom-control-label">Timesheet is approved / rejected</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <label class="custom-control-label">Expense sheet is approved / rejected</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" checked>
+                                                    <label class="custom-control-label">If worker doesnt submit timesheet before cut-off date</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <label class="custom-control-label">If manager doesnt approve timesheet before cut-off date</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" checked>
+                                                    <label class="custom-control-label"> If admin doesnt generate invoices for the approved timesheets</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
                                         <div class="row">
                                             <div style="padding-right:10px;margin-left:14px;margin-top:10px">
                                                 <button class="btn btn-success" type="submit">
