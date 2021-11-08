@@ -162,10 +162,7 @@
                       <div class="form-group">
                         <label class="control-label">Worker Type *</label>
                         <select class="form-control form-control-sm">
-                          <option value="0">PAYE</option>
                           <option value="1" selected="selected">LTD</option>
-                          <option value="2">External Contractor</option>
-                          <option value="3">Umbrella</option>
                         </select>
                       </div>
                     </div>

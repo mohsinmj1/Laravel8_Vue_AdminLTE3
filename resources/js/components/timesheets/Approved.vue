@@ -120,8 +120,10 @@
                 </thead>
                 <tbody>
                   <tr v-for="product in products.data" :key="product.id">
-                    <td>{{ product.id }}</td>
-                    <td>Wheeler, Daniel</td>
+                    <td>
+                      <a href="#">{{ product.id }}</a>
+                    </td>
+                    <td><a href="#">Wheeler, Daniel</a></td>
                     <td>LTD</td>
                     <td>Wkr146</td>
                     <td></td>
@@ -129,14 +131,12 @@
                     <td></td>
                     <td></td>
                     <td></td>
+                    <td><a href="#">Jordan</a></td>
+                    <td><a href="#">Cooke, Jordan</a></td>
                     <td></td>
-                    <td>Cooke, Jordan</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><a href="#">Jordan</a></td>
+                    <td><a href="#">Jordan</a></td>
+                    <td><a href="#">Jordan</a></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -217,9 +217,10 @@
                   </nav>
                 </div>
               </div>
-              <!-- <button type="submit" class="btn btn-primary btn-sm">
-                Submit
-                </button> -->
+              <button type="submit" class="btn btn-primary btn-sm">
+                Print Report
+              </button>
+              <button type="submit" class="btn btn-primary btn-sm">CSV</button>
               <button type="submit" class="btn btn-primary btn-sm">
                 Default CSV
               </button>

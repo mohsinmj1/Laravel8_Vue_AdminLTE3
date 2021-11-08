@@ -45,7 +45,7 @@
                 <li class="nav-item">
                     <router-link to="/timesheets/reject" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
-                        <p>Reject </p>
+                        <p>Rejected </p>
                     </router-link>
                 </li>
                 <li class="nav-item">
@@ -113,7 +113,7 @@
                 <li class="nav-item">
                     <router-link to="/expenses/reject" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
-                        <p>Reject </p>
+                        <p>Rejected </p>
                     </router-link>
                 </li>
                 <li class="nav-item">
