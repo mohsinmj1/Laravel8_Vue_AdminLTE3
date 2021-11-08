@@ -1,95 +1,60 @@
 <style>
 .has-search .form-control {
-  padding-left: 2.375rem;
+    padding-left: 2.375rem;
 }
 
 .has-search .form-control-feedback {
-  position: absolute;
-  z-index: 2;
-  display: block;
-  width: 2.375rem;
-  height: 2.375rem;
-  line-height: 2.375rem;
-  text-align: center;
-  pointer-events: none;
-  color: #aaa;
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
 }
-.to {
-  height: 29px;
-  color: white;
-  background-color: #227dc7;
+.to{
+    height: 29px;
+color: white;
+background-color: #227DC7;
 }
 .btn-size {
   font-size: 9px !important;
+
 }
 label {
-  font-size: 12px;
+    font-size:12px;
 }
 </style>
 
 <template>
-  <section class="content">
+
+<section class="content">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12">
-          <h2>Create Client</h2>
+        <div class="row">
+                <div class="col-lg-12">
+                    <h2>Create Client </h2>
+                </div>
         </div>
-      </div>
-      <div class="bg-white pb-4">
-        <div class="card-body">
-          <ul class="nav nav-tabs" id="custom-content-below-tab" role="tablist">
-            <li class="nav-item" style="width: 25%">
-              <a
-                class="nav-link active"
-                id="custom-content-below-main-tab"
-                data-toggle="pill"
-                href="#custom-content-below-main"
-                role="tab"
-                aria-controls="custom-content-below-main"
-                aria-selected="true"
-                >Main</a
-              >
-            </li>
-            <li class="nav-item" style="width: 25%">
-              <a
-                class="nav-link"
-                id="custom-content-below-date-ranges-tab"
-                data-toggle="pill"
-                href="#custom-content-below-date-ranges"
-                role="tab"
-                aria-controls="custom-content-below-date-ranges"
-                aria-selected="false"
-                >Invoicing</a
-              >
-            </li>
-            <li class="nav-item" style="width: 25%">
-              <a
-                class="nav-link"
-                id="custom-content-below-reference-tab"
-                data-toggle="pill"
-                href="#custom-content-below-reference"
-                role="tab"
-                aria-controls="custom-content-below-reference"
-                aria-selected="false"
-                >Advanced</a
-              >
-            </li>
-            <li class="nav-item" style="width: 25%">
-              <a
-                class="nav-link"
-                id="custom-content-below-financials-tab"
-                data-toggle="pill"
-                href="#custom-content-below-financials"
-                role="tab"
-                aria-controls="custom-content-below-financials"
-                aria-selected="false"
-                >History</a
-              >
-            </li>
-            <!-- <li class="nav-item" style="width:25%">
+        <div class="bg-white pb-4">
+            <div class="card-body">
+                <ul class="nav nav-tabs" id="custom-content-below-tab" role="tablist">
+                    <li class="nav-item" style="width:25%">
+                        <a class="nav-link active" id="custom-content-below-main-tab" data-toggle="pill" href="#custom-content-below-main" role="tab" aria-controls="custom-content-below-main" aria-selected="true">Main</a>
+                    </li>
+                    <li class="nav-item" style="width:25%">
+                        <a class="nav-link" id="custom-content-below-date-ranges-tab" data-toggle="pill" href="#custom-content-below-date-ranges" role="tab" aria-controls="custom-content-below-date-ranges" aria-selected="false">Invoicing</a>
+                    </li>
+                    <li class="nav-item" style="width:25%">
+                        <a class="nav-link" id="custom-content-below-reference-tab" data-toggle="pill" href="#custom-content-below-reference" role="tab" aria-controls="custom-content-below-reference" aria-selected="false">Advanced</a>
+                    </li>
+                    <li class="nav-item" style="width:25%">
+                        <a class="nav-link" id="custom-content-below-financials-tab" data-toggle="pill" href="#custom-content-below-financials" role="tab" aria-controls="custom-content-below-financials" aria-selected="false">History</a>
+                    </li>
+                    <!-- <li class="nav-item" style="width:25%">
                         <a class="nav-link" id="custom-content-below-advance-tab" data-toggle="pill" href="#custom-content-below-advance" role="tab" aria-controls="custom-content-below-advance" aria-selected="false">History</a>
                     </li> -->
-<<<<<<< HEAD
                 </ul><br>
                 <div class="tab-content" id="custom-content-below-tabContent">
                     <div class="tab-pane fade active show" id="custom-content-below-main" role="tabpanel" aria-labelledby="custom-content-below-main-tab">
@@ -195,110 +160,110 @@ label {
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Firstname </label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div>                                       
+                                                </div>       
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Lastname </label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div>                                       
+                                                </div>   
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Email </label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div>                                       
+                                                </div>   
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Department</label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
+                                                    </div>                                       
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Telephone </label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div>                                       
+                                                </div>   
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Mobile </label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div>                                       
+                                                </div>   
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Address Line 1 </label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div>                                       
+                                                </div>   
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Address Line 2 </label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div>                                       
+                                                </div>   
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Town/City </label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div>                                       
+                                                </div>   
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Company Sales VAT Number </label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div>                                       
+                                                </div>   
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">County </label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div>                                       
+                                                </div>   
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Postcode </label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div>                                       
+                                                </div>   
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Country Code</label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div>                                       
+                                                </div>                                                                                                               
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> 
                             </div>
                             <div class="col-lg-4">
                                 <div class="card card-primary card-outline card-tabs">
@@ -313,7 +278,7 @@ label {
                                                 <div class="row">
                                                     <div class="col-lg-6">
                                                         <label for="client" class="d-block mb-1">Default Timesheet Duration </label>
-                                                        <select class="form-control select2">
+                                                        <select class="form-control select2">                                    
                                                             <option value=""></option>
                                                             <option value="weekly">weekly</option>
                                                             <option value="weekly_tue-mon">weekly_tue-mon</option>
@@ -354,20 +319,20 @@ label {
                                                             <option value="monthly27th">monthly27th</option>
                                                             <option value="monthly28th">monthly28th</option>
                                                         </select>
-                                                    </div>
+                                                    </div>  
                                                      <div class="col-lg-6">
                                                         <label for="client" class="d-block mb-1">Default Expense Template </label>
-                                                        <select class="form-control select2">
+                                                        <select class="form-control select2">   
                                                                 <option value="">Agency Default</option>
                                                                 <option value="495">Adjustment Invoice</option>
-                                                                <option value="494">Default</option>
+                                                                <option value="494">Default</option>                                                            
                                                         </select>
-                                                    </div>
-                                                </div>
+                                                    </div>                                       
+                                                </div>    
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Default Timesheet Approval Route</label>
-                                                        <select class="form-control select2">
+                                                        <select class="form-control select2">                                    
                                                             <option value="">Agency Default</option>
                                                             <option value="2372">Agency Consultant Approval</option>
                                                             <option value="2376">Auto Approval Route</option>
@@ -376,12 +341,12 @@ label {
                                                             <option value="2377">Select Manager</option>
                                                             <option value="2454">Wights Approval (Katie)</option>
                                                         </select>
-                                                    </div>
-                                                </div>
+                                                    </div>                                                                                          
+                                                </div>   
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Default Chargeable Expense Approval Route</label>
-                                                        <select class="form-control select2">
+                                                        <select class="form-control select2">                                    
                                                            <option value="">Agency Default</option>
                                                             <option value="2372">Agency Consultant Approval</option>
                                                             <option value="2376">Auto Approval Route</option>
@@ -390,12 +355,12 @@ label {
                                                             <option value="2377">Select Manager</option>
                                                             <option value="2454">Wights Approval (Katie)</option>
                                                         </select>
-                                                    </div>
-                                                </div>
+                                                    </div>                                                                                          
+                                                </div>  
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Default Non Chargeable Expense Approval Route</label>
-                                                        <select class="form-control select2">
+                                                        <select class="form-control select2">                                    
                                                             <option value="">Agency Default</option>
                                                             <option value="2372">Agency Consultant Approval</option>
                                                             <option value="2376">Auto Approval Route</option>
@@ -404,18 +369,18 @@ label {
                                                             <option value="2377">Select Manager</option>
                                                             <option value="2454">Wights Approval (Katie)</option>
                                                         </select>
-                                                    </div>
-                                                </div>
+                                                    </div>                                                                                          
+                                                </div>                                                                                                               
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> 
                             </div>
                         </div>
-
+                       
                     </div>
                     <div class="tab-pane fade" id="custom-content-below-date-ranges" role="tabpanel" aria-labelledby="custom-content-below-date-ranges-tab">
-                        <div class="row">
+                        <div class="row">                            
                             <div class="col-lg-4">
                                 <div class="card card-primary card-outline card-tabs">
                                     <div class="row">
@@ -431,102 +396,102 @@ label {
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Firstname </label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div>                                       
+                                                </div>       
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Lastname </label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div>                                       
+                                                </div>   
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Email </label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div>                                       
+                                                </div>   
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Department</label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
+                                                    </div>                                       
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Telephone </label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div>                                       
+                                                </div>   
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Mobile </label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div>                                       
+                                                </div>   
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Address Line 1 </label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div>                                       
+                                                </div>   
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Address Line 2 </label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div>                                       
+                                                </div>   
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Town/City </label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div>                                       
+                                                </div>   
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Company Sales VAT Number </label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div>                                       
+                                                </div>   
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">County </label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div>                                       
+                                                </div>   
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Postcode </label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div>                                       
+                                                </div>   
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Country Code</label>
-                                                        <select class="form-control select2" style="width:100%">
+                                                        <select class="form-control select2" style="width:100%">                                                            
                                                             <option value=""></option>
                                                             <option value="AD">AD (Andorra)</option>
                                                             <option value="AE">AE (United Arab Emirates)</option>
@@ -776,14 +741,14 @@ label {
                                                             <option value="YT">YT (Mayotte)</option>
                                                             <option value="ZA">ZA (South Africa)</option>
                                                             <option value="ZM">ZM (Zambia)</option>
-                                                            <option value="ZW">ZW (Zimbabwe)</option>
+                                                            <option value="ZW">ZW (Zimbabwe)</option>                                                            
                                                         </select>
-                                                    </div>
-                                                </div>
+                                                    </div>                                       
+                                                </div>                                                                                                               
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> 
                             </div>
                             <div class="col-lg-4">
                                 <div class="card card-primary card-outline card-tabs">
@@ -798,7 +763,7 @@ label {
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Invoice Period </label>
-                                                        <select class="form-control select2" style="width:100%">
+                                                        <select class="form-control select2" style="width:100%">                                    
                                                             <option value="0" selected="selected">Weekly</option>
                                                             <option value="1">Two Weekly</option>
                                                             <option value="2">Four Weekly</option>
@@ -806,18 +771,18 @@ label {
                                                             <option value="4">4-4-5</option>
                                                             <option value="5">Other</option>
                                                         </select>
-                                                    </div>
-                                                </div>
+                                                    </div>                                                                                         
+                                                </div>    
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Deliver Invoices By</label>
-                                                        <select class="form-control select2" style="width:100%">
+                                                        <select class="form-control select2" style="width:100%">     
                                                             <option value="0">Post</option>
                                                             <option value="1" selected="selected">Email</option>
                                                             <option value="3">Delivery Not Required</option>
                                                         </select>
-                                                    </div>
-                                                </div>
+                                                    </div>                                                                                          
+                                                </div>   
                                                 <br>
                                                 <div class="row">
                                                     <div class="col-lg-12">
@@ -825,27 +790,27 @@ label {
                                                             <input type="checkbox" class="custom-control-input" id="customCheck1">
                                                             <label class="custom-control-label" for="customCheck1">Send Invoices Individually</label>
                                                         </div>
-                                                    </div>
+                                                    </div>                                                     
                                                 </div>
                                                 <div class="row">
                                                     <div class="p-2 pl-4">
                                                         <div class="timesheet_create_tit">
-                                                            <h2 class="pb-2" style="font-size:12px">
+                                                            <h2 class="pb-2" style="font-size:12px">                                                                
                                                                 Payment Terms
                                                             </h2>
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div>                                                                                                
+                                                </div>                                               
                                                 <div class="row">
                                                     <div class="col-lg-4">
                                                         <label for="client" class="d-block mb-1">Days </label>
                                                         <div class="input-group">
-                                                            <input type="text" value="30" class="form-control form-control-sm">
+                                                            <input type="text" value="30" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
+                                                    </div>  
                                                     <div class="col-lg-6">
                                                         <label for="client" class="d-block mb-1">Type</label>
-                                                        <select class="form-control select2" style="width:100%">
+                                                        <select class="form-control select2" style="width:100%">     
                                                             <option value="As Per Agreed Terms and Conditions">As Per Agreed Terms and Conditions</option>
                                                             <option value="Days From Invoice Date" selected="selected">Days From Invoice Date</option>
                                                             <option value="Working Days From Invoice Date">Working Days From Invoice Date</option>
@@ -854,26 +819,26 @@ label {
                                                             <option value="Days from End of Month After Next">Days from End of Month After Next</option>
                                                             <option value="Days from Sheet End Date">Days from Sheet End Date</option>
                                                         </select>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
+                                                    </div>                                       
+                                                </div>    
+                                                <div class="row">                                                    
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Template </label>
-                                                        <select class="form-control select2" style="width:100%">
+                                                        <select class="form-control select2" style="width:100%">     
                                                             <option value="462655">Default Charge Terms</option>
                                                         </select>
-                                                    </div>
-                                                </div>
-                                                 <div class="row">
+                                                    </div>                                       
+                                                </div>     
+                                                 <div class="row">                                                    
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Additional Text To Include on Invoice </label>
                                                         <textarea name="termsExtraText" id="termsExtraText" class="form-control" rows="10" style="line-height: 1; font-size: 12px; margin: 0; padding: 0;" onkeyup=""></textarea>
-                                                    </div>
-                                                </div>
+                                                    </div>                                       
+                                                </div>                                                                                                           
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> 
                             </div>
                             <div class="col-lg-4">
                                 <div class="card card-primary card-outline card-tabs">
@@ -889,11 +854,11 @@ label {
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Nominal Code </label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input type="text" class="form-control form-control-sm">                                                           
                                                         </div>
-                                                    </div>
-                                                </div>
-
+                                                    </div>                                                                                         
+                                                </div>   
+                                                                                                                                                   
                                             </div>
                                         </div>
                                     </div>
@@ -910,7 +875,7 @@ label {
                             <h3 class="panel-title">Allocation of Items To Invoices (Consolidation)</h3>
                         </div>
                         <div class="panel-body">
-                          <div class="row">
+                          <div class="row">  
                             <div class="col-sm-12">
                               <div class="form-group">
                                 <label class="control-label" for="goeson">What goes on each invoice?</label>
@@ -1101,20 +1066,6 @@ label {
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card card-primary card-outline card-tabs">
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <div class="p-2 pl-4">
-                          <div class="timesheet_create_tit">
-                            <h2 class="pb-2">Automatic Adjustments</h2>
-                          </div>
-                          <div class="row">
->>>>>>> bf33285a8ef3abe758f086c87a163f9808121c3f
                             <div class="col-lg-12">
                               <button type="button" class="btn btn-primary">
                                 Add Tag
@@ -2703,7 +2654,6 @@ label {
                             </div>
                           </div>
                         </div>
-<<<<<<< HEAD
                           </div>
                         </div>
                     </div>
@@ -2742,79 +2692,28 @@ label {
                                   </div>
                                 </div>
                               </div>
-=======
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="custom-content-below-financials"
-              role="tabpanel"
-              aria-labelledby="custom-content-below-financials-tab"
-            >
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="card card-primary card-outline card-tabs">
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <div class="p-2 pl-4">
-                          <div class="timesheet_create_tit">
-                            <h2 class="pb-2">CREATED:</h2>
-                            <p>Last Modified:</p>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg-12">
-                              <table class="table table-striped">
-                                <thead>
-                                  <tr>
-                                    <th>Date</th>
-                                    <th>Time</th>
-                                    <th>User</th>
-                                    <th>Event</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                  </tr>
-                                </tbody>
-                              </table>
->>>>>>> bf33285a8ef3abe758f086c87a163f9808121c3f
                             </div>
                           </div>
                         </div>
                       </div>
-<<<<<<< HEAD
                     </div>   
 
                 </div>  
-=======
-                    </div>
-                  </div>
-                </div>
-              </div>
->>>>>>> bf33285a8ef3abe758f086c87a163f9808121c3f
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </section>
+</section>
 </template>
 
-<script>
-export default {
-  mounted() {
-    //Initialize Select2 Elements
-    $(".select2").select2();
-    $('[data-toggle="tooltip"]').tooltip();
-    console.log("Creat Timesheet mounted.");
-  },
-};
+<script>   
+
+    export default {
+        
+        mounted() {
+            //Initialize Select2 Elements
+            $('.select2').select2();
+            $('[data-toggle="tooltip"]').tooltip();      
+            console.log('Creat Timesheet mounted.');
+        }
+    }
 </script>
