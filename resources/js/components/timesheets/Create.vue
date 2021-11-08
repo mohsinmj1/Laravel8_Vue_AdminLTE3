@@ -926,7 +926,7 @@
                         ss = ('0' + ss).slice(-2)
                         var counter=hh + ":" + mm + ":" + ss;
                     if(total_break){
-                       var parts = total_time.split(/:/);
+                       var parts = total_break.split(/:/);
                         var timePeriodMillis = (parseInt(parts[0], 10) * 60 * 60 * 1000) +
                                                 (parseInt(parts[1], 10) * 60 * 1000) + 
                                                 (parseInt(parts[2], 10) * 1000);
