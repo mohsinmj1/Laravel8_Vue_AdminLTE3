@@ -85,7 +85,7 @@
                                   href="/configuration/apprenticeshipLevy"
                                   >Rate Templates</a
                                 > -->
-                                <router-link to="/rates/create">
+                                <router-link to="/rates/view">
                                   <p>Rate Template</p>
                                 </router-link>
                               </div>
