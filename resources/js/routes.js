@@ -255,6 +255,10 @@ export default [
         path: "/supportDesk",
         component: require("./components/SupportDesk.vue").default
     },
+    {
+        path: "/faq",
+        component: require("./components/Faq.vue").default
+    },
 
     { path: "*", component: require("./components/NotFound.vue").default }
 ];
