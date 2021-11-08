@@ -49,7 +49,7 @@
 	                                <a href="#" class="dropdown-toggle waves-effect" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-question" style="font-size: 13px"></i> Help<span class="caret"></span></a>
 	                                        <ul class="dropdown-menu">
 	                                            <li>
-	                                                    <a href="#"  class="waves-effect">FAQ </a>
+	                                                    <a href="faq"  class="waves-effect">FAQ </a>
 	                                                
 	                                            </li>
 	                                            
