@@ -49,7 +49,7 @@
                 <div class="col-lg-12">
                     <div class="card card-primary">
                         <div class="card-header">
-                            <h3 class="card-title">Support Desk</h3>
+                            <h3 class="card-title" style="color: white">Support Desk</h3>
                         </div>
                          <div class="card-header" style="background-color: white">
             <div class="row">
