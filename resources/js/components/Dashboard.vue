@@ -146,10 +146,29 @@
                 </div>
             </div> -->
             <div class="row">
+                <div class="col-lg-6">
+                  <label for="client" class="d-block mb-1"
+                    >From Date / To Date</label
+                  >
+                  <div class="input-group">
+                    <input type="date" class="form-control form-control-sm" />
+                    <div class="input-group-append">
+                      <span
+                        class="input-group-text to"
+                        id="validationTooltipUsernamePrepend"
+                        >to</span
+                      >
+                    </div>
+                    <input type="date" class="form-control form-control-sm" />                    
+                  </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
                 <div class="col-lg-12">
                     <div class="card card-primary">
                         <div class="card-header">
-                            <h3 class="card-title">Timesheet Deadline</h3>
+                            <h3 class="card-title">Timesheet Deadlinesss</h3>
                         </div>
                         <div class="card-body">
                             <p>
