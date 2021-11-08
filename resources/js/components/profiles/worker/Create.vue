@@ -75,6 +75,9 @@
               <li>
                 <a href="#">View Consultants</a>
               </li>
+              <li>
+                <a href="#">View Clients</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -215,25 +218,11 @@
                           class="form-control form-control-sm"
                           onchange=""
                         >
-                          <option value="">None</option>
-                          <option value="A">
-                            A - Self-Employed Contractor
-                          </option>
-                          <option value="B">B - Partnership</option>
-                          <option value="C">
-                            C - Limited Liability Partnership
-                          </option>
+                       
                           <option value="D" selected="selected">
-                            D - Limited Company
+                            Limited Company
                           </option>
-                          <option value="E">E - Non-UK Engagement</option>
-                          <option value="F">
-                            F - Another Party Operated PAYE on the Worker's
-                            Payment
-                          </option>
-                          <option value="Z">
-                            Z - Out of HMRC Employment Intermediaries Scope
-                          </option>
+                        
                         </select>
                       </div>
                     </div>

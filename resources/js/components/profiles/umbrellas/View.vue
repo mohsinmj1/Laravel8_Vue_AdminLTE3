@@ -17,7 +17,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-6">
-          <h2>Umbrellas Search</h2>
+          <h2>Umbrellas</h2>
         </div>
         <div class="col-lg-6" style="text-align: right">
           <button class="btn btn-primary">

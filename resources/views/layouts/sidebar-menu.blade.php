@@ -307,6 +307,14 @@
             </ul>
             <ul class="nav nav-treeview">
                 <li class="nav-item">
+                    <router-link to="/profile" class="nav-link ">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Profile</p>
+                    </router-link>
+                </li>
+            </ul>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
                     <router-link to="/myaccount/notification" class="nav-link ">
                         <i class="far fa-circle nav-icon"></i>
                         <p>My Notification Settings</p>

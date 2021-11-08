@@ -193,9 +193,7 @@
                               <option value="">
                                 Please Select Worker Type
                               </option>
-                              <option value="">PAYE</option>
                               <option value="">LTD</option>
-                              <option value="">External Contractor</option>
                             </select>
                           </div>
                         </div>
@@ -397,7 +395,7 @@
                             />
                           </div>
                         </div>
-                        <div class="col-sm-3">
+                        <!-- <div class="col-sm-3">
                           <div class="form-group">
                             <label class="control-label">Nominal Code</label>
                             <input
@@ -405,7 +403,7 @@
                               class="form-control form-control-sm"
                             />
                           </div>
-                        </div>
+                        </div> -->
                       </div>
                       <div class="row">
                         <div class="col-sm-3">
@@ -624,11 +622,10 @@
                         <div class="col-sm-3">
                           <div class="form-group">
                             <label class="control-label">Project Code</label>
-                            <input
-                              type="text"
-                              class="form-control form-control-sm"
-                              value=""
-                            />
+                           <select class="form-control form-control-sm">
+                              <option value="">Choose</option>
+                             
+                            </select>
                           </div>
                         </div>
                         <div class="col-sm-3">
@@ -783,6 +780,9 @@
                         </li>
                         <li>
                           <a href="#">Consultants</a>
+                        </li>
+                         <li>
+                          <a href="#">Clients</a>
                         </li>
                       </ul>
                     </div>

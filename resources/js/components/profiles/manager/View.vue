@@ -253,7 +253,7 @@
                         </button>
                         <button
                           type="submit"
-                          class="btn btn-default btn-sm mx-2"
+                          class="btn btn-secondary btn-sm mx-2"
                         >
                           Clear
                         </button>
@@ -361,11 +361,9 @@
                         <div class="col-sm-3">
                           <div class="form-group">
                             <label class="control-label">Project Code</label>
-                            <input
-                              type="text"
-                              class="form-control form-control-sm"
-                              value=""
-                            />
+                            <select class="form-control form-control-sm">
+                              <option value="">Choose</option>
+                            </select>
                           </div>
                         </div>
                         <div class="col-sm-3">
@@ -384,7 +382,7 @@
                           </button>
                           <button
                             type="submit"
-                            class="btn btn-default btn-sm mx-2"
+                            class="btn btn-secondary btn-sm mx-2"
                           >
                             Clear
                           </button>
@@ -540,7 +538,7 @@
                   <th>Client</th>
                   <th>Client Ref</th>
                   <th>Last Login</th>
-                  <th>Acount Status</th>
+                  <th>Account Status</th>
                   <th>Created</th>
                   <th>Modified</th>
                 </tr>
@@ -565,6 +563,7 @@
                         <li><a href="#">Switch To</a></li>
                         <li><a href="#">Workers</a></li>
                         <li><a href="#">Consultants</a></li>
+                         <li><a href="#">Clients</a></li>
                       </ul>
                     </div>
                   </td>
