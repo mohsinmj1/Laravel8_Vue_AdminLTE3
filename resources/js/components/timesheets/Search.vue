@@ -1342,198 +1342,241 @@
         </div>
       </div>
 
-      <div class="card-body table-responsive p-0">
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th>Id</th>
-              <th>Worker</th>
-              <th>Worker Type</th>
-              <th>Worker Ref</th>
-              <th>Worker Ext Ref</th>
-              <th>Ltd Company Name</th>
-              <th>Worker Invoice Period</th>
-              <th>Timesheet Start</th>
-              <th>Payroll/Frequency</th>
-              <th>Provider</th>
-              <th>Consultant</th>
-              <th>Description</th>
-              <th>Client</th>
-              <th>Manager</th>
-              <th>Placement</th>
-              <th>Project Code</th>
-              <th>Placement Start</th>
-              <th>Placement End</th>
-              <th>Freehand Ref</th>
-              <th>Payroll Ref</th>
-              <th>Worker First Name</th>
-              <th>Worker Last Name</th>
-              <th>Agency Name</th>
-              <th>Job Title</th>
-              <th>Job Description</th>
-              <th>Pending Approvers</th>
-              <th>Period Ending</th>
-              <th>Status</th>
-              <th>Hours</th>
-              <th>Chargeable Hours</th>
-              <th>Payable Hours</th>
-              <th>Units</th>
-              <th>Chargeable Units</th>
-              <th>Payable Units</th>
-              <th>Pay</th>
-              <th>Pay Currency</th>
-              <th>Client Acc Ref</th>
-              <th>Exported Date</th>
-              <th>Invoiced Pay Net</th>
-              <th>Invoiced Pay Gross</th>
-              <th>Invoiced Pay VAT</th>
-              <th>Total Cost(GBP)</th>
-              <th>Worker Accounts Ref</th>
-              <th>Worker Gender</th>
-              <th>Invoiced Pay Net (GBP)</th>
-              <th>Invoiced Charge Net (GBP)</th>
-              <th>Charge</th>
-              <th>Charge Currency</th>
-              <th>Invoiced Charge Net</th>
-              <th>Invoiced Charge Gross</th>
-              <th>Invoiced Charge VAT</th>
-              <th>Charge(GBP)</th>
-              <th>Type</th>
-              <th>Approved</th>
-              <th>Approved By</th>
-              <th>Submitted</th>
-              <th>Submitted By</th>
-              <th>Client Country</th>
-              <th>Client Ref</th>
-              <th>Client Site</th>
-              <th>Internal Comment</th>
-              <th>Contracted Hours</th>
-              <th>Rate Reference</th>
-              <th>Rate Name</th>
-              <th>Charge Rate</th>
-              <th>Comment</th>
-              <th>Shift Date</th>
-              <th>Hours Worked</th>
-              <th>Paid Date</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <a href="#">1</a>
-              </td>
-              <td><a href="#">Robert</a></td>
-              <td>LTD</td>
-              <td>Wkr65</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td><a href="#">Robert</a></td>
-              <td><a href="#">Robert</a></td>
-              <td></td>
-              <td><a href="#">Wight Shipyard Company Limited</a></td>
-              <td><a href="#">Robert</a></td>
-              <td><a href="#">Pmt215</a></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>No</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <!-- /.card-body -->
-      <div class="card-footer">
-        <div class="row mb-3">
-          <div class="col-md-5 align-self-center">
-            <div>Showing 1 to 10 of 12 entries - 0 rows selected</div>
-          </div>
-          <div class="col-md-7 d-flex justify-content-end">
-            <nav aria-label="...">
-              <ul class="pagination mb-0">
-                <li class="page-item disabled">
-                  <a class="page-link" href="#" tabindex="-1">Previous</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">1</a>
-                </li>
-                <li class="page-item active">
-                  <a class="page-link" href="#"
-                    >2 <span class="sr-only">(current)</span></a
-                  >
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">3</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">Next</a>
-                </li>
-              </ul>
-            </nav>
+      <div class="card">
+        <div class="card-header" style="background-color: white">
+          <div class="row">
+            <div class="col-sm-10 mb-3">
+              <div class="d-flex align-items-center">
+                <label class="mb-0 mr-2 search-label">Search:</label>
+                <form class="form-inline">
+                  <div class="input-group input-group-sm">
+                    <input
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                      class="form-control color-light"
+                    />
+                    <div class="input-group-append">
+                      <button type="submit" class="btn color-light">
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+                <button type="submit" class="btn btn-sm color-light mx-1">
+                  Choose Columns
+                </button>
+              </div>
+            </div>
+            <div class="col-sm-2 mb-3">
+              <div class="d-flex align-items-center justify-content-end">
+                <label class="mb-0">Show</label>
+                <select class="form-control w-auto ml-2 mr-2 pt-0 pb-0 h-100">
+                  <option value="10">10</option>
+                  <option value="25">25</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                  <option value="250">250</option>
+                  <option value="500">500</option>
+                </select>
+                <label class="mb-0">entries</label>
+              </div>
+            </div>
           </div>
         </div>
-        <button type="submit" class="btn btn-danger btn-sm">
-          Print Report
-        </button>
-        <button type="submit" class="btn btn-primary btn-sm">CSV</button>
-        <button type="submit" class="btn btn-primary btn-sm">
-          Default CSV
-        </button>
-        <button type="submit" class="btn btn-primary btn-sm">
-          Reset Column
-        </button>
+        <div class="card-body table-responsive p-0">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Worker</th>
+                <th>Worker Type</th>
+                <th>Worker Ref</th>
+                <th>Worker Ext Ref</th>
+                <th>Ltd Company Name</th>
+                <th>Worker Invoice Period</th>
+                <th>Timesheet Start</th>
+                <th>Payroll/Frequency</th>
+                <th>Provider</th>
+                <th>Consultant</th>
+                <th>Description</th>
+                <th>Client</th>
+                <th>Manager</th>
+                <th>Placement</th>
+                <th>Project Code</th>
+                <th>Placement Start</th>
+                <th>Placement End</th>
+                <th>Freehand Ref</th>
+                <th>Payroll Ref</th>
+                <th>Worker First Name</th>
+                <th>Worker Last Name</th>
+                <th>Agency Name</th>
+                <th>Job Title</th>
+                <th>Job Description</th>
+                <th>Pending Approvers</th>
+                <th>Period Ending</th>
+                <th>Status</th>
+                <th>Hours</th>
+                <th>Chargeable Hours</th>
+                <th>Payable Hours</th>
+                <th>Units</th>
+                <th>Chargeable Units</th>
+                <th>Payable Units</th>
+                <th>Pay</th>
+                <th>Pay Currency</th>
+                <th>Client Acc Ref</th>
+                <th>Exported Date</th>
+                <th>Invoiced Pay Net</th>
+                <th>Invoiced Pay Gross</th>
+                <th>Invoiced Pay VAT</th>
+                <th>Total Cost(GBP)</th>
+                <th>Worker Accounts Ref</th>
+                <th>Worker Gender</th>
+                <th>Invoiced Pay Net (GBP)</th>
+                <th>Invoiced Charge Net (GBP)</th>
+                <th>Charge</th>
+                <th>Charge Currency</th>
+                <th>Invoiced Charge Net</th>
+                <th>Invoiced Charge Gross</th>
+                <th>Invoiced Charge VAT</th>
+                <th>Charge(GBP)</th>
+                <th>Type</th>
+                <th>Approved</th>
+                <th>Approved By</th>
+                <th>Submitted</th>
+                <th>Submitted By</th>
+                <th>Client Country</th>
+                <th>Client Ref</th>
+                <th>Client Site</th>
+                <th>Internal Comment</th>
+                <th>Contracted Hours</th>
+                <th>Rate Reference</th>
+                <th>Rate Name</th>
+                <th>Charge Rate</th>
+                <th>Comment</th>
+                <th>Shift Date</th>
+                <th>Hours Worked</th>
+                <th>Paid Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="#">1</a>
+                </td>
+                <td><a href="#">Robert</a></td>
+                <td>LTD</td>
+                <td>Wkr65</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="#">Robert</a></td>
+                <td><a href="#">Robert</a></td>
+                <td></td>
+                <td><a href="#">Wight Shipyard Company Limited</a></td>
+                <td><a href="#">Robert</a></td>
+                <td><a href="#">Pmt215</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>No</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+          <div class="row mb-3">
+            <div class="col-md-5 align-self-center">
+              <div>Showing 1 to 10 of 12 entries - 0 rows selected</div>
+            </div>
+            <div class="col-md-7 d-flex justify-content-end">
+              <nav aria-label="...">
+                <ul class="pagination mb-0">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#"
+                      >2 <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-danger btn-sm">
+            Print Report
+          </button>
+          <button type="submit" class="btn btn-primary btn-sm">CSV</button>
+          <button type="submit" class="btn btn-primary btn-sm">
+            Default CSV
+          </button>
+          <button type="submit" class="btn btn-primary btn-sm">
+            Reset Column
+          </button>
+        </div>
       </div>
     </div>
   </section>

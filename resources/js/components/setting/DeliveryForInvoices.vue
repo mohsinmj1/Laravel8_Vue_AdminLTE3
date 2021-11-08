@@ -5,7 +5,7 @@
         <div class="col-12">
           <div class="card" v-if="$gate.isAdmin()">
             <div class="card-header">
-              <h3 class="card-title">User List</h3>
+              <h3 class="card-title">Manage Projects</h3>
 
               <div class="card-tools">
                 <button
@@ -25,20 +25,14 @@
                   <tr>
                     <th>ID</th>
                     <th>Type</th>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Created</th>
+                    <th>Status</th>
                     <th>Action</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr v-for="user in users.data" :key="user.id">
-                    <td>{{ user.id }}</td>
                     <td class="text-capitalize">{{ user.type }}</td>
                     <td class="text-capitalize">{{ user.name }}</td>
-                    <td>{{ user.email }}</td>
-                    <td>{{ user.created_at }}</td>
-
                     <td>
                       <a href="#" @click="editModal(user)">
                         <i class="fa fa-edit blue"></i>

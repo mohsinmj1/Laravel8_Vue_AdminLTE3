@@ -100,6 +100,11 @@ export default [
         component: require("./components/rates/view.vue").default
     },
     {
+        path: "/setting/deliveryforinvoices",
+        component: require("./components/setting/DeliveryForInvoices.vue")
+            .default
+    },
+    {
         path: "/rates/create",
         component: require("./components/rates/Create.vue").default
     },
