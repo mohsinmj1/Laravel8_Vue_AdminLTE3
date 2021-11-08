@@ -251,6 +251,10 @@ export default [
         path: "/agency/view",
         component: require("./components/agency/View.vue").default
     },
+    {
+        path: "/supportDesk",
+        component: require("./components/SupportDesk.vue").default
+    },
 
     { path: "*", component: require("./components/NotFound.vue").default }
 ];

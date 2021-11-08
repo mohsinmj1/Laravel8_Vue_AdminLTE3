@@ -767,23 +767,25 @@ export default {
         total_break = $("#getBreakTime").val();
         clearInterval(myTimer);
       } else if (event == 2) {
+           var dtb = new Date();
         var Btime =
-          dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+          dtb.getHours() + ":" + dtb.getMinutes() + ":" + dtb.getSeconds();
         total_time = $("#workTime").val();
         clearInterval(myTime);
         myTimer = setInterval(setTimeBreak, 1000);
         $("#modalContinueBtn").show();
         $("#modalBreakBtn").hide();
         $("#getBreakTimeInBreakModal").val(Btime);
-        $("#getBreakTimeInBreakModal").val(Btime);
+       // $("#getBreakTimeInBreakModal").val(Btime);
       } else if (event == 3) {
-        var dte = new Date();
+        
         clearInterval(myTime);
         clearInterval(myTimer);
         $("#modalBreakBtn").hide();
         $("#modalContinueBtn").hide();
         $("#modalfinishBtn").hide();
         $("#modalBreakBtn").hide();
+        var dte = new Date();
         var timee =
           dte.getHours() + ":" + dte.getMinutes() + ":" + dte.getSeconds();
         total_break = $("#getBreakTime").val();

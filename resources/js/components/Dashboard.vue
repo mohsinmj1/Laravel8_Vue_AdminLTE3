@@ -1,7 +1,7 @@
 <template>
     <section class="content">
         <div class="container-fluid">
-            <!--<div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-12">
                     <div class="alert alert-info" role="alert">
                         <i class="mdi mdi-alert-circle-outline mr-2"></i>
@@ -144,7 +144,7 @@
                         </div>
                     </div>
                 </div>
-            </div>-->
+            </div> -->
             <div class="row">
                 <div class="col-lg-12">
                     <div class="card card-primary">
