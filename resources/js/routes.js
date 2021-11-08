@@ -258,6 +258,9 @@ export default [
     {
         path: "/faq",
         component: require("./components/Faq.vue").default
+    },   {
+        path: "/ticket",
+        component: require("./components/Ticket.vue").default
     },
 
     { path: "*", component: require("./components/NotFound.vue").default }

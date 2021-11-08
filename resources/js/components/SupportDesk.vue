@@ -108,19 +108,19 @@
                                             <strong>1</strong>
                                         </td>
                                         <td style="text-align: center;">
-                                            <strong>high</strong>
+                                            high
                                         </td>
                                         <td style="text-align: center;">
-                                            <strong>John</strong>
+                                            John
                                         </td>
                                         <td style="text-align: center;">
-                                            <strong>Smith</strong>
+                                            Smith
                                         </td>
                                         <td style="text-align: center;">
-                                            <strong>25633</strong>
+                                            25633
                                         </td>
                                         <td style="text-align: center;">
-                                            <strong>john@gmail.com</strong>
+                                            john@gmail.com
                                         </td>
                                     </tr>
                                 </tbody>
