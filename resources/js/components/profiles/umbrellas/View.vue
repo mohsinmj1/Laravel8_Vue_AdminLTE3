@@ -99,7 +99,6 @@
                   <th>Invoice Telephone</th>
                   <th>Created</th>
                   <th>Modified</th>
-                  <th>On Hold</th>
                 </tr>
               </thead>
               <tbody>
@@ -121,14 +120,10 @@
                           class="dropdown-menu"
                           aria-labelledby="dropdownMenuButton"
                         >
-                          <a class="dropdown-item" href="#">Today</a>
-                          <a class="dropdown-item" href="#">Yesterday</a>
-                          <hr />
-                          <a class="dropdown-item" href="#">Last 7 Days</a>
-                          <a class="dropdown-item" href="#">Last 30 Days</a>
-                          <hr />
-                          <a class="dropdown-item" href="#">This Week</a>
-                          <a class="dropdown-item" href="#">Last Week</a>
+                          <a class="dropdown-item" href="#">Users </a>
+                          <a class="dropdown-item" href="#">Workers</a>
+                          <a class="dropdown-item" href="#">Managers</a>
+                          <a class="dropdown-item" href="#">Consultants</a>
                         </div>
                       </div>
                     </div>
@@ -146,7 +141,6 @@
                   </td>
                   <td>{{ product.category.name }}</td>
                   <td>{{ product.price }}</td>
-                  <td>{{ product.category.name }}</td>
                   <td>{{ product.category.name }}</td>
                   <td>{{ product.category.name }}</td>
                   <td>{{ product.category.name }}</td>

@@ -325,14 +325,7 @@
                     <option value="3">No</option>
                   </select>
                 </div>
-                <div class="col-lg-3">
-                  <label for="client" class="d-block mb-1">Perm Invoice</label>
-                  <select class="form-control select2">
-                    <option value="1">All</option>
-                    <option value="2">Perm</option>
-                    <option value="3">Not Perm</option>
-                  </select>
-                </div>
+
               </div>
               <br />
               <div class="row">
@@ -346,18 +339,7 @@
                     <option value="3">No</option>
                   </select>
                 </div>
-                <div class="col-lg-3">
-                  <label for="client" class="d-block mb-1"
-                    >Supplier Invoice Status</label
-                  >
-                  <select class="form-control select2">
-                    <option value="1">All</option>
-                    <option value="2">Not Uploaded</option>
-                    <option value="3">Uploaded</option>
-                    <option value="2">Un-Matched</option>
-                    <option value="3">Accepted</option>
-                  </select>
-                </div>
+
                 <div class="col-lg-3">
                   <label for="client" class="d-block mb-1"
                     >Payment Application Status</label
@@ -1023,7 +1005,7 @@
                   <label for="client" class="d-block mb-1"
                     >Timesheet Frequency</label
                   >
-                  <select class="form-control select2" style="width: 100%">                    
+                  <select class="form-control select2" style="width: 100%">
                     <option value="ALL">All</option>
                     <option value="WEEKLY">weekly</option>
                     <option value="WEEKLY_TUE_MON">weekly_tue-mon</option>
@@ -1067,7 +1049,7 @@
                 </div>
                 <div class="col-lg-6">
                   <label for="client" class="d-block mb-1">Worker Type</label>
-                  <select class="form-control select2" style="width: 100%">                    
+                  <select class="form-control select2" style="width: 100%">
                     <option value="ALL">All</option>
                     <option value="PAYE">PAYE</option>
                     <option value="PAID_AS_PAYE">All Paid PAYE</option>
@@ -1255,7 +1237,7 @@
                   </button>
                 </div>
               </div>
-              <div class="row">
+              <!-- <div class="row">
                 <div class="col-lg-12">
                   <p>Manual Override:</p>
                 </div>
@@ -1281,7 +1263,7 @@
                     >
                   </p>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
           <!-- /.card -->

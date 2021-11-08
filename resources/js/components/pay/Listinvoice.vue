@@ -207,15 +207,15 @@
                   </select>
                 </div>
                 <div class="col-lg-3">
-                    <label for="client" class="d-block mb-1"
-                      >Credited Status</label
-                    >
-                    <select class="form-control select2">
-                      <option value="1">All</option>
-                      <option value="2">Yes</option>
-                      <option value="3">No</option>
-                    </select>
-                  </div>
+                  <label for="client" class="d-block mb-1"
+                    >Credited Status</label
+                  >
+                  <select class="form-control select2">
+                    <option value="1">All</option>
+                    <option value="2">Yes</option>
+                    <option value="3">No</option>
+                  </select>
+                </div>
               </div>
               <br />
               <div class="row">
@@ -1142,7 +1142,7 @@
                   </button>
                 </div>
               </div>
-              <div class="row">
+              <!-- <div class="row">
                 <div class="col-lg-12">
                   <p>Manual Override:</p>
                 </div>
@@ -1168,7 +1168,7 @@
                     >
                   </p>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
           <!-- /.card -->

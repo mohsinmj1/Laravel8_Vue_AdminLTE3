@@ -52,11 +52,21 @@
                                 style="margin-right: 13px"
                               >
                                 <a
-                                  class="list-group-item"
+                                  class="list-group"
                                   style="text-decoration: none"
                                   href="/configuration/apprenticeshipLevy"
                                   >Apprenticeship Levy</a
                                 >
+                              </div>
+                            </div>
+                            <div class="col-lg-12">
+                              <div
+                                class="list-group"
+                                style="margin-right: 13px"
+                              >
+                                <router-link to="/setting/deliveryforinvoices">
+                                  <p>Manage Types Of Delivery For Invoices</p>
+                                </router-link>
                               </div>
                             </div>
                           </div>
@@ -79,12 +89,15 @@
                                 class="list-group"
                                 style="margin-right: 13px"
                               >
-                                <a
+                                <!-- <a
                                   class="list-group-item"
                                   style="text-decoration: none"
                                   href="/configuration/apprenticeshipLevy"
                                   >Rate Templates</a
-                                >
+                                > -->
+                                <router-link to="/rates/view">
+                                  <p>Rate Template</p>
+                                </router-link>
                               </div>
                             </div>
                           </div>
