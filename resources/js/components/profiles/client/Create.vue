@@ -991,7 +991,6 @@ label {
                                 </div>
                               </div>
                             </div>
-<<<<<<< HEAD
                             <div class="card card-primary card-outline card-tabs">
                               <div class="row">
                                 <div class="col-lg-12">
@@ -1102,7 +1101,6 @@ label {
                                 </div>
                               </div>
                             </div>
-=======
                           </div>
                         </div>
                       </div>
