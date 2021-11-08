@@ -40,8 +40,41 @@
   <section class="content">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-6">
           <h2>Create Consultant</h2>
+        </div>
+        <div class="col-lg-6 text-right">
+          <div class="btn-group dropdown">
+            <a
+              href="#"
+              class="btn btn-primary btn-sm"
+              data-toggle="popover"
+              data-placement="top"
+              data-content="Click the down arrow to view actions."
+              data-timeout="3000"
+              data-original-title=""
+              title=""
+              >Actions</a
+            ><button
+              type="button"
+              class="btn btn-primary btn dropdown-toggle"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="caret"></i>
+            </button>
+            <ul class="dropdown-menu" role="menu" style="min-width:4rem !important;font-size:10px">
+              <li>
+                <a href="#">View Managers</a>
+              </li>
+              <li>
+                <a href="#">View Consultants</a>
+              </li>
+              <li>
+                <a href="#">View Clients</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="bg-white pb-4">

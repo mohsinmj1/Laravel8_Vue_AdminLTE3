@@ -61,9 +61,16 @@
                         href="#collapseOne"
                       >
                         <div class="timesheet_create_tit">
-                          <h2 class="pb-2">
-                            <i class="fa fa-search"></i> Search Options
-                          </h2>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <h2 class="pb-2">
+                                <i class="fa fa-search"></i> Search Options 
+                              </h2>
+                            </div>
+                            <div class="col-md-6 text-right">                             
+                              <i class="fa fa-plus-square"></i>                             
+                            </div>
+                          </div>
                         </div>
                       </a>
                     </div>
