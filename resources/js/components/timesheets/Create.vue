@@ -421,7 +421,9 @@
                              <input id="totalWorkingTime" type="text" style="width:79px" placeholder="hh:mm">
 
                             </div>
-                    
+                            <div class="col-lg-1">
+                                <input type="text" style="width:70px">
+                            </div>
                             <div class="col-lg-2">
                                 <select class="form-control select2" style="width:160px">
                                     <option value="IOW-006">IOW-006</option>
@@ -436,9 +438,7 @@
 
                                 </select>
                             </div>
-                            <div class="col-lg-1">
-                                <input type="text" style="width:70px">
-                            </div>
+
                             <div class="col-lg-1">
                                 <input type="text" style="width:70px">
                             </div>
@@ -475,6 +475,9 @@
                             <div class="col-lg-1">
                                 00:00
                             </div>
+                            <div class="col-lg-1">
+                                <input type="text" style="width:70px">
+                            </div>
                             <div class="col-lg-2">
                                 <select class="form-control select2" style="width:160px">
                                     <option value="IOW-006">IOW-006</option>
@@ -489,9 +492,7 @@
 
                                 </select>
                             </div>
-                            <div class="col-lg-1">
-                                <input type="text" style="width:70px">
-                            </div>
+
                               <div class="col-lg-1">
                                 <input type="text" style="width:70px">
                             </div>
@@ -926,7 +927,7 @@
                         ss = ('0' + ss).slice(-2)
                         var counter=hh + ":" + mm + ":" + ss;
                     if(total_break){
-                       var parts = total_time.split(/:/);
+                       var parts = total_break.split(/:/);
                         var timePeriodMillis = (parseInt(parts[0], 10) * 60 * 60 * 1000) +
                                                 (parseInt(parts[1], 10) * 60 * 1000) + 
                                                 (parseInt(parts[2], 10) * 1000);
