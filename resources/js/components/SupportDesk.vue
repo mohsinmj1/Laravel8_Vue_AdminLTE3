@@ -105,7 +105,7 @@
                                 <tbody>
                                     <tr>
                                         <td style="text-align: center;">
-                                            <strong>1</strong>
+                                            1
                                         </td>
                                         <td style="text-align: center;">
                                             high
