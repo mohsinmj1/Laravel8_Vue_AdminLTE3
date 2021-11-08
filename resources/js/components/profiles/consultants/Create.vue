@@ -69,125 +69,135 @@
               role="tabpanel"
               aria-labelledby="custom-content-below-timesheet-tab"
             >
-              <div
-                class="panel panel-border panel-primary"
-                style="border-top: 3px solid #009ada"
-              >
-                <div class="panel-heading">
-                  <h3 class="panel-title">Entry</h3>
-                </div>
-                <div class="panel-body">
-                  <div class="row">
-                    <div class="col-md-3 form-group">
-                      <label class="control-label">Title</label>
-                      <select
-                        name="title"
-                        id="title"
-                        class="form-control input-sm null"
-                      >
-                        <option value="" selected>Choose</option>
-                        <option value="">N/A</option>
-                        <option value="">Mr</option>
-                        <option value="">Mrs</option>
-                        <option value="">Ms</option>
-                        <option value="">Miss</option>
-                        <option value="">Sir</option>
-                        <option value="">Dr</option>
-                      </select>
-                    </div>
-                    <div class="col-md-3 form-group">
-                      <label class="control-label">Firstname *</label>
-                      <input type="text" class="form-control" />
-                    </div>
-                    <div class="col-md-3 form-group">
-                      <label class="control-label">Middlename</label>
-                      <input type="text" class="form-control" />
-                    </div>
-                    <div class="col-md-3 form-group">
-                      <label class="control-label">Lastname *</label>
-                      <input type="text" class="form-control" />
-                    </div>
-                    <div class="col-md-3 form-group">
-                      <label class="control-label">Email *</label>
-                      <input type="email" class="form-control" />
-                    </div>
-                    <div
-                      class="custom-control custom-checkbox col-md-2"
-                      style="margin-left: 10px; padding-top: 30px"
-                    >
-                      <div class="input-group">
+              <form action="" method="post">
+                <div class="card card-primary card-outline card-tabs">
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-md-3 form-group">
+                        <label class="control-label">Title</label>
+                        <select class="form-control form-control-sm">
+                          <option value="" selected>Please Select</option>
+                          <option value="">N/A</option>
+                          <option value="">Mr</option>
+                          <option value="">Mrs</option>
+                          <option value="">Ms</option>
+                          <option value="">Miss</option>
+                          <option value="">Sir</option>
+                          <option value="">Dr</option>
+                        </select>
+                      </div>
+                      <div class="col-md-3 form-group">
+                        <label class="control-label">Firstname *</label>
                         <input
-                          type="checkbox"
-                          class="custom-control-input"
-                          id="customCheck1"
+                          type="text"
+                          class="form-control form-control-sm"
                         />
-                        <label class="custom-control-label" for="customCheck1"
-                          >Emails Disabled
-                          <a
-                            href="javascript:void(0);"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title=""
-                            data-original-title="If ticked this user will not receive automated emails such as welcome emails, placement notifications and approval reminders."
-                            ><span class="badge badge-primary badge-tooltip"
-                              ><small>?</small></span
-                            ></a
-                          ></label
-                        >
                       </div>
-                    </div>
-                    <div class="col-md-3 form-group">
-                      <label class="control-label">Telephone *</label>
-                      <input type="email" class="form-control" />
-                    </div>
-                    <div class="col-md-3 form-group">
-                      <label class="control-label">Mobile *</label>
-                      <input type="email" class="form-control" />
-                    </div>
-                    <div class="col-md-3 form-group">
-                      <label class="control-label">Department</label>
-                      <input type="email" class="form-control" />
-                    </div>
-                    <div class="col-md-3 form-group">
-                      <label class="control-label">Team</label>
-                      <input type="email" class="form-control" />
+                      <div class="col-md-3 form-group">
+                        <label class="control-label">Middlename</label>
+                        <input
+                          type="text"
+                          class="form-control form-control-sm"
+                        />
+                      </div>
+                      <div class="col-md-3 form-group">
+                        <label class="control-label">Lastname *</label>
+                        <input
+                          type="text"
+                          class="form-control form-control-sm"
+                        />
+                      </div>
+                      <div class="col-md-3 form-group">
+                        <label class="control-label">Email *</label>
+                        <input
+                          type="email"
+                          class="form-control form-control-sm"
+                        />
+                      </div>
+                      <div class="col-md-3 align-self-center mt-3">
+                        <div class="d-flex align-items-center">
+                          <input class="mx-2" type="checkbox" />
+                          <label class="mb-0"
+                            >Emails Disabled
+                            <a
+                              href="javascript:void(0);"
+                              data-toggle="tooltip"
+                              data-placement="top"
+                              title=""
+                              data-original-title="If ticked this user will not receive automated emails such as welcome emails, placement notifications and approval reminders."
+                              ><span class="badge badge-primary badge-tooltip"
+                                ><small>?</small></span
+                              ></a
+                            ></label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-md-3 form-group">
+                        <label class="control-label">Telephone *</label>
+                        <input
+                          type="email"
+                          class="form-control form-control-sm"
+                        />
+                      </div>
+                      <div class="col-md-3 form-group">
+                        <label class="control-label">Mobile *</label>
+                        <input
+                          type="email"
+                          class="form-control form-control-sm"
+                        />
+                      </div>
+                      <div class="col-md-3 form-group">
+                        <label class="control-label">Department</label>
+                        <input
+                          type="email"
+                          class="form-control form-control-sm"
+                        />
+                      </div>
+                      <div class="col-md-3 form-group">
+                        <label class="control-label">Team</label>
+                        <input
+                          type="email"
+                          class="form-control form-control-sm"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="card card-primary card-outline card-tabs">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="p-2 pl-4">
-                      <div class="timesheet_create_tit">
-                        <h2 class="pb-2">Address</h2>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-6 form-group">
-                          <label class="control-label">Address Line 1</label>
-                          <input type="text" class="form-control" />
-                        </div>
-                        <div class="col-md-6 form-group">
-                          <label class="control-label">Address Line 2</label>
-                          <input type="text" class="form-control" />
-                        </div>
-                        <div class="col-md-6 form-group">
-                          <label class="control-label">Town/City</label>
-                          <input type="text" class="form-control" />
-                        </div>
-                        <div class="col-md-6 form-group">
-                          <label class="control-label">Country</label>
-                          <input type="text" class="form-control" />
-                        </div>
-                        <div class="col-md-6 form-group">
-                          <label class="control-label">Postcode</label>
-                          <input type="text" class="form-control" />
-                        </div>
-                      </div>
+                <div class="card card-primary card-outline py-3">
+                  <div class="row m-0">
+                    <div class="col-md-12">
+                      <h2>Address</h2>
+                    </div>
+                  </div>
+                  <div class="row m-0">
+                    <div class="col-md-6 form-group">
+                      <label class="control-label">Address Line 1</label>
+                      <input type="text" class="form-control form-control-sm" />
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <label class="control-label">Address Line 2</label>
+                      <input type="text" class="form-control form-control-sm" />
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <label class="control-label">Town/City</label>
+                      <input type="text" class="form-control form-control-sm" />
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <label class="control-label">Country</label>
+                      <input type="text" class="form-control form-control-sm" />
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <label class="control-label">Postcode</label>
+                      <input type="text" class="form-control form-control-sm" />
                     </div>
                   </div>
                 </div>
-              </div>
+                <div class="row m-0">
+                  <button type="submit" class="btn btn-primary btn-sm">
+                    Save
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
