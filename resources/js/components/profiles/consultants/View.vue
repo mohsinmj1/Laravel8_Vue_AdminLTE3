@@ -469,7 +469,7 @@
                   <th>Town</th>
                   <th>Country</th>
                   <th>Last Login</th>
-                  <th>Acount Status</th>
+                  <th>Account Status</th>
                   <th>Created</th>
                   <th>Modified</th>
                 </tr>
@@ -501,6 +501,7 @@
                         <li><a href="#">Messages</a></li>
                         <li><a href="#">Workers </a></li>
                         <li><a href="#">Manager </a></li>
+                        <li><a href="#">Client </a></li>
                       </ul>
                     </div>
                   </td>

@@ -62,6 +62,7 @@
             <ul class="dropdown-menu dropdown-menu-right" role="menu">
               <li><a href="#">View Workers</a></li>
               <li><a href="#">View Consultants</a></li>
+              <li><a href="#">View Clients</a></li>
             </ul>
           </div>
         </div>
@@ -69,7 +70,7 @@
       <div class="bg-white pb-4">
         <div class="card-body">
           <ul class="nav nav-tabs" id="custom-content-below-tab" role="tablist">
-            <li class="nav-item" style="width: 50%; border-bottom: blue">
+            <li class="nav-item" style="width: 100%; border-bottom: blue">
               <a
                 class="nav-link active"
                 id="custom-content-below-timesheet-tab"
@@ -81,7 +82,7 @@
                 >Main</a
               >
             </li>
-            <li class="nav-item" style="width: 50%">
+            <!-- <li class="nav-item" style="width: 50%">
               <a
                 class="nav-link"
                 id="custom-content-below-advance-tab"
@@ -92,7 +93,7 @@
                 aria-selected="false"
                 >Advanced</a
               >
-            </li>
+            </li> -->
           </ul>
           <br />
           <div class="tab-content" id="custom-content-below-tabContent">
@@ -250,7 +251,7 @@
                 </div>
               </div>
             </div>
-
+  <button class="btn-success">Save </button>
             <!--TAB 02 -->
             <div
               class="tab-pane fade"

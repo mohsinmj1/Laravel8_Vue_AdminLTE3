@@ -25,7 +25,7 @@
                                             <label for="inputName" class="col-sm-2 control-label">Name</label>
 
                                             <div class="col-sm-12">
-                                            <input type="" v-model="form.name" class="form-control" id="inputName" placeholder="Name" :class="{ 'is-invalid': form.errors.has('name') }">
+                                            <input readonly type="" v-model="form.name" class="form-control" id="inputName" placeholder="Name" :class="{ 'is-invalid': form.errors.has('name') }">
                                             <has-error :form="form" field="name"></has-error>
                                             </div>
                                         </div>
@@ -33,7 +33,7 @@
                                             <label for="inputEmail" class="col-sm-2 control-label">Email</label>
 
                                             <div class="col-sm-12">
-                                                <input type="email" v-model="form.email" class="form-control" id="inputEmail" placeholder="Email"  :class="{ 'is-invalid': form.errors.has('email') }">
+                                                <input readonly type="email" v-model="form.email" class="form-control" id="inputEmail" placeholder="Email"  :class="{ 'is-invalid': form.errors.has('email') }">
                                                 <has-error :form="form" field="email"></has-error>
                                             </div>
                                         </div>
