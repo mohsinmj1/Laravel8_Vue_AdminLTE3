@@ -91,7 +91,7 @@
                     <th>Pay Currency</th>
                     <th>Client Acc Ref</th>
                     <th>Exported Date</th>
-                    <th>Total Cost</th>
+                    <th>Total Cost(GBP)</th>
                     <th>Workers Accounts Ref</th>
                     <th>Worker Gender</th>
                     <th>Charge</th>
@@ -143,16 +143,16 @@
                     <td></td>
                     <td></td>
                     <td></td>
+                    <td>41:00</td>
+                    <td>34:00</td>
+                    <td>0</td>  
+                    <td>0</td>
+                    <td>0</td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>1,176.00</td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -170,9 +170,45 @@
                     <td></td>
                     <td></td>
                     <td>No</td>
+                  </tr>
+                  <tr>
                     <td></td>
                     <td></td>
                     <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td style="font-weight:bold">41:00</td>
+                    <td style="font-weight:bold">34:00</td>
+                    <td style="font-weight:bold">0</td>
+                    <td style="font-weight:bold">0</td>
+                    <td style="font-weight:bold">0</td>
+                    <td style="font-weight:bold"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>                                      
+                    <td style="font-weight:bold">1,176.00</td>
                   </tr>
                 </tbody>
               </table>
@@ -212,9 +248,9 @@
                 Print Report
               </button>
               <button type="submit" class="btn btn-primary btn-sm">CSV</button>
-              <button type="submit" class="btn btn-primary btn-sm">
+              <!-- <button type="submit" class="btn btn-primary btn-sm">
                 Default CSV
-              </button>
+              </button> -->
               <button type="submit" class="btn btn-primary btn-sm">
                 Reset Column
               </button>

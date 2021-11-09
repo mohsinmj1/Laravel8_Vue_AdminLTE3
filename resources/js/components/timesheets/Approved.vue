@@ -101,6 +101,9 @@
                     <th>Invoiced Charge NET (GBP)</th>
                     <th>Charge</th>
                     <th>Charge Currency</th>
+                    <th>Invoice Charge Net</th>
+                    <th>Invoice Charge Gross</th>
+                    <th>Invoice Charge VAT</th>
                     <th>Charge GBP</th>
                     <th>Type</th>
                     <th>Approved By</th>
@@ -149,6 +152,38 @@
                     <td></td>
                     <td></td>
                     <td></td>
+                    <td>41:00</td>
+                    <td>34:00</td>
+                    <td>0</td>  
+                    <td>0</td>
+                    <td>0</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1,176.00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>No</td>
+                  </tr>
+                  <tr>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -176,13 +211,19 @@
                     <td></td>
                     <td></td>
                     <td></td>
+                    <td style="font-weight:bold">281:15</td>
+                    <td style="font-weight:bold">281:15</td>
+                    <td style="font-weight:bold">0</td>
+                    <td style="font-weight:bold">0</td>
+                    <td style="font-weight:bold">0</td>
+                    <td style="font-weight:bold"></td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td style="font-weight:bold"></td>
+                    <td style="font-weight:bold"></td>
+                    <td style="font-weight:bold"></td>     
+                    <td style="font-weight:bold">5,773.63</td>
                   </tr>
                 </tbody>
               </table>
@@ -221,9 +262,9 @@
                 Print Report
               </button>
               <button type="submit" class="btn btn-primary btn-sm">CSV</button>
-              <button type="submit" class="btn btn-primary btn-sm">
+              <!-- <button type="submit" class="btn btn-primary btn-sm">
                 Default CSV
-              </button>
+              </button> -->
               <button type="submit" class="btn btn-primary btn-sm">
                 Reset Column
               </button>
