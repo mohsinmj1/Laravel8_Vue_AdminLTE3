@@ -9,7 +9,7 @@
       <div class="bg-white mb-4">
         <div class="card-body">
           <ul class="nav nav-tabs" id="custom-content-below-tab" role="tablist">
-            <li class="nav-item" style="width: 12.5%">
+            <li class="nav-item" style="width: 16%">
               <a
                 class="nav-link active"
                 id="custom-content-below-filters-tab"
@@ -21,7 +21,7 @@
                 >Main Filters</a
               >
             </li>
-            <li class="nav-item" style="width: 12.5%; border-bottom: blue">
+            <li class="nav-item" style="width: 16%; border-bottom: blue">
               <a
                 class="nav-link"
                 id="custom-content-below-ranges-tab"
@@ -33,7 +33,7 @@
                 >Data Ranges</a
               >
             </li>
-            <li class="nav-item" style="width: 12.5%">
+            <li class="nav-item" style="width: 16%">
               <a
                 class="nav-link"
                 id="custom-content-below-ref-tab"
@@ -45,31 +45,7 @@
                 >ID/Ref Ranges</a
               >
             </li>
-            <li class="nav-item" style="width: 12.5%">
-              <a
-                class="nav-link"
-                id="custom-content-below-financial-tab"
-                data-toggle="pill"
-                href="#custom-content-below-financial"
-                role="tab"
-                aria-controls="custom-content-below-financial"
-                aria-selected="false"
-                >Financial</a
-              >
-            </li>
-            <li class="nav-item" style="width: 12.5%">
-              <a
-                class="nav-link"
-                id="custom-content-below-pay-tab"
-                data-toggle="pill"
-                href="#custom-content-below-pay"
-                role="tab"
-                aria-controls="custom-content-below-pay"
-                aria-selected="false"
-                >Pay Elements</a
-              >
-            </li>
-            <li class="nav-item" style="width: 12.5%">
+            <li class="nav-item" style="width: 16%">
               <a
                 class="nav-link"
                 id="custom-content-below-grouping-tab"
@@ -81,7 +57,7 @@
                 >Grouping</a
               >
             </li>
-            <li class="nav-item" style="width: 12.5%">
+            <li class="nav-item" style="width: 16%">
               <a
                 class="nav-link"
                 id="custom-content-below-column-tab"
@@ -93,7 +69,7 @@
                 >Column</a
               >
             </li>
-            <li class="nav-item" style="width: 12.5%">
+            <li class="nav-item" style="width: 16%">
               <a
                 class="nav-link"
                 id="custom-content-below-saved-tab"
@@ -114,60 +90,6 @@
               role="tabpanel"
               aria-labelledby="custom-content-below-filters-tab"
             >
-              <div
-                class="panel panel-border panel-primary"
-                style="border-top: 3px solid #009ada"
-              >
-                <div class="panel-heading">
-                  <h3 class="panel-title">OPTIONS</h3>
-                </div>
-                <div class="row">
-                  <div class="col-sm-3">
-                    <div class="form-group input-group-sm">
-                      <label class="control-label" for="outputType"
-                        >Output By</label
-                      >
-                      <select
-                        name="outputType"
-                        id="outputType"
-                        class="form-control"
-                      >
-                        <option value="">Timesheet/Expense Item</option>
-                        <option value="">Timesheet/Expense Claim</option>
-                        <option value="">Shift</option>
-                        <option value="">Rate</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div
-                    class="custom-control custom-checkbox col-lg-2"
-                    style="padding-top: 30px"
-                  >
-                    <div class="input-group">
-                      <input
-                        type="checkbox"
-                        class="custom-control-input"
-                        id="customCheck1"
-                      />
-                      <label class="custom-control-label" for="customCheck1"
-                        >Include Reverted</label
-                      >
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="form-group input-group-sm">
-                      <label class="control-label" for=""
-                        >Show Invoiced Pay From</label
-                      >
-                      <select class="form-control">
-                        <option value="">Supplier Invoices</option>
-                        <option value="">Advice Notes</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <br />
               <div
                 class="panel panel-border panel-primary"
                 style="border-top: 3px solid #009ada"
@@ -2516,378 +2438,7 @@
               </div>
             </div>
             <!------third ref tab end -->
-            <div
-              class="tab-pane fade"
-              id="custom-content-below-financial"
-              role="tabpanel"
-              aria-labelledby="custom-content-below-financial-tab"
-            >
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <label class="control-label" for="placementItrisId"
-                      >Sales Sector</label
-                    >
-                    <select
-                      name="placementStatus"
-                      id="placementStatus"
-                      class="form-control input-sm null"
-                      onchange=""
-                    >
-                      <option value="Active">Choose</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <label class="control-label" for="jobTitle"
-                      >Purchase Sector</label
-                    >
-                    <select
-                      name="placementStatus"
-                      id="placementStatus"
-                      class="form-control input-sm null"
-                      onchange=""
-                    >
-                      <option value="Active">Choose</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <label for="client" class="d-block mb-1">Sales Branch </label>
-                  <div class="input-group">
-                    <select
-                      name="placementStatus"
-                      id="placementStatus"
-                      class="form-control input-sm null"
-                      onchange=""
-                    >
-                      <option value="Active">Choose</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <label for="client" class="d-block mb-1"
-                    >Purchase Branch
-                  </label>
-                  <div class="input-group">
-                    <select
-                      name="placementStatus"
-                      id="placementStatus"
-                      class="form-control input-sm null"
-                      onchange=""
-                    >
-                      <option value="Active">Choose</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
 
-              <div class="row">
-                <div class="col-sm-6">
-                  <label for="client" class="d-block mb-1"
-                    >Sales Location
-                  </label>
-                  <div class="input-group">
-                    <select
-                      name="placementStatus"
-                      id="placementStatus"
-                      class="form-control input-sm null"
-                      onchange=""
-                    >
-                      <option value="Active">Choose</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <label for="client" class="d-block mb-1"
-                    >Sales Location</label
-                  >
-                  <div class="input-group">
-                    <select
-                      name="placementStatus"
-                      id="placementStatus"
-                      class="form-control input-sm null"
-                      onchange=""
-                    >
-                      <option value="Active">Choose</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <label for="client" class="d-block mb-1"
-                    >Sales Division
-                  </label>
-                  <div class="input-group">
-                    <select
-                      name="placementStatus"
-                      id="placementStatus"
-                      class="form-control input-sm null"
-                      onchange=""
-                    >
-                      <option value="Active">Choose</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <label for="client" class="d-block mb-1"
-                    >Purchase Division</label
-                  >
-                  <div class="input-group">
-                    <select
-                      name="placementStatus"
-                      id="placementStatus"
-                      class="form-control input-sm null"
-                      onchange=""
-                    >
-                      <option value="Active">Choose</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <label for="client" class="d-block mb-1"
-                    >Sales Department
-                  </label>
-                  <div class="input-group">
-                    <select
-                      name="placementStatus"
-                      id="placementStatus"
-                      class="form-control input-sm null"
-                      onchange=""
-                    >
-                      <option value="Active">Choose</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <label for="client" class="d-block mb-1">Purchase Dept</label>
-                  <div class="input-group">
-                    <select
-                      name="placementStatus"
-                      id="placementStatus"
-                      class="form-control input-sm null"
-                      onchange=""
-                    >
-                      <option value="Active">Choose</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <label for="client" class="d-block mb-1"
-                    >Sales Project
-                  </label>
-                  <div class="input-group">
-                    <select
-                      name="placementStatus"
-                      id="placementStatus"
-                      class="form-control input-sm null"
-                      onchange=""
-                    >
-                      <option value="Active">Choose</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <label for="client" class="d-block mb-1"
-                    >Purchase Project</label
-                  >
-                  <div class="input-group">
-                    <input
-                      type="text"
-                      class="form-control form-control-sm"
-                      placeholder="Search"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <label for="client" class="d-block mb-1"
-                    >Sales Cost Centre</label
-                  >
-                  <div class="input-group">
-                    <select
-                      name="placementStatus"
-                      id="placementStatus"
-                      class="form-control input-sm null"
-                      onchange=""
-                    >
-                      <option value="Active">Choose</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <label for="client" class="d-block mb-1"
-                    >Purchase Cost Centre</label
-                  >
-                  <div class="input-group">
-                    <select
-                      name="placementStatus"
-                      id="placementStatus"
-                      class="form-control input-sm null"
-                      onchange=""
-                    >
-                      <option value="Active">Choose</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <br />
-              <div class="col-sm-12">
-                <div class="" id="button-panel">
-                  <input
-                    type="button"
-                    class="btn btn-primary"
-                    name="splitComm"
-                    value="Split Commission"
-                    onclick="return submitSplitCommission();"
-                  />
-                  <input
-                    type="button"
-                    class="btn btn-primary"
-                    name="grossMar"
-                    value="Gross Margin"
-                    onclick="return submitGrossMargin();"
-                  />
-                  <input
-                    type="button"
-                    class="btn btn-primary"
-                    name="resetFilter"
-                    value="Reset All"
-                    onclick="javascript:resetAll();"
-                  />
-                </div>
-              </div>
-            </div>
-            <!----- financial tab end ----->
-            <div
-              class="tab-pane fade"
-              id="custom-content-below-pay"
-              role="tabpanel"
-              aria-labelledby="custom-content-below-pay-tab"
-            >
-              <div class="col-lg-10" style="padding-left: 0px">
-                <div class="col-lg-12 row">
-                  <div class="col-lg-5">
-                    <label for="client" class="d-block mb-1"
-                      >Job Description</label
-                    >
-                    <div class="input-group">
-                      <select
-                        name="altManager_from[]"
-                        id="altManager"
-                        class="form-control input-sm"
-                        size="8"
-                        multiple="multiple"
-                      ></select>
-                    </div>
-                  </div>
-                  <div class="col-lg-2" style="padding-top: 35px">
-                    <button
-                      type="button"
-                      id="altManager_rightAll"
-                      class="btn btn-block btn-primary btn-sm"
-                    >
-                      <i class="fa fa-forward" aria-hidden="true"></i>
-                    </button>
-                    <button
-                      type="button"
-                      id="altManager_rightSelected"
-                      class="btn btn-block btn-light btn-xs"
-                    >
-                      <i class="fa fa-angle-right" aria-hidden="true"></i>
-                    </button>
-                    <button
-                      type="button"
-                      id="altManager_leftSelected"
-                      class="btn btn-block btn-light btn-xs"
-                    >
-                      <i class="fa fa-angle-left" aria-hidden="true"></i>
-                    </button>
-                    <button
-                      type="button"
-                      id="altManager_leftAll"
-                      class="btn btn-block btn-primary btn-sm"
-                    >
-                      <i class="fa fa-backward" aria-hidden="true"></i>
-                    </button>
-                  </div>
-                  <div class="col-lg-5">
-                    <div class="row">
-                      <label for="client" class="d-block mb-1"
-                        >Job Description</label
-                      >
-                      <div class="input-group">
-                        <select
-                          name="altManager_from[]"
-                          id="altManager"
-                          class="form-control input-sm"
-                          size="8"
-                          multiple="multiple"
-                        ></select>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-5">
-                        <button
-                          type="button"
-                          style="padding: 0px; width: 70px"
-                          id="altManager_move_up"
-                          class="btn btn-block btn-light"
-                        >
-                          <i class="fa fa-arrow-up"></i>
-                        </button>
-                      </div>
-                      <div class="col-sm-5">
-                        <button
-                          type="button"
-                          style="padding: 0px; width: 70px"
-                          id="altManager_move_down"
-                          class="btn btn-block btn-light"
-                        >
-                          <i class="fa fa-arrow-down"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <br />
-              <div class="col-sm-12">
-                <div class="" id="button-panel">
-                  <input
-                    type="button"
-                    class="btn btn-primary"
-                    name="splitComm"
-                    value="Split Commission"
-                    onclick="return submitSplitCommission();"
-                  />
-                  <input
-                    type="button"
-                    class="btn btn-primary"
-                    name="grossMar"
-                    value="Gross Margin"
-                    onclick="return submitGrossMargin();"
-                  />
-                  <input
-                    type="button"
-                    class="btn btn-primary"
-                    name="resetFilter"
-                    value="Reset All"
-                    onclick="javascript:resetAll();"
-                  />
-                </div>
-              </div>
-            </div>
-            <!------fourth tab end -->
             <div
               class="tab-pane fade"
               id="custom-content-below-grouping"
