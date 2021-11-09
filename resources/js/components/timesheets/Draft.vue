@@ -137,16 +137,16 @@
                     <td>Draft</td>
                     <td></td>
                     <td></td>
+                    <td>58:00</td>
+                    <td>77:00</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>1,578.50</td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -167,6 +167,35 @@
                     <td></td>
                     <td></td>
                     <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td style="font-weight:bold">234:30</td>
+                    <td style="font-weight:bold">229:00</td>
+                    <td style="font-weight:bold">0</td>
+                    <td style="font-weight:bold">0</td>
+                    <td style="font-weight:bold">0</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td style="font-weight:bold">3,522.50</td>
                   </tr>
                 </tbody>
               </table>
@@ -208,9 +237,9 @@
                 Print Report
               </button>
               <button type="submit" class="btn btn-primary btn-sm">CSV</button>
-              <button type="submit" class="btn btn-primary btn-sm">
+              <!-- <button type="submit" class="btn btn-primary btn-sm">
                 Default CSV
-              </button>
+              </button> --> 
               <button type="submit" class="btn btn-primary btn-sm">
                 Reset Column
               </button>

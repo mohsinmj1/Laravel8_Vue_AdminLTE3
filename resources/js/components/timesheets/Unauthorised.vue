@@ -146,16 +146,16 @@
                     <td></td>
                     <td></td>
                     <td></td>
+                    <td>41:00</td>
+                    <td>34:00</td>
+                    <td>0</td>  
+                    <td>0</td>
+                    <td>0</td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>1,176.00</td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -176,6 +176,45 @@
                     <td></td>
                     <td></td>
                     <td>No</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td style="font-weight:bold">281:15</td>
+                    <td style="font-weight:bold">281:15</td>
+                    <td style="font-weight:bold">0</td>
+                    <td style="font-weight:bold">0</td>
+                    <td style="font-weight:bold">0</td>
+                    <td style="font-weight:bold"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td style="font-weight:bold">5,773.63</td>
                   </tr>
                 </tbody>
               </table>
