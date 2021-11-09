@@ -20,10 +20,8 @@ class CreatePlacementsTable extends Migration
             $table->string('job_title');
             $table->text('job_desc')->nullable();
             $table->string('client_site')->nullable();
-            $table->unsignedBigInteger('worker_id');
-            $table->unsignedBigInteger('client_id');
-            $table->unsignedBigInteger('manager_id');
-            $table->unsignedBigInteger('consultant_id');
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('role_id');
             $table->string('alternative_managers')->nullable();
             $table->string('internal_agency_comments')->nullable();
             $table->unsignedBigInteger('timesheet_duration_id')->nullable();
