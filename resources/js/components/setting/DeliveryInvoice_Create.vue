@@ -27,7 +27,6 @@
                       <div class="form-group">
                         <label class="control-label">Status</label>
                         <select class="form-control control-from-sm">
-                          <option>GBP</option>
                            <option>Disable</option>
                             <option>Enable</option>
                         </select>

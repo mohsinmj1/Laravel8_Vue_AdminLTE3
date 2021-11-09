@@ -90,7 +90,7 @@
                     </td>
                     <td>Welder 2 - Higher Rate</td>
                     <td>Wight Shipyard Company Limited</td>
-                    <td>GBP</td>
+                    <td>Disable</td>
                     <td>Higher Rates</td>
                     
                   </tr>
@@ -109,7 +109,7 @@
                     </td>
                     <td>Stores - Labourer</td>
                     <td>Wight Shipyard Company Limited</td>
-                    <td>GBP</td>
+                    <td>Disable</td>
                     <td>Standard Labour Rates</td>
                 
                   </tr>
@@ -128,7 +128,7 @@
                     </td>
                     <td>iNTERIORS</td>
                     <td>Wight Shipyard Company Limited</td>
-                    <td>GBP</td>
+                    <td>Enable</td>
                     <td></td>
                 
                   </tr>
@@ -152,7 +152,7 @@
                     </td>
                     <td>Engineering</td>
                     <td>Wight Shipyard Company Limited</td>
-                    <td>GBP</td>
+                    <td>Enable</td>
                     <td></td>
                    
                   </tr>
@@ -171,7 +171,7 @@
                     </td>
                     <td>Job Rates - 05/10/18</td>
                     <td>Wight Shipyard Company Limited</td>
-                    <td>GBP</td>
+                    <td>Enable</td>
                     <td></td>
                 
                   </tr>
@@ -190,7 +190,7 @@
                     </td>
                     <td>Test</td>
                     <td>Wight Shipyard Company Limited</td>
-                    <td>GBP</td>
+                    <td>Enable</td>
                     <td>Test</td>
                 
                   </tr>
