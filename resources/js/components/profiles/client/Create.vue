@@ -322,23 +322,60 @@ label {
                                                     </div>  
                                                      <div class="col-lg-6">
                                                         <label for="client" class="d-block mb-1">Default Expense Template </label>
-                                                        <select class="form-control select2">   
-                                                                <option value="">Agency Default</option>
-                                                                <option value="495">Adjustment Invoice</option>
-                                                                <option value="494">Default</option>                                                            
+                                                          <select class="form-control select2">                                    
+                                                            <option value=""></option>
+                                                            <option value="weekly">weekly</option>
+                                                            <option value="weekly_tue-mon">weekly_tue-mon</option>
+                                                            <option value="weekly_wed-tue">weekly_wed-tue</option>
+                                                            <option value="weekly_thurs-wed">weekly_thurs-wed</option>
+                                                            <option value="weekly_fri-thurs">weekly_fri-thurs</option>
+                                                            <option value="weekly_sat-fri">weekly_sat-fri</option>
+                                                            <option value="weekly_sun-sat">weekly_sun-sat</option>
+                                                            <option value="two-weekly">two-weekly</option>
+                                                            <option value="four-weekly">four-weekly</option>
+                                                            <option value="monthly">monthly</option>
+                                                            <option value="half-monthly-16th">half-monthly-16th</option>
+                                                            <option value="monthly2nd">monthly2nd</option>
+                                                            <option value="monthly3rd">monthly3rd</option>
+                                                            <option value="monthly4th">monthly4th</option>
+                                                            <option value="monthly5th">monthly5th</option>
+                                                            <option value="monthly6th">monthly6th</option>
+                                                            <option value="monthly7th">monthly7th</option>
+                                                            <option value="monthly8th">monthly8th</option>
+                                                            <option value="monthly9th">monthly9th</option>
+                                                            <option value="monthly10th">monthly10th</option>
+                                                            <option value="monthly11th">monthly11th</option>
+                                                            <option value="monthly12th">monthly12th</option>
+                                                            <option value="monthly13th">monthly13th</option>
+                                                            <option value="monthly14th">monthly14th</option>
+                                                            <option value="monthly15th">monthly15th</option>
+                                                            <option value="monthly16th">monthly16th</option>
+                                                            <option value="monthly17th">monthly17th</option>
+                                                            <option value="monthly18th">monthly18th</option>
+                                                            <option value="monthly19th">monthly19th</option>
+                                                            <option value="monthly20th">monthly20th</option>
+                                                            <option value="monthly21st">monthly21st</option>
+                                                            <option value="monthly22th">monthly22th</option>
+                                                            <option value="monthly23th">monthly23th</option>
+                                                            <option value="monthly24th">monthly24th</option>
+                                                            <option value="monthly25th">monthly25th</option>
+                                                            <option value="monthly26th">monthly26th</option>
+                                                            <option value="monthly27th">monthly27th</option>
+                                                            <option value="monthly28th">monthly28th</option>
                                                         </select>
                                                     </div>                                       
                                                 </div>    
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Default Timesheet Approval Route</label>
-                                                        <select class="form-control select2">                                    
-                                                            <option value="">Agency Default</option>
+                                                        <select class="form-control select2">  
+                                                            <option value="">Select Manager</option>                                  
+                                                            <option value="2377">Agency Default</option>
                                                             <option value="2372">Agency Consultant Approval</option>
                                                             <option value="2376">Auto Approval Route</option>
                                                             <option value="2368">Client Manager Approval</option>
                                                             <option value="2467">SMS Ltd</option>
-                                                            <option value="2377">Select Manager</option>
+                                                            
                                                             <option value="2454">Wights Approval (Katie)</option>
                                                         </select>
                                                     </div>                                                                                          
@@ -346,13 +383,14 @@ label {
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Default Chargeable Expense Approval Route</label>
-                                                        <select class="form-control select2">                                    
-                                                           <option value="">Agency Default</option>
+                                                        <select class="form-control select2">  
+                                                            <option value="">Select Manager</option>                                  
+                                                           <option value="2377">Agency Default</option>
                                                             <option value="2372">Agency Consultant Approval</option>
                                                             <option value="2376">Auto Approval Route</option>
                                                             <option value="2368">Client Manager Approval</option>
                                                             <option value="2467">SMS Ltd</option>
-                                                            <option value="2377">Select Manager</option>
+                                                          
                                                             <option value="2454">Wights Approval (Katie)</option>
                                                         </select>
                                                     </div>                                                                                          
@@ -360,13 +398,13 @@ label {
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <label for="client" class="d-block mb-1">Default Non Chargeable Expense Approval Route</label>
-                                                        <select class="form-control select2">                                    
-                                                            <option value="">Agency Default</option>
+                                                        <select class="form-control select2">    
+                                                          <option value="">Select Manager</option>                                
+                                                            <option value="2377">Agency Default</option>
                                                             <option value="2372">Agency Consultant Approval</option>
                                                             <option value="2376">Auto Approval Route</option>
                                                             <option value="2368">Client Manager Approval</option>
-                                                            <option value="2467">SMS Ltd</option>
-                                                            <option value="2377">Select Manager</option>
+                                                            <option value="2467">SMS Ltd</option>                                                            
                                                             <option value="2454">Wights Approval (Katie)</option>
                                                         </select>
                                                     </div>                                                                                          
@@ -792,49 +830,7 @@ label {
                                                         </div>
                                                     </div>                                                     
                                                 </div>
-                                                <div class="row">
-                                                    <div class="p-2 pl-4">
-                                                        <div class="timesheet_create_tit">
-                                                            <h2 class="pb-2" style="font-size:12px">                                                                
-                                                                Payment Terms
-                                                            </h2>
-                                                        </div>
-                                                    </div>                                                                                                
-                                                </div>                                               
-                                                <div class="row">
-                                                    <div class="col-lg-4">
-                                                        <label for="client" class="d-block mb-1">Days </label>
-                                                        <div class="input-group">
-                                                            <input type="text" value="30" class="form-control form-control-sm">                                                           
-                                                        </div>
-                                                    </div>  
-                                                    <div class="col-lg-6">
-                                                        <label for="client" class="d-block mb-1">Type</label>
-                                                        <select class="form-control select2" style="width:100%">     
-                                                            <option value="As Per Agreed Terms and Conditions">As Per Agreed Terms and Conditions</option>
-                                                            <option value="Days From Invoice Date" selected="selected">Days From Invoice Date</option>
-                                                            <option value="Working Days From Invoice Date">Working Days From Invoice Date</option>
-                                                            <option value="Days from Month End">Days from Month End</option>
-                                                            <option value="Days from End of Next Month">Days from End of Next Month</option>
-                                                            <option value="Days from End of Month After Next">Days from End of Month After Next</option>
-                                                            <option value="Days from Sheet End Date">Days from Sheet End Date</option>
-                                                        </select>
-                                                    </div>                                       
-                                                </div>    
-                                                <div class="row">                                                    
-                                                    <div class="col-lg-12">
-                                                        <label for="client" class="d-block mb-1">Template </label>
-                                                        <select class="form-control select2" style="width:100%">     
-                                                            <option value="462655">Default Charge Terms</option>
-                                                        </select>
-                                                    </div>                                       
-                                                </div>     
-                                                 <div class="row">                                                    
-                                                    <div class="col-lg-12">
-                                                        <label for="client" class="d-block mb-1">Additional Text To Include on Invoice </label>
-                                                        <textarea name="termsExtraText" id="termsExtraText" class="form-control" rows="10" style="line-height: 1; font-size: 12px; margin: 0; padding: 0;" onkeyup=""></textarea>
-                                                    </div>                                       
-                                                </div>                                                                                                           
+                                                                                                                                                         
                                             </div>
                                         </div>
                                     </div>
@@ -1035,45 +1031,15 @@ label {
                                 </div>
                               </div>
                             </div>
-                            <div class="card card-primary card-outline card-tabs">
-                              <div class="row">
-                                <div class="col-lg-12">
-                                  <div class="p-2 pl-4">
-                                    <div class="timesheet_create_tit">
-                                      <h2 class="pb-2">TAGS</h2>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-lg-12">
-                                        <table class="table table-borderless">
-                                          <thead>
-                                            <tr>
-                                              <th scope="col">Category</th>
-                                              <th scope="col">Value</th>
-                                              <th scope="col">Remove</th>
-                                            </tr>
-                                          </thead>
-                                          <tbody>
-                                            <tr>
-                                              <td>Mark</td>
-                                              <td>Otto</td>
-                                              <td>@mdo</td>
-                                            </tr>
-                                          </tbody>
-                                        </table>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-12">
+                           
+                            <!-- <div class="col-lg-12">
                               <button type="button" class="btn btn-primary">
                                 Add Tag
                               </button>
-                            </div>
+                            </div> -->
                           </div>
                           <div class="col-lg-6">
-                            <div class="card card-primary card-outline card-tabs">
+                            <!-- <div class="card card-primary card-outline card-tabs">
                               <div class="row">
                                 <div class="col-lg-12">
                                   <div class="p-2 pl-4">
@@ -1677,7 +1643,7 @@ label {
                                   </div>
                                 </div>
                               </div>
-                            </div>
+                            </div> -->
                             <div class="card card-primary card-outline card-tabs">
                               <div class="row">
                                 <div class="col-lg-12">
@@ -1726,7 +1692,7 @@ label {
                                           >
                                         </div>
                                       </div>
-                                      <div class="col-lg-12">
+                                      <!-- <div class="col-lg-12">
                                         <div class="custom-control custom-checkbox">
                                           <input
                                             type="checkbox"
@@ -1739,8 +1705,8 @@ label {
                                             >Include paper timesheets on invoices</label
                                           >
                                         </div>
-                                      </div>
-                                      <div class="col-lg-12">
+                                      </div> -->
+                                      <!-- <div class="col-lg-12">
                                         <div class="custom-control custom-checkbox">
                                           <input
                                             type="checkbox"
@@ -1753,8 +1719,8 @@ label {
                                             >Include paper expenses on invoices</label
                                           >
                                         </div>
-                                      </div>
-                                      <div class="col-lg-12">
+                                      </div> -->
+                                      <!-- <div class="col-lg-12">
                                         <div class="custom-control custom-checkbox">
                                           <input
                                             type="checkbox"
@@ -1768,133 +1734,13 @@ label {
                                             invoices</label
                                           >
                                         </div>
-                                      </div>
+                                      </div> -->
                                     </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                            <div class="card card-primary card-outline card-tabs">
-                              <div class="row">
-                                <div class="col-lg-12">
-                                  <div class="p-2 pl-4">
-                                    <div class="timesheet_create_tit">
-                                      <h2 class="pb-2">Automatic Adjustments</h2>
-                                    </div>
-                                    <div class="row">
-                                      <div class="panel-body">
-                                        <p>
-                                            You can automatically apply adjustments to this
-                                            Client's invoices.
-                                            Adjustments can be a fixed amount or a percentage
-                                            of the invoice value. The adjustment can apply per timesheet,
-                                            per invoice or per worker.
-                                        </p>
-                                        <div class="row">
-                                          <div class="col-sm-6">
-                                            <div class="form-group">
-                                              <label class="control-label" for="null">Adjust By <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Choose whether to adjust the invoice by a fixed amount or a percentage."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
-                                                <select name="invoiceAdjustmentSettings.adjustBy" id="invoiceAdjustmentSettings.adjustBy" class="form-control input-sm null" onchange="">
-                                                <option value="0">Fixed Amount</option>
-                                                <option value="1">Percentage</option>
-                                                </select>
-                                            </div>
-                                          </div>
-
-                                          <div class="col-sm-6">
-                                            <div class="form-group">
-                                              <label class="control-label" for="null">Adjust Per <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Choose whether to adjust the invoice per invoice or per timesheet."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
-                                              <select name="invoiceAdjustmentSettings.adjustPer" id="invoiceAdjustmentSettings.adjustPer" class="form-control input-sm null" onchange="">
-                                                <option value="2">Per Invoice</option>
-                                                <option value="1">Per Timesheet</option>
-                                                <option value="0">Per Worker</option>
-                                              </select>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="row">
-                                          <div class="col-sm-12">
-                                            <div class="form-group"><label class="control-label" for="null">Addition / Deduction <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Choose whether to add or deduct the calculated amount."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
-                                              <select name="invoiceAdjustmentSettings.adjustType" id="invoiceAdjustmentSettings.adjustType" class="form-control input-sm null" onchange="">
-                                              <option value="0">Addition</option>
-                                              <option value="1">Deduction</option>
-                                              </select>
-                                            </div>
-                                          </div>
-                                          <div class="col-sm-6">
-                                            <div class="form-group"> 
-                                              <label class="control-label" for="invoiceAdjustmentSettings.amount">Amount <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Enter an amount to adjust invoices by."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
-                                              <input type="text" label="Amount" format="2" name="invoiceAdjustmentSettings.amount" value="" tooltip="Enter an amount to adjust invoices by." id="invoiceAdjustmentSettings.amount" class="form-control input-sm">
-                                            </div>
-                                          </div>                                              
-                                          <div class="col-sm-12">
-                                            <div class="form-group"><label class="control-label" for="null">Tax Code Override <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="If not set, the taxcode on the invoice will be used."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
-                                              <select name="invoiceAdjustmentSettings.vatCodeId" id="invoiceAdjustmentSettings.vatCodeId" class="form-control input-sm null" onchange="">
-                                              <option value="">Choose</option>
-                                              <option value="768">None (T0)</option>
-                                              <option value="767">Standard (T1)</option>
-                                              </select>
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        <div class="row">
-                                          <div class="col-sm-6">
-                                            <div class="form-group"> 
-                                              <label class="control-label" for="invoiceAdjustmentSettings.minimum">Minimum <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Enter a minimum amount to adjust invoices by."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
-                                                <input type="text" label="Minimum" grid="6" name="invoiceAdjustmentSettings.minimum" value="" tooltip="Enter a minimum amount to adjust invoices by." id="invoiceAdjustmentSettings.minimum" class="form-control input-sm">
-                                            </div>
-                                          </div>
-                                            
-
-                                          <div class="col-sm-6">
-                                            <div class="form-group"> 
-                                              <label class="control-label" for="invoiceAdjustmentSettings.maximum">Maximum <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Enter a maximum amount to adjust invoices by."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
-                                                <input type="text" label="Maximum" grid="6" name="invoiceAdjustmentSettings.maximum" value="" tooltip="Enter a maximum amount to adjust invoices by." id="invoiceAdjustmentSettings.maximum" class="form-control input-sm">
-                                            </div>
-                                          </div>                                            
-                                        </div>
-
-                                        <div class="row">
-                                          <div class="col-sm-12">
-                                            <div class="form-group"> 
-                                              <label class="control-label" for="invoiceAdjustmentSettings.description">Invoice Line Description <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="The description to show on the the invoice line. If not set, the agency default is used."><span class="badge badge-primary badge-tooltip"><small>?</small></span></a></label>
-                                                <input type="text" label="Invoice Line Description" format="1" name="invoiceAdjustmentSettings.description" value="" tooltip="The description to show on the the invoice line. If not set, the agency default is used." id="invoiceAdjustmentSettings.description" class="form-control input-sm">
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                              <div class="form-group" style="margin-bottom:0 !important;">                                            
-                                                  <label for="" class="control-label" id="_label">Applicable From</label>                                            
-                                                    <div class="input-group">
-                                                      <input style="min-width:80px;" type="text" value="" class="bsDP form-control input-sm " placeholder="dd/MM/yyyy" id="null_X" name="invoiceAdjustmentSettings.applicableFrom_X" data-date-start-date="" data-date-end-date="">
-                                                      <input id="" name="invoiceAdjustmentSettings.applicableFrom" value="" type="hidden">
-                                                      <span id="null_icon" class="bsDP-icon input-group-addon bg-primary b-0 text-white"><i class="ion-calendar"></i></span>                                                
-                                                    </div><!-- input-group -->
-                                              </div>
-                                            </div>
-
-
-
-                                            <div class="col-sm-6">
-                                              <div class="form-group" style="margin-bottom:0 !important;">                                            
-                                                <label for="" class="control-label" id="_label">Applicable To</label>                                            
-                                                  <div class="input-group">
-                                                    <input style="min-width:80px;" type="text" value="" class="bsDP form-control input-sm " placeholder="dd/MM/yyyy" id="null_X" name="invoiceAdjustmentSettings.applicableTo_X" data-date-start-date="" data-date-end-date="">
-                                                    <input id="" name="invoiceAdjustmentSettings.applicableTo" value="" type="hidden">
-                                                    <span id="null_icon" class="bsDP-icon input-group-addon bg-primary b-0 text-white"><i class="ion-calendar"></i></span>
-                                                  </div><!-- input-group -->
-                                              </div>
-                                            </div> 
-                                        </div>
-                                      </div>
-                                    </div>                                   
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+                           
                             <div class="card card-primary card-outline card-tabs">
                               <div class="panel panel-border panel-primary">
                                 <div class="panel-heading">
