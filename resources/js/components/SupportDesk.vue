@@ -49,7 +49,7 @@
                 <div class="col-lg-12">
                     <div class="card card-primary">
                         <div class="card-header">
-                            <h3 class="card-title">TMS</h3>
+                            <h3 class="card-title" style="color: white">Support Desk</h3>
                         </div>
                          <div class="card-header" style="background-color: white">
             <div class="row">
@@ -105,22 +105,22 @@
                                 <tbody>
                                     <tr>
                                         <td style="text-align: center;">
-                                            <strong>1</strong>
+                                            1
                                         </td>
                                         <td style="text-align: center;">
-                                            <strong>high</strong>
+                                            high
                                         </td>
                                         <td style="text-align: center;">
-                                            <strong>John</strong>
+                                            John
                                         </td>
                                         <td style="text-align: center;">
-                                            <strong>Smith</strong>
+                                            Smith
                                         </td>
                                         <td style="text-align: center;">
-                                            <strong>25633</strong>
+                                            25633
                                         </td>
                                         <td style="text-align: center;">
-                                            <strong>john@gmail.com</strong>
+                                            john@gmail.com
                                         </td>
                                     </tr>
                                 </tbody>

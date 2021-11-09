@@ -258,7 +258,49 @@ export default [
     {
         path: "/faq",
         component: require("./components/Faq.vue").default
+    },   {
+        path: "/ticket",
+        component: require("./components/Ticket.vue").default
     },
-
+    {
+        path: "/configuration/deliveryInvoice",
+        component: require("./components/setting/DeliveryInvoice.vue").default
+    },
+    {
+        path: "/configuration/taxrate",
+        component: require("./components/setting/Taxrate.vue").default
+    },
+    {
+        path: "/configuration/InvoicePeriod",
+        component: require("./components/setting/ManageInvoice.vue").default
+    },
+    {
+        path: "/configuration/InvoiceType",
+        component: require("./components/setting/InvoiceType.vue").default
+    },
+    {
+        path: "/configuration/payroll",
+        component: require("./components/setting/Payroll.vue").default
+    },
+    {
+        path: "/configuration/delivery/create",
+        component: require("./components/setting/DeliveryInvoice_Create.vue").default
+    },
+    {
+        path: "/configuration/manageinvoicecreate",
+        component: require("./components/setting/ManageInvoice_Create.vue").default
+    },
+    {
+        path: "/configuration/invoicetypecreate",
+        component: require("./components/setting/InvoiceType_Create.vue").default
+    },
+    {
+        path: "/configuration/payrollcreate",
+        component: require("./components/setting/Payroll_Create.vue").default
+    },
+    {
+        path: "/configuration/taxcreate",
+        component: require("./components/setting/Taxrate_Create.vue").default
+    },
     { path: "*", component: require("./components/NotFound.vue").default }
 ];

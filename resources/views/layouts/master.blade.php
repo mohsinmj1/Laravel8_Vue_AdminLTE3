@@ -56,7 +56,7 @@
 	                                            	<li><a href="/supportDesk" class="waves-effect">Support Desk</a>
 	                                            	</li>
                                                     
-	                                            	<li><a href="#"  class="waves-effect">Create Ticket</a>
+	                                            	<li><a href="ticket"  class="waves-effect">Create Ticket</a>
 	                                            	</li>
 	                                            
                                                 
