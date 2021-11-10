@@ -1,11 +1,6 @@
 <style>
-body{margin-top:20px;
-background:#eee;
-}
 
-.padding {
-    padding: 10px;
-}
+
 
 /* GRID */
 .col {
