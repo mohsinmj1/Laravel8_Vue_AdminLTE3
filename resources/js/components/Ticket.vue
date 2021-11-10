@@ -1,4 +1,5 @@
 <style>
+	/*
 body{margin-top:20px;
 background:#eee;
 }
@@ -7,7 +8,7 @@ background:#eee;
     padding: 10px;
 }
 
-/* GRID */
+!* GRID *!
 .col {
     padding: 10px 20px;
 	margin-bottom: 10px;
@@ -160,9 +161,10 @@ background:#eee;
 	border-bottom-width: 4px !important;
 	border-bottom-style: solid !important;
 }
-
+*/
 
 /* SUPPORT TICKET */
+	/*
 .support ul {
     list-style: none;
 	padding: 0px;
@@ -249,8 +251,9 @@ background:#eee;
 	border-top: 1px solid #ccc;
 }
 
-
+*/
 /* BACKGROUND COLORS */
+	/*
 .bg-red, .bg-yellow, .bg-aqua, .bg-blue, .bg-light-blue, .bg-green, .bg-navy, .bg-teal, .bg-olive, .bg-lime, .bg-orange, .bg-fuchsia, .bg-purple, .bg-maroon, bg-gray, bg-black, .bg-red a, .bg-yellow a, .bg-aqua a, .bg-blue a, .bg-light-blue a, .bg-green a, .bg-navy a, .bg-teal a, .bg-olive a, .bg-lime a, .bg-orange a, .bg-fuchsia a, .bg-purple a, .bg-maroon a, bg-gray a, .bg-black a {
     color: #f9f9f9 !important;
 }
@@ -306,7 +309,7 @@ background:#eee;
 	background-color: #222222 !important;
 }
 
-
+*/
 </style>
 
 

@@ -91,7 +91,7 @@ class CategoryController extends BaseController
     public function destroy($id)
     {
 
-        $cat = category::findOrFail($id);
+        $cat = Category::findOrFail($id);
         $cat->delete();
 
         return $this->sendResponse([$cat], 'Category has been Deleted');
