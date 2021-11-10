@@ -47,46 +47,50 @@
                           </div>
                           <div class="row">
                             <div class="col-lg-12">
-                           
-                                <a
-                                  class="list-group-item"
-                                  style="text-decoration: none"
-                                  href="/configuration/apprenticeshipLevy"
-                                  >Apprenticeship Levy</a
-                                >
-                        
-                          
-                                 <a
-                                  class="list-group-item"
-                                  style="text-decoration: none"
-                                  href="/configuration/deliveryInvoice"
-                                  >Manage types of delivery for invoice</a
-                                >
-                                 <a
-                                  class="list-group-item"
-                                  style="text-decoration: none"
-                                  href="/configuration/InvoicePeriod"
-                                  >Manage  invoice periods </a
-                                >
-                                <a
-                                  class="list-group-item"
-                                  style="text-decoration: none"
-                                  href="/configuration/taxrate"
-                                  > Manage tax rates </a
-                                >
-                                <a
-                                  class="list-group-item"
-                                  style="text-decoration: none"
-                                  href="/configuration/InvoiceType"
-                                  > Manage invoice types </a
-                                >
-                       
-                                 <a
-                                  class="list-group-item"
-                                  style="text-decoration: none"
-                                  href="/configuration/payroll"
-                                  > Manage payroll/pay frequencies </a
-                                >
+                              <a
+                                class="list-group-item"
+                                style="text-decoration: none"
+                                href="/configuration/apprenticeshipLevy"
+                                >Apprenticeship Levy</a
+                              >
+
+                              <a
+                                class="list-group-item"
+                                style="text-decoration: none"
+                                href="/configuration/deliveryInvoice"
+                                >Manage types of delivery for invoice</a
+                              >
+                              <a
+                                class="list-group-item"
+                                style="text-decoration: none"
+                                href="/configuration/InvoicePeriod"
+                                >Manage invoice periods
+                              </a>
+                              <a
+                                class="list-group-item"
+                                style="text-decoration: none"
+                                href="/configuration/taxrate"
+                              >
+                                Manage tax rates
+                              </a>
+                              <a
+                                class="list-group-item"
+                                style="text-decoration: none"
+                                href="/configuration/InvoiceType"
+                              >
+                                Manage invoice types
+                              </a>
+
+                              <a
+                                class="list-group-item"
+                                style="text-decoration: none"
+                                href="/configuration/payroll"
+                              >
+                                Manage payroll/pay frequencies
+                              </a>
+                              <router-link to="/product/category">
+                                <p>Expense Category</p>
+                              </router-link>
                             </div>
                           </div>
                         </div>
@@ -157,7 +161,7 @@
                                   href="/configuration/smsOptions"
                                   >SMS Settings</a
                                 >
-                                 
+
                                 <!--<a
                                   class="list-group-item"
                                   style="text-decoration: none"
