@@ -82,4 +82,18 @@ class CategoryController extends BaseController
 
         return $this->sendResponse($tag, 'Category Information has been updated');
     }
+        /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+
+        $cat = Category::findOrFail($id);
+        $cat->delete();
+
+        return $this->sendResponse([$cat], 'Category has been Deleted');
+    }
 }

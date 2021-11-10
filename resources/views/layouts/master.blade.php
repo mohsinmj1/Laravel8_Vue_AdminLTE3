@@ -18,7 +18,6 @@
             top: 0;
             right: 0px;
         }
-
     </style>
 </head>
 
@@ -26,8 +25,9 @@
     <div class="wrapper" id="app">
         <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
             <div class="container">
-                <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler order-1" type="button" data-toggle="collapse"
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse order-3" id="navbarCollapse">
@@ -44,28 +44,30 @@
                 <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
                     <!-- Messages Dropdown Menu -->
                     <li>
-	                        <ul class="nav navbar-nav hidden-xs" style="padding-top: 5px;padding-right: 15px;">
-	                            <li class="dropdown">
-	                                <a href="#" class="dropdown-toggle waves-effect" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-question" style="font-size: 13px"></i> Help<span class="caret"></span></a>
-	                                        <ul class="dropdown-menu">
-	                                            <li>
-	                                                    <a href="/faq"  class="waves-effect">FAQ </a>
-	                                                
-	                                            </li>
-	                                            
-	                                            	<li><a href="/supportDesk" class="waves-effect">Support Desk</a>
-	                                            	</li>
-                                                    
-	                                            	<li><a href="/ticket"  class="waves-effect">Create Ticket</a>
-	                                            	</li>
-	                                            
-                                                
-	                                        </ul>
-	                            </li>
-	                        </ul>
-	
-	                    </li>
-              
+                        <ul class="nav navbar-nav hidden-xs" style="padding-top: 5px;padding-right: 15px;">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle waves-effect" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false"><i class="fas fa-question"
+                                        style="font-size: 13px"></i> Help<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="/faq" class="waves-effect">FAQ </a>
+
+                                    </li>
+
+                                    <li><a href="/supportDesk" class="waves-effect">Support Desk</a>
+                                    </li>
+
+                                    <li><a href="/ticket" class="waves-effect">Create Ticket</a>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </li>
+
                     <!-- Notifications Dropdown Menu -->
                     <li class="nav-item dropdown">
                         <a class="nav-link" data-toggle="dropdown" href="#">
@@ -139,16 +141,16 @@
             <div class="content-header">
                 <div class="container-fluid">
                     {{-- <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0 text-dark"></h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Starter Page</li>
-            </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row --> --}}
+                        <div class="col-sm-6">
+                            <h1 class="m-0 text-dark"></h1>
+                        </div><!-- /.col -->
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active">Starter Page</li>
+                            </ol>
+                        </div><!-- /.col -->
+                    </div><!-- /.row --> --}}
                 </div><!-- /.container-fluid -->
             </div>
             <!-- /.content-header -->
@@ -176,11 +178,25 @@
     {{-- ./wrapper --}}
 
     @auth
-        <script>
-            window.user = @json(auth()->user())
-        </script>
+    <script>
+        window.user = @json(auth()->user())
+    </script>
     @endauth
     <script src="{{ mix('/js/app.js') }}"></script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/618a7a0c6bb0760a4941d1ac/1fk2epggj';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
 
 </body>
 
