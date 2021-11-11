@@ -37,8 +37,6 @@ class CreateAgencyTable extends Migration
             $table->string('ic_phone');
             $table->string('ic_mobile');
             $table->string('ic_address');
-            $table->string('ic_Country');
-            $table->string('ic_country_code');
             $table->string('ic_town');
             $table->string('ic_postcode');
             $table->timestamps();

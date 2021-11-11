@@ -13,8 +13,10 @@ class CreateWorkersTable extends Migration
      */
     public function up()
     {
-        Schema::create('workers', function (Blueprint $table) {
-            $table->id();
+        Schema::create('user_main', function (Blueprint $table) {
+            $table->integer('um_id');
+            $table->integer('user_id');
+            $table->string('title');
             $table->string('email');
             $table->string('fname');
             $table->string('lname');
@@ -22,17 +24,20 @@ class CreateWorkersTable extends Migration
             $table->string('mobile');
             $table->string('gender');
             $table->date('dob');
-            $table->date('date_joning');
-            $table->string('address');
+            $table->date('joning_date');
+            $table->string('address_one');
+            $table->string('address_two');
             $table->string('Country');
             $table->string('country_code');
             $table->string('town');
             $table->string('postcode');
-            $table->string('nin_no');
-            $table->string('tax_reference');
-            $table->integer('role_id');
-            $table->integer('agency_id');
-            $table->integer('manager_id');
+            $table->string('worker_type');
+            $table->string('payroll');
+            $table->string('engagement_type');
+            $table->string('default_currency');
+            $table->string('primary');
+            $table->string('accounts');
+            $table->string('team');
             $table->timestamps();
         });
     }
