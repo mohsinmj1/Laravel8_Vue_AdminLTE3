@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRateTemplatesTable extends Migration
+class CreateRatesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,21 @@ class CreateRateTemplatesTable extends Migration
      */
     public function up()
     {
-        Schema::create('rate_templates', function (Blueprint $table) {
+        Schema::create('rates', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('placement_id');
             $table->string('name');
             $table->string('pay');
+            $table->unsignedBigInteger('pay_currency_id');
             $table->string('charge');
-            $table->string('duration');
-            $table->integer('fields_id');
+            $table->unsignedBigInteger('charge_currency_id');
+            $table->string('frontend_ref');
+            $table->string('backend_ref');
+            $table->unsignedBigInteger('pay_element_id');
+            $table->unsignedBigInteger('time_pattern_id');
+            $table->unsignedBigInteger('time_period_id');
+            $table->bigInteger('duration');
+            $table->unsignedBigInteger('timesheet_fields_id');
+
             $table->boolean('show_comment_box')->default(false);
             $table->boolean('worker_can_select')->default(false);
             $table->timestamps();
@@ -34,6 +41,6 @@ class CreateRateTemplatesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('rate_templates');
+        Schema::dropIfExists('rates');
     }
 }
