@@ -106,7 +106,7 @@
                 role="tab"
                 aria-controls="custom-content-below-timesheet"
                 aria-selected="false"
-                >Employement Details</a
+                >Employment Details</a
               >
             </li>
             <li class="nav-item" style="width: 20%">
@@ -218,11 +218,9 @@
                           class="form-control form-control-sm"
                           onchange=""
                         >
-                       
                           <option value="D" selected="selected">
                             Limited Company
                           </option>
-                        
                         </select>
                       </div>
                     </div>
@@ -476,13 +474,9 @@
                             <div class="input-group">
                               <input
                                 style="min-width: 80px"
-                                type="text"
+                                type="date"
                                 value=""
-                                class="
-                                  bsDP
-                                  form-control form-control-sm
-                                  input-sm
-                                "
+                                class="bsDP form-control form-control-sm"
                                 placeholder="dd/MM/yyyy"
                                 id="workerDetails.dateOfBirth_X"
                                 name="workerDetails.dateOfBirth_X"
@@ -490,17 +484,9 @@
                                 data-date-end-date=""
                               />
 
-                              <input
-                                id="workerDetails.dateOfBirth"
-                                name="workerDetails.dateOfBirth"
-                                value=""
-                                type="hidden"
-                              />
-
                               <span
                                 id="workerDetails.dateOfBirth_icon"
                                 class="
-                                  bsDP-icon
                                   input-group-addon
                                   bg-primary
                                   b-0
@@ -527,7 +513,7 @@
                             <div class="input-group">
                               <input
                                 style="min-width: 80px"
-                                type="text"
+                                type="date"
                                 value=""
                                 class="
                                   bsDP
@@ -540,18 +526,9 @@
                                 data-date-start-date=""
                                 data-date-end-date=""
                               />
-
-                              <input
-                                id="workerDetails.dateOfJoining"
-                                name="workerDetails.dateOfJoining"
-                                value=""
-                                type="hidden"
-                              />
-
                               <span
                                 id="workerDetails.dateOfJoining_icon"
                                 class="
-                                  bsDP-icon
                                   input-group-addon
                                   bg-primary
                                   b-0

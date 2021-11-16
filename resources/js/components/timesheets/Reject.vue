@@ -63,7 +63,7 @@
                     <th>Ltd Company Name</th>
                     <th>Worker Invoice Period</th>
                     <th>Timesheet Start</th>
-                    <th>Paroll/Frequency</th>
+                    <th>Payroll/Frequency</th>
                     <th>Provider</th>
                     <th>Consultant</th>
                     <th>Description</th>
@@ -145,7 +145,7 @@
                     <td></td>
                     <td>41:00</td>
                     <td>34:00</td>
-                    <td>0</td>  
+                    <td>0</td>
                     <td>0</td>
                     <td>0</td>
                     <td></td>
@@ -199,16 +199,16 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td style="font-weight:bold">41:00</td>
-                    <td style="font-weight:bold">34:00</td>
-                    <td style="font-weight:bold">0</td>
-                    <td style="font-weight:bold">0</td>
-                    <td style="font-weight:bold">0</td>
-                    <td style="font-weight:bold"></td>
+                    <td style="font-weight: bold">41:00</td>
+                    <td style="font-weight: bold">34:00</td>
+                    <td style="font-weight: bold">0</td>
+                    <td style="font-weight: bold">0</td>
+                    <td style="font-weight: bold">0</td>
+                    <td style="font-weight: bold"></td>
                     <td></td>
                     <td></td>
-                    <td></td>                                      
-                    <td style="font-weight:bold">1,176.00</td>
+                    <td></td>
+                    <td style="font-weight: bold">1,176.00</td>
                   </tr>
                 </tbody>
               </table>

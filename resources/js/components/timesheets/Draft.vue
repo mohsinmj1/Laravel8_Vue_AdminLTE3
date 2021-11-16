@@ -69,7 +69,7 @@
                     <th>Ltd Company Name</th>
                     <th>Worker Invoice Period</th>
                     <th>Timesheet Start</th>
-                    <th>Paroll/Frequency</th>
+                    <th>Payroll/Frequency</th>
                     <th>Manager</th>
                     <th>Placement Start</th>
                     <th>Worker First Name</th>
@@ -186,16 +186,16 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td style="font-weight:bold">234:30</td>
-                    <td style="font-weight:bold">229:00</td>
-                    <td style="font-weight:bold">0</td>
-                    <td style="font-weight:bold">0</td>
-                    <td style="font-weight:bold">0</td>
+                    <td style="font-weight: bold">234:30</td>
+                    <td style="font-weight: bold">229:00</td>
+                    <td style="font-weight: bold">0</td>
+                    <td style="font-weight: bold">0</td>
+                    <td style="font-weight: bold">0</td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td style="font-weight:bold">3,522.50</td>
+                    <td style="font-weight: bold">3,522.50</td>
                   </tr>
                 </tbody>
               </table>
@@ -239,7 +239,7 @@
               <button type="submit" class="btn btn-primary btn-sm">CSV</button>
               <!-- <button type="submit" class="btn btn-primary btn-sm">
                 Default CSV
-              </button> --> 
+              </button> -->
               <button type="submit" class="btn btn-primary btn-sm">
                 Reset Column
               </button>
