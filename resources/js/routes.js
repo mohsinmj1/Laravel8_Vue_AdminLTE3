@@ -283,8 +283,11 @@ export default [
         component: require("./components/setting/Payroll.vue").default
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> parent of c1a29a3 (clear conflicts)
     {
         path: "/configuration/delivery/create",
         component: require("./components/setting/DeliveryInvoice_Create.vue").default
@@ -309,6 +312,9 @@ export default [
         path: "/settings/apprenticeship",
         component: require("./components/setting/Apprenticeship/ApprenticeshipLevy.vue").default 
     },
+<<<<<<< HEAD
+>>>>>>> parent of c1a29a3 (clear conflicts)
+=======
 >>>>>>> parent of c1a29a3 (clear conflicts)
     { path: "*", component: require("./components/NotFound.vue").default }
 ];
