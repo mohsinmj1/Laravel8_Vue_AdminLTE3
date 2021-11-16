@@ -100,6 +100,11 @@ export default [
         component: require("./components/rates/view.vue").default
     },
     {
+        path: "/setting/deliveryforinvoices",
+        component: require("./components/setting/DeliveryForInvoices.vue")
+            .default
+    },
+    {
         path: "/rates/create",
         component: require("./components/rates/Create.vue").default
     },
@@ -253,8 +258,7 @@ export default [
     {
         path: "/faq",
         component: require("./components/Faq.vue").default
-    },
-    {
+    },   {
         path: "/ticket",
         component: require("./components/Ticket.vue").default
     },
@@ -278,7 +282,6 @@ export default [
         path: "/configuration/payroll",
         component: require("./components/setting/Payroll.vue").default
     },
-<<<<<<< HEAD
     {
         path: "/configuration/delivery/create",
         component: require("./components/setting/DeliveryInvoice_Create.vue").default
@@ -303,8 +306,5 @@ export default [
         path: "/settings/apprenticeship",
         component: require("./components/setting/Apprenticeship/ApprenticeshipLevy.vue").default 
     },
-=======
-
->>>>>>> 6d882dfb624760346ebd7b16bbaaf254bc9c216a
     { path: "*", component: require("./components/NotFound.vue").default }
 ];
