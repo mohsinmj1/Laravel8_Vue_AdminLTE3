@@ -41,12 +41,17 @@
                   <div class="card card-primary card-outline card-tabs">
                     <div class="row">
                       <div class="col-lg-12">
+<<<<<<< HEAD
                         <div class="p-2 pl-4">
+=======
+                        <div class="p-2 pl-4" style="height: 328px">
+>>>>>>> parent of ea0252b (Apprenticeship Levy)
                           <div class="timesheet_create_tit">
                             <h2 class="pb-2">General</h2>
                           </div>
                           <div class="row">
                             <div class="col-lg-12">
+<<<<<<< HEAD
                               <router-link
                                 to="/configuration/apprenticeshipLevy"
                                 class="list-group-item"
@@ -93,6 +98,48 @@
                               >
                                 <p class="mb-0">Expense Category</p>
                               </router-link>
+=======
+                           
+                                <a
+                                  class="list-group-item"
+                                  style="text-decoration: none"
+                                  href="/configuration/apprenticeshipLevy"
+                                  >Apprenticeship Levy</a
+                                >
+                        
+                          
+                                 <a
+                                  class="list-group-item"
+                                  style="text-decoration: none"
+                                  href="/configuration/deliveryInvoice"
+                                  >Manage types of delivery for invoice</a
+                                >
+                                 <a
+                                  class="list-group-item"
+                                  style="text-decoration: none"
+                                  href="/configuration/InvoicePeriod"
+                                  >Manage  invoice periods </a
+                                >
+                                <a
+                                  class="list-group-item"
+                                  style="text-decoration: none"
+                                  href="/configuration/taxrate"
+                                  > Manage tax rates </a
+                                >
+                                <a
+                                  class="list-group-item"
+                                  style="text-decoration: none"
+                                  href="/configuration/InvoiceType"
+                                  > Manage invoice types </a
+                                >
+                       
+                                 <a
+                                  class="list-group-item"
+                                  style="text-decoration: none"
+                                  href="/configuration/payroll"
+                                  > Manage payroll/pay frequencies </a
+                                >
+>>>>>>> parent of ea0252b (Apprenticeship Levy)
                             </div>
                           </div>
                         </div>

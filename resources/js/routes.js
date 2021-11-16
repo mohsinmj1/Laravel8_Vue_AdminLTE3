@@ -308,6 +308,7 @@ export default [
         path: "/configuration/taxcreate",
         component: require("./components/setting/Taxrate_Create.vue").default
     },
+<<<<<<< HEAD
     {
         path: "/settings/apprenticeship",
         component: require("./components/setting/Apprenticeship/ApprenticeshipLevy.vue").default 
@@ -316,5 +317,7 @@ export default [
 >>>>>>> parent of c1a29a3 (clear conflicts)
 =======
 >>>>>>> parent of c1a29a3 (clear conflicts)
+=======
+>>>>>>> parent of ea0252b (Apprenticeship Levy)
     { path: "*", component: require("./components/NotFound.vue").default }
 ];
