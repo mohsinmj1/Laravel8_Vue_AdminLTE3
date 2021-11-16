@@ -20,6 +20,7 @@ class CreateCurrenciesTable extends Migration
             $table->longText('description')->nullable();
             $table->bigInteger('order')->nullable();
             $table->string('status')->nullable()->default('Enable');
+            
             $table->timestamps();
         });
     }
