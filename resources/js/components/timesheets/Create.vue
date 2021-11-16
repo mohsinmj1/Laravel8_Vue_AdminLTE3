@@ -24,7 +24,7 @@
                   <label for="placement" class="d-block mb-1"
                     >Timesheet Period</label
                   >
-                  <input type="text" class="w-100" disabled />
+                  <input type="date" class="w-100" />
                 </div>
               </div>
             </div>
@@ -767,7 +767,7 @@ export default {
         total_break = $("#getBreakTime").val();
         clearInterval(myTimer);
       } else if (event == 2) {
-           var dtb = new Date();
+        var dtb = new Date();
         var Btime =
           dtb.getHours() + ":" + dtb.getMinutes() + ":" + dtb.getSeconds();
         total_time = $("#workTime").val();
@@ -776,9 +776,8 @@ export default {
         $("#modalContinueBtn").show();
         $("#modalBreakBtn").hide();
         $("#getBreakTimeInBreakModal").val(Btime);
-       // $("#getBreakTimeInBreakModal").val(Btime);
+        // $("#getBreakTimeInBreakModal").val(Btime);
       } else if (event == 3) {
-        
         clearInterval(myTime);
         clearInterval(myTimer);
         $("#modalBreakBtn").hide();

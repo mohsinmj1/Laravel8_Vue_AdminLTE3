@@ -19,9 +19,6 @@
   color: white;
   background-color: #227dc7;
 }
-.btn-size {
-  font-size: 9px !important;
-}
 </style>
 
 <template>
@@ -290,12 +287,12 @@
                       </div>
                       <div class="row" style="margin-top: 20px">
                         <div style="margin-left: 15px">
-                          <button class="btn btn-success" type="submit">
+                          <button class="btn btn-primary btn-sm" type="submit">
                             Search
                           </button>
                         </div>
                         <div style="margin-left: 10px">
-                          <button class="btn btn-primary" type="submit">
+                          <button class="btn btn-primary btn-sm" type="submit">
                             Reset All
                           </button>
                         </div>
@@ -344,10 +341,7 @@
                             <div class="input-group-append">
                               <div class="dropdown">
                                 <button
-                                  class="
-                                    btn btn-primary btn-size
-                                    dropdown-toggle
-                                  "
+                                  class="btn btn-primary btn-sm dropdown-toggle"
                                   type="button"
                                   id="dropdownMenuButton"
                                   data-toggle="dropdown"
@@ -406,10 +400,7 @@
                             <div class="input-group-append">
                               <div class="dropdown">
                                 <button
-                                  class="
-                                    btn btn-primary btn-size
-                                    dropdown-toggle
-                                  "
+                                  class="btn btn-primary btn-sm dropdown-toggle"
                                   type="button"
                                   id="dropdownMenuButton"
                                   data-toggle="dropdown"
@@ -470,10 +461,7 @@
                             <div class="input-group-append">
                               <div class="dropdown">
                                 <button
-                                  class="
-                                    btn btn-primary btn-size
-                                    dropdown-toggle
-                                  "
+                                  class="btn btn-primary btn-sm dropdown-toggle"
                                   type="button"
                                   id="dropdownMenuButton"
                                   data-toggle="dropdown"
@@ -532,10 +520,7 @@
                             <div class="input-group-append">
                               <div class="dropdown">
                                 <button
-                                  class="
-                                    btn btn-primary btn-size
-                                    dropdown-toggle
-                                  "
+                                  class="btn btn-primary btn-sm dropdown-toggle"
                                   type="button"
                                   id="dropdownMenuButton"
                                   data-toggle="dropdown"
@@ -574,12 +559,12 @@
                       </div>
                       <div class="row" style="margin-top: 20px">
                         <div style="margin-left: 15px">
-                          <button class="btn btn-success" type="submit">
+                          <button class="btn btn-primary btn-sm" type="submit">
                             Search
                           </button>
                         </div>
                         <div style="margin-left: 10px">
-                          <button class="btn btn-primary" type="submit">
+                          <button class="btn btn-primary btn-sm" type="submit">
                             Reset All
                           </button>
                         </div>
@@ -652,12 +637,12 @@
                       </div>
                       <div class="row" style="margin-top: 20px">
                         <div style="margin-left: 15px">
-                          <button class="btn btn-success" type="submit">
+                          <button class="btn btn-primary btn-sm" type="submit">
                             Search
                           </button>
                         </div>
                         <div style="margin-left: 10px">
-                          <button class="btn btn-primary" type="submit">
+                          <button class="btn btn-primary btn-sm" type="submit">
                             Reset All
                           </button>
                         </div>

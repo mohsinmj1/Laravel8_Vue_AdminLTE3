@@ -66,7 +66,7 @@
                 </div>
               </div>
               <div class="row m-0">
-                <form action="" method="post">
+                <form v-on:submit.prevent="onSubmit">
                   <table class="table table-responsive table-hover">
                     <thead>
                       <tr>

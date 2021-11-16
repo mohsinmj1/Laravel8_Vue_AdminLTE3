@@ -19,9 +19,6 @@
   color: white;
   background-color: #227dc7;
 }
-.btn-size {
-  font-size: 9px !important;
-}
 </style>
 
 <template>
@@ -243,10 +240,12 @@
               <br />
               <div class="row">
                 <div style="padding-right: 10px">
-                  <button class="btn btn-success" type="submit">Search</button>
+                  <button class="btn btn-primary btn-sm" type="submit">
+                    Search
+                  </button>
                 </div>
                 <div style="padding-right: 10px">
-                  <button class="btn btn-primary" type="submit">
+                  <button class="btn btn-primary btn-sm" type="submit">
                     Reset All
                   </button>
                 </div>
@@ -276,7 +275,7 @@
                     <div class="input-group-append">
                       <div class="dropdown">
                         <button
-                          class="btn btn-primary btn-size dropdown-toggle"
+                          class="btn btn-primary btn-sm dropdown-toggle"
                           type="button"
                           id="dropdownMenuButton"
                           data-toggle="dropdown"
@@ -317,7 +316,7 @@
                     <div class="input-group-append">
                       <div class="dropdown">
                         <button
-                          class="btn btn-primary btn-size dropdown-toggle"
+                          class="btn btn-primary btn-sm dropdown-toggle"
                           type="button"
                           id="dropdownMenuButton"
                           data-toggle="dropdown"
@@ -362,7 +361,7 @@
                     <div class="input-group-append">
                       <div class="dropdown">
                         <button
-                          class="btn btn-primary btn-size dropdown-toggle"
+                          class="btn btn-primary btn-sm dropdown-toggle"
                           type="button"
                           id="dropdownMenuButton"
                           data-toggle="dropdown"
@@ -405,7 +404,7 @@
                     <div class="input-group-append">
                       <div class="dropdown">
                         <button
-                          class="btn btn-primary btn-size dropdown-toggle"
+                          class="btn btn-primary btn-sm dropdown-toggle"
                           type="button"
                           id="dropdownMenuButton"
                           data-toggle="dropdown"
@@ -450,7 +449,7 @@
                     <div class="input-group-append">
                       <div class="dropdown">
                         <button
-                          class="btn btn-primary btn-size dropdown-toggle"
+                          class="btn btn-primary btn-sm dropdown-toggle"
                           type="button"
                           id="dropdownMenuButton"
                           data-toggle="dropdown"
@@ -493,7 +492,7 @@
                     <div class="input-group-append">
                       <div class="dropdown">
                         <button
-                          class="btn btn-primary btn-size dropdown-toggle"
+                          class="btn btn-primary btn-sm dropdown-toggle"
                           type="button"
                           id="dropdownMenuButton"
                           data-toggle="dropdown"
@@ -523,10 +522,12 @@
               <br />
               <div class="row">
                 <div style="padding-right: 10px">
-                  <button class="btn btn-success" type="submit">Search</button>
+                  <button class="btn btn-primary btn-sm" type="submit">
+                    Search
+                  </button>
                 </div>
                 <div style="padding-right: 10px">
-                  <button class="btn btn-primary" type="submit">
+                  <button class="btn btn-primary btn-sm" type="submit">
                     Reset All
                   </button>
                 </div>
@@ -732,10 +733,12 @@
               </div>
               <div class="row">
                 <div style="padding-right: 10px">
-                  <button class="btn btn-success" type="submit">Search</button>
+                  <button class="btn btn-primary btn-sm" type="submit">
+                    Search
+                  </button>
                 </div>
                 <div style="padding-right: 10px">
-                  <button class="btn btn-primary" type="submit">
+                  <button class="btn btn-primary btn-sm" type="submit">
                     Reset All
                   </button>
                 </div>
@@ -870,10 +873,12 @@
               <br />
               <div class="row">
                 <div style="padding-right: 10px">
-                  <button class="btn btn-success" type="submit">Search</button>
+                  <button class="btn btn-primary btn-sm" type="submit">
+                    Search
+                  </button>
                 </div>
                 <div style="padding-right: 10px">
-                  <button class="btn btn-primary" type="submit">
+                  <button class="btn btn-primary btn-sm" type="submit">
                     Reset All
                   </button>
                 </div>
@@ -935,7 +940,15 @@
                 <div class="col-lg-6">
                   <label for="client" class="d-block mb-1">Worker Type</label>
                   <select class="form-control select2" style="width: 100%">
-                    <option value="LTD">Ltd</option>
+                    <option value="ALL">All</option>
+                    <option value="PAYE">PAYE</option>
+                    <option value="PAID_AS_PAYE">All Paid PAYE</option>
+                    <option value="NON_PAYE">Non-PAYE</option>
+                    <option value="LTD">Ltd Company</option>
+                    <option value="EXTERNAL_CONTRACTOR">
+                      External Contractor
+                    </option>
+                    <option value="NON_PAID_AS_PAYE">All Not Paid PAYE</option>
                   </select>
                 </div>
               </div>
@@ -950,6 +963,7 @@
                   >
                   <select class="form-control select2" style="width: 100%">
                     <option value="1">All</option>
+                    <option value="2">Weekly Paid</option>
                     <option value="3">Weekly (Limited)</option>
                     <option value="4">Monthly (Limited)</option>
                   </select>
@@ -958,10 +972,12 @@
               <br />
               <div class="row">
                 <div style="padding-right: 10px">
-                  <button class="btn btn-success" type="submit">Search</button>
+                  <button class="btn btn-primary btn-sm" type="submit">
+                    Search
+                  </button>
                 </div>
                 <div style="padding-right: 10px">
-                  <button class="btn btn-primary" type="submit">
+                  <button class="btn btn-primary btn-sm" type="submit">
                     Reset All
                   </button>
                 </div>
@@ -1024,6 +1040,7 @@
                     <th>Gross</th>
                     <th>Currency</th>
                     <th>Net (GBP)</th>
+                    <th>Exchange Rate</th>
                     <th>Primary Recipient</th>
                     <th>Additional Recipients</th>
                     <th>Sent</th>
@@ -1039,18 +1056,13 @@
                 <tbody>
                   <tr v-for="product in products.data" :key="product.id">
                     <td><input type="checkbox" name="" id="" /></td>
-                    <td>
-                      <a href="">{{ product.id }}</a>
-                    </td>
                     <td>{{ product.id }}</td>
                     <td>{{ product.id }}</td>
                     <td>{{ product.id }}</td>
-                    <td>
-                      <a href="#">{{ product.id }}</a>
-                    </td>
-                    <td>
-                      <a href="#">{{ product.id }}</a>
-                    </td>
+                    <td>{{ product.id }}</td>
+                    <td>{{ product.id }}</td>
+                    <td>{{ product.id }}</td>
+                    <td>{{ product.id }}</td>
                     <td>{{ product.id }}</td>
                     <td>{{ product.id }}</td>
                     <td>{{ product.id }}</td>
@@ -1058,7 +1070,7 @@
                     <td>{{ product.id }}</td>
                     <td>{{ product.name }}</td>
                     <td>{{ product.category.name }}</td>
-                    <td><i class="fa fa-edit"></i></td>
+                    <td>{{ product.description | truncate(20, "...") }}</td>
                     <td>{{ product.name }}</td>
                     <td>{{ product.category.name }}</td>
                     <td>{{ product.name }}</td>
