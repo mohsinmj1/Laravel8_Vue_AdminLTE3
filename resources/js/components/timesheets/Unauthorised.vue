@@ -64,7 +64,7 @@
                     <th>Ltd Company Name</th>
                     <th>Worker Invoice Period</th>
                     <th>Timesheet Start</th>
-                    <th>Payroll/Frequency</th>
+                    <th>Paroll/Frequency</th>
                     <th>Provider</th>
                     <th>Consultant</th>
                     <th>Description</th>
@@ -148,7 +148,7 @@
                     <td></td>
                     <td>41:00</td>
                     <td>34:00</td>
-                    <td>0</td>
+                    <td>0</td>  
                     <td>0</td>
                     <td>0</td>
                     <td></td>
@@ -205,16 +205,16 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td style="font-weight: bold">281:15</td>
-                    <td style="font-weight: bold">281:15</td>
-                    <td style="font-weight: bold">0</td>
-                    <td style="font-weight: bold">0</td>
-                    <td style="font-weight: bold">0</td>
-                    <td style="font-weight: bold"></td>
+                    <td style="font-weight:bold">281:15</td>
+                    <td style="font-weight:bold">281:15</td>
+                    <td style="font-weight:bold">0</td>
+                    <td style="font-weight:bold">0</td>
+                    <td style="font-weight:bold">0</td>
+                    <td style="font-weight:bold"></td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td style="font-weight: bold">5,773.63</td>
+                    <td style="font-weight:bold">5,773.63</td>
                   </tr>
                 </tbody>
               </table>
@@ -261,6 +261,7 @@
               </button>
             </div>
           </div>
+          
         </div>
       </div>
 
