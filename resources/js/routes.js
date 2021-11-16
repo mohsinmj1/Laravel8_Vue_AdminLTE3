@@ -282,12 +282,7 @@ export default [
         path: "/configuration/payroll",
         component: require("./components/setting/Payroll.vue").default
     },
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-=======
->>>>>>> parent of c1a29a3 (clear conflicts)
     {
         path: "/configuration/delivery/create",
         component: require("./components/setting/DeliveryInvoice_Create.vue").default
@@ -308,16 +303,11 @@ export default [
         path: "/configuration/taxcreate",
         component: require("./components/setting/Taxrate_Create.vue").default
     },
-<<<<<<< HEAD
+
     {
         path: "/settings/apprenticeship",
         component: require("./components/setting/Apprenticeship/ApprenticeshipLevy.vue").default 
     },
-<<<<<<< HEAD
->>>>>>> parent of c1a29a3 (clear conflicts)
-=======
->>>>>>> parent of c1a29a3 (clear conflicts)
-=======
->>>>>>> parent of ea0252b (Apprenticeship Levy)
+
     { path: "*", component: require("./components/NotFound.vue").default }
 ];
