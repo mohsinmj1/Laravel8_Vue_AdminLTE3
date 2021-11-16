@@ -278,6 +278,33 @@ export default [
         path: "/configuration/payroll",
         component: require("./components/setting/Payroll.vue").default
     },
+<<<<<<< HEAD
+    {
+        path: "/configuration/delivery/create",
+        component: require("./components/setting/DeliveryInvoice_Create.vue").default
+    },
+    {
+        path: "/configuration/manageinvoicecreate",
+        component: require("./components/setting/ManageInvoice_Create.vue").default
+    },
+    {
+        path: "/configuration/invoicetypecreate",
+        component: require("./components/setting/InvoiceType_Create.vue").default
+    },
+    {
+        path: "/configuration/payrollcreate",
+        component: require("./components/setting/Payroll_Create.vue").default
+    },
+    {
+        path: "/configuration/taxcreate",
+        component: require("./components/setting/Taxrate_Create.vue").default
+    },
+    {
+        path: "/settings/apprenticeship",
+        component: require("./components/setting/Apprenticeship/ApprenticeshipLevy.vue").default 
+    },
+=======
 
+>>>>>>> 6d882dfb624760346ebd7b16bbaaf254bc9c216a
     { path: "*", component: require("./components/NotFound.vue").default }
 ];
