@@ -303,7 +303,7 @@ export default [
         component: require("./components/setting/Taxrate_Create.vue").default
     },
     {
-        path: "/settings/apprenticeship",
+        path: "/configuration/apprenticeship",
         component: require("./components/setting/apprenticeship/ApprenticeshipLevy.vue").default
     },
     { path: "*", component: require("./components/NotFound.vue").default }
