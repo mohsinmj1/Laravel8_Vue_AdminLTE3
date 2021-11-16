@@ -41,58 +41,51 @@
                   <div class="card card-primary card-outline card-tabs">
                     <div class="row">
                       <div class="col-lg-12">
-                        <div class="p-2 pl-4">
+                        <div class="p-2 pl-4" style="height: 350px">
                           <div class="timesheet_create_tit">
                             <h2 class="pb-2">General</h2>
                           </div>
                           <div class="row">
-                            <div class="col-lg-12">
-                              <router-link
-                                to="/configuration/apprenticeshipLevy"
-                                class="list-group-item"
-                              >
-                                <p class="mb-0">Apprenticeship Levy</p>
-                              </router-link>
-                              <router-link
-                                to="/configuration/deliveryInvoice"
-                                class="list-group-item"
-                              >
-                                <p class="mb-0">
-                                  Manage Types of Delivery for Invoice
-                                </p>
-                              </router-link>
-                              <router-link
-                                to="/configuration/InvoicePeriod"
-                                class="list-group-item"
-                              >
-                                <p class="mb-0">Manage Invoice Periods</p>
-                              </router-link>
-                              <router-link
-                                to="/configuration/taxrate"
-                                class="list-group-item"
-                              >
-                                <p class="mb-0">Manage Tax Rates</p>
-                              </router-link>
-                              <router-link
-                                to="/configuration/InvoiceType"
-                                class="list-group-item"
-                              >
-                                <p class="mb-0">Manage Invoice Types</p>
-                              </router-link>
-                              <router-link
-                                to="/configuration/payroll"
-                                class="list-group-item"
-                              >
-                                <p class="mb-0">
-                                  Manage payroll/pay Frequencies
-                                </p>
-                              </router-link>
-                              <router-link
-                                to="/product/category"
-                                class="list-group-item"
-                              >
-                                <p class="mb-0">Expense Category</p>
-                              </router-link>
+                            <div class="col-lg-12">                                 
+                                <a
+                                  class="list-group-item"
+                                  style="text-decoration: none"                                 
+                                  ><router-link to="/settings/apprenticeship">
+                                  <p>Apprenticeship Levy</p>
+                                </router-link>  </a>                         
+                        
+                          
+                                 <a
+                                  class="list-group-item"
+                                  style="text-decoration: none"
+                                  href="/configuration/deliveryInvoice"
+                                  >Manage types of delivery for invoice</a
+                                >
+                                 <a
+                                  class="list-group-item"
+                                  style="text-decoration: none"
+                                  href="/configuration/InvoicePeriod"
+                                  >Manage  invoice periods </a
+                                >
+                                <a
+                                  class="list-group-item"
+                                  style="text-decoration: none"
+                                  href="/configuration/taxrate"
+                                  > Manage tax rates </a
+                                >
+                                <a
+                                  class="list-group-item"
+                                  style="text-decoration: none"
+                                  href="/configuration/InvoiceType"
+                                  > Manage invoice types </a
+                                >
+                       
+                                 <a
+                                  class="list-group-item"
+                                  style="text-decoration: none"
+                                  href="/configuration/payroll"
+                                  > Manage payroll/pay frequencies </a
+                                >
                             </div>
                           </div>
                         </div>
@@ -148,22 +141,22 @@
                                 <a
                                   class="list-group-item"
                                   style="text-decoration: none"
-                                  href="#"
+                                  href="/configuration/email"
                                   >Email Server Settings</a
                                 >
                                 <a
                                   class="list-group-item"
                                   style="text-decoration: none"
-                                  href="#"
+                                  href="/menuGenerator/fieldSettings"
                                   >Entity Field Permissions</a
                                 >
                                 <a
                                   class="list-group-item"
                                   style="text-decoration: none"
-                                  href="#"
+                                  href="/configuration/smsOptions"
                                   >SMS Settings</a
                                 >
-
+                                 
                                 <!--<a
                                   class="list-group-item"
                                   style="text-decoration: none"
@@ -179,7 +172,7 @@
                                 <a
                                   class="list-group-item"
                                   style="text-decoration: none"
-                                  href="#"
+                                  href="/configuration/splitCommissionOptions"
                                   >Split Commission Settings</a
                                 >
                               </div>

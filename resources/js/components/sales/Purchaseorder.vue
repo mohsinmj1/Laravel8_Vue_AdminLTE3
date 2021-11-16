@@ -19,6 +19,9 @@
   color: white;
   background-color: #227dc7;
 }
+.btn-size {
+  font-size: 9px !important;
+}
 </style>
 
 <template>
@@ -29,7 +32,7 @@
           <h2>Purchase Orders</h2>
         </div>
         <div class="col-lg-6" style="text-align: right">
-          <button class="btn btn-primary btn-sm">
+          <button class="btn btn-primary">
             <router-link
               style="color: white; text-decoration: none"
               to="/sales/createpurchaseorder"
@@ -61,11 +64,11 @@
                           <div class="row">
                             <div class="col-md-6">
                               <h2 class="pb-2">
-                                <i class="fa fa-search"></i> Search Options
+                                <i class="fa fa-search"></i> Search Options 
                               </h2>
                             </div>
-                            <div class="col-md-6 text-right">
-                              <i class="fa fa-plus-square"></i>
+                            <div class="col-md-6 text-right">                             
+                              <i class="fa fa-plus-square"></i>                             
                             </div>
                           </div>
                         </div>
@@ -153,7 +156,7 @@
                                     <div class="dropdown">
                                       <button
                                         class="
-                                          btn btn-primary btn-sm
+                                          btn btn-primary btn-size
                                           dropdown-toggle
                                         "
                                         type="button"
@@ -239,7 +242,7 @@
                                     <div class="dropdown">
                                       <button
                                         class="
-                                          btn btn-primary btn-sm
+                                          btn btn-primary btn-size
                                           dropdown-toggle
                                         "
                                         type="button"
@@ -315,7 +318,7 @@
                                     <div class="dropdown">
                                       <button
                                         class="
-                                          btn btn-primary btn-sm
+                                          btn btn-primary btn-size
                                           dropdown-toggle
                                         "
                                         type="button"
@@ -393,7 +396,7 @@
                                     <div class="dropdown">
                                       <button
                                         class="
-                                          btn btn-primary btn-sm
+                                          btn btn-primary btn-size
                                           dropdown-toggle
                                         "
                                         type="button"
@@ -439,18 +442,12 @@
                               <div
                                 style="padding-right: 10px; padding-left: 12px"
                               >
-                                <button
-                                  class="btn btn-primary btn-sm"
-                                  type="submit"
-                                >
+                                <button class="btn btn-success" type="submit">
                                   Search
                                 </button>
                               </div>
                               <div style="padding-right: 10px">
-                                <button
-                                  class="btn btn-primary btn-sm"
-                                  type="submit"
-                                >
+                                <button class="btn btn-primary" type="submit">
                                   Reset All
                                 </button>
                               </div>

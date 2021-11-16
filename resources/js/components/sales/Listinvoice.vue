@@ -19,6 +19,9 @@
   color: white;
   background-color: #227dc7;
 }
+.btn-size {
+  font-size: 9px !important;
+}
 </style>
 
 <template>
@@ -179,7 +182,7 @@
               <div class="row">
                 <div class="col-lg-3">
                   <label for="client" class="d-block mb-1">Sent Status</label>
-                  <select class="form-control form-control-sm">
+                  <select class="form-control select2">
                     <option value="1">All</option>
                     <option value="2">Yes</option>
                     <option value="3">No</option>
@@ -187,7 +190,7 @@
                 </div>
                 <div class="col-lg-3">
                   <label for="client" class="d-block mb-1">Paid Status</label>
-                  <select class="form-control form-control-sm">
+                  <select class="form-control select2">
                     <option value="1">All</option>
                     <option value="2">Yes</option>
                     <option value="3">No</option>
@@ -197,7 +200,7 @@
                   <label for="client" class="d-block mb-1"
                     >Exported Status</label
                   >
-                  <select class="form-control form-control-sm">
+                  <select class="form-control select2">
                     <option value="1">All</option>
                     <option value="2">Yes</option>
                     <option value="3">No</option>
@@ -207,7 +210,7 @@
                   <label for="client" class="d-block mb-1"
                     >Credited Status</label
                   >
-                  <select class="form-control form-control-sm">
+                  <select class="form-control select2">
                     <option value="1">All</option>
                     <option value="2">Yes</option>
                     <option value="3">No</option>
@@ -220,7 +223,7 @@
                   <label for="client" class="d-block mb-1"
                     >Credited Status</label
                   >
-                  <select class="form-control form-control-sm">
+                  <select class="form-control select2">
                     <option value="1">All</option>
                     <option value="2">Yes</option>
                     <option value="3">No</option>
@@ -230,7 +233,7 @@
                   <label for="client" class="d-block mb-1"
                     >Supplier Invoice Status</label
                   >
-                  <select class="form-control form-control-sm">
+                  <select class="form-control select2">
                     <option value="1">All</option>
                     <option value="2">Yes</option>
                     <option value="3">No</option>
@@ -242,7 +245,7 @@
                   <label for="client" class="d-block mb-1"
                     >Item PO Status</label
                   >
-                  <select class="form-control form-control-sm">
+                  <select class="form-control select2">
                     <option value="1">All</option>
                     <option value="2">Not Required / Already Provided</option>
                     <option value="3">PO Required</option>
@@ -252,12 +255,10 @@
               <br />
               <div class="row">
                 <div style="padding-right: 10px">
-                  <button class="btn btn-primary btn-sm" type="submit">
-                    Search
-                  </button>
+                  <button class="btn btn-success" type="submit">Search</button>
                 </div>
                 <div style="padding-right: 10px">
-                  <button class="btn btn-primary btn-sm" type="submit">
+                  <button class="btn btn-primary" type="submit">
                     Reset All
                   </button>
                 </div>
@@ -287,7 +288,7 @@
                     <div class="input-group-append">
                       <div class="dropdown">
                         <button
-                          class="btn btn-primary btn-sm dropdown-toggle"
+                          class="btn btn-primary btn-size dropdown-toggle"
                           type="button"
                           id="dropdownMenuButton"
                           data-toggle="dropdown"
@@ -302,8 +303,10 @@
                         >
                           <a class="dropdown-item" href="#">Today</a>
                           <a class="dropdown-item" href="#">Yesterday</a>
+                          <hr />
                           <a class="dropdown-item" href="#">Last 7 Days</a>
                           <a class="dropdown-item" href="#">Last 30 Days</a>
+                          <hr />
                           <a class="dropdown-item" href="#">This Week</a>
                           <a class="dropdown-item" href="#">Last Week</a>
                         </div>
@@ -326,7 +329,7 @@
                     <div class="input-group-append">
                       <div class="dropdown">
                         <button
-                          class="btn btn-primary btn-sm dropdown-toggle"
+                          class="btn btn-primary btn-size dropdown-toggle"
                           type="button"
                           id="dropdownMenuButton"
                           data-toggle="dropdown"
@@ -371,7 +374,7 @@
                     <div class="input-group-append">
                       <div class="dropdown">
                         <button
-                          class="btn btn-primary btn-sm dropdown-toggle"
+                          class="btn btn-primary btn-size dropdown-toggle"
                           type="button"
                           id="dropdownMenuButton"
                           data-toggle="dropdown"
@@ -414,7 +417,7 @@
                     <div class="input-group-append">
                       <div class="dropdown">
                         <button
-                          class="btn btn-primary btn-sm dropdown-toggle"
+                          class="btn btn-primary btn-size dropdown-toggle"
                           type="button"
                           id="dropdownMenuButton"
                           data-toggle="dropdown"
@@ -459,7 +462,7 @@
                     <div class="input-group-append">
                       <div class="dropdown">
                         <button
-                          class="btn btn-primary btn-sm dropdown-toggle"
+                          class="btn btn-primary btn-size dropdown-toggle"
                           type="button"
                           id="dropdownMenuButton"
                           data-toggle="dropdown"
@@ -502,7 +505,7 @@
                     <div class="input-group-append">
                       <div class="dropdown">
                         <button
-                          class="btn btn-primary btn-sm dropdown-toggle"
+                          class="btn btn-primary btn-size dropdown-toggle"
                           type="button"
                           id="dropdownMenuButton"
                           data-toggle="dropdown"
@@ -532,12 +535,10 @@
               <br />
               <div class="row">
                 <div style="padding-right: 10px">
-                  <button class="btn btn-primary btn-sm" type="submit">
-                    Search
-                  </button>
+                  <button class="btn btn-success" type="submit">Search</button>
                 </div>
                 <div style="padding-right: 10px">
-                  <button class="btn btn-primary btn-sm" type="submit">
+                  <button class="btn btn-primary" type="submit">
                     Reset All
                   </button>
                 </div>
@@ -743,12 +744,10 @@
               </div>
               <div class="row">
                 <div style="padding-right: 10px">
-                  <button class="btn btn-primary btn-sm" type="submit">
-                    Search
-                  </button>
+                  <button class="btn btn-success" type="submit">Search</button>
                 </div>
                 <div style="padding-right: 10px">
-                  <button class="btn btn-primary btn-sm" type="submit">
+                  <button class="btn btn-primary" type="submit">
                     Reset All
                   </button>
                 </div>
@@ -763,10 +762,7 @@
               <div class="row">
                 <div class="col-lg-6">
                   <label for="client" class="d-block mb-1">Sales Sector</label>
-                  <select
-                    class="form-control form-control-sm"
-                    style="width: 100%"
-                  >
+                  <select class="form-control select2" style="width: 100%">
                     <option value="1">Choose</option>
                   </select>
                 </div>
@@ -774,10 +770,7 @@
                   <label for="client" class="d-block mb-1"
                     >Purchase Sector</label
                   >
-                  <select
-                    class="form-control form-control-sm"
-                    style="width: 100%"
-                  >
+                  <select class="form-control select2" style="width: 100%">
                     <option value="1">Choose</option>
                   </select>
                 </div>
@@ -785,10 +778,7 @@
               <div class="row">
                 <div class="col-lg-6">
                   <label for="client" class="d-block mb-1">Sales Branch</label>
-                  <select
-                    class="form-control form-control-sm"
-                    style="width: 100%"
-                  >
+                  <select class="form-control select2" style="width: 100%">
                     <option value="1">Choose</option>
                   </select>
                 </div>
@@ -796,10 +786,7 @@
                   <label for="client" class="d-block mb-1"
                     >Purchase Branch</label
                   >
-                  <select
-                    class="form-control form-control-sm"
-                    style="width: 100%"
-                  >
+                  <select class="form-control select2" style="width: 100%">
                     <option value="1">Choose</option>
                   </select>
                 </div>
@@ -809,10 +796,7 @@
                   <label for="client" class="d-block mb-1"
                     >Sales Location</label
                   >
-                  <select
-                    class="form-control form-control-sm"
-                    style="width: 100%"
-                  >
+                  <select class="form-control select2" style="width: 100%">
                     <option value="1">Choose</option>
                   </select>
                 </div>
@@ -820,10 +804,7 @@
                   <label for="client" class="d-block mb-1"
                     >Purchase Location</label
                   >
-                  <select
-                    class="form-control form-control-sm"
-                    style="width: 100%"
-                  >
+                  <select class="form-control select2" style="width: 100%">
                     <option value="1">Choose</option>
                   </select>
                 </div>
@@ -833,10 +814,7 @@
                   <label for="client" class="d-block mb-1"
                     >Sales Division</label
                   >
-                  <select
-                    class="form-control form-control-sm"
-                    style="width: 100%"
-                  >
+                  <select class="form-control select2" style="width: 100%">
                     <option value="1">Choose</option>
                   </select>
                 </div>
@@ -844,10 +822,7 @@
                   <label for="client" class="d-block mb-1"
                     >Purchase Division</label
                   >
-                  <select
-                    class="form-control form-control-sm"
-                    style="width: 100%"
-                  >
+                  <select class="form-control select2" style="width: 100%">
                     <option value="1">Choose</option>
                   </select>
                 </div>
@@ -857,10 +832,7 @@
                   <label for="client" class="d-block mb-1"
                     >Sales Department</label
                   >
-                  <select
-                    class="form-control form-control-sm"
-                    style="width: 100%"
-                  >
+                  <select class="form-control select2" style="width: 100%">
                     <option value="1">Choose</option>
                   </select>
                 </div>
@@ -868,10 +840,7 @@
                   <label for="client" class="d-block mb-1"
                     >Purchase Department</label
                   >
-                  <select
-                    class="form-control form-control-sm"
-                    style="width: 100%"
-                  >
+                  <select class="form-control select2" style="width: 100%">
                     <option value="1">Choose</option>
                   </select>
                 </div>
@@ -879,10 +848,7 @@
               <div class="row">
                 <div class="col-lg-6">
                   <label for="client" class="d-block mb-1">Sales Project</label>
-                  <select
-                    class="form-control form-control-sm"
-                    style="width: 100%"
-                  >
+                  <select class="form-control select2" style="width: 100%">
                     <option value="1">Choose</option>
                   </select>
                 </div>
@@ -890,10 +856,7 @@
                   <label for="client" class="d-block mb-1"
                     >Purchase Project</label
                   >
-                  <select
-                    class="form-control form-control-sm"
-                    style="width: 100%"
-                  >
+                  <select class="form-control select2" style="width: 100%">
                     <option value="1">Choose</option>
                   </select>
                 </div>
@@ -903,10 +866,7 @@
                   <label for="client" class="d-block mb-1"
                     >Sales Cost Centre</label
                   >
-                  <select
-                    class="form-control form-control-sm"
-                    style="width: 100%"
-                  >
+                  <select class="form-control select2" style="width: 100%">
                     <option value="1">Choose</option>
                   </select>
                 </div>
@@ -914,10 +874,7 @@
                   <label for="client" class="d-block mb-1"
                     >Purchase Cost Centre</label
                   >
-                  <select
-                    class="form-control form-control-sm"
-                    style="width: 100%"
-                  >
+                  <select class="form-control select2" style="width: 100%">
                     <option value="1">Choose</option>
                   </select>
                 </div>
@@ -925,12 +882,10 @@
               <br />
               <div class="row">
                 <div style="padding-right: 10px">
-                  <button class="btn btn-primary btn-sm" type="submit">
-                    Search
-                  </button>
+                  <button class="btn btn-success" type="submit">Search</button>
                 </div>
                 <div style="padding-right: 10px">
-                  <button class="btn btn-primary btn-sm" type="submit">
+                  <button class="btn btn-primary" type="submit">
                     Reset All
                   </button>
                 </div>
@@ -951,8 +906,7 @@
                       id="customCheck1"
                     />
                     <label class="custom-control-label" for="customCheck1"
-                      >Only show items that have a Self Bill Invoice/Advice
-                      Note</label
+                      >Only show items that have a Self Bill Invoice</label
                     >
                   </div>
                 </div>
@@ -963,10 +917,7 @@
                   <label for="client" class="d-block mb-1"
                     >Timesheet Frequency</label
                   >
-                  <select
-                    class="form-control form-control-sm"
-                    style="width: 100%"
-                  >
+                  <select class="form-control select2" style="width: 100%">
                     <option value="ALL">All</option>
                     <option value="WEEKLY">weekly</option>
                     <option value="WEEKLY_TUE_MON">weekly_tue-mon</option>
@@ -1010,10 +961,7 @@
                 </div>
                 <div class="col-lg-6">
                   <label for="client" class="d-block mb-1">Worker Type</label>
-                  <select
-                    class="form-control form-control-sm"
-                    style="width: 100%"
-                  >
+                  <select class="form-control select2" style="width: 100%">
                     <option value="LTD">Ltd</option>
                   </select>
                 </div>
@@ -1027,12 +975,8 @@
                   <label for="client" class="d-block mb-1"
                     >Payroll/Payment Frequency</label
                   >
-                  <select
-                    class="form-control form-control-sm"
-                    style="width: 100%"
-                  >
+                  <select class="form-control select2" style="width: 100%">
                     <option value="1">All</option>
-                    <option value="2">Weekly Paid</option>
                     <option value="3">Weekly (Limited)</option>
                     <option value="4">Monthly (Limited)</option>
                   </select>
@@ -1041,12 +985,10 @@
               <br />
               <div class="row">
                 <div style="padding-right: 10px">
-                  <button class="btn btn-primary btn-sm" type="submit">
-                    Search
-                  </button>
+                  <button class="btn btn-success" type="submit">Search</button>
                 </div>
                 <div style="padding-right: 10px">
-                  <button class="btn btn-primary btn-sm" type="submit">
+                  <button class="btn btn-primary" type="submit">
                     Reset All
                   </button>
                 </div>
@@ -1111,7 +1053,6 @@
                     <th>Gross</th>
                     <th>Currency</th>
                     <th>Net (GBP)</th>
-                    <th>Exchange Rate</th>
                     <th>Primary Recipient</th>
                     <th>Additional Recipients</th>
                     <th>Sent</th>
@@ -1127,13 +1068,16 @@
                 <tbody>
                   <tr v-for="product in products.data" :key="product.id">
                     <td><input type="checkbox" name="" id="" /></td>
+                    <td>
+                      <a href="#">{{ product.id }}</a>
+                    </td>
                     <td>{{ product.id }}</td>
                     <td>{{ product.id }}</td>
                     <td>{{ product.id }}</td>
                     <td>{{ product.id }}</td>
-                    <td>{{ product.id }}</td>
-                    <td>{{ product.id }}</td>
-                    <td>{{ product.id }}</td>
+                    <td>
+                      <a href="#">{{ product.id }}</a>
+                    </td>
                     <td>{{ product.id }}</td>
                     <td>{{ product.id }}</td>
                     <td>{{ product.id }}</td>
@@ -1143,7 +1087,7 @@
                     <td>{{ product.category.name }}</td>
                     <td>{{ product.description | truncate(20, "...") }}</td>
                     <td>{{ product.name }}</td>
-                    <td>{{ product.category.name }}</td>
+                    <td><i class="fa fa-edit"></i></td>
                     <td>{{ product.name }}</td>
                     <td>{{ product.description | truncate(20, "...") }}</td>
                     <td>{{ product.name }}</td>
