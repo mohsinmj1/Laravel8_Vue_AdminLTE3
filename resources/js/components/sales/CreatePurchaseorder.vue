@@ -19,9 +19,6 @@
   color: white;
   background-color: #227dc7;
 }
-.btn-size {
-  font-size: 9px !important;
-}
 #file-upload-btn {
   position: absolute;
   font-size: 50px;
@@ -162,7 +159,7 @@
                                     <div class="dropdown">
                                       <button
                                         class="
-                                          btn btn-primary btn-size
+                                          btn btn-primary btn-sm
                                           dropdown-toggle
                                         "
                                         type="button"
@@ -251,7 +248,7 @@
                                     <div class="dropdown">
                                       <button
                                         class="
-                                          btn btn-primary btn-size
+                                          btn btn-primary btn-sm
                                           dropdown-toggle
                                         "
                                         type="button"
@@ -349,7 +346,7 @@
                                   />
                                   <!-- Chrome security returns 'C:\fakepath\'  -->
                                   <input
-                                    class="btn"
+                                    class="btn btn-sm"
                                     style="
                                       background-color: #6254b2 !important;
                                       color: white;
@@ -362,7 +359,10 @@
                                   &nbsp;
                                   <span class="badge badge-important"></span>
                                 </span>
-                                <button type="button" class="btn btn-danger">
+                                <button
+                                  type="button"
+                                  class="btn btn-danger btn-sm"
+                                >
                                   Delete
                                 </button>
                               </div>
@@ -370,7 +370,10 @@
                             <br />
                             <div class="row">
                               <div class="col-lg-6">
-                                <button type="button" class="btn btn-success">
+                                <button
+                                  type="button"
+                                  class="btn btn-primary btn-sm"
+                                >
                                   Save
                                 </button>
                               </div>

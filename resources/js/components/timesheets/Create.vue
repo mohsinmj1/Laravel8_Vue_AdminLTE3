@@ -24,7 +24,7 @@
                   <label for="placement" class="d-block mb-1"
                     >Timesheet Period</label
                   >
-                  <input type="text" class="w-100" disabled />
+                  <input type="date" class="w-100" />
                 </div>
               </div>
             </div>
@@ -288,7 +288,7 @@
               <div class="col-lg-1">
                 <button
                   id="startbtn"
-                  class="btn btn-success py-0 px-3"
+                  class="btn btn-primary btn-sm py-0 px-3"
                   data-toggle="modal"
                   data-target="#modal-start-time"
                   style="line-height: 26px"
@@ -303,7 +303,7 @@
                 />
               </div>
               <div class="col-lg-1">
-                <!-- <button id="breakbtn"  class="btn btn-success py-0 px-3"   style="display:none;line-height:26px;">Break</button> -->
+                <!-- <button id="breakbtn"  class="btn btn-primary btn-sm py-0 px-3"   style="display:none;line-height:26px;">Break</button> -->
                 <input
                   id="breakTime"
                   type="text"
@@ -312,7 +312,7 @@
                 />
               </div>
               <div class="col-lg-1">
-                <!-- <button id="finishbtn" class="btn btn-success py-0 px-3" style="display:none;line-height:26px;" v-on:click="startfn(3)" >Finish</button> -->
+                <!-- <button id="finishbtn" class="btn btn-primary btn-sm py-0 px-3" style="display:none;line-height:26px;" v-on:click="startfn(3)" >Finish</button> -->
                 <input
                   id="finishTime"
                   type="text"
@@ -376,7 +376,7 @@
               <div class="col-lg-1">
                 <button
                   id="startbtn"
-                  class="btn btn-success py-0 px-3"
+                  class="btn btn-primary btn-sm py-0 px-3"
                   style="line-height: 26px"
                 >
                   Start
@@ -391,7 +391,7 @@
               <div class="col-lg-1">
                 <button
                   id="breakbtn"
-                  class="btn btn-success py-0 px-3"
+                  class="btn btn-primary btn-sm py-0 px-3"
                   data-toggle="modal"
                   data-target="#modal-start-time"
                   style="display: none; line-height: 26px"
@@ -409,7 +409,7 @@
               <div class="col-lg-1">
                 <button
                   id="finishbtn"
-                  class="btn btn-success py-0 px-3"
+                  class="btn btn-primary btn-sm py-0 px-3"
                   style="display: none; line-height: 26px"
                   v-on:click="startfn(3)"
                 >
@@ -463,20 +463,22 @@
             </div>
             <div class="row mt-2">
               <div style="padding-right: 10px">
-                <button class="btn btn-danger" type="submit">Cancel</button>
+                <button class="btn btn-danger btn-sm" type="submit">
+                  Cancel
+                </button>
               </div>
               <div style="padding-right: 10px">
-                <button class="btn btn-success" type="submit">
+                <button class="btn btn-primary btn-sm" type="submit">
                   Save as Draft
                 </button>
               </div>
               <div style="padding-right: 10px">
-                <button class="btn btn-success" type="submit">
+                <button class="btn btn-primary btn-sm" type="submit">
                   Save and Submit
                 </button>
               </div>
               <div style="padding-right: 10px">
-                <button class="btn btn-primary" type="submit">
+                <button class="btn btn-primary btn-sm" type="submit">
                   Copy from Previous
                 </button>
               </div>
@@ -493,7 +495,7 @@
                 <div class="timesheet_create_tit">
                   <h2 class="pb-2">PAPER Upload</h2>
                   <div class="upload-btn-wrapper">
-                    <button class="btn">Upload Paper</button>
+                    <button class="btn btn-sm">Upload Paper</button>
                     <input type="file" name="myfile" />
                   </div>
                 </div>
@@ -706,7 +708,7 @@
             </button>
             <button
               type="button"
-              class="btn btn-success"
+              class="btn btn-primary btn-sm"
               id="modalfinishBtn"
               v-on:click="startfn(3)"
             >
@@ -767,7 +769,7 @@ export default {
         total_break = $("#getBreakTime").val();
         clearInterval(myTimer);
       } else if (event == 2) {
-           var dtb = new Date();
+        var dtb = new Date();
         var Btime =
           dtb.getHours() + ":" + dtb.getMinutes() + ":" + dtb.getSeconds();
         total_time = $("#workTime").val();
@@ -776,9 +778,8 @@ export default {
         $("#modalContinueBtn").show();
         $("#modalBreakBtn").hide();
         $("#getBreakTimeInBreakModal").val(Btime);
-       // $("#getBreakTimeInBreakModal").val(Btime);
+        // $("#getBreakTimeInBreakModal").val(Btime);
       } else if (event == 3) {
-        
         clearInterval(myTime);
         clearInterval(myTimer);
         $("#modalBreakBtn").hide();
