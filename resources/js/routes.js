@@ -304,7 +304,7 @@ export default [
     },
     {
         path: "/settings/apprenticeship",
-        component: require("./components/setting/Apprenticeship/ApprenticeshipLevy.vue").default 
+        component: require("./components/setting/apprenticeship/ApprenticeshipLevy.vue").default
     },
     { path: "*", component: require("./components/NotFound.vue").default }
 ];
